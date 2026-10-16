@@ -1,0 +1,19 @@
+Demo of RadTemplate
+
+free text: [] or [default text]
+
+[c)checkbox1|checkbox2|default checked||]
+
+[r)radio1|radio2 checked||radio3]
+
+[dropdown1|dropdown selected||dropdown3] 
+_________
+___
+___
+___
+___
+___
+___
+___
+___
+{multiselect1|multiselect2||multiselect3|multiselect4||multiselect5//r4}

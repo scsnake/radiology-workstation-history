@@ -1,0 +1,500 @@
+
+
+	OBFUSCATOR TRANSLATION TABLE CREATION MESSAGES FILE
+	Date: 下午 04:25 2019年9月24日
+
+	#FILE IN WHICH THE TRANSLATION COMMANDS WERE FOUND:
+	
+
+
+#FOUND: DEFLABELS funcname: __CloseOnScreenDisplayGUI
+    Created obfuscated name: @fkk@kfkk##ffkfk@kk@#kkkffk#f@
+
+#FOUND: DEFLABELS funcname: FINITA_LA_COMEDIA
+    Created obfuscated name: #kkf#k@kkf@f@f@kk#k@kkkkf@@k
+
+#FOUND: DEFLABELS funcname: FINITA_DA_COMEDIA
+    Created obfuscated name: #fk@ffk@@k#f#kffk#f#kkkk@f#f#kk@
+
+#FOUND: DEFLABELS funcname: viewXMLSize
+    Created obfuscated name: f@#f#kf#fkf@@kff#fk#@ffkfkf#kff#kk
+
+#FOUND: DEFLABELS funcname: viewXMLClose
+    Created obfuscated name: #k#fk#k@#f#k#f@kf@@kkfff@fk#kkk#kf@kkfk@f@
+
+#FOUND: DEFLABELS funcname: askForPortalIdPw_submit
+    Created obfuscated name: f#kfff@f@kk@#kkffff##k@ffk
+
+#FOUND: DEFLABELS funcname: getControlNameByHwnd_FAIL
+    Created obfuscated name: f@ffkfk@kf@kk#@fk@k#fk#kffkfffffkkk@k#kf
+
+#FOUND: DEFLABELS funcname: ListControlsReturn
+    Created obfuscated name: f#@k#k@f#f#fk#fk@kfkf@kk@fkff@
+
+#FOUND: DEFLABELS funcname: errorHandle
+    Created obfuscated name: f@ff@f@k#fkffk#kkfkf@k@f
+
+#FOUND: DEFLABELS funcname: grabCorner
+    Created obfuscated name: k#ff@kf#@f#f@fk@f#@f#kfkkkffff@k
+
+#FOUND: DEFFUNCS funcname: On_WM_COPYDATA
+    Created obfuscated name: f@k##fk@f@#kkk
+
+#FOUND: DEFPARAMS funcname: wParam
+    Created obfuscated name: kk#f#ff#f#f##k@k
+
+#FOUND: DEFPARAMS funcname: lParam
+    Created obfuscated name: k@#fkfkk#k@f
+
+#FOUND: DEFPARAMS funcname: msg
+    Created obfuscated name: fk#kk@kfkkk#kf#f
+
+#FOUND: DEFPARAMS funcname: hwnd
+    Created obfuscated name: @k@fkf@k@fffffff
+
+#FOUND: DEFFUNCS funcname: ParseInfo
+    Created obfuscated name: @f@kk@#f#kf@fk
+
+#FOUND: DEFPARAMS funcname: j
+    Created obfuscated name: #kkk#kffffk@
+
+#FOUND: DEFPARAMS funcname: tried
+    Created obfuscated name: kk#ff@#kk#@f@k
+
+#FOUND: DEFFUNCS funcname: SetTimerF
+    Created obfuscated name: k#f#k@kk@kfkf#
+
+#FOUND: DEFPARAMS funcname: "setReportGUI"
+    Created obfuscated name: #k#ffkk@f#kkfk
+
+#FOUND: DEFPARAMS funcname: -500
+    Created obfuscated name: kf@kkk#kf@f#kf#k
+
+#FOUND: DEFPARAMS funcname: [info
+    Created obfuscated name: #k#kffkfkkkf@f
+
+#FOUND: DEFPARAMS funcname: j
+    Created obfuscated name: fkkffffkkffffffk
+
+#FOUND: DEFPARAMS funcname: frames[which.1-1
+    Created obfuscated name: kf#k#fk@k@@fk#
+
+#FOUND: DEFPARAMS funcname: 1
+    Created obfuscated name: @f@kk@@kfkfkkkff
+
+#FOUND: DEFPARAMS funcname: 1]]
+    Created obfuscated name: f@kkf#f@k#kkf#
+
+#FOUND: DEFFUNCS funcname: noduleLine
+    Created obfuscated name: #kf@f@ff@k@kkk#k
+
+#FOUND: DEFFUNCS funcname: setReportGUI
+    Created obfuscated name: f@k#k#fkkff#
+
+#FOUND: DEFPARAMS funcname: info
+    Created obfuscated name: f#fkfk@kf#k@@k
+
+#FOUND: DEFPARAMS funcname: json
+    Created obfuscated name: kk#kfff#kkfk#f
+
+#FOUND: DEFPARAMS funcname: frameHwnd
+    Created obfuscated name: k@@ff@k@k#k@f#
+
+#FOUND: DEFFUNCS funcname: setReportGUIControl
+    Created obfuscated name: kf#fkf@ff#fk@fkk
+
+#FOUND: DEFPARAMS funcname: var
+    Created obfuscated name: kfk#f@kkf#@kk@@f
+
+#FOUND: DEFPARAMS funcname: value
+    Created obfuscated name: #fk#f@#ffk#f#k
+
+#FOUND: DEFFUNCS funcname: DisplayNoduleInfo
+    Created obfuscated name: k##kfkfkfk#f@k
+
+#FOUND: DEFPARAMS funcname: noduleInd
+    Created obfuscated name: @ff@fkk##ff@f#
+
+#FOUND: DEFPARAMS funcname: isSameSeries
+    Created obfuscated name: ffk@ffkkkf@kkf
+
+#FOUND: DEFPARAMS funcname: "rMinD"
+    Created obfuscated name: fkkfkf@kfff#kk
+
+#FOUND: DEFPARAMS funcname: Round(nodule.Diameter
+    Created obfuscated name: fffkk#f#k@@f
+
+#FOUND: DEFLABELS funcname: HideGUIifInactive
+    Created obfuscated name: k@fffkk#f@f##k#kkkkkfkkf#f#kkk@kf#k@fk
+
+#FOUND: DEFLABELS funcname: ReportGUI
+    Created obfuscated name: #f@f#fk@k@fkk@@kff@ff#@kf#f@@k#kf##kffk#
+
+#FOUND: DEFLABELS funcname: thinSliceMode
+    Created obfuscated name: f@kff#k@@kkkk#fkk##ff#k#fk#fffkfk@#f@kf@f@
+
+#FOUND: DEFLABELS funcname: thickSliceMode
+    Created obfuscated name: k@kkf@#k#fk@fffkkkfkkk@fk##f
+
+#FOUND: DEFLABELS funcname: Undo
+    Created obfuscated name: @kkf@kk#@f#kf#k#k@#fkk@kk@fkkf
+
+#FOUND: DEFFUNCS funcname: MoveMsgbox
+    Created obfuscated name: f@#k#ff@#kf#
+
+#FOUND: DEFPARAMS funcname: title
+    Created obfuscated name: ff@k@ff@#f#f#kf#
+
+#FOUND: DEFLABELS funcname: selectLobe
+    Created obfuscated name: @f#fffkkfkk@fffkk@#k@kk@fk#fff#f@kkkff
+
+#FOUND: DEFLABELS funcname: CopyText
+    Created obfuscated name: kkff@fkk#kkkk#@f@kk#@kk@kk@f@fkk#k
+
+#FOUND: DEFLABELS funcname: CopyText1
+    Created obfuscated name: @ff@@ff@#f@k#k@ff#k#k@kkff#kfk#kk##f
+
+#FOUND: DEFLABELS funcname: reportFP
+    Created obfuscated name: fkkffkfkfk@fk@k##kfk#ff@k@fkff#k#kfkfk
+
+#FOUND: DEFLABELS funcname: reportFN
+    Created obfuscated name: #k@fk##k#fkkkf@k@f@f#kf@f#f@ffff#fk@
+
+#FOUND: DEFFUNCS funcname: sendFeedback
+    Created obfuscated name: k@k@fk@kkkk#
+
+#FOUND: DEFPARAMS funcname: feedback
+    Created obfuscated name: kkffkk#f@kk@@kf@
+
+#FOUND: DEFLABELS funcname: HideGUI
+    Created obfuscated name: k@f#f#fffk#kkkf#ff@k#f
+
+#FOUND: DEFPARAMS funcname: feedback
+    Created obfuscated name: f@#kk@k#k#f#kkkf
+
+#FOUND: DEFLABELS funcname: sendFeedbackFail
+    Created obfuscated name: f#fk@k@kkfkf@fff@fff@f@ffkk#@fk@@kkk@kkk#f
+
+#FOUND: DEFLABELS funcname: setSocket
+    Created obfuscated name: #kf@fkkfk#f@kk#kk#ffkkk@ffffffkkf##fk@ff
+
+#FOUND: DEFLABELS funcname: ToolTip
+    Created obfuscated name: @f#kkff@k#f@@ff#kf#kkkk#@kkf
+
+#FOUND: DEFFUNCS funcname: getPwb
+    Created obfuscated name: @ffkfk#fk#f@kk
+
+#FOUND: DEFPARAMS funcname: instance
+    Created obfuscated name: fffkf@f#@k@ff#
+
+#FOUND: DEFPARAMS funcname: position
+    Created obfuscated name: @f#kkf#fkff@kf#k
+
+#FOUND: DEFPARAMS funcname: Visible
+    Created obfuscated name: @kf#fk@k@k#f
+
+#FOUND: DEFLABELS funcname: sethotkey
+    Created obfuscated name: fkkkkfkff#ff@kf@kfkffkffk#@ffkkkk#f@kkfkkf
+
+#FOUND: DEFLABELS funcname: ReportFNHotkey
+    Created obfuscated name: @f#f@kff@fk#@fkfk@k#k@f@k@kfkk
+
+#FOUND: DEFLABELS funcname: ReportFPHotkey
+    Created obfuscated name: #fk##k#k@f@kkff#@ff@#ffk
+
+#FOUND: DEFFUNCS funcname: search
+    Created obfuscated name: @f#k@kfk@f#f#ff@
+
+#FOUND: DEFFUNCS funcname: next
+    Created obfuscated name: k@f#kff@kf#fff
+
+#FOUND: DEFFUNCS funcname: prior
+    Created obfuscated name: f@kf@f#kk#kk
+
+#FOUND: DEFLABELS funcname: magicResult
+    Created obfuscated name: @fkffk@kkffk@kffkff@k@f@f@kf
+
+#FOUND: DEFLABELS funcname: loadJson
+    Created obfuscated name: kff@fk#kkfk@#fff@k#fkff#k@
+
+#FOUND: DEFLABELS funcname: noduleListGui
+    Created obfuscated name: f@fffkf##k#kf@f#@k#kkkf#k@#kfk#kk#@k
+
+#FOUND: DEFFUNCS funcname: guiNoduleButton
+    Created obfuscated name: k#ff@k#kkf#f
+
+#FOUND: DEFPARAMS funcname: _i
+    Created obfuscated name: kff##k@fkff##k
+
+#FOUND: DEFPARAMS funcname: w
+    Created obfuscated name: kkkkk@k@k@fkkff#
+
+#FOUND: DEFPARAMS funcname: h
+    Created obfuscated name: fkkkf#ffk#k@#f
+
+#FOUND: DEFPARAMS funcname: x
+    Created obfuscated name: k@ff#k#k@fk##k
+
+#FOUND: DEFPARAMS funcname: y
+    Created obfuscated name: k#@f#ff#kk@fkff@
+
+#FOUND: DEFLABELS funcname: orderBySize
+    Created obfuscated name: f#k@k#ff#kff#k@kkfkkk@f#f@#kk#
+
+#FOUND: DEFLABELS funcname: jumpToNodule
+    Created obfuscated name: fff@f#fkffkkfk@fff#kkf@kf#f#kk#f#kk#f@
+
+#FOUND: DEFLABELS funcname: ShowNoduleListGUI
+    Created obfuscated name: @kf#k@ffk#k#kfkk#ff#@f
+
+#FOUND: DEFFUNCS funcname: nextInd
+    Created obfuscated name: k#kk@k@f#fk#
+
+#FOUND: DEFPARAMS funcname: ind
+    Created obfuscated name: ff@kfkf@ffk#
+
+#FOUND: DEFFUNCS funcname: priorInd
+    Created obfuscated name: kkfff@@k#kk@kf@f
+
+#FOUND: DEFPARAMS funcname: ind
+    Created obfuscated name: #kf@#k@kkk#fff
+
+#FOUND: DEFLABELS funcname: disconnectSocket
+    Created obfuscated name: k#@kfkff#kkfk@kf#k@f@kf#f#f#k#f@@f@kkkkk
+
+#FOUND: DEFLABELS funcname: sendChartNo
+    Created obfuscated name: kfk#@f@f@fk#kf@k#f#fffkkfk
+
+#FOUND: DEFLABELS funcname: getChartNo
+    Created obfuscated name: @fk#kkk@kf@kkkk##ffkf@#kk#kkf#f@#ff##k
+
+#FOUND: DEFLABELS funcname: main
+    Created obfuscated name: fkk@fff@#kk##fffkffk#f
+
+#FOUND: DEFLABELS funcname: test
+    Created obfuscated name: f@k@ff#ffkf#@f@kf@k#k@f#k#
+
+#FOUND: DEFFUNCS funcname: httprequest
+    Created obfuscated name: f##kk##ffkf@@kk@
+
+#FOUND: DEFPARAMS funcname: ip "studies/" patient.studies[A_Index]
+    Created obfuscated name: ff@fkfkf#fkf#k
+
+#FOUND: DEFPARAMS funcname: post
+    Created obfuscated name: kf@kk@f@kk#k
+
+#FOUND: DEFPARAMS funcname: header
+    Created obfuscated name: k#f@kkkf#k@k
+
+#FOUND: DEFPARAMS funcname: "charset: utf-8"
+    Created obfuscated name: ffkf#k#ffkk#@fk#
+
+#FOUND: DEFFUNCS funcname: if
+    Created obfuscated name: k#k@#kk#@kk@#f
+
+#FOUND: DEFPARAMS funcname: url
+    Created obfuscated name: #f#k@kkkf@fff@ff
+
+#FOUND: DEFLABELS funcname: UrlToBrowser
+    Created obfuscated name: k@fkk@fkfff@@kffkff##fkfff@k@f#ffkf@
+
+#FOUND: DEFPARAMS funcname: ShowClearRead && (AccNo!
+    Created obfuscated name: k@#fkf@ff@k@
+
+#FOUND: DEFPARAMS funcname: 1
+    Created obfuscated name: kfk##k#kf@#fk#@k
+
+#FOUND: DEFPARAMS funcname: openNew
+    Created obfuscated name: kff#kk#fff@k@k@f
+
+#FOUND: DEFLABELS funcname: recoverClip
+    Created obfuscated name: kkf#f#kkf#kf#f#fkkfk@k@kf@@k@k@kk##f
+
+#FOUND: DEFLABELS funcname: openNewChromeOrFirefox
+    Created obfuscated name: #kkkfff#k@f@kfkkkfkfk#k#ff@fk#@kkf
+
+#FOUND: DEFPARAMS funcname: appPath!
+    Created obfuscated name: k@k#fk#k@fff
+
+#FOUND: DEFPARAMS funcname: appPath!
+    Created obfuscated name: f#fkf#f#f@k@fk
+
+#FOUND: DEFPARAMS funcname: appPath!
+    Created obfuscated name: kkf@@fk@k@kf
+
+#FOUND: DEFLABELS funcname: fail
+    Created obfuscated name: kfffk#fk#fkfk#fkfkk@fkff#fk#ff@ff##k
+
+#FOUND: DEFLABELS funcname: noResult
+    Created obfuscated name: fff##f#fkffkkk#ffkfff@f@@fkf#fk@@kf#ff#f
+
+#FOUND: DEFFUNCS funcname: SHA1dash
+    Created obfuscated name: kfk@k#f#kf@kkf
+
+#FOUND: DEFPARAMS funcname: str
+    Created obfuscated name: k##kk@fkfkf#@f@f
+
+#FOUND: DEFLABELS funcname: next
+    Created obfuscated name: k@k#kk#kkkkk@kk##fk@ffkk@k#kk#k#k#@k
+
+#FOUND: DEFLABELS funcname: prior
+    Created obfuscated name: f#f@f@k@f@#fff#k@f@kkfk#f#k#f#k@#k#k
+
+#FOUND: DEFLABELS funcname: changeIm
+    Created obfuscated name: @k#fk#@k@kkkfkk@f##f#k@f#fkff#fffkkffkkfk#
+
+#FOUND: DEFLABELS funcname: changeIm2
+    Created obfuscated name: kkf@kk@ff@fffkk@f#kkff
+
+#FOUND: DEFFUNCS funcname: RegExMatch
+    Created obfuscated name: f@fff#k@#kf#fk
+
+#FOUND: DEFPARAMS funcname: currentUrl
+    Created obfuscated name: kfkkf#f@@fk#
+
+#FOUND: DEFLABELS funcname: impaxSelect
+    Created obfuscated name: fkf@kk@kkf#k@fkkk#f#kk#ffk
+
+#FOUND: DEFPARAMS funcname: lastAccNo!
+    Created obfuscated name: ff#kkffk@kf@kf
+
+#FOUND: DEFLABELS funcname: EBMselect
+    Created obfuscated name: @fkf@k#fk#fk#kkk#kfkkkffkfk@kffkk@k@
+
+#FOUND: DEFLABELS funcname: OnExit
+    Created obfuscated name: kk@f#fffk@#kkff@#ff@f@f@kk@kff#kfk#kfk@f
+
+#FOUND: DEFLABELS funcname: dismiss
+    Created obfuscated name: @kkfk@f@kkk@#fff#ff#@k@fk#@kkk
+
+#FOUND: DEFLABELS funcname: LButton_Shift
+    Created obfuscated name: k@f#ffff@fkkk#ffkffffkkffk
+
+#FOUND: DEFLABELS funcname: LButtonUp
+    Created obfuscated name: k#fk#fk#f#@kfff#f@k#f@
+
+#FOUND: DEFFUNCS funcname: StringUpper
+    Created obfuscated name: f#f@kkf#f##k@k
+
+#FOUND: DEFPARAMS funcname: str
+    Created obfuscated name: kk#fkf@kf@kkk@
+
+#FOUND: DEFFUNCS funcname: IsValidJPEG
+    Created obfuscated name: #f#f#kfkkfff@kk#
+
+#FOUND: DEFPARAMS funcname: JPEG
+    Created obfuscated name: k@k#k@@kkfkkf@kk
+
+#FOUND: DEFFUNCS funcname: WinHttpRequest
+    Created obfuscated name: @kk#f#fffkkkkf
+
+#FOUND: DEFPARAMS funcname: URL
+    Created obfuscated name: @fkk#k#kk#f@@kf#
+
+#FOUND: DEFPARAMS funcname: In_POST__Out_Data
+    Created obfuscated name: k@@f@kk@@k#k#k#k
+
+#FOUND: DEFPARAMS funcname: In_Out_HEADERS
+    Created obfuscated name: #kff@ffkfff#
+
+#FOUND: DEFPARAMS funcname: Options
+    Created obfuscated name: kk@kfkk@f@k##k
+
+#FOUND: DEFPARAMS funcname: https
+    Created obfuscated name: k#fk#kkk@fk#
+
+#FOUND: DEFPARAMS funcname: Options
+    Created obfuscated name: kkk#fkk@#k#fkf
+
+#FOUND: DEFPARAMS funcname: "i
+    Created obfuscated name: fkf#f##kf@@kf#
+
+#FOUND: DEFFUNCS funcname: objrelease
+    Created obfuscated name: f##k#kk@f@f#
+
+#FOUND: DEFPARAMS funcname: _p
+    Created obfuscated name: #k@kk@@f@fkfkf
+
+#FOUND: DEFPARAMS funcname: Options
+    Created obfuscated name: #kk@@kf@k@@k#k@f
+
+#FOUND: DEFPARAMS funcname: "i
+    Created obfuscated name: #kff#ff@@kkf@k
+
+#FOUND: DEFFUNCS funcname: ControlGetText
+    Created obfuscated name: f@#fff@kf#kffk
+
+#FOUND: DEFPARAMS funcname: control
+    Created obfuscated name: #kkf#k@k#kkk@kk#
+
+#FOUND: DEFPARAMS funcname: title
+    Created obfuscated name: #kf#ffkf#k#f
+
+#FOUND: DEFPARAMS funcname: Text
+    Created obfuscated name: #f@fk@f@f##f
+
+#FOUND: DEFPARAMS funcname: exclude_title
+    Created obfuscated name: @k@f#kf#fkf@@k
+
+#FOUND: DEFPARAMS funcname: exclude_text
+    Created obfuscated name: k@k##kfkfffffk#f
+
+#FOUND: DEFFUNCS funcname: __controlGetText
+    Created obfuscated name: k@kfkfkkk#k#
+
+#FOUND: DEFPARAMS funcname: hwnd
+    Created obfuscated name: @kk@f@f#k@ff@f
+
+#FOUND: DEFFUNCS funcname: WinGetClass
+    Created obfuscated name: f#f#ffkf@f#fk@
+
+#FOUND: DEFPARAMS funcname: title
+    Created obfuscated name: @fffk#@kf#k##k
+
+#FOUND: DEFPARAMS funcname: Text
+    Created obfuscated name: ffffkk#kkk@k@fkf
+
+#FOUND: DEFPARAMS funcname: exclude_title
+    Created obfuscated name: ffkkkk#k@kk@f#f#
+
+#FOUND: DEFPARAMS funcname: exclude_text
+    Created obfuscated name: @f@fk@kkkfffkk
+
+#FOUND: DEFFUNCS funcname: ShowToolTip
+    Created obfuscated name: @fffk#fffkk@kff@
+
+#FOUND: DEFPARAMS funcname: Text
+    Created obfuscated name: @kkk@fk@@k#f@f
+
+#FOUND: DEFPARAMS funcname: Out
+    Created obfuscated name: #k@fffk##k@fff
+
+#FOUND: DEFPARAMS funcname: X
+    Created obfuscated name: f@#f@kk#@kff
+
+#FOUND: DEFPARAMS funcname: Y
+    Created obfuscated name: f@kk@ffkkf@f#k
+
+#FOUND: DEFPARAMS funcname: In
+    Created obfuscated name: ffkk#k#f@k@f@kf#
+
+#FOUND: DEFPARAMS funcname: bControl
+    Created obfuscated name: @kkf@f@k#f@kkkkk
+
+#FOUND: DEFPARAMS funcname: Nr
+    Created obfuscated name: kff#f@kk@kf@kf
+
+#FOUND: DEFLABELS funcname: ShowToolTip
+    Created obfuscated name: k##f@f#kf@ff#ff#k#@ffkkf@kfkkkk#k#fkfk
+
+#FOUND: DEFFUNCS funcname: DateDiff
+    Created obfuscated name: f@@k#fkfk#fk
+
+#FOUND: DEFPARAMS funcname: date
+    Created obfuscated name: fkk@f@kffkkfk#k#
+
+#FOUND: DEFPARAMS funcname: refDate
+    Created obfuscated name: f@f##f#f#fkf
+
+#FOUND: DEFPARAMS funcname: AbsValue
+    Created obfuscated name: kf@ff#@f#fkf

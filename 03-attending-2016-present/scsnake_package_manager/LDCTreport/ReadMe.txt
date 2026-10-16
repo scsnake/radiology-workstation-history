@@ -1,0 +1,7 @@
+- 文字框內可自由編輯
+- Nodule/GGO
+  -- 下拉式選單可選取預設文字或自由填入文字
+  -- 依數量、大小、描述、種類、部位、變化填入
+  -- 部位可多選，鍵盤快速鍵為[rlb][umln]，例如ru為RUL，bn為bilateral lungs
+- Submit: 報告貼上RIS
+- Reset: 換打另一份報告時可reset重新輸入

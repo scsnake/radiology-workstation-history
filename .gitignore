@@ -1,0 +1,46 @@
+# Binary executables and libraries
+*.exe
+*.dll
+*.bin
+*.pdb
+*.cache
+*.so
+*.dylib
+*.appref-ms
+
+# Shortcuts
+*.lnk
+
+# Database and large data exports
+*.sqlite3
+*.db
+*.mdb
+*.xls
+*.xlsx
+*.vfs2
+*.vfs3
+*.saz
+
+# Office binary documents with metadata
+*.doc
+*.docx
+*.ppt
+*.pptx
+
+# Temporary, logs, and backups
+*.tmp
+*.log
+*.bak
+*.sav
+*.swp
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Scratch
+scratch/
+
+# Local-only guidelines and private notes (do not push)
+SANITIZATION_GUIDELINE.md
+*GUIDELINE*.md
+

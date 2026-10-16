@@ -1,0 +1,37 @@
+﻿- 打開textHotkey.ini
+  -- 設定要作用的程式，以逗號分隔，可填exe檔名（大小寫相符）或視窗部分標題
+  -- 設定快速鍵，不需要的功能可以刪去/空白
+- `：往左刪除一個字(word)，Ctrl + ` 輸出 `
+- ctrl以字(word)為單位，alt以句(子句)為單位，win以完整行為單位，搭配鍵盤左右鍵可移動輸入游標
+	- 再搭配shift則為選取文字
+	- 連續性：組合鍵不動，繼續按左右鍵可加大選取範圍
+- ctrl/alt/win搭配backspace/del，相當於往左/右選取後刪除範圍
+- tab：游標往右，跳過非文字字元，到下一個文字字元之前
+	- 如果沒有非文字字元，則為正常的tab功能
+- [ 選取左側字，] 選取右側字
+	- alt選取句
+	- win選取完整行
+	- Ctrl + [ 輸出 [，Ctrl + ] 輸出 ]
+- PageUp/PageDown：到上一行/下一行的end
+- Alt + 數字(0~9)：跳到第n行的end
+- Alt + Up/Down：這一行(或選取的多行)和上/下一行互換位置
+
+- Open "textHotkey.ini"
+  -- Set action windows (separated by comma ",") with executable name (.exe, case sensitive) or part of window title
+  -- Set hotkeys; empty/delete the key will disable specific hotkey
+- "`": backspace a word; "Ctrl+`" will output "`"
+- Move caret (i.e. the cursor in text edit)
+  -- Ctrl + Left/Right: bypassing a word
+  -- Alt + Left/Right: bypassing a sentence, to the location of comma (,) or period (.)
+	-- Win + Left/Right: to the beginning of line
+	-- Shift + above hotkeys: selecting text instead of moving caret
+	-- Ctrl/Alt/Win + Backspace/Del: deleting text with the same pattern of text range
+- Tab: move caret leftward, bypassing non-alphabet character (such as parenthesis)
+- "[", "]": similar to Ctrl+Left/Right, but only select one word sequently leftward/rightward
+  -- Alt/Win + [/]: select one sentence/line sequently leftward/rightward
+	-- "Ctrl+[" will output "["; "Ctrl+]" will output "]"
+- PageUp/PageDown: to the end of previous/next line
+- Alt + Numeric key (1-9, 0 as 10): to the end of nth line, which is determined by the numbering or bullets at the beginning of the lines
+- Alt + Up/Down: exchange position of current line (or selected lines) with previous/next line
+
+LastUpdate: 2017/01/12 by scsnake@gmail.com

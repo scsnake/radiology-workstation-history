@@ -1,0 +1,35 @@
+﻿1. Imaging Date
+        [2015//w100]/[//w50]/[//w50] 
+    Imaging Modality
+        Imaging by [c)CT scan||MRI]
+    Imaging Body Parts
+		[c)Brain|Neck|Chest||Abdomen|Pelvis|Others:] [//w200]
+    Contrast Enhancement
+		[r)Without/With||With|Without]
+2. Tumor Location
+		[c)Cervical segment (hypopharynx to sternal notch)]
+		[c)Upper third of thoracic segment (sternal notch to azygos vein)]
+		[c)Middle third of thoracic segment (azygos vein to inferior pulmonary vein)]
+		[c)Lower third of thoracic segment (inferior pulmonary vein to esophagogastric junction)]
+	Tumor Size
+        [c)Measurable: ||] Length: [//w50]cm, Max thickness: [//w50]cm
+        [c)Non-measurable]
+3. Tumor Invasion
+    [c)No or equivocal]
+    [c)Yes: ]
+		[c)Esophagus|Pleura|Pericardium|Diaphragm|Peritoneum|Aortic wall|Carina]
+		[c)Posterior wall of trachea|Posterior wall of main bronchus|Left atrial wall]
+4. Regional Nodal Metastasis
+	[c)No or equivocal]
+	[c)Yes, ] number of suspicious lymph node(s): [//w50], location:
+		[c)Lower cervical, supraclavicular, and sternal notch|Right upper paratracheal|Left upper paratracheal]
+		[c)Prevascular|Retrotracheal|Right lower paratracheal|Left lower paratracheal|Subaortic (A-P window)]
+		[c)Paraaortic (ascending aorta or phrenic)|Subcarinal|Paraesophageal|Right hilar|Left hilar]
+        [c)Others:] [//w300]
+5. Distant Metastasis (in this study)
+    [c)No or Equivocal:||][]
+    [c)Yes, location:] [//w500]    
+6. Other findings:
+    [nil//w500]
+Impression:
+Esophageal cancer, tentative staging T[//w50]N[//w50]Mx.

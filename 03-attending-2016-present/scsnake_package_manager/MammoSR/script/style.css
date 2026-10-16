@@ -1,0 +1,61 @@
+@media print {
+body {-webkit-print-color-adjust: exact;}
+}
+@page { margin: 15; }         
+@media all {
+	.page-break, label	{ display: none; }
+	
+}
+
+@media print {
+	.page-break	{ display: block; page-break-after: always; }
+	.noPrint {display: none  !important; }
+}
+
+@media screen {
+	span[contenteditable=true] {
+		border-bottom: 2px solid red;
+	}
+	input[type=checkbox] {
+		
+	}
+}
+.tightLayout, .tightLayout span {
+	line-height: 90%;
+	padding: 0px 2px 0px 2px;
+}
+
+* {
+font-family: "Times New Roman", "標楷體", "DFKai-SB";
+}
+
+table.pftable {font-size:14pt;width:100%;border-width: 2px;border-color: black;border-collapse: collapse;line-height: 120%;}
+table.pftable th, .header {font-size:12pt;background-color:#b8b8b8;border-width: 1px;padding 0px 2px 0px 2px;border-style: solid;border-color: black;text-align:center;font-weight: bold;}
+table.pftable tr {background-color:rgba(0, 0, 0, 0);;}
+table.pftable td {font-size:12pt;border-width: 1px;border-style: solid;border-color: black;padding: 0px 2px 0px 2px;}
+
+table.tftable {font-size:14pt;width:100%;border-width: 2px;border-color: black;border-collapse: collapse;line-height: 150%;padding: 2px 6px 2px 6px;}
+table.tftable th, .header {font-size:12pt;background-color:#b8b8b8;border-width: 1px;padding: 8px;border-style: solid;border-color: black;text-align:center;font-weight: bold;}
+table.tftable tr {background-color:rgba(0, 0, 0, 0);;}
+table.tftable td {font-size:12pt;border-width: 1px;border-style: solid;border-color: black;}
+
+table.inline {font-size:14pt;width:100%;border-width: 0px;border-collapse: collapse;}
+table.inline td {text-align: center;border-width: 0px 1px 0px 0px;border-color: black;}
+table.inline .tdLast {text-align: center;border-width: 0px 0px 0px 0px;border-color: black;}
+table.inline .tdBottomLine {text-align: center;border-color: black; border-width: 0px 1px 1px 0px; }
+table.inline .tdBottomLineLast {text-align: center;border-color: black; border-width: 0px 0px 1px 0px; }
+
+table.smallCell td {padding: 0;}
+
+
+table.lesion {font-size:14pt;width:100%;border: 0px;border-collapse: collapse;padding: 0px 2px 0px 2px;}
+table.lesion tr {border: 1px black solid;padding: 0px 2px 0px 2px;}
+table.lesion td {border: 0px;padding: 0px 2px 0px 2px;}
+table.lesion .lesionTd {font-size:12pt;background-color:#dddddd;border-width: 1px;border-style: solid;border-color: black;text-align:left;font-weight: bold;padding: 0px 2px 0px 2px;}
+table.lesion .lWhite {border-left: white !important;}
+
+.bold {font-weight: bold;}
+.bottomSpace {margin: 0px 0px 8px 0px;}
+
+.t1 {font-weight: bold; font-size: 20pt; color: black; text-align: center;}
+

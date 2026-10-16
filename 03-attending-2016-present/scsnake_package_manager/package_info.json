@@ -1,0 +1,145 @@
+{
+  "__titles__": [
+    "is_folder",
+    "dependency",
+    "version",
+    "description"
+  ],
+  "__url__": "http:\/\/intranet.hospital.example\/scsnake\/",
+  "AHK_BG": [
+    1,
+    [],
+    "0.4",
+    ""
+  ],
+  "AutoNum": [
+    1,
+    [],
+    "0.2",
+    "換行自動編號"
+  ],
+  "boneage report": [
+    1,
+    [
+      "RisImpaxPolling.exe"
+    ],
+    "0.3",
+    "Bone Age報告輔助"
+  ],
+  "Capture2Text": [
+    1,
+    [],
+    "0.1",
+    "OCR"
+  ],
+  "changeSchedule": [
+    1,
+    [
+      "contacts.csv"
+    ],
+    "0.3",
+    "換班表程式"
+  ],
+  "contacts.csv": [
+    0,
+    [],
+    "0.5",
+    "通訊錄"
+  ],
+  "diffReport": [
+    1,
+    [],
+    "0.3",
+    "比對暫存\/發送報告"
+  ],
+  "DigiSign": [
+    1,
+    [],
+    "0.19",
+    "自動電子簽章"
+  ],
+  "EBMpreload": [
+    1,
+    [],
+    "0.5",
+    ""
+  ],
+  "FirefoxLogin": [
+    1,
+    [
+      "RisImpaxPolling.exe"
+    ],
+    "0.11",
+    "Portal功能優化"
+  ],
+  "Hotstring Helper": [
+    1,
+    [],
+    "0.3",
+    "以關鍵字尋找現񧂚"
+  ],
+  "ImpaxContextServer": [
+    1,
+    [],
+    "0.1",
+    "IMPAX Context Server"
+  ],
+  "LDCTreport": [
+    1,
+    [],
+    "0.9",
+    "Low dose chest CT員工健檢報告格式"
+  ],
+  "MammoSR": [
+    1,
+    [
+      "RisImpaxPolling.exe"
+    ],
+    "0.19",
+    "國健乳篩報告格式"
+  ],
+  "portalMessage": [
+    1,
+    [
+      "contacts.csv"
+    ],
+    "0.5",
+    "發送群組簡訊"
+  ],
+  "RadTemplate": [
+    1,
+    [],
+    "0.6",
+    "自訂報告範本"
+  ],
+  "RisImpaxPolling.exe": [
+    0,
+    [],
+    "0.3",
+    "RIS\/IMPAX狀態"
+  ],
+  "scsnakeUpdate.exe": [
+    0,
+    [],
+    "0.6",
+    "Drag & Drop updater"
+  ],
+  "scsPackageManager.exe": [
+    0,
+    [],
+    "0.8",
+    "Package Manager"
+  ],
+  "searchLab.exe": [
+    0,
+    [],
+    "0.2",
+    ""
+  ],
+  "urgentReport": [
+    1,
+    [],
+    "0.1",
+    "催報告簡訊\/雙向溝通平台"
+  ]
+}

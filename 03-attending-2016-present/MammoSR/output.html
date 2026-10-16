@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<script type="text/javascript" src="../script/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="../script/script.js"></script>
+<link rel=stylesheet type="text/css" href="../script/style.css" /> 
+<script type="text/javascript" src="./script/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="./script/script.js"></script>
+<link rel=stylesheet type="text/css" href="./script/style.css" /> 
+</head>
+
+<body>
+<form id=reportForm >
+<table name="tfhover" class="tftable" border="1">
+<tr><th colspan=4>乳房攝影檢查結果</th></tr>
+<tr><td width=15% class=bold>醫院名稱</td><td width=35%><span contenteditable=true name=hospital>N醫院</span></td><td class=bold width=18%>醫事機構代碼</td><td style="padding: 0px">
+<table class=inline><tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class=tdLast>0</td></tr></table>
+</td></tr>
+
+<tr><td width=15% class=bold>姓名</td><td width=35%><span contenteditable=true name=ptname>&nbsp;&nbsp;</span></td><td class=bold width=18%>病歷號</td><td><span contenteditable=true name=chartno>&nbsp;&nbsp;</span></td></tr>
+
+<tr><td width=15% class=bold>攝影日期</td><td colspan=3><span contenteditable=true name=examDate1>&nbsp;&nbsp;</span>年<span contenteditable=true name=examDate2>&nbsp;&nbsp;</span>月<span contenteditable=true name=examDate3>&nbsp;&nbsp;</span>日</td></tr>
+<tr><td width=15% class=bold>攝影儀機型</td><td colspan=3><input type=checkbox name=xraycb1>CR乳房X光攝影儀（Computed Radiography, CR）</input><br/><input type=checkbox name=xraycb2>DR乳房X光攝影儀（Digital Radiography, DR）</input><br/><input type=checkbox name=xraycb3>乳房斷層攝影機（Tomosynthesis, Tomo）</input></td></tr>
+<tr><td width=15% class=bold>乳房觸診檢查</td><td style="border-right: 0;"><input type=checkbox name=palpcb1>有腫塊或其他異常，<br/>　請在右圖相關位置標示「X」</input><br/><input type=checkbox name=palpcb2>無異常</input><br/><input type=checkbox checked=checked name=palpcb3>未做觸診檢查</input></td><td colspan=2 style="border-left: 0;text-align: center;"><img src="../image/br.png" height=84 width=188 /></td></tr>
+<tr><td class=bold>乳腺組成</td><td colspan=3><input type=checkbox name=bdcb1>Fatty breast</input> <input type=checkbox name=bdcb2>Scattered fibroglandular density</input> <input type=checkbox name=bdcb3>Heterogeneously dense</input> <input type=checkbox name=bdcb4>Extremely dense</input></td></tr>
+<tr><td class=bold>與舊片比較</td><td colspan=3><input type=checkbox name=comparecb1>是</input>;<br/><input type=checkbox name=comparecb2>否，理由為：</input> <input type=checkbox name=reasoncb1>第一次篩檢</input> <input type=checkbox name=reasoncb2>無法取得舊片</input> <input type=checkbox name=reasoncb3>無法獲知是否有舊片</input></td></tr>
+<tr><td class=bold>攝影判讀日期</td><td colspan=3><span contenteditable=true name=reportDate1>&nbsp;&nbsp;</span>年<span contenteditable=true name=reportDate2>&nbsp;&nbsp;</span>月<span contenteditable=true name=reportDate3>&nbsp;&nbsp;</span>日</td></td></tr>
+<tr><td class=bold>攝影檢查結果</td><td colspan=3>
+<p class=bottomSpace>※ Category 0, 3, 4, 5需加填「乳房X光攝影檢查異常個案報告表」。</p>
+<input type=checkbox name=resultcb1>(0)需附加其他影像檢查再評估</input><br/>
+<p class=bottomSpace> 　(Category 0: Need Additional Imaging Evaluation.)</p>
+<input type=checkbox name=resultcb2>(1)無異常發現</input><br/>
+<p class=bottomSpace> 　(Category 1: Negative.)</p>
+<input type=checkbox name=resultcb3>(2)良性發現</input><br/>
+<p class=bottomSpace> 　(Category 2: Benign Finding.)</p>
+<input type=checkbox name=resultcb4>(3)可能是良性發現－須短期追蹤檢查(如:六個月)</input><br/>
+<p class=bottomSpace> 　(Category 3: Probably Benign Finding－Short Interval Follow-Up Suggested.)</p>
+<input type=checkbox name=resultcb5>(4)可疑異常須考慮組織生檢</input><br/>
+ 　(Category 4: Suspicious Abnormality－Biopsy Should Be Considered.)</br>
+　<input type=checkbox name=resultsubcb1>a. Low suspicion</input><br/>
+　<input type=checkbox name=resultsubcb2>b. Moderate suspicion</input><br/>
+<p class=bottomSpace>　<input type=checkbox id=resultsubcb3>c. High suspicion</input></p>
+<input type=checkbox name=resultcb6>(5)高度懷疑為惡性腫瘤必須採取適當的措施</input>
+<p class=bottomSpace> 　(Category 5: Highly Suggestive of Malignancy－Appropriate Action Should Be Taken.)</p>
+</td></tr>
+<tr height=100><td class=bold width=15%>放射科醫師</td><td width=35%><div style="position: relative; z-index: -999; " id=signHereDiv></div><span contenteditable=true name=radiologist>&nbsp;&nbsp;</span></td><td class=bold width=15%>醫事放射師</td><td><span contenteditable=true name=technician>&nbsp;&nbsp;</span></td></tr>
+</table>
+
+
+<div id="positiveFindingPage" class=positiveFinding>
+<div class="page-break"></div>
+<div class=noPrint><br /><hr width=80% /><br /></div>
+<input type=submit value="Delete This Finding ↓" onclick="deleteThisFinding(this);return false;" style="height: 50; width: 150; font-size: 100%;" class=noPrint />
+<p style="text-align: right;" class=tightLayout>【本檢查經費由衛生福利部國民健康署菸害防制及衛生保健基金支應】</p>
+<p class="t1">國民健康署婦女乳房X光攝影檢查異常個案報告表</p>
+<p style="text-align: right;" class=tightLayout>病歷號：<span contenteditable=true name=chartno>&nbsp;&nbsp;</span></p>
+<table name="tfhover" class="pftable" border="1">
+<tr><td class=header colspan=4>檢查資訊</td></tr>
+<tr><td width=12% class=bold>姓名</td><td width=33%><span contenteditable=true name=ptname>&nbsp;&nbsp;</span></td><td width=20% style="padding: 0;">
+<table class=inline><tr height=50%><td class="bold" style="border-width: 0 0 1px 0;border-color: black;text-align: left;padding-top: 0;padding-bottom: 0;">身分證統一編號</td></tr><tr><td class="bold" style="text-align: left;padding-top: 0;padding-bottom: 0;border: 0px;">統一證號(外籍)</td></tr></table></td>
+<td style="padding: 0;">
+<table class="inline smallCell">
+<tr class=tdRow height=50%><td width=10% class=tdBottomLine><span contenteditable=true name=id1>&nbsp;&nbsp;</span></td><td width=10% class=tdBottomLine><span contenteditable=true name=id2>&nbsp;&nbsp;</span></td><td width=10% class=tdBottomLine><span contenteditable=true name=id3>&nbsp;&nbsp;</span></td><td width=10% class=tdBottomLine><span contenteditable=true name=id4>&nbsp;&nbsp;</span></td><td width=10% class=tdBottomLine><span contenteditable=true name=id5>&nbsp;&nbsp;</span></td><td width=10% class=tdBottomLine><span contenteditable=true name=id6>&nbsp;&nbsp;</span></td><td width=10% class=tdBottomLine><span contenteditable=true name=id7>&nbsp;&nbsp;</span></td><td width=10% class=tdBottomLine><span contenteditable=true name=id8>&nbsp;&nbsp;</span></td><td width=10% class=tdBottomLine><span contenteditable=true name=id9>&nbsp;&nbsp;</span></td><td width=10% class=tdBottomLineLast><span contenteditable=true name=id10>&nbsp;&nbsp;</span></td></tr>
+<tr class=tdRow><td width=10%><span contenteditable=true name=fid1>&nbsp;&nbsp;</span></td><td width=10%><span contenteditable=true name=fid2>&nbsp;&nbsp;</span></td><td width=10%><span contenteditable=true name=fid3>&nbsp;&nbsp;</span></td><td width=10%><span contenteditable=true name=fid4>&nbsp;&nbsp;</span></td><td width=10%><span contenteditable=true name=fid5>&nbsp;&nbsp;</span></td><td width=10%><span contenteditable=true name=fid6>&nbsp;&nbsp;</span></td><td width=10%><span contenteditable=true name=fid7>&nbsp;&nbsp;</span></td><td width=10%><span contenteditable=true name=fid8>&nbsp;&nbsp;</span></td><td width=10%><span contenteditable=true name=fid9>&nbsp;&nbsp;</span></td><td width=10% class=tdLast><span contenteditable=true name=fid10>&nbsp;&nbsp;</span></td></tr>
+</table>
+</td></tr>
+<tr><td width=15% class=bold>出生日期</td><td width=35%><span contenteditable=true name=brth1>&nbsp;&nbsp;</span>年<span contenteditable=true name=brth2>&nbsp;&nbsp;</span>月<span contenteditable=true name=brth3>&nbsp;&nbsp;</span>日</td><td width=15% class=bold>乳房攝影日期</td><td><span contenteditable=true name=examDate1>&nbsp;&nbsp;</span>年<span contenteditable=true name=examDate2>&nbsp;&nbsp;</span>月<span contenteditable=true name=examDate3>&nbsp;&nbsp;</span>日</td></tr>
+<tr><td width=15% class=bold>醫院名稱</td><td width=35%><span contenteditable=true name=hospital>N醫院</span></td><td width=15% class=bold>放射科醫師</td><td><span contenteditable=true name=radiologist>&nbsp;&nbsp;</span></td></tr>
+<tr><td class=header colspan=4>乳房X光攝影陽性結果</td></tr>
+<tr><td colspan=4>
+<input type=checkbox name=resultcb1><span class=bold>Category 0</span></input>: Need Additional Imaging Evaluation.<br/>
+<input type=checkbox name=resultcb4><span class=bold>Category 3</span></input>: Probably Benign Finding － Short Interval Follow-up Is Suggested..<br/>
+<input type=checkbox name=resultcb5><span class=bold>Category 4</span></input>: Suspicious Abnormality － Biopsy Should Be Considered.<br/>
+　　　　　　<input type=checkbox name=resultsubcb1>a. Low suspicion</input>　　<input type=checkbox name=resultsubcb2>b. Moderate suspicion</input>　　<input type=checkbox name=resultsubcb3>c. High suspicion</input><br/>
+<input type=checkbox name=resultcb6><span class=bold>Category 5</span></input>: Highly Suggestive of Malignancy － Appropriate Action Should Be Taken.
+</td></tr>
+<tr><td class=header colspan=4>病灶勾選（如單側多處病灶或兩側皆有病灶，請以不同表單分開呈現）</td></tr>
+<tr><td colspan=4>
+<input type=checkbox name=findingmasscb><span class=bold>1. Mass</span></input>: <input type=checkbox name=massposcb1>Rt.</input> <input type=checkbox name=massposcb2>Lt.</input> <input type=checkbox name=massposcb3>Multiple, unilateral</input> <input type=checkbox name=massposcb4>Multiple, bilateral</input><br/>
+<table class=lesion ><tr><td rowspan=3 class=lesionTd width=10%>Location</td><td colspan=3 width=54%><input type=checkbox name=massloccb1>UOQ</input> 　　 <input type=checkbox name=massloccb2>UIQ</input> 　　 <input type=checkbox name=massloccb3>LOQ</input> 　　 <input type=checkbox name=massloccb4>LIQ</input></td><td><input type=checkbox name=massloccb5>Subareolar</input></td><td><input type=checkbox name=massloccb6>Axillary tail</input></td></tr>
+<tr><td class=lesionTd width=18% rowspan=2>One view only</td><td colspan=2><input type=checkbox name=masshscb1>Upper Hemisphere</input></td><td colspan=2><input type=checkbox name=masshscb2>Lower Hemisphere</input></td></tr>
+<tr><td colspan=2><input type=checkbox name=masshscb3>Outer Hemisphere</input></td><td colspan=2><input type=checkbox name=masshscb4>Inner Hemisphere</input></td></tr>
+<tr><td class=lesionTd>Size</td><td><input type=checkbox name=masssizecb1>< 1.0cm</input></td><td><input type=checkbox name=masssizecb2>1-2cm</input></td><td><input type=checkbox name=masssizecb3>2-3cm</input></td><td><input type=checkbox name=masssizecb4>3-4cm</input></td><td><input type=checkbox name=masssizecb5>4-5cm</input></td></tr>
+<tr><td class=lesionTd>Morphology</td><td><input type=checkbox name=massmorcb1>Round</input></td><td><input type=checkbox name=massmorcb2>Oval</input></td><td><input type=checkbox name=massmorcb3>Lobular</input></td><td><input type=checkbox name=massmorcb4>Irregular</input></td><td> </td></tr>
+<tr><td class=lesionTd>Margin</td><td><input type=checkbox name=massmargincb1>Circumscribed</input></td><td><input type=checkbox name=massmargincb2>Microlobulated</input></td><td><input type=checkbox name=massmargincb3>Obscured</input></td><td><input type=checkbox name=massmargincb4>Indistinct</input></td><td><input type=checkbox name=massmargincb5>Spiculated</input></td></tr>
+<tr><td class=lesionTd>Density</td><td><input type=checkbox name=massdencb1>High-density</input></td><td><input type=checkbox name=massdencb2>Equal density</input></td><td><input type=checkbox name=massdencb3>Low-density</input></td><td><input type=checkbox name=massdencb4>Fat-containing</input></td></tr>
+</table>
+<input type=checkbox name=findingcalcb><span class=bold>2. Calcifications</span></input>: <input type=checkbox name=calposcb1>Rt.</input> <input type=checkbox name=calposcb2>Lt.</input> <input type=checkbox name=calposcb3>Multiple, unilateral</input> <input type=checkbox name=calposcb4>Multiple, bilateral</input><br/>
+<table class=lesion ><tr><td rowspan=3 class=lesionTd width=10%>Location</td><td colspan=3 width=54%><input type=checkbox name=calloccb1>UOQ</input> 　　 <input type=checkbox name=calloccb2>UIQ</input> 　　 <input type=checkbox name=calloccb3>LOQ</input> 　　 <input type=checkbox name=calloccb4>LIQ</input></td><td><input type=checkbox name=calloccb5>Subareolar</input></td><td><input type=checkbox name=calloccb6>Axillary tail</input></td></tr>
+<tr><td class=lesionTd width=18% rowspan=2>One view only</td><td colspan=2><input type=checkbox name=calhscb1>Upper Hemisphere</input></td><td colspan=2><input type=checkbox name=calhscb2>Lower Hemisphere</input></td></tr>
+<tr><td colspan=2><input type=checkbox name=calhscb3>Outer Hemisphere</input></td><td colspan=2><input type=checkbox name=calhscb4>Inner Hemisphere</input></td></tr>
+<tr><td class=lesionTd>Distribution</td><td><input type=checkbox name=caldistcb1>Grouped</input></td><td><input type=checkbox name=caldistcb2>Linear</input></td><td><input type=checkbox name=caldistcb3>Segmental</input></td><td><input type=checkbox name=caldistcb4>Regional</input></td><td><input type=checkbox name=caldistcb5>Diffuse</input></td></tr>
+<tr><td class=lesionTd>Morphology</td><td colspan=5><input type=checkbox name=calmorcb1>Amorphous</input> 　<input type=checkbox name=calmorcb2>Coarse Heterogeneous</input> 　<input type=checkbox name=calmorcb3>Fine Pleomorphic</input> 　<input type=checkbox name=calmorcb4>Fine Linear Branching</input></td></tr>
+</table>
+<input type=checkbox name=findingasycb><span class=bold>3. Asymmetry</span></input>: <input type=checkbox name=asyposcb1>Rt.</input> <input type=checkbox name=asyposcb2>Lt.</input>　<input type=checkbox name=asytypecb1>Asymmetry</input> <input type=checkbox name=asytypecb2>Focal asymmetry</input> <input type=checkbox name=asytypecb3>Developing focal asymmetry</input><br/>
+<table class=lesion ><tr><td rowspan=3 class=lesionTd width=10%>Location</td><td colspan=3 width=54%><input type=checkbox name=asyloccb1>UOQ</input> 　　 <input type=checkbox name=asyloccb2>UIQ</input> 　　 <input type=checkbox name=asyloccb3>LOQ</input> 　　 <input type=checkbox name=asyloccb4>LIQ</input></td><td><input type=checkbox name=asyloccb5>Subareolar</input></td><td><input type=checkbox name=asyloccb6>Axillary tail</input></td></tr>
+<tr><td class=lesionTd width=18% rowspan=2>One view only</td><td colspan=2><input type=checkbox name=asyhscb1>Upper Hemisphere</input></td><td colspan=2><input type=checkbox name=asyhscb2>Lower Hemisphere</input></td></tr>
+<tr><td colspan=2><input type=checkbox name=asyhscb3>Outer Hemisphere</input></td><td colspan=2><input type=checkbox name=asyhscb4>Inner Hemisphere</input></td></tr>
+</table>
+<input type=checkbox name=findingardicb><span class=bold>4. Architectural distortion</span></input>: <input type=checkbox name=ardiposcb1>Rt.</input> <input type=checkbox name=ardiposcb2>Lt.</input><br/>
+<table class=lesion ><tr><td rowspan=3 class=lesionTd width=10%>Location</td><td colspan=3 width=54%><input type=checkbox name=ardiloccb1>UOQ</input> 　　 <input type=checkbox name=ardiloccb2>UIQ</input> 　　 <input type=checkbox name=ardiloccb3>LOQ</input> 　　 <input type=checkbox name=ardiloccb4>LIQ</input></td><td><input type=checkbox name=ardiloccb5>Subareolar</input></td><td><input type=checkbox name=ardiloccb6>Axillary tail</input></td></tr>
+<tr><td class=lesionTd width=18% rowspan=2>One view only</td><td colspan=2><input type=checkbox name=ardihscb1>Upper Hemisphere</input></td><td colspan=2><input type=checkbox name=ardihscb2>Lower Hemisphere</input></td></tr>
+<tr><td colspan=2><input type=checkbox name=ardihscb3>Outer Hemisphere</input></td><td colspan=2><input type=checkbox name=ardihscb4>Inner Hemisphere</input></td></tr>
+</table>
+<input type=checkbox name=findingnipcb><span class=bold>5. Thickening or retraction of the skin and/or nipple</span></input>: <input type=checkbox name=nipposcb1>Rt.</input> / <input type=checkbox name=nipposcb2>Lt.</input><br/>
+<input type=checkbox name=findinglncb><span class=bold>6. Dense or enlarged axillary LNs</span></input>: <input type=checkbox name=lnposcb1>Rt.</input> / <input type=checkbox name=lnposcb2>Lt.</input><br/>
+<input type=checkbox name=findingductcb><span class=bold>7. Dilated lactiferous ducts</span></input>: <input type=checkbox name=ductposcb1>Rt.</input> / <input type=checkbox name=ductposcb2>Lt.</input><br/>
+<input type=checkbox name=findingskincb><span class=bold>8. Diffuse thickening of the skin and increased density</span></input>: <input type=checkbox name=skinposcb1>Rt.</input> / <input type=checkbox name=skinposcb2>Lt.</input><br/>
+<input type=checkbox name=findingothercb><span class=bold>9. Others</span></input>:<span contenteditable=true name=other>&nbsp;&nbsp;</span>
+</td></tr>
+</table></div>
+
+
+
+<div class=noPrint id=saveHint >
+<div class=noPrint><br /></div>
+<input type=submit value=Save onclick="save();return false;" style="height: 50; width: 100; font-size: 150%;" />
+</div>
+<div class=noPrint><br /></div>
+<input type=submit value="Add New Finding" onclick="createNewPositiveFinding();return false;" style="height: 50; width: 150; font-size: 100%;" class=noPrint />
+<div class=noPrint><br /></div>
+<input type=submit value="Delete Last Finding" onclick="deleteLastFinding();return false;" style="height: 50; width: 150; font-size: 100%;" class=noPrint />
+<input type=hidden id=lesionCount name=lesionCount value=0 />
+</form>
+</body></html>

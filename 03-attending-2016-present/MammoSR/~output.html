@@ -1,0 +1,31 @@
+﻿<style type="text/css">
+* {
+font-family: "Times New Roman", "標楷體";
+line-height: 150%;
+}
+
+table.tftable {font-size:14pt;color:#333333;width:100%;border-width: 1px;border-color: #a9a9a9;border-collapse: collapse;}
+table.tftable th, .header {font-size:12pt;background-color:#b8b8b8;border-width: 1px;padding: 8px;border-style: solid;border-color: #a9a9a9;text-align:center;}
+table.tftable tr {background-color:#ffffff;}
+table.tftable td {font-size:12pt;border-width: 1px;padding: 8px;border-style: solid;border-color: #a9a9a9;}
+</style>
+
+<table id="tfhover" class="tftable" border="1">
+<tr><th colspan=2>乳房攝影檢查結果</th></tr>
+<tr><td width=40%>攝影日期</td><td>$date</td></tr>
+<tr><td>病歷號</td><td>$chartno</td></tr>
+<tr><td>乳腺組成</td><td>$density</td></tr>
+<tr><td>與舊片比較</td><td>$reason</td></tr>
+<tr><td>攝影檢查結果</td><td>$impression</td></tr>
+<tr><td></td><td>放射科醫師：$vs　　放射師：$tech</td></tr>
+<tr><td class=header colspan=2>病灶勾選</td></tr>
+<tr><td>Mass</td><td>$mass</td></tr>
+<tr><td>Calcifications</td><td>$cal</td></tr>
+<tr><td>Focal asymmetry</td><td>$asy</td></tr>
+<tr><td>Architectural distortion</td><td>$ad</td></tr>
+<!-- <tr><td>Thickening or retraction of the skin and/or nipple</td><td>$nip</td></tr>
+<tr><td>Dense or enlarged axillary LNs</td><td>$lap </td></tr>
+<tr><td>Dilated lactiferous ducts</td><td>$duct</td></tr>
+<tr><td>Diffuse thickening of the skin and increased density</td><td>$skin</td></tr> -->
+<tr><td>Others</td><td>$other</td></tr>
+</table>

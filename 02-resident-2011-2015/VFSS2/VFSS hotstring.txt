@@ -1,0 +1,31 @@
+::bh::bolus holding
+::od::oral drooling
+::pol::premature oral leakage
+::omc::oral mucosal coating
+::os::oral stasis
+::em::epiglottic movement
+::ve::velar elevation
+::por::phayrngo-oral reflux
+::sym::symmetric
+::tpc::tongue-palate contact
+::ps::piecemeal swallowing
+::pc::phayrngeal contraction
+::pmc::phayrngeal mucosal coating
+::vs::vallecular stasis
+::pss::pyriform sinus stasis
+::hbe::hyoid bone elevation
+::pnr::pharyngo-nasal reflux
+::rst::retropharyngeal soft tissue
+
+::lp::laryngeal penetration
+::asp::aspiration
+
+::bs::bolus study
+::bar::barium
+::swa::swallowing
+::dys::dysphagia
+::tri::trismus
+
+::ng::placement of a NG tube
+::opc::post-op change
+::tra::tracheostomy

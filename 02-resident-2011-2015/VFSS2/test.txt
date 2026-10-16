@@ -1,0 +1,40 @@
+﻿Clinical history: 
+
+Videofluoroscopic swallowing study with barium meal in thin 5mL, paste 5mL in lateral view, and thin 5mL in AP view shows: (S/N: )
+1. Oral phase:
+   - Oral drooling: 
+   - Bolus holdling: 
+   - Oral stasis: 
+   - Oral mucosal coating: 
+   - Premature oral leakage: 
+   - Piecemeal swallowing: 
+   - Tongue-palate contact: 
+2. Swallowing time: 
+   - Oral transit time (normal<2s): 
+      thin 5:              s
+      paste 5:           s
+   - Pharyngeal transit time (normal<1s): 
+      thin 5:              s
+      paste 5:           s
+   - Swallowing trigger (normal<1s): 
+      thin 5:              s
+      paste 5:           s
+   - Laryngeal penetration: no.
+   - Aspiration: asymptomatic in thin bolus study, symptomatic in thick bolus study, symptomatic in paste bolus study, symptomatic in test bolus study.
+3. Pharyngeal phase:
+   - Vallecular stasis: 
+   - Pyriform sinus stasis: 
+   - Velar elevation: 
+   - Pharyngeal contraction: 
+   - Hyoid bone elevation: 
+   - Epiglottic movement: 
+   - Pharyngeal mucosal coating: 
+   - Pharyngo-oral reflux: 
+   - Pharyngo-nasal reflux: 
+   - Retropharyngeal soft tissue: 
+   - Bolus pass into esophagus: 
+4. Other finding:
+   test
+   asdf
+   asdf
+5. Conclusion of VFSS:

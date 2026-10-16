@@ -1,0 +1,1 @@
+Place authorized physician signature image files (PNG/BMP) in this directory.

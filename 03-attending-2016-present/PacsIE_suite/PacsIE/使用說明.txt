@@ -1,0 +1,12 @@
+使用順序:
+- PacsIE.ini輸入portal帳號密碼
+- 開啟RIS
+- 搜尋要打的報告（建議CXR或KUB、建議按時間排序）
+- 點開「報告撰打作業」
+- 執行PacsIEMain.exe
+- 點「Open PacsIE」
+
+FAQ:
+- Alt + Win + P可隱藏/顯示RIS
+- RIS過一陣子會當掉，要重開RIS、重新搜尋、打開撰打介面以及重開feedRIS.exe
+- 右下角一直跳數字但沒有減少：在feedRIS的圖示按右鍵→Delete reports

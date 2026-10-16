@@ -1,0 +1,7 @@
+{
+  "name": "FirefoxLoginApp",
+  "description": "For firefox native messaging",
+  "path": "/FirefoxLoginApp.exe",
+  "type": "stdio",
+  "allowed_extensions": [ "raduser@hospital-n.local" ]
+}

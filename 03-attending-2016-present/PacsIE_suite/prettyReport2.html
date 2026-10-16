@@ -1,0 +1,42 @@
+<head><style type="text/css">
+* {font-family: Verdana; font-size: 14px; line-height: 120%}
+div {white-space: Wrap; position: absolute;}
+body {overflow-y: auto; overflow-x: Hidden; }</style></script>
+
+</head>
+<body><div id="text">asdfasdf as d </div>
+
+<script type="text/javascript">
+var zInd=2;
+newDiv=(div=document.getElementById('text')).cloneNode(true);
+newDiv.id='text'+zInd;newDiv.style.zIndex=zInd;newDiv.style.opacity='0';
+colorKeyword(newDiv, /s\wf/, 'font-weight: bold');
+document.body.appendChild(newDiv);
+
+function colorKeyword(node, regex, style){
+	if(node.nodeName.toLowerCase()=='mark') return;
+	
+	if(node.hasChildNodes()) {
+      for(var i=0; i < node.childNodes.length; i++)
+        colorKeyword(node.childNodes[i], regex, style);
+    }
+	if(node.nodeType == 3) { // NODE_TEXT
+      if((nv = node.nodeValue) && (regs = regex.exec(nv))) {
+        var match = document.createElement('mark');
+        match.appendChild(document.createTextNode(regs[0]));
+        match.style.color='red';
+        match.style.backgroundColor='#ffffff';
+        match.style.opacity='1';
+
+        
+        after = node.splitText(regs.index);
+        
+        after.nodeValue = after.nodeValue.substring(regs[0].length);
+        node.parentNode.insertBefore(match, after);
+      }
+    }
+}
+
+</script>
+
+</body>

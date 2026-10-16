@@ -1,0 +1,28 @@
+:Base RoboType.hlp>Main
+:Title RoboType Help
+1 Help topic overview=main_index
+1 What's new in RoboType 3.0=revnotes30
+1 What's new in RoboType 3.1=revnotes31
+1 General Operation
+2 Introduction=intro
+2 Using Auto search=AutoSearch
+2 Using Manual search=ManualSearch
+2 How RoboType Types=typing
+2 Using abbreviation groups=AbbrevGroups
+1 Menus
+2 File menu=menu_file
+2 Edit menu=menu_edit
+2 View menu=menu_view
+2 Options menu=menu_options
+2 Tags menu=menu_tags
+2 Help menu=menu_help
+2 System menu=sys_menu
+1 Technical Information
+2 Installing RoboType=install
+2 Removing RoboType from your system=uninstall
+2 Capacity limits and rules=rules
+2 The Reset command=HID_TASKBAR_RESET
+2 RoboType and DOS Windows=dos_windows
+2 RoboType and other applications=ClipAid
+2 What's new in RoboType 3.0=revnotes30
+2 What's new in RoboType 3.1=revnotes31

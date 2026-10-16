@@ -1,0 +1,467 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <title>
+        �������(Portal)����
+    </title>
+    <link href="css/login.css" type="text/css" rel="stylesheet" />
+
+    <script type="text/javascript" src="scripts/Utils.js"></script>
+
+    <LINK href="css/portal.css" type="text/css" rel="stylesheet">
+
+    <script type="text/javascript">
+                function PostData(CardID)
+                {
+                  //document.write('<form id=myForm >');   
+                  //document.write('<input type="hidden" id="CardID" name="CardID" />'); 
+                  var   myForm=document.forms['Form1']; 
+                  myForm.CardID.value=CardID;
+                  myForm.action=""; 
+                  myForm.method='POST';   
+                  myForm.submit();    
+                }
+                
+                function LoadRFIDControl() {
+                    document.getElementById("divRFIDControl").innerHTML = "<" + "script id= \'psudoJS\'" + ">";
+	                //document.getElementById("divRFIDControl").innerHTML = "<script id='psudoJS'><\/script>";
+	                //document.getElementById("psudoJS").src="scripts/RFIDObject.js";
+                    //document.getElementById('divRFIDControl').innerHTML = "<script type='text/javascript' src='scripts/RFIDObject.js'><\/script>";
+                    //document.getElementById('divRFIDControl').innerHTML = "You are fired.";
+                }
+    </script>
+
+    <style type="text/css">
+        BODY
+        {
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+        .link4
+        {
+            font-size: 12px;
+            color: #736d56;
+            line-height: 16px;
+            font-family: "�ө���" , "�رd������(P)";
+        }
+        .link4 a
+        {
+            font-size: 12px;
+            color: #736d56;
+            line-height: 16px;
+            font-family: "�ө���" , "�رd������(P)";
+            text-decoration: none;
+        }
+        .link4 A:hover
+        {
+            font-weight: normal;
+            font-size: 12px;
+            color: #a8a28c;
+            font-family: "�ө���" , "�رd������(P)";
+        }
+    </style>
+    <meta http-equiv="Content-Type" content="text/html; charset=big5">
+</head>
+<body ms_positioning="GridLayout">
+    <form name="Form1" method="post" action="Login.aspx?URL=http%3a%2f%2fhisaw.hospital-n.local%2fWebApplication%2fRadiology%2fRISPatientRegistration.aspx" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTM2MzQ1ODAwNg9kFgYCAQ8WAh4EVGV4dAUa5q2j5byP55Kw5aKDKFBvcnRhbCnku4vpnaJkAgMPFgIfAAU9PExJTksgaHJlZj0iY3NzL3BvcnRhbC5jc3MiIHR5cGU9InRleHQvY3NzIiByZWw9InN0eWxlc2hlZXQiPmQCBQ9kFg4CAw8PFgQfAAUBIB4HVmlzaWJsZWhkZAIJDxAPFgIeC18hRGF0YUJvdW5kZ2QQFQMJ57i96Zmi5Y2ADOWMl+itt+WIhumZogzph5HlsbHliIbpmaIVAwJUMAJUMgJUMxQrAwNnZ2dkZAINDw8WAh4NT25DbGllbnRDbGljawVraWYgKCBjaGsoKSApDQoJCQkJCQkJCXsNCgkJCQkJCQkJCWhhbmRsZUxvZ2luKCk7DQoJCQkJCQkJCX0NCgkJCQkJCQkJZWxzZQ0KCQkJCQkJCQkJcmV0dXJuIGZhbHNlOw0KCQkJCQkJCQlkZAIVDw8WAh8ABRjniYjmnKzvvJpTVEFCTEVfMjAwODAyMDFkZAIXDxYCHwAFaCA8QSBocmVmPSdtYWlsdG86a2ltQG50dWguZ292LnR3OzAzMDYwMEBudHVoLmdvdi50dztuaWNvQG50dWguZ292LnR3Jz7os4foqIrlrqQ8L0E+KOWIhuapnzYxMTIwIH4gNjExMjIpZAIZDxYCHwAFZk5hdGlvbmFsIFRhaXdhbiBVbml2ZXJzaXR5IEhvc3BpdGFsIC0gTm8uNywgQ2h1bmcgU2hhbiBTLiBSZC4sIFRhaXBlaSAxMDAsIFRhaXdhbiBURUw6IDg4Ni0yLTIzMTItMzQ1NmQCGw8WAh8ABb0B5ZyLIOeriyDlj7Ag54GjIOWkpyDlrbgg6YarIOWtuCDpmaIg6ZmEIOiorSDphqsg6ZmiIC0g5Y+wIOWMlyDluIIg5LitIOWxsSDljZcg6LevIDcg6JmfICjmnbHlnYDmlrDlpKfmqJPkvY/pmaLmgKXoqLrmnI3li5kpIOWPsCDljJcg5biCIOW4uCDlvrcg6KGXIDEg6JmfICjopb/lnYDoiIrlpKfmqJPploDoqLrkvY/pmaLmnI3li5kpZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAwUPaW1nQnRuU3VibWl0TmV3BQxpYm5SRklETG9naW4FDEltYWdlQnV0dG9uMg==" />
+
+
+<script src="/General/ScriptResource.axd?d=P6YPMU4GYMHjtIiD5zGE-YkDtmc0cotSUqRVLN7go4k78paLrrJXGXL_BP1e1UTLCY8mU43XFWQIau0I0J26NtR94uSTRUOUad4sZXVvO1r8jiVjkOf_ZONGSiIWh6iqFJKM5SRNd8U8twjJ3oWA9NHOZUhDzN7sWASTTuMJCYfaclM50&amp;t=6979c82c" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="/General/ScriptResource.axd?d=wMEM2Me9o3FletQudivwDQv6f9oA157ci-SWEzYkGHckmpmkZZ7jVoCaRcZwCOVCEUgWSpBGdQNHY-RJ12kHhaZZED7lMdNV_QfQTV-rnmUNFwg_GUUhnoNzXIh9TZ-6cjYDcgyl1aXphymt4q_p4VYXAGw1&amp;t=ffffffffae6104ec" type="text/javascript"></script>
+<script src="/General/ScriptResource.axd?d=DtFs3hhmeJRKi58U-MGceBYlCA8IZ3Kt2KocOdSrwUpf7slCPI6Au_8mjCCVDnD-u0cLAB-cHTPQeuzn8owJTMQzjzpZIEmhn5Pp8DUv08K4i12VW5jWXk6e-YkKIkMVSVRFTdMpN4zpmx8ROaMRZY2N9Mk1&amp;t=ffffffffae6104ec" type="text/javascript"></script>
+<script src="/General/ScriptResource.axd?d=MpmKgP8y3pEfFZw-4FflXb8dpS6h7bkdYKXPVi6NN31g0RBjUcu6Vo4a1lzNmCfLB3Kz20gb_Y8p_JjIdcOXlVDLCFTASNqgvwOURha_qqdYQro6cUlIKHaMWmO9BHjOev9mmi0AEzvAuyXudzEsXeV6qx8B8QI7Qazw0zu7xiaMMuKF0&amp;t=ffffffffae6104ec" type="text/javascript"></script>
+<script src="/General/ScriptResource.axd?d=iu1nON2ashYfmWiWoyDH-JtL_rbZNmWAg4sSp7QbnOgg2-_EXcsyGQ5sHupQDIGUGeynNY--Z0ZQW9zyfRvhfqw3SsDMjoHl9qao2M3DAqIkavszuKr--vTTHoaTvyX6KV_rwAu5yYTlh_7A1P-8JqQTJ641&amp;t=ffffffffae6104ec" type="text/javascript"></script>
+<script src="/General/ScriptResource.axd?d=B-V4MrIk-NiJ4bbxJ6tO8dGli3yviceB6Mt8k-HeeAdbOaH98X7O7BmXYgShArmQ-L5qw0d6PTYbuxgPFOq6CXv7HNfu9o3lXT92b7rtf8lfarfJyiXx6os_4tlSvKIlbCDHJHzLvfw6q_orUK4R6lPBlmXlJsyFyBJowWSrqhK7D3hx0&amp;t=ffffffffae6104ec" type="text/javascript"></script>
+<script src="/General/ScriptResource.axd?d=o9V1OW_N9g9V6mPpyE0QynZqsZTA4tB24rJt4fWnwXwduvl86XKYRpAfLbzWIjXjXBQBzBO6DTlgAtnt9yLgfE3ti9PvVT-teVFLp9lKN_GxfmaVh7Aohi3m45bhUKElfZP4y30mzWMfyxivPFd9_82TJulxNJlmEKXy2n2qneZzuPSC0&amp;t=ffffffffae6104ec" type="text/javascript"></script>
+<script src="/General/ScriptResource.axd?d=yKKwj4TXJVwYkfEp4UAA7jXRDnmUiGLbO1q-1l-de0MiUNASw4iRfStMtgRIr6YlZnXsKMvXfWjaZhlfA8faISHEiMNXSx3efCo6CF7KcjXVY7ejfTVCb9pj2sePFKxdEhmqBfAKxZp2ja2XGeZo7RYMGcyoa7s8MEXeggWJaigk7hB60&amp;t=ffffffffae6104ec" type="text/javascript"></script>
+<script src="/General/ScriptResource.axd?d=nxmOjZQWl7ritfjNfslJEdXTcfgEE0QCJzujnEclLU2DsbXpI9fe1UtJ_6cJfzHIzDQageGwboALsb0DjgEidWxK27uOf0XOWdcLvk-RvQkLSkYbZs-DuEiN-h5U6EQ93CuyrMX4Q2BEpLoNik8OMJ2RqYA1&amp;t=ffffffffae6104ec" type="text/javascript"></script>
+<script src="/General/ScriptResource.axd?d=ZH5GL1UaN_6G4jroKJv5hSK9Ldyd-wAJTZ0tg1th__rCsUola6rpEfSBQIz-H3Jd_fG6665ouTpiQC9P0NWnUQz3fS7kCtNocqwEjnLB2lpaKe80_01OLEm3hh3F2j0smLAkwK7GlnnDM9ybqTRcdPyOlhn2vrXWRhHETuQIRGBU-Fhu0&amp;t=ffffffffae6104ec" type="text/javascript"></script>
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWFALC+5KTCwLT8dy8BQLKw6LdBQLaitTeCQLaitzeCQLaiuDeCQKgrebICwKXrebICwKprebICwKvrebICwKTrebICwKprabWCwK4rebICwKhrebICwLIwsymBwKzntD7BQLA8KJhAtLC1eQCApKC95kMAvjhyMsD" />
+    <div align="center">
+        
+        <input id="CardID" type="hidden" name="CardID" />
+        <table cellspacing="0" cellpadding="0" width="800" border="0">
+            <tr>
+                <td colspan="5" height="102" valign="bottom" background="images/index7_01_1_1.gif">
+                    <table width="100%" border="0" cellpadding="0">
+                        <tr>
+                            <td height="25">
+                                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="8%">
+                                            &nbsp;
+                                        </td>
+                                        <td width="3%" valign="middle">
+                                            <div align="center">
+                                                <img src="images/dot.gif" width="10" height="10"></div>
+                                        </td>
+                                        <td width="9%" class="link4">
+                                            <a href="http://www.hospital-n.local" target="_blank">�s���|�~��</a>
+                                        </td>
+                                        <td width="2%" valign="middle">
+                                            <div align="center">
+                                                <img src="images/dot.gif" alt="" width="10" height="10"></div>
+                                        </td>
+                                        <td width="15%" class="link4">
+                                            <a href="http://intra.hospital-n.local" target="_blank">�s���|����(��m��)</a>
+                                        </td>
+                                        <td width="3%" valign="middle">
+                                            <div align="center">
+                                                <img src="images/dot.gif" alt="" width="10" height="10"></div>
+                                        </td>
+                                        <td width="10%" class="link4">
+                                            <a href="http://intra.mc.ntu.edu.tw/" target="_blank">�ª��|����</a>
+                                        </td>
+                                        <td width="1%" valign="middle">
+                                            &nbsp;
+                                        </td>
+                                        <td width="50%" class="link4">
+                                            &nbsp;
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="94%" height="30">
+                                <div align="right">
+                                    <span class="link4">
+                                        <img src="images/arrow.gif" alt=" " width="5" height="5" vspace="2">
+                                        <a href="http://edu.hospital-n.local/" target="_blank">�Ʀ�ǲ� </a>
+                                        <img src="images/arrow.gif" alt=" " width="5" height="5" vspace="2">
+                                        <a href="http://km.hospital-n.local/km" target="_blank">KM�t�� </a>
+                                        <img src="images/arrow.gif" alt=" " width="5" height="5" vspace="2">
+                                        <a href="http://ahisaw.hospital-n.local/EIP/" target="_blank" visible="false">�t�Ԩt�� </a>
+                                        <img src="images/arrow.gif" width="5" height="5" vspace="2">
+                                        <a href="http://intra.hospital-n.local/doc/DocLib/%e6%96%87%e4%bb%b6%e8%a1%a8%e6%a0%bc%e4%b8%8b%e8%bc%89.aspx"
+                                            target="_blank">���U��</a>
+                                        <img src="images/arrow.gif" width="5" height="5" vspace="2">
+                                        <a href="http://hisaw.hospital-n.local/WebApplication/WebAdministration/default.aspx"
+                                            target="_blank">������</a> </span>
+                                </div>
+                            </td>
+                            <td width="6%">
+                                &nbsp;
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="39" background="images/design6_1_1.gif">
+                    <img height="129" src="images/design6_1.gif" width="39">
+                </td>
+                <td valign="top" width="380" bgcolor="#e7e1c1" rowspan="2" style="height: 424px">
+                    <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                        <tr>
+                            <td width="385" valign="top">
+                                <img height="129" src="images/design6_2.gif" width="384">
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table width="383" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td>
+                                <iframe width="385" height="221" src="http://intra.hospital-n.local/news/document/message_board.htm"
+                                    frameborder="0" scrolling="no"></iframe>
+                            </td>
+                        </tr>
+                    </table>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td height="41">
+                                <iframe width="383px" height="40px" frameborder="0" scrolling="no" src="http://intra.hospital-n.local/news/document/staff_message.htm">
+                                </iframe>
+                            </td>
+                        </tr>
+                    </table>
+                    <br />
+                </td>
+                <td valign="top" width="46" background="images/design6_3_1.gif">
+                    <img height="128" src="images/index7_03.gif" width="46">
+                </td>
+                <td valign="top" width="286" bgcolor="#ffffff" rowspan="2" style="height: 424px">
+                    <table height="300" cellspacing="0" cellpadding="0" width="100%" bgcolor="#ffffff"
+                        border="0">
+                        <tr>
+                            <td valign="top" height="54">
+                                <div class="LogIn" align="center">
+                                    </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top">
+                                <div align="center">
+                                    <table cellspacing="0" cellpadding="4" width="250" align="center" border="0">
+                                        <tr>
+                                            <td class="LogIn" width="49" align="right">
+                                                    �b��
+                                            </td>
+                                            <td width="181" align="left">
+                                                    <input name="txtUserID" type="text" id="txtUserID" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="LogIn" align="right">
+                                                �K�X
+                                            </td>
+                                            <td align="left">
+                                                <input name="txtPass" type="password" id="txtPass" onkeypress="detectCapsLock(event)" />
+                                                <div id="capStatus" style="visibility: hidden">
+                                                    <font color="red" size="2">�j�g��(CapsLock)�w�}��</font></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="LogIn" align="right">
+                                                    �|��
+                                            </td>
+                                            <td align="left">
+                                                    <select name="ddlHospital" id="ddlHospital" class="LogIn" DESIGNTIMEDRAGDROP="101">
+	<option selected="selected" value="T0">�`�|��</option>
+	<option value="T2">�_�@���|</option>
+	<option value="T3">���s���|</option>
+
+</select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="LogIn" align="right">
+                                                    �n�J�t��
+                                            </td>
+                                            <td align="left">
+                                                <font face="�s�ө���">
+                                                    <span id="rdblQuickMenu" class="En11" style="display:inline-block;"><input id="rdblQuickMenu_0" type="radio" name="rdblQuickMenu" value="H" checked="checked" /><label for="rdblQuickMenu_0">�����������</label><br /><input id="rdblQuickMenu_1" type="radio" name="rdblQuickMenu" value="A" /><label for="rdblQuickMenu_1">��F�t�ο��</label><br /><input id="rdblQuickMenu_2" type="radio" name="rdblQuickMenu" value="O" /><label for="rdblQuickMenu_2">���E�t��</label><br /><input id="rdblQuickMenu_3" type="radio" name="rdblQuickMenu" value="I" /><label for="rdblQuickMenu_3">��|�t��</label><br /><input id="rdblQuickMenu_4" type="radio" name="rdblQuickMenu" value="E" /><label for="rdblQuickMenu_4">��E�t��</label><br /><input id="rdblQuickMenu_5" type="radio" name="rdblQuickMenu" value="OP" /><label for="rdblQuickMenu_5">��N�t��</label><br /><input id="rdblQuickMenu_6" type="radio" name="rdblQuickMenu" value="P" /><label for="rdblQuickMenu_6">PACS�t��</label><br /><input id="rdblQuickMenu_7" type="radio" name="rdblQuickMenu" value="W" /><label for="rdblQuickMenu_7">�������f��</label></span>
+                                                </font>
+                                            </td>
+                                        </tr>
+                                        <tr valign="middle">
+                                            <td colspan="2" height="50">
+                                                <div class="LogIn" align="center">
+                                                    <table cellspacing="0" cellpadding="0" border="0">
+                                                        <tr align="center" valign="middle">
+                                                            <td width="60" align="center">
+                                                                <input type="image" name="imgBtnSubmitNew" id="imgBtnSubmitNew" src="images/LogIn.gif" onclick="if ( chk() )
+								{
+									handleLogin();
+								}
+								else
+									return false;
+								;" border="0" />
+                                                            </td>
+                                                            <td style="width: 80px" align="center">
+                                                                <input type="image" name="ibnRFIDLogin" id="ibnRFIDLogin" title="�ϥέ��u�ҵn�J" src="images/RFID.gif" border="0" />
+                                                            </td>
+                                                            <td width="60" align="center">
+                                                                <input type="image" name="ImageButton2" id="ImageButton2" src="images/Cancel.gif" border="0" />
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <span id="lblMessage" class="note_red"></span><br>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td valign="top" width="45" background="images/index7_05.gif" rowspan="2" style="height: 424px">
+                    <div align="right">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td background="images/design6_1_1.gif" style="height: 61px">
+                </td>
+                <td valign="top" width="46" background="images/design6_3_1.gif" style="height: 61px">
+                </td>
+            </tr>
+            <tr valign="top">
+                <td background="images/design6_1_1.gif" bgcolor="#e7e1c1">
+                    &nbsp;
+                </td>
+                <td colspan="3" bgcolor="#d1cda2">
+                    <br>
+                    <table width="680" border="0" align="center" cellpadding="8" cellspacing="0" bgcolor="#e5e3d1">
+                        <tr>
+                            <td>
+                                <div align="left">
+                                    <span class="note_red">�`�N�ƶ�����:</span>
+                                    <table width="670" border="0" cellspacing="2" cellpadding="2">
+                                        <tr>
+                                            <td width="7%" valign="top">
+                                                <div align="center">
+                                                    <span class="LogIn">1.</span></div>
+                                            </td>
+                                            <td width="93%">
+                                                <span class="LogIn">�ݥ���v�ݸg���ƫ�A��i�n�J�i�E���@�~�}����O(���~�T��</span><span class="En11">AUTHOR_UNAUTHORIZED_FUNCTION</span><span
+                                                    class="LogIn">)�A�Y�������D�Ь��H�ƫ�</span><span class="En11">TEL:61572</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top">
+                                                <div align="center">
+                                                    <span class="LogIn">2.</span></div>
+                                            </td>
+                                            <td>
+                                                <span class="LogIn">�N�V��v�ݸg���ƫ�A��i�n�J�i�E���@�~�}����O(���~�T��</span><span class="En11">AUTHOR_UNAUTHORIZED_FUNCTION</span><span
+                                                    class="LogIn">)�A�Y�������D�Ь��оǳ�</span><span class="En11">TEL:67517</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top">
+                                                <div align="center">
+                                                    <span class="LogIn">3.</span></div>
+                                            </td>
+                                            <td>
+                                                <span class="LogIn">�����v�M�����Ƥ��ݥ���v�ȯ�ϥΡu��¬d�ߡv�\��ﶵ</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top">
+                                                <div align="center">
+                                                    <span class="LogIn">4.</span></div>
+                                            </td>
+                                            <td>
+                                                <span class="LogIn">��L�����n�J���D�A�Ь���T�A�ȥx</span><span class="En11">TEL:61120~61122</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                </td>
+                <td background="images/index7_05.gif" bgcolor="#e7e1c1">
+                    &nbsp;
+                </td>
+            </tr>
+            <tr valign="top">
+                <td colspan="5">
+                    <img height="32" src="images/frame_bottom.gif" width="800">
+                </td>
+            </tr>
+            <tr valign="top">
+                <td background="images/bottom_bg.gif" colspan="4" height="26">
+                    <div class="maintain" align="center">
+                        <br />
+                        <span id="Label5">�����GSTABLE_20080201</span>&nbsp;������@:
+                         <A href='mailto:kim@hospital-n.local;030600@hospital-n.local;nico@hospital-n.local'>��T��</A>(����61120 ~ 61122)
+                    </div>
+                </td>
+                <td bgcolor="#d6cf94" height="26">
+                    &nbsp;
+                </td>
+            </tr>
+            <tr valign="top">
+                <td background="images/design6_address.gif" colspan="5" height="77">
+                    <div align="center">
+                        <font face="�s�ө���"></font>
+                        <table cellspacing="0" cellpadding="0" align="center" border="0">
+                            <tr>
+                                <td height="20">
+                                    <div align="center">
+                                        <span class="maintain">
+                                            <br />
+                                            National Taiwan University Hospital - No.7, Chung Shan S. Rd., Taipei 100, Taiwan TEL: 886-2-2312-3456
+                                        </span>
+                                    </div>
+                                    <tr>
+                                        <td height="20">
+                                            <div align="center">
+                                                <span class="maintain">
+                                                    �� �� �x �W �j �� �� �� �| �� �] �� �| - �x �_ �� �� �s �n �� 7 �� (�F�}�s�j�Ӧ�|��E�A��) �x �_ �� �` �w �� 1 �� (��}�¤j�Ӫ��E��|�A��)
+                                                </span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    <input type="submit" name="btnInvisible" value="!" id="btnInvisible" style="display: none" />
+    <div id="pnlRFIDLogin">
+	
+        <table width="100%">
+            <tr>
+                <td align="center">
+                    <span id="lblErrorMsg"><font color="Red"></font></span>
+                    <div id="divRFIDControl">
+                    </div>
+                    
+                    <input type="submit" name="btnStopRFID" value="����RFID�n�J" id="btnStopRFID" />
+                </td>
+            </tr>
+        </table>
+    
+</div>
+    
+<script>document.getElementById('txtUserID').focus();</script><script>function chk()
+				{
+					if (document.getElementById('txtUserID').value.length ==0)
+					{ 
+						alert('�п�J�b��'); 
+						document.getElementById('txtUserID').focus();
+						return false;
+					}
+
+					if (document.getElementById('txtPass').value.length ==0)
+					{ 
+						alert('�п�J�K�X'); 
+						document.getElementById('txtPass').focus();
+						return false;
+					}
+
+					return true;
+				}</script><script language='javascript' src='scripts/md5.js'></script><script language='javascript'>
+							function handleLogin()
+							{
+								//sendMD5Value(calculateMD5Value());
+                                CheckAndSetPassTextBox('txtPass');
+                                //CheckAndSetPassTextBox('txbNewPass1');
+                                //CheckAndSetPassTextBox('txbNewPass2');
+							}
+							function calculateMD5Value()	
+							{
+								var pw = document.forms['Form1'].elements['txtPass'].value;
+								return hex_md5(pw);
+							}
+							function sendMD5Value(hash)
+							{
+								document.forms['Form1'].elements['txtPass'].value = hash;
+							}
+                            function CheckAndSetPassTextBox(textboxID)
+                            {
+                                if ( document.getElementById(textboxID) != null )
+                                {
+                                    document.getElementById(textboxID).value = hex_md5(document.getElementById(textboxID).value);
+                                }
+                            }
+						</script>
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.initialize();
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.ModalPopupBehavior, {"BackgroundCssClass":"modalBackground","CancelControlID":"btnStopRFID","PopupControlID":"pnlRFIDLogin","dynamicServicePath":"/General/Login.aspx","id":"ibnRFIDLogin_ModalPopupExtender"}, null, null, $get("btnInvisible"));
+});
+//]]>
+</script>
+</form>
+</body>
+</html>

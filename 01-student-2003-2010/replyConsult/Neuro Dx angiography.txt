@@ -1,0 +1,8 @@
+Angiography is scheduled on"date" "time" on call.
+Please:
+- Obtain informed consent. 
+- Set IV line in the left arm.
+- Check patient laboratory data before the procedure (PLT, PT/PTT, Cre).
+- NPO for 4 hours except medicine.
+- Presence of family during the whole procedure.
+- Avoid use of Metformin 48hrs before and after angiography.

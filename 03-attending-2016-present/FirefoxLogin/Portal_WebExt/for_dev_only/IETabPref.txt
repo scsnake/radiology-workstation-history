@@ -1,0 +1,24 @@
+IETabPref
+ietab.toolsmenu.icon=false
+ietab.intl.charset.default=
+ietab.pagelink=true
+ietab.tabsmenu.extapp=true
+ietab.handleBookmarkURL=true
+ietab.bookmark.extapp=true
+ietab.tabsmenu=true
+ietab.filter=true
+ietab.extAppPath=
+ietab.toolsmenu=true
+ietab.bookmark=true
+ietab.titleEnding=
+ietab.alwaysNewTab=false
+ietab.statusbar=true
+ietab.icon.bookmark=false
+ietab.extAppParam=%1
+ietab.filterlist=/^file:\/\/\/.*\.(mht|mhtml)$/ http://*update.microsoft.com/* http://www.windowsupdate.com/*
+ietab.ctrlclick=true
+ietab.icon.tabsmenu=false
+ietab.pagelink.extapp=true
+ietab.focustab=true
+ietab.icon.pagelink=false
+ietab.handleUrlBar=false

@@ -1,0 +1,1332 @@
+<HEAD><TITLE>異常事件通報</TITLE><LINK rel=stylesheet type=text/css href="../../css/style.css"><LINK rel=Stylesheet type=text/css href="../AvisoCSS/ajaxCalendar.css"><LINK rel=Stylesheet type=text/css href="../AvisoCSS/ajaxAutoComplete.css"><LINK rel=stylesheet type=text/css href="/WebApplication/Administration/UrgentAviso/WebResource.axd?d=BHuJee25iwJGOjdhQZbV0O1uzMMon3ts3NFlnEyBI_IxIsmrwCu8F3RaUuF4M7gx4eke1XFfw96GYzkQt9h0Ze9jU3-DbAEG2tzKkjZu4B8GR7ibWk8xAp9Lhhj79CUrZxxO4w2&amp;t=634575707300000000"></HEAD>
+<BODY>
+<FORM id=formMain method=post name=formMain action=CaseForm.aspx?ScrollTop=0&amp;ScrollLeft=0&amp;CaseActName=TempCase&amp;CurrentPageIndex=0&amp;CreateByTemp=Y>
+<DIV><INPUT id=caseTab_ClientState value='{"ActiveTabIndex":6,"TabState":[true,true,true,true,true,true,true]}' type=hidden name=caseTab_ClientState>    </DIV>
+<SCRIPT type=text/javascript>
+//<![CDATA[
+var theForm = document.forms['formMain'];
+if (!theForm) {
+    theForm = document.formMain;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</SCRIPT>
+
+<SCRIPT type=text/javascript src="/WebApplication/Administration/UrgentAviso/WebResource.axd?d=sBAdSpgwL5HUyVCKjk36WfM4u9IAl_nRjg3uEUtKeJ-lE3jEanBEptmt5j1_nGcmA-EQhBTSsMaWW_BM-kCp2DrRbRc1&amp;t=634761319083085725"></SCRIPT>
+
+<SCRIPT type=text/javascript>
+//<![CDATA[
+var gHappenDateWeek = 'caseTab_caseTabPerson_Person_lblHappenDateWeek';var __cultureInfo = '{"name":"zh-TW","numberFormat":{"CurrencyDecimalDigits":2,"CurrencyDecimalSeparator":".","IsReadOnly":true,"CurrencyGroupSizes":[3],"NumberGroupSizes":[3],"PercentGroupSizes":[3],"CurrencyGroupSeparator":",","CurrencySymbol":"NT$","NaNSymbol":"不是一個數字","CurrencyNegativePattern":1,"NumberNegativePattern":1,"PercentPositivePattern":1,"PercentNegativePattern":1,"NegativeInfinitySymbol":"負無窮大","NegativeSign":"-","NumberDecimalDigits":2,"NumberDecimalSeparator":".","NumberGroupSeparator":",","CurrencyPositivePattern":0,"PositiveInfinitySymbol":"正無窮大","PositiveSign":"+","PercentDecimalDigits":2,"PercentDecimalSeparator":".","PercentGroupSeparator":",","PercentSymbol":"%","PerMilleSymbol":"‰","NativeDigits":["0","1","2","3","4","5","6","7","8","9"],"DigitSubstitution":1},"dateTimeFormat":{"AMDesignator":"上午","Calendar":{"MinSupportedDateTime":"\/Date(-62135596800000)\/","MaxSupportedDateTime":"\/Date(253402271999999)\/","AlgorithmType":1,"CalendarType":1,"Eras":[1],"TwoDigitYearMax":2029,"IsReadOnly":true},"DateSeparator":"/","FirstDayOfWeek":0,"CalendarWeekRule":0,"FullDateTimePattern":"yyyy\u0027年\u0027M\u0027月\u0027d\u0027日\u0027 tt hh:mm:ss","LongDatePattern":"yyyy\u0027年\u0027M\u0027月\u0027d\u0027日\u0027","LongTimePattern":"tt hh:mm:ss","MonthDayPattern":"M\u0027月\u0027d\u0027日\u0027","PMDesignator":"下午","RFC1123Pattern":"ddd, dd MMM yyyy HH\u0027:\u0027mm\u0027:\u0027ss \u0027GMT\u0027","ShortDatePattern":"yyyy/M/d","ShortTimePattern":"tt hh:mm","SortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd\u0027T\u0027HH\u0027:\u0027mm\u0027:\u0027ss","TimeSeparator":":","UniversalSortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd HH\u0027:\u0027mm\u0027:\u0027ss\u0027Z\u0027","YearMonthPattern":"yyyy\u0027年\u0027M\u0027月\u0027","AbbreviatedDayNames":["星期日","星期一","星期二","星期三","星期四","星期五","星期六"],"ShortestDayNames":["日","一","二","三","四","五","六"],"DayNames":["星期日","星期一","星期二","星期三","星期四","星期五","星期六"],"AbbreviatedMonthNames":["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月",""],"MonthNames":["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月",""],"IsReadOnly":true,"NativeCalendarName":"西曆 (中文)","AbbreviatedMonthGenitiveNames":["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月",""],"MonthGenitiveNames":["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月",""]}}';//]]>
+</SCRIPT>
+
+<SCRIPT type=text/javascript src="/WebApplication/Administration/UrgentAviso/ScriptResource.axd?d=rlVH9Ncmse7zyytK0Mf5Z6bQ2rHOc1RStFHDondhu5epJJiey5aSzM1JJRKOgiRfoHJuWdEUA9-jAS_lnsTQbSU18sPCpGUatgNwvXRbDb0UBONq7feAe4GEQ0Lc7NucdaDTZOl_ZOS-rgKlRqs_Gd9u4hc1&amp;t=ffffffffac299bf8"></SCRIPT>
+
+<SCRIPT type=text/javascript src="/WebApplication/Administration/UrgentAviso/ScriptResource.axd?d=f1xwZ8Td9HWbF7k5VKV0m9Gq-zd_9cvsIfuMrNyITj8Fspsnu9IqlS2r_9w685rUo_SH2yxB7ktvfNSQ7WI9VDAdXRffeqOlcRiiHQWg6x9a_6ufNarbzvv5ekON_norORHk2MkzJMsSk3BOcywcdu63uwYsfj7A15akXUPnpsX1eqLq0&amp;t=ffffffffac299bf8"></SCRIPT>
+
+<SCRIPT type=text/javascript src="../AvisoJS/CaseForm.js"></SCRIPT>
+
+<SCRIPT type=text/javascript src="../AvisoJS/JQuery.js"></SCRIPT>
+
+<SCRIPT type=text/javascript src="/WebApplication/Administration/UrgentAviso/ScriptResource.axd?d=Y52OnN_DyFsBtfc7Z6CD0qSHHChC1hdjZiqwJ9jmvSBl_myKyI3kBG2l6sEPPcrgrFcXAEKTCwI0tsF5CdQXV7rf5Qz1gtJW41vL1EBgzF1XuZK2RIbNMn1JKrB9qD2FtOeR8S5dhCmYwl3FQ3Ym4B5x4jo1&amp;t=6879b39b"></SCRIPT>
+
+<SCRIPT type=text/javascript src="/WebApplication/Administration/UrgentAviso/ScriptResource.axd?d=WP5GFLEuJSdSBJYcIIiQfcYB-s62Md6tkiBFCX5N6zGJbMepHetenM4VzVseX0YfRwbHAWDJIfwLyhRcoM0ryKbh_gaAuHJ8beKo4615eZisWpzBfoAP7ubWWT1pQeKUC_z-BEbuSwPZSKVI0mEdKM6B3lw1&amp;t=6879b39b"></SCRIPT>
+
+<SCRIPT type=text/javascript src="/WebApplication/Administration/UrgentAviso/ScriptResource.axd?d=JY1Dr31Xh2GhX-D-y9CZ_2jtVpb45_4c5lgeea_OwVKi1YCP6vBsvqt4T7Eeoye1Pamzs6hWD7LzALdiNQpdGYSpef5bLw2nbpXD7Raw-3xjtZ2mXQjhojc2Ud3FCCc8oZnK-VS3b4d_iICWB4HM4QjtObo1&amp;t=6879b39b"></SCRIPT>
+
+<SCRIPT type=text/javascript src="/WebApplication/Administration/UrgentAviso/ScriptResource.axd?d=ahWHu_Q_5HSTiA-6xATlEfYr3TFksQfh_DVjNBNKnFSeN2FiDrK8cTzbF7RWPYPI47HmT1SRufEcP_NUyYs46wfNNrokCMQ5P9wxVZTCbl95DVOm76K9zqQdd_cGS25x5Wn-jw_tKlO5i80Gq6tf4KvQIpk1&amp;t=6879b39b"></SCRIPT>
+
+<SCRIPT type=text/javascript src="/WebApplication/Administration/UrgentAviso/ScriptResource.axd?d=YF3WwNwWXwUHGLIfYsa9uPhBbvLa-8I3hpwru0mgsiQ-6mYIx1hB1immZEU44Un3fvX6Aw_PpvnyJqgyZQm0AvrpIREUnbQd2QYrI6TwoLiILHtF28RJdcCGO0bnBTugM4wzoF3mTOEY6K4WKknQB4c_JS41&amp;t=6879b39b"></SCRIPT>
+
+<SCRIPT type=text/javascript src="/WebApplication/Administration/UrgentAviso/ScriptResource.axd?d=MGnOCipTemRzNgQRbxpIczpETEsIhJpWFdw_MpiN-HMwdPFVY9qlQPJsch0ec1wWaRW6PYirxS2QqNYoCcSPFTLQChs1u5stbH5BtKOpoVqCjeGd7---QStWkcCy1kGzoGiG3SxH4Y3FEwS7aHmpLtf82Gk1&amp;t=6879b39b"></SCRIPT>
+
+<SCRIPT type=text/javascript src="/WebApplication/Administration/UrgentAviso/ScriptResource.axd?d=8oFoIBuKj_VkOfnkrsVO57CMnxMiM0U93EI2VLd-2_sNosIba_ilFWRQAYuXhmGxbVE51v51g_GJ_K1VmJGc80z4ivHKTieASn8htvjhnyQGggzsMzuKfdFQw9sOu744LNlBlcw68wDJ82aHO-IT9Gq3LV81&amp;t=6879b39b"></SCRIPT>
+
+<SCRIPT type=text/javascript src="/WebApplication/Administration/UrgentAviso/ScriptResource.axd?d=eDnjxUaCvVShMdjnwKbFclXYvwjkufkDTMcqcaYMJLWIWrxlPq-8FIrVW_Tw4gTnsCg562DJbrTt2egw_olZIGx5DLdh0BEnAXeyNSGS3a6NdZXg1mO4EimHB1NWA6QPayP7p-X5VOLQNh_LUMuZCm2hIlo1&amp;t=6879b39b"></SCRIPT>
+
+<SCRIPT type=text/javascript src="/WebApplication/Administration/UrgentAviso/ScriptResource.axd?d=b94yQ503_Pop_A5wzpNFpuLcz8AIX5hdzuKbrPEWQGicXOiQ76xbZ-C4jT86bMO2MiMM4wag36dbM789Nwy1wXsBGunfZg9sfc6nn6-dGTzKSYrPPghyDeUfup3Vmo9Q-8RIcJQOh0VMYNG5Gvuxpcvkgm41&amp;t=6879b39b"></SCRIPT>
+
+<SCRIPT type=text/javascript src="/WebApplication/Administration/UrgentAviso/ScriptResource.axd?d=Cq0aJAAfZc2BrqSDfAZEeUdD_COBM_h2GLBUxmviTnETHYaWKa00Y5Dw1-A2TNqwbIQ_AC5lRhTa-Fon0Qbn2g-7_duSnSfgeBnrwXTcGUKuXP12CN2LrAPPaCgrqGlEoLFnbFZSgwhR8MeraEV3StxMUhn0L5NFNn2H69s2f5Lx6fip0&amp;t=6879b39b"></SCRIPT>
+
+<SCRIPT type=text/javascript src="/WebApplication/Administration/UrgentAviso/ScriptResource.axd?d=r8EbdOsj4R4xRUaZebuoQrca7t2CB2fzztjPnhLLPL7jOSh7J6ohS3_htmDTbREouJddSmyNs61cVb2qDN5mBJQyO11w2uYZnuujuta1BOQb2YWQMpb9RJFPGpYH9s4sXWYJKQ2&amp;t=6879b39b"></SCRIPT>
+
+<SCRIPT type=text/javascript src="/WebApplication/Administration/UrgentAviso/ScriptResource.axd?d=OcEzibqKvwdjKuefyaYj3UxQ6Gmjvm5VDYpMJUbu_B_kE7IK5mHvzX-E66FbjxCXnak8eMHP7HOfrbP3OxwhS4jp48lHe26xyppJIrI-TSLkEC30E9slYofzm2V68OPlbxBbDCV1wB-zN-mnWYJguhrRBlRyOd8eaXDoTYr27vaWoCZD0&amp;t=6879b39b"></SCRIPT>
+
+<DIV> </DIV>
+<OBJECT style="DISPLAY: none" id=printDaemon classid=/WebApplication/NControls/PrintLibrary.dll#NH.Printing.PrintDaemon></OBJECT>
+<SCRIPT type=text/javascript>
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('scriptManager', document.getElementById('formMain'));
+Sys.WebForms.PageRequestManager.getInstance()._updateControls(['fuPanelCaseNo','fuPanelMessage','fcaseTab$caseTabPerson$uPanelPerson','fcaseTab$caseTabEvent$uPanelEvent','fcaseTab$caseTabAviso$uPanelAviso','fcaseTab$caseTabImmediate$uPanelImmediate','fcaseTab$caseTabPrevent$uPanelPrevent','fcaseTab$caseTabRehappen$uPanelRehappen','fcaseTab$caseTabImprove$uPanelImprove','fuPanelMessageDown','fuPanelActBtn','fuPanelCaseType','fuPanelEventType'], ['btnCaseTabPerson','btnCaseTabEvent','btnCaseTabAviso','btnCaseTabImmediate','btnCaseTabPrevent','btnCaseTabRehappen','btnCaseTabImprove'], [], 90);
+//]]>
+</SCRIPT>
+
+<DIV style="WIDTH: 100%" id=panelMain>
+<TABLE id=tblMain class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="HEIGHT: 26px">
+<TD class=inputTableTitle colSpan=8>通報事件單</TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width="12%" align=right><SPAN class=queryText>案號：</SPAN></TD>
+<TD width="13%" align=left>
+<DIV id=uPanelCaseNo><SPAN id=lblCaseNo></SPAN>&nbsp;</DIV></TD>
+<TD width="12%" align=right></TD>
+<TD width="13%" align=left></TD>
+<TD width="12%" align=right></TD>
+<TD width="13%" align=left></TD>
+<TD width="12%" align=right></TD>
+<TD width="13%" align=middle><INPUT style="WIDTH: 96px; HEIGHT: 22px" id=btnBackWorkSiteUp class=button value=返回作業區 type=submit name=btnBackWorkSiteUp> </TD></TR>
+<TR style="HEIGHT: 20px">
+<TD colSpan=8>
+<TABLE id=tblRemind class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="HEIGHT: 20px">
+<TD width="25%">&nbsp;</TD>
+<TD width="10%" align=right><FONT color=red size=2>事項提醒：</FONT></TD>
+<TD align=left><FONT color=blue size=2>1.<FONT color=crimson>新增</FONT>案件<FONT color=crimson>至少</FONT>需填寫<FONT color=crimson>「當事人資料」、「通報者資料」、「事件內容」、「檢討改善」</FONT>的必填欄位資料。</FONT></TD></TR>
+<TR style="HEIGHT: 20px">
+<TD width="25%">&nbsp;</TD>
+<TD width="10%">&nbsp;</TD>
+<TD align=left><FONT color=blue size=2>2.選項後方如果有&nbsp;<IMG src="../AvisoImages/table_add.png">&nbsp;圖示，則表示該選項勾選後會顯示細項目供進一步選取。</FONT></TD></TR>
+<TR style="HEIGHT: 20px">
+<TD width="25%">&nbsp;</TD>
+<TD width="10%">&nbsp;</TD>
+<TD align=left><FONT color=blue size=2>3.<FONT color=crimson>新增檢核條件</FONT>：「當事人資料」&nbsp;若&nbsp;<FONT color=crimson>受影響對象</FONT>&nbsp;為病人，則<FONT color=crimson>病人所在科別</FONT>&nbsp;為必選取項目。</FONT></TD></TR>
+<TR style="HEIGHT: 20px">
+<TD width="25%">&nbsp;</TD>
+<TD width="10%">&nbsp;</TD>
+<TD align=left><FONT color=blue size=2>4.<FONT color=crimson>新增暫存機制</FONT>：由「新增通報(暫存版)」進入，點選「暫存」可將頁面資料儲存，並產生&nbsp;<FONT color=crimson>TEMPxxxx</FONT>&nbsp;之暫存案號。</FONT></TD></TR>
+<TR style="HEIGHT: 20px">
+<TD width="25%">&nbsp;</TD>
+<TD width="10%">&nbsp;</TD>
+<TD align=left><FONT color=blue size=2>&nbsp;&nbsp;&nbsp;於填寫完成後請記得點選&nbsp;<FONT color=crimson>「確認取號」</FONT>&nbsp;以轉成實際案號。</FONT></TD></TR></TBODY></TABLE></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD colSpan=6>
+<DIV id=uPanelMessage><SPAN style="COLOR: green" id=lblSuccessMsg></SPAN><SPAN id=lblErrorMsg class=errorMsgText></SPAN>&nbsp;</DIV></TD>
+<TD colSpan=2 align=right><FONT color=blue size=2>目前剩餘： <FONT color=crimson><SPAN id=lblRemainMinUp>--</SPAN></FONT>&nbsp;&nbsp;分&nbsp;&nbsp; <FONT color=crimson><SPAN id=lblRemainSecUp>--</SPAN></FONT>&nbsp;&nbsp;秒&nbsp;&nbsp; </FONT></TD></TR></TBODY></TABLE></DIV>
+<DIV style="WIDTH: 100%" id=panelCaseTab>
+<DIV style="VISIBILITY: visible" id=caseTab class="ajax__tab_xp ajax__tab_container ajax__tab_default">
+<DIV id=caseTab_header class=ajax__tab_header><SPAN id=caseTab_caseTabPerson_tab><SPAN class=ajax__tab_outer><SPAN class=ajax__tab_inner><SPAN id=__tab_caseTab_caseTabPerson class=ajax__tab_tab>當事人資料</SPAN></SPAN></SPAN></SPAN><SPAN id=caseTab_caseTabEvent_tab><SPAN class=ajax__tab_outer><SPAN class=ajax__tab_inner><SPAN id=__tab_caseTab_caseTabEvent class=ajax__tab_tab>事件內容</SPAN></SPAN></SPAN></SPAN><SPAN id=caseTab_caseTabAviso_tab><SPAN class=ajax__tab_outer><SPAN class=ajax__tab_inner><SPAN id=__tab_caseTab_caseTabAviso class=ajax__tab_tab>通報者資料</SPAN></SPAN></SPAN></SPAN><SPAN id=caseTab_caseTabImmediate_tab><SPAN class=ajax__tab_outer><SPAN class=ajax__tab_inner><SPAN id=__tab_caseTab_caseTabImmediate class=ajax__tab_tab>立即處理方式</SPAN></SPAN></SPAN></SPAN><SPAN id=caseTab_caseTabPrevent_tab><SPAN class=ajax__tab_outer><SPAN class=ajax__tab_inner><SPAN id=__tab_caseTab_caseTabPrevent class=ajax__tab_tab>預防措施</SPAN></SPAN></SPAN></SPAN><SPAN id=caseTab_caseTabRehappen_tab><SPAN class=ajax__tab_outer><SPAN class=ajax__tab_inner><SPAN id=__tab_caseTab_caseTabRehappen class=ajax__tab_tab>再發生的可能情形</SPAN></SPAN></SPAN></SPAN><SPAN id=caseTab_caseTabImprove_tab class=ajax__tab_active><SPAN class=ajax__tab_outer><SPAN class=ajax__tab_inner><SPAN id=__tab_caseTab_caseTabImprove class=ajax__tab_tab>檢討改善</SPAN></SPAN></SPAN></SPAN> </DIV>
+<DIV id=caseTab_body class=ajax__tab_body>
+<DIV style="DISPLAY: none; VISIBILITY: hidden" id=caseTab_caseTabPerson class=ajax__tab_panel><!-- update panel for 當事人資料 -->
+<DIV id=caseTab_caseTabPerson_uPanelPerson>
+<DIV id=caseTab_caseTabPerson_Person_panelPerson Width="100%">
+<TABLE id=tblPersonTitle class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="HEIGHT: 26px">
+<TD class=inputTableTitle>當事人基本資料</TD></TR></TBODY></TABLE>
+<TABLE id=tblPerson class=queryTableDisplay width=970>
+<TBODY>
+<TR style="HEIGHT: 26px">
+<TD colSpan=5>
+<TABLE class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="HEIGHT: 26px">
+<TD width="14%" align=right><FONT color=red>*</FONT><SPAN class=queryText>事件發生日期：</SPAN></TD>
+<TD width="11%" align=left><INPUT style="WIDTH: 90px" id=txbHappenDate class=textBox onfocus=showCalendarWeek(this); maxLength=10 name=t$QPerson$HappenDate> <SPAN id=caseTab_caseTabPerson_Person_lblHappenDateWeek></SPAN></TD>
+<TD width="14%" align=right><FONT color=red>*</FONT><SPAN class=queryText>發生時間：</SPAN></TD>
+<TD width="13%" align=left><INPUT style="TEXT-ALIGN: center; WIDTH: 18px" id=txbHappenHour class=textBox onkeypress="return checkNumberKeyin(this, false, event);" maxLength=2 name=t$QPerson$HappenHour>&nbsp;時<FONT color=blue size=1>(24hr)</FONT> <INPUT style="TEXT-ALIGN: center; WIDTH: 18px" id=txbHappenMin class=textBox onkeypress="return checkNumberKeyin(this, false, event);" maxLength=2 name=t$QPerson$HappenMin>&nbsp;分 </TD>
+<TD width="14%" align=right><FONT color=red>*</FONT><SPAN class=queryText>通報日期：</SPAN></TD>
+<TD width="11%" align=left><INPUT style="WIDTH: 90px" id=txbAvisoDate class=textBox onfocus=showCalendar(this); value=2012/07/10 maxLength=10 name=t$QPerson$AvisoDate> </TD>
+<TD style="DISPLAY: none" id=td_PersonHappenTimeTitle width="12%" align=right><SPAN class=queryText>發生時段：</SPAN></TD>
+<TD style="DISPLAY: none" id=td_PersonHappenTimeValue width="11%" align=left><SELECT id=s$QPerson$HappenTime name=s$QPerson$HappenTime> <OPTION selected value=0>=請選擇=</OPTION> <OPTION value=2>00:01 ~ 02:00</OPTION> <OPTION value=4>02:01 ~ 04:00</OPTION> <OPTION value=6>04:01 ~ 06:00</OPTION> <OPTION value=8>06:01 ~ 08:00</OPTION> <OPTION value=10>08:01 ~ 10:00</OPTION> <OPTION value=12>10:01 ~ 12:00</OPTION> <OPTION value=14>12:01 ~ 14:00</OPTION> <OPTION value=16>14:01 ~ 16:00</OPTION> <OPTION value=18>16:01 ~ 18:00</OPTION> <OPTION value=20>18:01 ~ 20:00</OPTION> <OPTION value=22>20:01 ~ 22:00</OPTION> <OPTION value=24>22:01 ~ 24:00</OPTION></SELECT> </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width="14%" align=right><SPAN class=queryText>姓名：</SPAN></TD>
+<TD width="11%" align=left><INPUT style="WIDTH: 90px" id=txbPersonName class=textBox maxLength=6 name=t$QPerson$Name> </TD>
+<TD width="14%" align=right><SPAN class=queryText>性別：</SPAN></TD>
+<TD width="13%" align=left><INPUT id=rdoPersonGrender_0 value=0 type=radio name=r$QPerson$Grender>男 <INPUT id=rdoPersonGrender_1 value=1 type=radio name=r$QPerson$Grender>女 </TD>
+<TD width="14%" align=right><SPAN class=queryText>年齡：</SPAN></TD>
+<TD width="11%" align=left><INPUT style="TEXT-ALIGN: center; WIDTH: 24px" id=txbPersonAge class=textBox onkeypress="return checkNumberKeyin(this, false, event);" maxLength=3 name=t$QPerson$Age> &nbsp; <SELECT id=s$QPerson$AgeUnit name=s$QPerson$AgeUnit> <OPTION selected value=0>年</OPTION> <OPTION value=1>天</OPTION></SELECT> </TD>
+<TD width="12%" align=right><SPAN class=queryText>婚姻狀況：</SPAN></TD>
+<TD width="11%" align=left><INPUT id=rdoPersonMarital_0 value=0 type=radio name=r$QPerson$Marital>未婚 <INPUT id=rdoPersonMarital_1 value=1 type=radio name=r$QPerson$Marital>已婚 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width="14%" align=right><SPAN class=queryText>病歷號/身分證：</SPAN></TD>
+<TD width="11%" align=left><INPUT style="WIDTH: 90px" id=txbPersonId class=textBox maxLength=10 name=t$QPerson$PersonId> </TD>
+<TD width="14%" align=right><SPAN class=queryText>門診/住院日期：</SPAN></TD>
+<TD width="13%" align=left><INPUT style="WIDTH: 90px" id=txbTreatmentDate class=textBox onfocus=showCalendar(this); maxLength=10 name=t$QPerson$TreatmentDate> </TD>
+<TD width="14%" align=right><SPAN class=queryText>床號：</SPAN></TD>
+<TD width="11%" align=left><INPUT style="WIDTH: 90px" id=txbBedNo class=textBox maxLength=15 name=t$QPerson$BedNo> </TD>
+<TD width="12%" align=right><SPAN class=queryText></SPAN></TD>
+<TD width="11%" align=left></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width="14%" align=right><SPAN class=queryText>病人有無陪伴者：</SPAN></TD>
+<TD width="11%" align=left><INPUT id=rdoPersonIsPersonAttendee_0 value=0 type=radio name=r$QPerson$IsPersonAttendee>無 <INPUT id=rdoPersonIsPersonAttendee_1 value=1 type=radio name=r$QPerson$IsPersonAttendee>有 </TD>
+<TD width="14%" align=right><SPAN class=queryText>陪伴者是否在場：</SPAN></TD>
+<TD width="13%" align=left><INPUT id=rdoPersonIsAttendee_0 value=0 type=radio name=r$QPerson$IsAttendee>無 <INPUT id=rdoPersonIsAttendee_1 value=1 type=radio name=r$QPerson$IsAttendee>有 </TD>
+<TD width="14%" align=right><FONT color=red>*</FONT><SPAN class=queryText>事件發生單位：</SPAN></TD>
+<TD colSpan=3 align=left><INPUT style="WIDTH: 250px" id=txbEventDept class=textBox onfocus=showAutoCompleteDept(this); value=RAD_影像醫學部_15100 name=t$QPerson$EventDept> <INPUT id=btnEventDept class=button onclick="clearTxbValue('txbEventDept');" value=重填 type=button> <IMG onclick=openDeptHelperPage(); src="../AvisoImages/info.png"> </TD></TR></TBODY></TABLE></TD></TR>
+<TR style="BACKGROUND-COLOR: darkseagreen; HEIGHT: 26px">
+<TD colSpan=5 align=left><SPAN class=queryText>診斷：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD colSpan=4 align=left><TEXTAREA class=textBox rows=5 cols=185 name=t$QPerson$Diagnosis></TEXTAREA> </TD></TR>
+<TR style="BACKGROUND-COLOR: darkseagreen; HEIGHT: 26px">
+<TD colSpan=5 align=left><SPAN class=queryText>身份：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkPersonRole_0 onclick=showBlockByCheckBox(this.id); value=0 type=checkbox name=c$QPerson$Role>病患 <IMG src="../AvisoImages/table_add.png"> </TD>
+<TD width=240 align=left><INPUT id=chkPersonRole_1 onclick=showBlockByCheckBox(this.id); value=1 type=checkbox name=c$QPerson$Role>員工 <IMG src="../AvisoImages/table_add.png"> </TD>
+<TD width=240 align=left><INPUT id=chkPersonRole_2 value=2 type=checkbox name=c$QPerson$Role>訪客/家屬 </TD>
+<TD width=240 align=left><INPUT id=chkPersonRole_3 value=3 type=checkbox name=c$QPerson$Role>服務員/看護 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkPersonRole_4 value=4 type=checkbox name=c$QPerson$Role>其他： <INPUT style="WIDTH: 140px" id=txbPersonRole_4 class=textBox name=t$QPerson$Role_4> </TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD></TR>
+<TR style="DISPLAY: none; HEIGHT: 26px" id=tr_chkPersonRole_0>
+<TD colSpan=5>
+<TABLE style="BORDER-BOTTOM-COLOR: darkgoldenrod; BORDER-TOP-COLOR: darkgoldenrod; BORDER-RIGHT-COLOR: darkgoldenrod; BORDER-LEFT-COLOR: darkgoldenrod" id=tbl_chkPersonRole_0 class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="BACKGROUND-COLOR: darkkhaki; HEIGHT: 26px">
+<TD colSpan=5 align=left>&nbsp;&nbsp;<SPAN class=queryText>病房型態：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoPersonSickRoomType_0 value=0 type=radio name=r$QPerson$SickRoomType>單人房 </TD>
+<TD width=240 align=left><INPUT id=rdoPersonSickRoomType_1 value=1 type=radio name=r$QPerson$SickRoomType>二人房 </TD>
+<TD width=240 align=left><INPUT id=rdoPersonSickRoomType_2 value=2 type=radio name=r$QPerson$SickRoomType>三人房 </TD>
+<TD width=240 align=left><INPUT id=rdoPersonSickRoomType_3 value=3 type=radio name=r$QPerson$SickRoomType>四人房 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoPersonSickRoomType_4 value=4 type=radio name=r$QPerson$SickRoomType>其他： <INPUT style="WIDTH: 140px" id=txbPersonSickRoomType_4 class=textBox name=t$QPerson$SickRoomType_4> </TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD></TR></TBODY></TABLE></TD></TR>
+<TR style="DISPLAY: none; HEIGHT: 26px" id=tr_chkPersonRole_1>
+<TD colSpan=5>
+<TABLE style="BORDER-BOTTOM-COLOR: darkgoldenrod; BORDER-TOP-COLOR: darkgoldenrod; BORDER-RIGHT-COLOR: darkgoldenrod; BORDER-LEFT-COLOR: darkgoldenrod" id=tbl_chkPersonRole_1 class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="BACKGROUND-COLOR: darkkhaki; HEIGHT: 26px">
+<TD colSpan=5 align=left>&nbsp;&nbsp;<SPAN class=queryText>員工類型：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoPersonEmpType_0 value=0 type=radio name=r$QPerson$EmpType>醫師 </TD>
+<TD width=240 align=left><INPUT id=rdoPersonEmpType_1 value=1 type=radio name=r$QPerson$EmpType>護理人員 </TD>
+<TD width=240 align=left><INPUT id=rdoPersonEmpType_2 value=2 type=radio name=r$QPerson$EmpType>醫技人員 </TD>
+<TD width=240 align=left><INPUT id=rdoPersonEmpType_3 value=3 type=radio name=r$QPerson$EmpType>實習生 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoPersonEmpType_4 value=4 type=radio name=r$QPerson$EmpType>行政人員 </TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD></TR></TBODY></TABLE></TD></TR>
+<TR style="BACKGROUND-COLOR: darkseagreen; HEIGHT: 26px">
+<TD colSpan=5 align=left><SPAN class=queryText>事件發生地點：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkPersonEventVenue_0 value=0 type=checkbox name=c$QPerson$EventVenue>一般病房 </TD>
+<TD width=240 align=left><INPUT id=chkPersonEventVenue_1 value=1 type=checkbox name=c$QPerson$EventVenue>藥局 </TD>
+<TD width=240 align=left><INPUT id=chkPersonEventVenue_2 value=2 type=checkbox name=c$QPerson$EventVenue>急診室 </TD>
+<TD width=240 align=left><INPUT id=chkPersonEventVenue_3 onclick=showBlockByCheckBox(this.id); value=3 type=checkbox name=c$QPerson$EventVenue>門診 <IMG src="../AvisoImages/table_add.png"> </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkPersonEventVenue_4 onclick=showBlockByCheckBox(this.id); value=4 type=checkbox name=c$QPerson$EventVenue>公共區域 <IMG src="../AvisoImages/table_add.png"> </TD>
+<TD width=240 align=left><INPUT id=chkPersonEventVenue_5 onclick=showBlockByCheckBox(this.id); value=5 type=checkbox name=c$QPerson$EventVenue>功能檢查室 <IMG src="../AvisoImages/table_add.png"> </TD>
+<TD width=240 align=left><INPUT id=chkPersonEventVenue_6 onclick=showBlockByCheckBox(this.id); value=6 type=checkbox name=c$QPerson$EventVenue>特殊醫療照護區 <IMG src="../AvisoImages/table_add.png"> </TD>
+<TD width=240 align=left><INPUT id=chkPersonEventVenue_7 value=7 type=checkbox name=c$QPerson$EventVenue>不知道 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkPersonEventVenue_8 onclick=showBlockByCheckBox(this.id); value=8 type=checkbox name=c$QPerson$EventVenue>其他 <IMG src="../AvisoImages/table_add.png"> </TD>
+<TD width=240 align=left><INPUT id=chkPersonEventVenue_9 value=9 type=checkbox name=c$QPerson$EventVenue>院外 </TD>
+<TD width=240 align=left><INPUT id=chkPersonEventVenue_10 value=10 type=checkbox name=c$QPerson$EventVenue>外包-傳送人員 </TD>
+<TD width=240 align=left></TD></TR>
+<TR style="DISPLAY: none; HEIGHT: 26px" id=tr_chkPersonEventVenue_3>
+<TD colSpan=5>
+<TABLE style="BORDER-BOTTOM-COLOR: darkgoldenrod; BORDER-TOP-COLOR: darkgoldenrod; BORDER-RIGHT-COLOR: darkgoldenrod; BORDER-LEFT-COLOR: darkgoldenrod" id=tbl_chkPersonEventVenue_3 class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="BACKGROUND-COLOR: darkkhaki; HEIGHT: 26px">
+<TD colSpan=5 align=left>&nbsp;&nbsp;<SPAN class=queryText>門診類型：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkPersonPoliclinic_0 value=0 type=checkbox name=c$QPerson$Policlinic>門診大廳 </TD>
+<TD width=240 align=left><INPUT id=chkPersonPoliclinic_1 value=1 type=checkbox name=c$QPerson$Policlinic>診間室 </TD>
+<TD width=240 align=left><INPUT id=chkPersonPoliclinic_2 value=2 type=checkbox name=c$QPerson$Policlinic>檢驗站 </TD>
+<TD width=240 align=left><INPUT id=chkPersonPoliclinic_3 value=3 type=checkbox name=c$QPerson$Policlinic>其他： <INPUT style="WIDTH: 140px" id=txbPersonPoliclinic_3 class=textBox name=t$QPerson$Policlinic_3> </TD></TR></TBODY></TABLE></TD></TR>
+<TR style="DISPLAY: none; HEIGHT: 26px" id=tr_chkPersonEventVenue_4>
+<TD colSpan=5>
+<TABLE style="BORDER-BOTTOM-COLOR: darkgoldenrod; BORDER-TOP-COLOR: darkgoldenrod; BORDER-RIGHT-COLOR: darkgoldenrod; BORDER-LEFT-COLOR: darkgoldenrod" id=tbl_chkPersonEventVenue_4 class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="BACKGROUND-COLOR: darkkhaki; HEIGHT: 26px">
+<TD colSpan=5 align=left>&nbsp;&nbsp;<SPAN class=queryText>公共區域：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkPersonPublicPlace_0 value=0 type=checkbox name=c$QPerson$PublicPlace>交誼廳 </TD>
+<TD width=240 align=left><INPUT id=chkPersonPublicPlace_1 value=1 type=checkbox name=c$QPerson$PublicPlace>樓梯間 </TD>
+<TD width=240 align=left><INPUT id=chkPersonPublicPlace_2 value=2 type=checkbox name=c$QPerson$PublicPlace>電梯 </TD>
+<TD width=240 align=left><INPUT id=chkPersonPublicPlace_3 value=3 type=checkbox name=c$QPerson$PublicPlace>停車場 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkPersonPublicPlace_4 value=4 type=checkbox name=c$QPerson$PublicPlace>其他： <INPUT style="WIDTH: 140px" id=txbPersonPublicPlace_4 class=textBox name=t$QPerson$PublicPlace_4> </TD>
+<TD width=240 align=left><INPUT id=txbPersonPublicPlace_5 value=5 type=checkbox name=c$QPerson$PublicPlace>B1 商場 </TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD></TR></TBODY></TABLE></TD></TR>
+<TR style="DISPLAY: none; HEIGHT: 26px" id=tr_chkPersonEventVenue_5>
+<TD colSpan=5>
+<TABLE style="BORDER-BOTTOM-COLOR: darkgoldenrod; BORDER-TOP-COLOR: darkgoldenrod; BORDER-RIGHT-COLOR: darkgoldenrod; BORDER-LEFT-COLOR: darkgoldenrod" id=tbl_chkPersonEventVenue_5 class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="BACKGROUND-COLOR: darkkhaki; HEIGHT: 26px">
+<TD colSpan=5 align=left>&nbsp;&nbsp;<SPAN class=queryText>功能檢查室類型：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkPersonInspectRoom_0 value=0 type=checkbox name=c$QPerson$InspectRoom>X 光室 </TD>
+<TD width=240 align=left><INPUT id=chkPersonInspectRoom_1 value=1 type=checkbox name=c$QPerson$InspectRoom>超音波室 </TD>
+<TD width=240 align=left><INPUT id=chkPersonInspectRoom_2 value=2 type=checkbox name=c$QPerson$InspectRoom>電腦斷層室 </TD>
+<TD width=240 align=left><INPUT id=chkPersonInspectRoom_3 value=3 type=checkbox name=c$QPerson$InspectRoom>血管攝影室 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkPersonInspectRoom_4 value=4 type=checkbox name=c$QPerson$InspectRoom>放射診斷科 </TD>
+<TD width=240 align=left><INPUT id=chkPersonInspectRoom_5 value=5 type=checkbox name=c$QPerson$InspectRoom>內視鏡室 </TD>
+<TD width=240 align=left><INPUT id=chkPersonInspectRoom_6 value=6 type=checkbox name=c$QPerson$InspectRoom>心電圖室 </TD>
+<TD width=240 align=left><INPUT id=chkPersonInspectRoom_7 value=7 type=checkbox name=c$QPerson$InspectRoom>肺功能室 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkPersonInspectRoom_8 value=8 type=checkbox name=c$QPerson$InspectRoom>核磁共振室 </TD>
+<TD width=240 align=left><INPUT id=chkPersonInspectRoom_9 value=9 type=checkbox name=c$QPerson$InspectRoom>尿動力室 </TD>
+<TD width=240 align=left><INPUT id=chkPersonInspectRoom_10 value=10 type=checkbox name=c$QPerson$InspectRoom>支氣管檢查室 </TD>
+<TD width=240 align=left><INPUT id=chkPersonInspectRoom_11 value=11 type=checkbox name=c$QPerson$InspectRoom>其他： <INPUT style="WIDTH: 140px" id=txbPersonInspectRoom_11 class=textBox name=t$QPerson$InspectRoom_11> </TD></TR></TBODY></TABLE></TD></TR>
+<TR style="DISPLAY: none; HEIGHT: 26px" id=tr_chkPersonEventVenue_6>
+<TD colSpan=5>
+<TABLE style="BORDER-BOTTOM-COLOR: darkgoldenrod; BORDER-TOP-COLOR: darkgoldenrod; BORDER-RIGHT-COLOR: darkgoldenrod; BORDER-LEFT-COLOR: darkgoldenrod" id=tbl_chkPersonEventVenue_6 class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="BACKGROUND-COLOR: darkkhaki; HEIGHT: 26px">
+<TD colSpan=5 align=left>&nbsp;&nbsp;<SPAN class=queryText>特殊醫療照護區類型：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkPersonCareArea_0 value=0 type=checkbox name=c$QPerson$CareArea>加護病房 </TD>
+<TD width=240 align=left><INPUT id=chkPersonCareArea_1 value=1 type=checkbox name=c$QPerson$CareArea>開刀房 </TD>
+<TD width=240 align=left><INPUT id=chkPersonCareArea_2 value=2 type=checkbox name=c$QPerson$CareArea>產房 </TD>
+<TD width=240 align=left><INPUT id=chkPersonCareArea_3 value=3 type=checkbox name=c$QPerson$CareArea>安寧病房 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkPersonCareArea_4 value=4 type=checkbox name=c$QPerson$CareArea>復健部門 </TD>
+<TD width=240 align=left><INPUT id=chkPersonCareArea_5 value=5 type=checkbox name=c$QPerson$CareArea>日間照護 </TD>
+<TD width=240 align=left><INPUT id=chkPersonCareArea_6 value=6 type=checkbox name=c$QPerson$CareArea>RCC/RCW 呼吸治療單位 </TD>
+<TD width=240 align=left><INPUT id=chkPersonCareArea_7 value=7 type=checkbox name=c$QPerson$CareArea>透析中心 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkPersonCareArea_8 value=8 type=checkbox name=c$QPerson$CareArea>嬰兒室 </TD>
+<TD width=240 align=left><INPUT id=chkPersonCareArea_9 value=9 type=checkbox name=c$QPerson$CareArea>其他： <INPUT style="WIDTH: 140px" id=txbPersonCareArea_9 class=textBox name=t$QPerson$CareArea_9> </TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD></TR></TBODY></TABLE></TD></TR>
+<TR style="DISPLAY: none; HEIGHT: 26px" id=tr_chkPersonEventVenue_8>
+<TD colSpan=5>
+<TABLE style="BORDER-BOTTOM-COLOR: darkgoldenrod; BORDER-TOP-COLOR: darkgoldenrod; BORDER-RIGHT-COLOR: darkgoldenrod; BORDER-LEFT-COLOR: darkgoldenrod" id=tbl_chkPersonEventVenue_8 class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="BACKGROUND-COLOR: darkkhaki; HEIGHT: 26px">
+<TD colSpan=5 align=left>&nbsp;&nbsp;<SPAN class=queryText>其他類型：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkPersonVenueOther_0 value=0 type=checkbox name=c$QPerson$VenueOther>護理之家 </TD>
+<TD width=240 align=left><INPUT id=chkPersonVenueOther_1 value=1 type=checkbox name=c$QPerson$VenueOther>家庭社區醫學部 </TD>
+<TD width=240 align=left><INPUT id=chkPersonVenueOther_2 value=2 type=checkbox name=c$QPerson$VenueOther>行政單位辦公室 </TD>
+<TD width=240 align=left><INPUT id=chkPersonVenueOther_3 value=3 type=checkbox name=c$QPerson$VenueOther>科辦公室 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkPersonVenueOther_4 value=4 type=checkbox name=c$QPerson$VenueOther>其他： <INPUT style="WIDTH: 140px" id=txbPersonVenueOther_4 class=textBox name=t$QPerson$VenueOther_4> </TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD></TR></TBODY></TABLE></TD></TR>
+<TR style="BACKGROUND-COLOR: darkseagreen; HEIGHT: 26px">
+<TD colSpan=5 align=left><SPAN class=queryText>受影響的對象：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkPersonAffectPerson_0 onclick=showBlockByCheckBox(this.id); value=0 type=checkbox name=c$QPerson$AffectPerson>病人 <IMG src="../AvisoImages/table_add.png"> </TD>
+<TD width=240 align=left><INPUT id=chkPersonAffectPerson_1 value=1 type=checkbox name=c$QPerson$AffectPerson>住民 </TD>
+<TD width=240 align=left><INPUT id=chkPersonAffectPerson_2 value=2 type=checkbox name=c$QPerson$AffectPerson>訪客/家屬 </TD>
+<TD width=240 align=left><INPUT id=chkPersonAffectPerson_3 value=3 type=checkbox name=c$QPerson$AffectPerson>員工 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkPersonAffectPerson_4 value=4 type=checkbox name=c$QPerson$AffectPerson>儀器設備 </TD>
+<TD width=240 align=left><INPUT id=chkPersonAffectPerson_5 value=5 type=checkbox name=c$QPerson$AffectPerson>不知道 </TD>
+<TD width=240 align=left><INPUT id=chkPersonAffectPerson_6 value=6 type=checkbox name=c$QPerson$AffectPerson>其他： <INPUT style="WIDTH: 140px" id=txbPersonAffectPerson_6 class=textBox name=t$QPerson$AffectPerson_6> </TD>
+<TD width=240 align=left></TD></TR>
+<TR style="DISPLAY: none; HEIGHT: 26px" id=tr_chkPersonAffectPerson_0>
+<TD colSpan=5>
+<TABLE style="BORDER-BOTTOM-COLOR: darkgoldenrod; BORDER-TOP-COLOR: darkgoldenrod; BORDER-RIGHT-COLOR: darkgoldenrod; BORDER-LEFT-COLOR: darkgoldenrod" id=tbl_chkPersonAffectPerson_0 class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="BACKGROUND-COLOR: darkkhaki; HEIGHT: 26px">
+<TD colSpan=5 align=left>&nbsp;&nbsp;<SPAN class=queryText>病人性別：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientGrender_0 value=0 type=radio name=r$QPerson$PatientGrender>男性 </TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientGrender_1 value=1 type=radio name=r$QPerson$PatientGrender>女性 </TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientGrender_2 value=2 type=radio name=r$QPerson$PatientGrender>不知道 </TD>
+<TD width=240 align=left></TD></TR>
+<TR style="BACKGROUND-COLOR: darkkhaki; HEIGHT: 26px">
+<TD colSpan=5 align=left>&nbsp;&nbsp;<SPAN class=queryText>病人年齡層：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientAge_0 value=0 type=radio name=r$QPerson$PatientAge>嬰兒(一歲以下)(不含一歲) </TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientAge_1 value=1 type=radio name=r$QPerson$PatientAge>幼兒(1-3) </TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientAge_2 value=2 type=radio name=r$QPerson$PatientAge>學齡前期(4-6) </TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientAge_3 value=3 type=radio name=r$QPerson$PatientAge>學齡期(7-12) </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientAge_4 value=4 type=radio name=r$QPerson$PatientAge>青少年(13-18) </TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientAge_5 value=5 type=radio name=r$QPerson$PatientAge>成年(19-64) </TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientAge_6 value=6 type=radio name=r$QPerson$PatientAge>老年(65歲以上) </TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientAge_7 value=7 type=radio name=r$QPerson$PatientAge>不知道 </TD></TR>
+<TR style="BACKGROUND-COLOR: darkkhaki; HEIGHT: 26px">
+<TD colSpan=5 align=left>&nbsp;&nbsp;<SPAN class=queryText>就醫類別：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientTreatment_0 value=0 type=radio name=r$QPerson$PatientTreatment>住院 </TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientTreatment_1 value=1 type=radio name=r$QPerson$PatientTreatment>門診 </TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientTreatment_2 value=2 type=radio name=r$QPerson$PatientTreatment>急診 </TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientTreatment_3 value=3 type=radio name=r$QPerson$PatientTreatment>健檢 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientTreatment_4 value=4 type=radio name=r$QPerson$PatientTreatment>護理之家 </TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientTreatment_5 value=5 type=radio name=r$QPerson$PatientTreatment>不知道 </TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD></TR>
+<TR style="BACKGROUND-COLOR: darkkhaki; HEIGHT: 26px">
+<TD colSpan=5 align=left>&nbsp;&nbsp; <FONT color=red>*</FONT> <SPAN class=queryText>病人所在科別：</SPAN> </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientDept_0 value=0 type=radio name=r$QPerson$PatientDept>內科 </TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientDept_1 value=1 type=radio name=r$QPerson$PatientDept>外科 </TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientDept_2 value=2 type=radio name=r$QPerson$PatientDept>婦產科 </TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientDept_3 value=3 type=radio name=r$QPerson$PatientDept>小兒科 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientDept_4 value=4 type=radio name=r$QPerson$PatientDept>家庭醫學科 </TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientDept_5 value=5 type=radio name=r$QPerson$PatientDept>骨科 </TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientDept_6 value=6 type=radio name=r$QPerson$PatientDept>神經外科 </TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientDept_7 value=7 type=radio name=r$QPerson$PatientDept>整型外科 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientDept_8 value=8 type=radio name=r$QPerson$PatientDept>泌尿科 </TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientDept_9 value=9 type=radio name=r$QPerson$PatientDept>耳鼻喉科 </TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientDept_10 value=10 type=radio name=r$QPerson$PatientDept>眼科 </TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientDept_11 value=11 type=radio name=r$QPerson$PatientDept>皮膚科 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientDept_12 value=12 type=radio name=r$QPerson$PatientDept>神經科 </TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientDept_13 value=13 type=radio name=r$QPerson$PatientDept>復健科 </TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientDept_14 value=14 type=radio name=r$QPerson$PatientDept>麻醉科 </TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientDept_15 value=15 type=radio name=r$QPerson$PatientDept>放射科 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientDept_16 value=16 type=radio name=r$QPerson$PatientDept>病理科 </TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientDept_17 value=17 type=radio name=r$QPerson$PatientDept>核醫科 </TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientDept_18 value=18 type=radio name=r$QPerson$PatientDept>急診醫學科 </TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientDept_19 value=19 type=radio name=r$QPerson$PatientDept>職業醫學科 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientDept_20 value=20 type=radio name=r$QPerson$PatientDept>腫瘤科 </TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientDept_21 value=21 type=radio name=r$QPerson$PatientDept>精神科 </TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientDept_22 value=22 type=radio name=r$QPerson$PatientDept>牙科 </TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientDept_23 value=23 type=radio name=r$QPerson$PatientDept>口腔顎面外科 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientDept_24 value=24 type=radio name=r$QPerson$PatientDept>中醫科 </TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientDept_25 value=25 type=radio name=r$QPerson$PatientDept>緩和醫療科 </TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientDept_26 value=26 type=radio name=r$QPerson$PatientDept>藥劑科 </TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientDept_27 value=27 type=radio name=r$QPerson$PatientDept>不知道 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientDept_28 value=28 type=radio name=r$QPerson$PatientDept>其他： <INPUT style="WIDTH: 140px" id=txbPersonPatientDept_28 class=textBox name=t$QPerson$PatientDept_28> </TD>
+<TD width=240 align=left><INPUT id=rdoPersonPatientDept_29 value=29 type=radio name=r$QPerson$PatientDept>創傷醫學部 </TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD></TR></TBODY></TABLE></TD></TR>
+<TR style="BACKGROUND-COLOR: darkseagreen; HEIGHT: 26px">
+<TD colSpan=5 align=left><SPAN class=queryText>對健康的影響程度：</SPAN> <IMG onclick=openTreatAffectHelperPage(); src="../AvisoImages/info.png"> </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoPersonAffectHealth_0 onclick="showBlockByRadio(this.id, this.name);" value=0 type=radio name=r$QPerson$AffectHealth>有傷害 <IMG src="../AvisoImages/table_add.png"> </TD>
+<TD width=240 align=left><INPUT id=rdoPersonAffectHealth_1 onclick="showBlockByRadio(this.id, this.name);" value=1 type=radio name=r$QPerson$AffectHealth>無傷害 </TD>
+<TD width=240 align=left><INPUT id=rdoPersonAffectHealth_2 onclick="showBlockByRadio(this.id, this.name);" value=2 type=radio name=r$QPerson$AffectHealth>跡近錯失 </TD>
+<TD width=240 align=left><INPUT id=rdoPersonAffectHealth_3 onclick="showBlockByRadio(this.id, this.name);" value=3 type=radio name=r$QPerson$AffectHealth>無法判定 </TD></TR>
+<TR style="DISPLAY: none; HEIGHT: 26px" id=tr_rdoPersonAffectHealth_0>
+<TD colSpan=5>
+<TABLE style="BORDER-BOTTOM-COLOR: darkgoldenrod; BORDER-TOP-COLOR: darkgoldenrod; BORDER-RIGHT-COLOR: darkgoldenrod; BORDER-LEFT-COLOR: darkgoldenrod" id=tbl_rdoPersonAffectHealth_0 class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="BACKGROUND-COLOR: darkkhaki; HEIGHT: 26px">
+<TD colSpan=5 align=left>&nbsp;&nbsp;<SPAN class=queryText>有傷害程度：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoPersonAffectHurt_0 value=0 type=radio name=r$QPerson$AffectHurt>死亡 </TD>
+<TD width=240 align=left><INPUT id=rdoPersonAffectHurt_1 value=1 type=radio name=r$QPerson$AffectHurt>極重度 </TD>
+<TD width=240 align=left><INPUT id=rdoPersonAffectHurt_2 value=2 type=radio name=r$QPerson$AffectHurt>重度 </TD>
+<TD width=240 align=left><INPUT id=rdoPersonAffectHurt_3 value=3 type=radio name=r$QPerson$AffectHurt>中度 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoPersonAffectHurt_4 value=4 type=radio name=r$QPerson$AffectHurt>輕度 </TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD></TR></TBODY></TABLE></TD></TR>
+<TR style="BACKGROUND-COLOR: darkseagreen; HEIGHT: 26px">
+<TD colSpan=5 align=left><SPAN class=queryText>過程中有關聯的人員：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkPersonRelPerson_0 onclick=showBlockByCheckBox(this.id); value=0 type=checkbox name=c$QPerson$RelPerson>醫師 <IMG src="../AvisoImages/table_add.png"> </TD>
+<TD width=240 align=left><INPUT id=chkPersonRelPerson_1 onclick=showBlockByCheckBox(this.id); value=1 type=checkbox name=c$QPerson$RelPerson>護理人員 <IMG src="../AvisoImages/table_add.png"> </TD>
+<TD width=240 align=left><INPUT id=chkPersonRelPerson_2 onclick=showBlockByCheckBox(this.id); value=2 type=checkbox name=c$QPerson$RelPerson>藥事人員 <IMG src="../AvisoImages/table_add.png"> </TD>
+<TD width=240 align=left><INPUT id=chkPersonRelPerson_3 onclick=showBlockByCheckBox(this.id); value=3 type=checkbox name=c$QPerson$RelPerson>醫事檢驗人員 <IMG src="../AvisoImages/table_add.png"> </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkPersonRelPerson_4 onclick=showBlockByCheckBox(this.id); value=4 type=checkbox name=c$QPerson$RelPerson>物理、職能治療人員 <IMG src="../AvisoImages/table_add.png"> </TD>
+<TD width=240 align=left><INPUT id=chkPersonRelPerson_5 onclick=showBlockByCheckBox(this.id); value=5 type=checkbox name=c$QPerson$RelPerson>放射技術人員 <IMG src="../AvisoImages/table_add.png"> </TD>
+<TD width=240 align=left><INPUT id=chkPersonRelPerson_6 onclick=showBlockByCheckBox(this.id); value=6 type=checkbox name=c$QPerson$RelPerson>行政人員 <IMG src="../AvisoImages/table_add.png"> </TD>
+<TD width=240 align=left><INPUT id=chkPersonRelPerson_7 onclick=showBlockByCheckBox(this.id); value=7 type=checkbox name=c$QPerson$RelPerson>支援人員 <IMG src="../AvisoImages/table_add.png"> </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkPersonRelPerson_8 value=8 type=checkbox name=c$QPerson$RelPerson>無 </TD>
+<TD width=240 align=left><INPUT id=chkPersonRelPerson_9 value=9 type=checkbox name=c$QPerson$RelPerson>其他： <INPUT style="WIDTH: 140px" id=txbPersonRelPerson_9 class=textBox name=t$QPerson$RelPerson_9> </TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD></TR>
+<TR style="DISPLAY: none; HEIGHT: 26px" id=tr_chkPersonRelPerson_0>
+<TD colSpan=5>
+<TABLE style="BORDER-BOTTOM-COLOR: darkgoldenrod; BORDER-TOP-COLOR: darkgoldenrod; BORDER-RIGHT-COLOR: darkgoldenrod; BORDER-LEFT-COLOR: darkgoldenrod" id=tbl_chkPersonRelPerson_0 class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="BACKGROUND-COLOR: darkkhaki; HEIGHT: 26px">
+<TD colSpan=5 align=left>&nbsp;&nbsp;<SPAN class=queryText>醫師類型：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkPersonDoctor_0 value=0 type=checkbox name=c$QPerson$Doctor>主治醫師 </TD>
+<TD width=240 align=left><INPUT id=chkPersonDoctor_1 value=1 type=checkbox name=c$QPerson$Doctor>住院醫師 </TD>
+<TD width=240 align=left><INPUT id=chkPersonDoctor_2 value=2 type=checkbox name=c$QPerson$Doctor>實習醫師 </TD>
+<TD width=240 align=left></TD></TR></TBODY></TABLE></TD></TR>
+<TR style="DISPLAY: none; HEIGHT: 26px" id=tr_chkPersonRelPerson_1>
+<TD colSpan=5>
+<TABLE style="BORDER-BOTTOM-COLOR: darkgoldenrod; BORDER-TOP-COLOR: darkgoldenrod; BORDER-RIGHT-COLOR: darkgoldenrod; BORDER-LEFT-COLOR: darkgoldenrod" id=tbl_chkPersonRelPerson_1 class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="BACKGROUND-COLOR: darkkhaki; HEIGHT: 26px">
+<TD colSpan=5 align=left>&nbsp;&nbsp;<SPAN class=queryText>護理人員類型：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkPersonNurse_0 value=0 type=checkbox name=c$QPerson$Nurse>專科護理師 </TD>
+<TD width=240 align=left><INPUT id=chkPersonNurse_1 value=1 type=checkbox name=c$QPerson$Nurse>護理人員 </TD>
+<TD width=240 align=left><INPUT id=chkPersonNurse_2 value=2 type=checkbox name=c$QPerson$Nurse>實習護理師 </TD>
+<TD width=240 align=left></TD></TR></TBODY></TABLE></TD></TR>
+<TR style="DISPLAY: none; HEIGHT: 26px" id=tr_chkPersonRelPerson_2>
+<TD colSpan=5>
+<TABLE style="BORDER-BOTTOM-COLOR: darkgoldenrod; BORDER-TOP-COLOR: darkgoldenrod; BORDER-RIGHT-COLOR: darkgoldenrod; BORDER-LEFT-COLOR: darkgoldenrod" id=tbl_chkPersonRelPerson_2 class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="BACKGROUND-COLOR: darkkhaki; HEIGHT: 26px">
+<TD colSpan=5 align=left>&nbsp;&nbsp;<SPAN class=queryText>藥事人員類型：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkPersonDispenser_0 value=0 type=checkbox name=c$QPerson$Dispenser>藥師 </TD>
+<TD width=240 align=left><INPUT id=chkPersonDispenser_1 value=1 type=checkbox name=c$QPerson$Dispenser>藥劑生 </TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD></TR></TBODY></TABLE></TD></TR>
+<TR style="DISPLAY: none; HEIGHT: 26px" id=tr_chkPersonRelPerson_3>
+<TD colSpan=5>
+<TABLE style="BORDER-BOTTOM-COLOR: darkgoldenrod; BORDER-TOP-COLOR: darkgoldenrod; BORDER-RIGHT-COLOR: darkgoldenrod; BORDER-LEFT-COLOR: darkgoldenrod" id=tbl_chkPersonRelPerson_3 class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="BACKGROUND-COLOR: darkkhaki; HEIGHT: 26px">
+<TD colSpan=5 align=left>&nbsp;&nbsp;<SPAN class=queryText>醫事檢驗人員類型：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkPersonInspect_0 value=0 type=checkbox name=c$QPerson$Inspect>醫事檢驗師 </TD>
+<TD width=240 align=left><INPUT id=chkPersonInspect_1 value=1 type=checkbox name=c$QPerson$Inspect>醫事檢驗生 </TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD></TR></TBODY></TABLE></TD></TR>
+<TR style="DISPLAY: none; HEIGHT: 26px" id=tr_chkPersonRelPerson_4>
+<TD colSpan=5>
+<TABLE style="BORDER-BOTTOM-COLOR: darkgoldenrod; BORDER-TOP-COLOR: darkgoldenrod; BORDER-RIGHT-COLOR: darkgoldenrod; BORDER-LEFT-COLOR: darkgoldenrod" id=tbl_chkPersonRelPerson_4 class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="BACKGROUND-COLOR: darkkhaki; HEIGHT: 26px">
+<TD colSpan=5 align=left>&nbsp;&nbsp;<SPAN class=queryText>物理、職能治療人員類型：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkPersonTreatmentMan_0 value=0 type=checkbox name=c$QPerson$TreatmentMan>物理、職能治療人員 </TD>
+<TD width=240 align=left><INPUT id=chkPersonTreatmentMan_1 value=1 type=checkbox name=c$QPerson$TreatmentMan>物理、職能治療實習生 </TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD></TR></TBODY></TABLE></TD></TR>
+<TR style="DISPLAY: none; HEIGHT: 26px" id=tr_chkPersonRelPerson_5>
+<TD colSpan=5>
+<TABLE style="BORDER-BOTTOM-COLOR: darkgoldenrod; BORDER-TOP-COLOR: darkgoldenrod; BORDER-RIGHT-COLOR: darkgoldenrod; BORDER-LEFT-COLOR: darkgoldenrod" id=tbl_chkRelPerson_5 class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="BACKGROUND-COLOR: darkkhaki; HEIGHT: 26px">
+<TD colSpan=5 align=left>&nbsp;&nbsp;<SPAN class=queryText>放射技術人員類型：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkPersonRadiateMan_0 value=0 type=checkbox name=c$QPerson$RadiateMan>放射師 </TD>
+<TD width=240 align=left><INPUT id=chkPersonRadiateMan_1 value=1 type=checkbox name=c$QPerson$RadiateMan>放射技術士 </TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD></TR></TBODY></TABLE></TD></TR>
+<TR style="DISPLAY: none; HEIGHT: 26px" id=tr_chkPersonRelPerson_6>
+<TD colSpan=5>
+<TABLE style="BORDER-BOTTOM-COLOR: darkgoldenrod; BORDER-TOP-COLOR: darkgoldenrod; BORDER-RIGHT-COLOR: darkgoldenrod; BORDER-LEFT-COLOR: darkgoldenrod" id=tbl_chkPersonRelPerson_6 class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="BACKGROUND-COLOR: darkkhaki; HEIGHT: 26px">
+<TD colSpan=5 align=left>&nbsp;&nbsp;<SPAN class=queryText>行政人員類型：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkPersonStaff_0 value=0 type=checkbox name=c$QPerson$Staff>行政人員 </TD>
+<TD width=240 align=left><INPUT id=chkPersonStaff_1 value=1 type=checkbox name=c$QPerson$Staff>工務維修人員 </TD>
+<TD width=240 align=left><INPUT id=chkPersonStaff_2 value=2 type=checkbox name=c$QPerson$Staff>資訊技術人員 </TD>
+<TD width=240 align=left><INPUT id=chkPersonStaff_3 value=3 type=checkbox name=c$QPerson$Staff>品管人員 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkPersonStaff_4 value=4 type=checkbox name=c$QPerson$Staff>其他： <INPUT style="WIDTH: 140px" id=txbPersonStaff_4 class=textBox name=t$QPerson$Staff_4> </TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD></TR></TBODY></TABLE></TD></TR>
+<TR style="DISPLAY: none; HEIGHT: 26px" id=tr_chkPersonRelPerson_7>
+<TD colSpan=5>
+<TABLE style="BORDER-BOTTOM-COLOR: darkgoldenrod; BORDER-TOP-COLOR: darkgoldenrod; BORDER-RIGHT-COLOR: darkgoldenrod; BORDER-LEFT-COLOR: darkgoldenrod" id=tbl_chkPersonRelPerson_7 class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="BACKGROUND-COLOR: darkkhaki; HEIGHT: 26px">
+<TD colSpan=5 align=left>&nbsp;&nbsp;<SPAN class=queryText>支援人員類型：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkPersonSupport_0 value=0 type=checkbox name=c$QPerson$Support>專科/外科助理 </TD>
+<TD width=240 align=left><INPUT id=chkPersonSupport_1 value=1 type=checkbox name=c$QPerson$Support>看護 </TD>
+<TD width=240 align=left><INPUT id=chkPersonSupport_2 value=2 type=checkbox name=c$QPerson$Support>志工 </TD>
+<TD width=240 align=left><INPUT id=chkPersonSupport_3 value=3 type=checkbox name=c$QPerson$Support>保全 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkPersonSupport_4 value=4 type=checkbox name=c$QPerson$Support>駐衛警 </TD>
+<TD width=240 align=left><INPUT id=chkPersonSupport_5 value=5 type=checkbox name=c$QPerson$Support>外包人員 </TD>
+<TD width=240 align=left><INPUT id=chkPersonSupport_6 value=6 type=checkbox name=c$QPerson$Support>臨床研究助理 </TD>
+<TD width=240 align=left><INPUT id=chkPersonSupport_7 value=7 type=checkbox name=c$QPerson$Support>照顧服務員 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkPersonSupport_8 value=8 type=checkbox name=c$QPerson$Support>其他： <INPUT style="WIDTH: 140px" id=txbPersonSupport_8 class=textBox name=t$QPerson$Support_8> </TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV></DIV></DIV>
+<DIV style="DISPLAY: none; VISIBILITY: hidden" id=caseTab_caseTabEvent class=ajax__tab_panel><!-- update panel for 事件內容 -->
+<DIV id=caseTab_caseTabEvent_uPanelEvent>
+<DIV style="VISIBILITY: visible" id=caseTab_caseTabEvent_EventContainer_eventTab class="ajax__tab_xp ajax__tab_container ajax__tab_default">
+<DIV id=caseTab_caseTabEvent_EventContainer_eventTab_header class=ajax__tab_header><SPAN id=caseTab_caseTabEvent_EventContainer_eventTab_tabSurgery_tab><SPAN class=ajax__tab_outer><SPAN class=ajax__tab_inner><SPAN id=__tab_caseTab_caseTabEvent_EventContainer_eventTab_tabSurgery class=ajax__tab_tab>手術</SPAN></SPAN></SPAN></SPAN><SPAN id=caseTab_caseTabEvent_EventContainer_eventTab_tabFalldown_tab><SPAN class=ajax__tab_outer><SPAN class=ajax__tab_inner><SPAN id=__tab_caseTab_caseTabEvent_EventContainer_eventTab_tabFalldown class=ajax__tab_tab>跌倒</SPAN></SPAN></SPAN></SPAN><SPAN id=caseTab_caseTabEvent_EventContainer_eventTab_tabDrug_tab><SPAN class=ajax__tab_outer><SPAN class=ajax__tab_inner><SPAN id=__tab_caseTab_caseTabEvent_EventContainer_eventTab_tabDrug class=ajax__tab_tab>藥物</SPAN></SPAN></SPAN></SPAN><SPAN id=caseTab_caseTabEvent_EventContainer_eventTab_tabBlood_tab><SPAN class=ajax__tab_outer><SPAN class=ajax__tab_inner><SPAN id=__tab_caseTab_caseTabEvent_EventContainer_eventTab_tabBlood class=ajax__tab_tab>輸血</SPAN></SPAN></SPAN></SPAN><SPAN id=caseTab_caseTabEvent_EventContainer_eventTab_tabTreatment_tab><SPAN class=ajax__tab_outer><SPAN class=ajax__tab_inner><SPAN id=__tab_caseTab_caseTabEvent_EventContainer_eventTab_tabTreatment class=ajax__tab_tab>醫療</SPAN></SPAN></SPAN></SPAN><SPAN id=caseTab_caseTabEvent_EventContainer_eventTab_tabAccident_tab><SPAN class=ajax__tab_outer><SPAN class=ajax__tab_inner><SPAN id=__tab_caseTab_caseTabEvent_EventContainer_eventTab_tabAccident class=ajax__tab_tab>公共</SPAN></SPAN></SPAN></SPAN><SPAN id=caseTab_caseTabEvent_EventContainer_eventTab_tabSecurity_tab><SPAN class=ajax__tab_outer><SPAN class=ajax__tab_inner><SPAN id=__tab_caseTab_caseTabEvent_EventContainer_eventTab_tabSecurity class=ajax__tab_tab>治安</SPAN></SPAN></SPAN></SPAN><SPAN id=caseTab_caseTabEvent_EventContainer_eventTab_tabHurt_tab><SPAN class=ajax__tab_outer><SPAN class=ajax__tab_inner><SPAN id=__tab_caseTab_caseTabEvent_EventContainer_eventTab_tabHurt class=ajax__tab_tab>傷害</SPAN></SPAN></SPAN></SPAN><SPAN id=caseTab_caseTabEvent_EventContainer_eventTab_tabIntubate_tab><SPAN class=ajax__tab_outer><SPAN class=ajax__tab_inner><SPAN id=__tab_caseTab_caseTabEvent_EventContainer_eventTab_tabIntubate class=ajax__tab_tab>管路</SPAN></SPAN></SPAN></SPAN><SPAN id=caseTab_caseTabEvent_EventContainer_eventTab_tabHeart_tab><SPAN class=ajax__tab_outer><SPAN class=ajax__tab_inner><SPAN id=__tab_caseTab_caseTabEvent_EventContainer_eventTab_tabHeart class=ajax__tab_tab>急救</SPAN></SPAN></SPAN></SPAN><SPAN id=caseTab_caseTabEvent_EventContainer_eventTab_tabInspect_tab><SPAN class=ajax__tab_outer><SPAN class=ajax__tab_inner><SPAN id=__tab_caseTab_caseTabEvent_EventContainer_eventTab_tabInspect class=ajax__tab_tab>檢查/檢驗/病理切片</SPAN></SPAN></SPAN></SPAN><SPAN id=caseTab_caseTabEvent_EventContainer_eventTab_tabAnesthesia_tab><SPAN class=ajax__tab_outer><SPAN class=ajax__tab_inner><SPAN id=__tab_caseTab_caseTabEvent_EventContainer_eventTab_tabAnesthesia class=ajax__tab_tab>麻醉</SPAN></SPAN></SPAN></SPAN><SPAN id=caseTab_caseTabEvent_EventContainer_eventTab_tabAdmin_tab><SPAN class=ajax__tab_outer><SPAN class=ajax__tab_inner><SPAN id=__tab_caseTab_caseTabEvent_EventContainer_eventTab_tabAdmin class=ajax__tab_tab>行政</SPAN></SPAN></SPAN></SPAN><SPAN id=caseTab_caseTabEvent_EventContainer_eventTab_tabChemotherapyLeak_tab><SPAN class=ajax__tab_outer><SPAN class=ajax__tab_inner><SPAN id=__tab_caseTab_caseTabEvent_EventContainer_eventTab_tabChemotherapyLeak class=ajax__tab_tab>化療藥品外滲</SPAN></SPAN></SPAN></SPAN><SPAN id=caseTab_caseTabEvent_EventContainer_eventTab_tabChemotherapyOver_tab><SPAN class=ajax__tab_outer><SPAN class=ajax__tab_inner><SPAN id=__tab_caseTab_caseTabEvent_EventContainer_eventTab_tabChemotherapyOver class=ajax__tab_tab>化療藥品溢灑</SPAN></SPAN></SPAN></SPAN><SPAN id=caseTab_caseTabEvent_EventContainer_eventTab_tabOther_tab class=ajax__tab_active><SPAN class=ajax__tab_outer><SPAN class=ajax__tab_inner><SPAN id=__tab_caseTab_caseTabEvent_EventContainer_eventTab_tabOther class=ajax__tab_tab>其他</SPAN></SPAN></SPAN></SPAN> </DIV>
+<DIV id=caseTab_caseTabEvent_EventContainer_eventTab_body class=ajax__tab_body>
+<DIV style="DISPLAY: none; VISIBILITY: hidden" id=caseTab_caseTabEvent_EventContainer_eventTab_tabSurgery class=ajax__tab_panel><!-- update panel for 手術 -->
+<DIV id=caseTab_caseTabEvent_EventContainer_eventTab_tabSurgery_uPanelSurgery></DIV></DIV>
+<DIV style="DISPLAY: none; VISIBILITY: hidden" id=caseTab_caseTabEvent_EventContainer_eventTab_tabFalldown class=ajax__tab_panel><!-- update panel for 跌倒 -->
+<DIV id=caseTab_caseTabEvent_EventContainer_eventTab_tabFalldown_uPanelFalldown></DIV></DIV>
+<DIV style="DISPLAY: none; VISIBILITY: hidden" id=caseTab_caseTabEvent_EventContainer_eventTab_tabDrug class=ajax__tab_panel><!-- update panel for 藥物 -->
+<DIV id=caseTab_caseTabEvent_EventContainer_eventTab_tabDrug_uPanelDrug></DIV></DIV>
+<DIV style="DISPLAY: none; VISIBILITY: hidden" id=caseTab_caseTabEvent_EventContainer_eventTab_tabBlood class=ajax__tab_panel><!-- udpate panel for 輸血 -->
+<DIV id=caseTab_caseTabEvent_EventContainer_eventTab_tabBlood_uPanelBlood></DIV></DIV>
+<DIV style="DISPLAY: none; VISIBILITY: hidden" id=caseTab_caseTabEvent_EventContainer_eventTab_tabTreatment class=ajax__tab_panel><!-- udpate panel for 醫療 -->
+<DIV id=caseTab_caseTabEvent_EventContainer_eventTab_tabTreatment_uPanelTreatment></DIV></DIV>
+<DIV style="DISPLAY: none; VISIBILITY: hidden" id=caseTab_caseTabEvent_EventContainer_eventTab_tabAccident class=ajax__tab_panel><!-- udpate panel for 公共 -->
+<DIV id=caseTab_caseTabEvent_EventContainer_eventTab_tabAccident_uPanelAccident></DIV></DIV>
+<DIV style="DISPLAY: none; VISIBILITY: hidden" id=caseTab_caseTabEvent_EventContainer_eventTab_tabSecurity class=ajax__tab_panel><!-- udpate panel for 治安 -->
+<DIV id=caseTab_caseTabEvent_EventContainer_eventTab_tabSecurity_uPanelSecurity></DIV></DIV>
+<DIV style="DISPLAY: none; VISIBILITY: hidden" id=caseTab_caseTabEvent_EventContainer_eventTab_tabHurt class=ajax__tab_panel><!-- udpate panel for 傷害 -->
+<DIV id=caseTab_caseTabEvent_EventContainer_eventTab_tabHurt_uPanelHurt></DIV></DIV>
+<DIV style="DISPLAY: none; VISIBILITY: hidden" id=caseTab_caseTabEvent_EventContainer_eventTab_tabIntubate class=ajax__tab_panel><!-- udpate panel for 管路 -->
+<DIV id=caseTab_caseTabEvent_EventContainer_eventTab_tabIntubate_uPanelIntubate></DIV></DIV>
+<DIV style="DISPLAY: none; VISIBILITY: hidden" id=caseTab_caseTabEvent_EventContainer_eventTab_tabHeart class=ajax__tab_panel><!-- udpate panel for 心跳 -->
+<DIV id=caseTab_caseTabEvent_EventContainer_eventTab_tabHeart_uPanelHeart></DIV></DIV>
+<DIV style="DISPLAY: none; VISIBILITY: hidden" id=caseTab_caseTabEvent_EventContainer_eventTab_tabInspect class=ajax__tab_panel><!-- udpate panel for 檢查/檢驗/病理切片 -->
+<DIV id=caseTab_caseTabEvent_EventContainer_eventTab_tabInspect_uPanelInspect></DIV></DIV>
+<DIV style="DISPLAY: none; VISIBILITY: hidden" id=caseTab_caseTabEvent_EventContainer_eventTab_tabAnesthesia class=ajax__tab_panel><!-- udpate panel for 麻醉 -->
+<DIV id=caseTab_caseTabEvent_EventContainer_eventTab_tabAnesthesia_uPanelAnesthesia></DIV></DIV>
+<DIV style="DISPLAY: none; VISIBILITY: hidden" id=caseTab_caseTabEvent_EventContainer_eventTab_tabAdmin class=ajax__tab_panel><!-- udpate panel for 行政 -->
+<DIV id=caseTab_caseTabEvent_EventContainer_eventTab_tabAdmin_uPanelAdmin></DIV></DIV>
+<DIV style="DISPLAY: none; VISIBILITY: hidden" id=caseTab_caseTabEvent_EventContainer_eventTab_tabChemotherapyLeak class=ajax__tab_panel><!-- udpate panel for 化療藥品外滲 -->
+<DIV id=caseTab_caseTabEvent_EventContainer_eventTab_tabChemotherapyLeak_uPanelChemotherapyLeak></DIV></DIV>
+<DIV style="DISPLAY: none; VISIBILITY: hidden" id=caseTab_caseTabEvent_EventContainer_eventTab_tabChemotherapyOver class=ajax__tab_panel><!-- udpate panel for 化療藥品外滲 -->
+<DIV id=caseTab_caseTabEvent_EventContainer_eventTab_tabChemotherapyOver_uPanelChemotherapyOver></DIV></DIV>
+<DIV style="VISIBILITY: visible" id=caseTab_caseTabEvent_EventContainer_eventTab_tabOther class=ajax__tab_panel><!-- udpate panel for 其他 -->
+<DIV id=caseTab_caseTabEvent_EventContainer_eventTab_tabOther_uPanelOther>
+<DIV id=caseTab_caseTabEvent_EventContainer_eventTab_tabOther_EventOther_panelOther Width="945px">
+<TABLE id=tblOtherTitle class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="HEIGHT: 26px">
+<TD class=inputTableTitle>其他事件</TD></TR></TBODY></TABLE>
+<TABLE id=tblOther class=queryTableDisplay width=945>
+<TBODY>
+<TR style="BACKGROUND-COLOR: darkseagreen; HEIGHT: 26px">
+<TD colSpan=5 align=left><SPAN class=queryText>項目：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=5 align=right>&nbsp;</TD>
+<TD colSpan=4 align=left><INPUT id=chkOtherType_0 disabled value=0 type=checkbox name=c$QOther$Type>管路意外脫落(含氣管內管、氣切管、鼻胃管、胸管、中心靜脈導管、動脈導管、週邊靜脈導管、導尿管、引流管)等 &nbsp;<FONT color=blue size=2>(請改填寫<FONT color=crimson>管路</FONT>事件)</FONT> </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=5 align=right>&nbsp;</TD>
+<TD colSpan=4 align=left><INPUT id=chkOtherType_1 disabled value=1 type=checkbox name=c$QOther$Type>檢查引發併發症(含內視鏡、血管攝影、放射線檢查等) &nbsp;<FONT color=blue size=2>(請改填寫<FONT color=crimson>檢查</FONT>事件)</FONT> </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=5 align=right>&nbsp;</TD>
+<TD colSpan=4 align=left><INPUT id=chkOtherType_2 disabled value=2 type=checkbox name=c$QOther$Type>手術引發併發症(含麻醉、手術意外傷及其他器官、術後感染等) &nbsp;<FONT color=blue size=2>(請改填寫<FONT color=crimson>手術</FONT>事件)</FONT> </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=5 align=right>&nbsp;</TD>
+<TD colSpan=4 align=left><INPUT id=chkOtherType_3 disabled value=3 type=checkbox name=c$QOther$Type>其他醫療處置引發之併發症 &nbsp;<FONT color=blue size=2>(請改填寫<FONT color=crimson>醫療</FONT>事件)</FONT> </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=5 align=right>&nbsp;</TD>
+<TD colSpan=4 align=left><INPUT id=chkOtherType_4 value=4 type=checkbox name=c$QOther$Type>護理處置引發之併發症 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=5 align=right>&nbsp;</TD>
+<TD colSpan=4 align=left><INPUT id=chkOtherType_5 disabled value=5 type=checkbox name=c$QOther$Type>診斷錯誤或延誤 &nbsp;<FONT color=blue size=2>(請於<FONT color=crimson>醫療、急救、檢查</FONT>事件中選取適合事件填寫)</FONT> </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=5 align=right>&nbsp;</TD>
+<TD colSpan=4 align=left><INPUT id=chkOtherType_6 onclick=showBlockByCheckBox(this.id); value=6 type=checkbox name=c$QOther$Type>化療藥物滲漏或溢灑 <IMG src="http://ahisaw.hospital-n.local/WebApplication/Administration/UrgentAviso/AvisoImages/table_add.png"> </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=5 align=right>&nbsp;</TD>
+<TD colSpan=4 align=left><INPUT id=chkOtherType_7 value=7 type=checkbox name=c$QOther$Type>病人行蹤不明事件 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=5 align=right>&nbsp;</TD>
+<TD colSpan=4 align=left><INPUT id=chkOtherType_8 value=8 type=checkbox name=c$QOther$Type>運送過程之事件 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=5 align=right>&nbsp;</TD>
+<TD colSpan=4 align=left><INPUT id=chkOtherType_9 value=9 type=checkbox name=c$QOther$Type>其他： <INPUT style="WIDTH: 180px" id=txbOtherType_9 class=textBox name=t$QOther$Type_9> </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=5 align=right>&nbsp;</TD>
+<TD colSpan=4 align=left><INPUT id=chkOtherType_10 value=10 type=checkbox name=c$QOther$Type>倫理與法規相關事件 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=5 align=right>&nbsp;</TD>
+<TD colSpan=4 align=left><INPUT id=chkOtherType_11 value=11 type=checkbox name=c$QOther$Type>問題醫材 </TD></TR>
+<TR style="DISPLAY: none; HEIGHT: 26px" id=tr_chkOtherType_6>
+<TD colSpan=5>
+<TABLE style="BORDER-BOTTOM-COLOR: darkgoldenrod; BORDER-TOP-COLOR: darkgoldenrod; BORDER-RIGHT-COLOR: darkgoldenrod; BORDER-LEFT-COLOR: darkgoldenrod" id=tbl_chkOtherType_6 class=queryTableDisplay width=945>
+<TBODY>
+<TR style="BACKGROUND-COLOR: darkkhaki; HEIGHT: 26px">
+<TD colSpan=5 align=left>&nbsp;&nbsp;<SPAN class=queryText>滲漏或溢灑：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=5 align=right>&nbsp;</TD>
+<TD width=235 align=left><INPUT id=chkOtherChemical_0 value=0 type=checkbox name=c$QOther$Chemical>滲漏 </TD>
+<TD width=235 align=left><INPUT id=chkOtherChemical_1 value=1 type=checkbox name=c$QOther$Chemical>溢灑 </TD>
+<TD width=235 align=left></TD>
+<TD width=235 align=left></TD></TR></TBODY></TABLE></TD></TR>
+<TR style="BACKGROUND-COLOR: darkseagreen; HEIGHT: 26px">
+<TD colSpan=5 align=left><FONT color=red>*</FONT><SPAN class=queryText>事件原因：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=5 align=right>&nbsp;</TD>
+<TD width=235 align=left><INPUT id=chkOtherReason_0 value=0 type=checkbox name=c$QOther$Reason>與病人生理及行為因素相關 </TD>
+<TD width=235 align=left><INPUT id=chkOtherReason_1 value=1 type=checkbox name=c$QOther$Reason>與器材設備因素相關 </TD>
+<TD width=235 align=left><INPUT id=chkOtherReason_2 value=2 type=checkbox name=c$QOther$Reason>與環境因素相關 </TD>
+<TD width=235 align=left><INPUT id=chkOtherReason_3 value=3 type=checkbox name=c$QOther$Reason>與使用藥物相關 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=5 align=right>&nbsp;</TD>
+<TD width=235 align=left><INPUT id=chkOtherReason_4 value=4 type=checkbox name=c$QOther$Reason>與工作狀態/流程設計相關 </TD>
+<TD width=235 align=left><INPUT id=chkOtherReason_5 value=5 type=checkbox name=c$QOther$Reason>與人員個人因素相關 </TD>
+<TD width=235 align=left><INPUT id=chkOtherReason_6 value=6 type=checkbox name=c$QOther$Reason>不知道 </TD>
+<TD width=235 align=left><INPUT id=chkOtherReason_7 value=7 type=checkbox name=c$QOther$Reason>其他： <INPUT style="WIDTH: 140px" id=txbOtherReason_7 class=textBox name=t$QOther$Reason_7> </TD></TR>
+<TR style="BACKGROUND-COLOR: darkseagreen; HEIGHT: 26px">
+<TD colSpan=5 align=left><FONT color=red>*</FONT><SPAN class=queryText>請簡述整起事件經過及您認為發生本次事件的可能原因：<FONT color=blue>(最多500字)</FONT></SPAN> </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=5 align=right>&nbsp;</TD>
+<TD colSpan=4 align=left><TEXTAREA class=textBox rows=7 cols=180 name=t$QOther$Desc></TEXTAREA> </TD></TR></TBODY></TABLE></DIV></DIV></DIV></DIV></DIV></DIV></DIV>
+<DIV style="DISPLAY: none; VISIBILITY: hidden" id=caseTab_caseTabAviso class=ajax__tab_panel><!-- update panel for 通報者資料 -->
+<DIV id=caseTab_caseTabAviso_uPanelAviso>
+<DIV id=caseTab_caseTabAviso_Aviso_panelAviso Width="100%">
+<TABLE id=tblAvisoTitle class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="HEIGHT: 26px">
+<TD class=inputTableTitle>通報者資料</TD></TR></TBODY></TABLE>
+<TABLE id=tblAviso class=queryTableDisplay width=970>
+<TBODY>
+<TR style="HEIGHT: 26px">
+<TD colSpan=5>
+<TABLE class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="HEIGHT: 26px">
+<TD width="11%" align=right><SPAN class=queryText>姓名：</SPAN></TD>
+<TD width="10%" align=left><INPUT style="WIDTH: 85px" id=txbAvisoName class=textBox value=陳醫師 readOnly maxLength=4 name=t$QAviso$AvisoName> </TD>
+<TD width="12%" align=right><FONT color=red>*</FONT><SPAN class=queryText>聯絡電話：</SPAN></TD>
+<TD width="10%" align=left><INPUT style="WIDTH: 85px" id=txbAvisoTel class=textBox maxLength=10 name=t$QAviso$AvisoTel> </TD>
+<TD width="12%" align=right><FONT color=red>*</FONT><SPAN class=queryText>服務單位：</SPAN></TD>
+<TD align=left><INPUT style="WIDTH: 195px" id=txbAvisoDept class=textBox onfocus=showAutoCompleteDept(this); value=RAD_影像醫學部_15100 name=t$QAviso$AvisoDept> <INPUT id=btnAvisoDept class=button onclick="clearTxbValue('txbAvisoDept');" value=重填 type=button> <IMG onclick=openDeptHelperPage(); src="http://ahisaw.hospital-n.local/WebApplication/Administration/UrgentAviso/AvisoImages/info.png"> </TD>
+<TD width="7%" align=right><SPAN class=queryText>主管：</SPAN></TD>
+<TD width="10%" align=left><INPUT id=rdoIsBoss_0 value=0 type=radio name=r$QAviso$IsBoss>是 &nbsp; <INPUT id=rdoIsBoss_1 value=1 CHECKED type=radio name=r$QAviso$IsBoss>否 </TD></TR></TBODY></TABLE>
+<TABLE class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="HEIGHT: 26px">
+<TD width="12%" align=right><SPAN class=queryText><SPAN id=caseTab_caseTabAviso_Aviso_lblBossTitle>單位組長：</SPAN></SPAN> </TD>
+<TD width="13%" align=left><SELECT id=s$QAviso$NurseBoss name=s$QAviso$NurseBoss> <OPTION selected value=X>=請選擇=</OPTION></SELECT> </TD>
+<TD width="12%" align=right><SPAN class=queryText><SPAN id=caseTab_caseTabAviso_Aviso_lblSubChiefTitle>單位副主任：</SPAN></SPAN> </TD>
+<TD width="13%" align=left><SELECT id=s$QAviso$NurseSubChief name=s$QAviso$NurseSubChief> <OPTION selected value=X>=請選擇=</OPTION><OPTION value=003924>003924-陳世杰</OPTION></SELECT> </TD>
+<TD style="DISPLAY: none" id=td_AgentBlockTitle width="12%" align=right><SPAN class=queryText>代理督導：</SPAN></TD>
+<TD style="DISPLAY: none" id=td_AgentBlockValue width="13%" align=left><SELECT id=s$QAviso$AgentSubChief name=s$QAviso$AgentSubChief> <OPTION selected value=X>=請選擇=</OPTION><OPTION value=003924>003924-陳世杰</OPTION></SELECT> </TD>
+<TD width="12%" align=right><SPAN class=queryText><SPAN id=caseTab_caseTabAviso_Aviso_lblChiefTitle>單位主任：</SPAN></SPAN> </TD>
+<TD width="13%" align=left><SELECT id=s$QAviso$NurseChief name=s$QAviso$NurseChief> <OPTION selected value=X>=請選擇=</OPTION><OPTION value=000898>000898-施庭芳</OPTION></SELECT> </TD></TR></TBODY></TABLE></TD></TR>
+<TR style="BACKGROUND-COLOR: darkseagreen; HEIGHT: 26px">
+<TD colSpan=5 align=left><FONT color=red>*</FONT><SPAN class=queryText>身份別：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoAvisoRole_0 onclick="showBlockByRadio(this.id, this.name);" value=0 type=radio name=r$QAviso$Role>醫師 <IMG src="http://ahisaw.hospital-n.local/WebApplication/Administration/UrgentAviso/AvisoImages/table_add.png"> </TD>
+<TD width=240 align=left><INPUT id=rdoAvisoRole_1 onclick="showBlockByRadio(this.id, this.name);" value=1 type=radio name=r$QAviso$Role>護理人員 <IMG src="http://ahisaw.hospital-n.local/WebApplication/Administration/UrgentAviso/AvisoImages/table_add.png"> </TD>
+<TD width=240 align=left><INPUT id=rdoAvisoRole_2 onclick="showBlockByRadio(this.id, this.name);" value=2 type=radio name=r$QAviso$Role>藥事人員 <IMG src="http://ahisaw.hospital-n.local/WebApplication/Administration/UrgentAviso/AvisoImages/table_add.png"> </TD>
+<TD width=240 align=left><INPUT id=rdoAvisoRole_3 onclick="showBlockByRadio(this.id, this.name);" value=3 type=radio name=r$QAviso$Role>醫事檢驗人員 <IMG src="http://ahisaw.hospital-n.local/WebApplication/Administration/UrgentAviso/AvisoImages/table_add.png"> </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoAvisoRole_4 onclick="showBlockByRadio(this.id, this.name);" value=4 type=radio name=r$QAviso$Role>物理、職能治療人員 <IMG src="http://ahisaw.hospital-n.local/WebApplication/Administration/UrgentAviso/AvisoImages/table_add.png"> </TD>
+<TD width=240 align=left><INPUT id=rdoAvisoRole_5 onclick="showBlockByRadio(this.id, this.name);" value=5 type=radio name=r$QAviso$Role>放射技術人員 <IMG src="http://ahisaw.hospital-n.local/WebApplication/Administration/UrgentAviso/AvisoImages/table_add.png"> </TD>
+<TD width=240 align=left><INPUT id=rdoAvisoRole_6 onclick="showBlockByRadio(this.id, this.name);" value=6 type=radio name=r$QAviso$Role>行政人員 <IMG src="http://ahisaw.hospital-n.local/WebApplication/Administration/UrgentAviso/AvisoImages/table_add.png"> </TD>
+<TD width=240 align=left><INPUT id=rdoAvisoRole_7 onclick="showBlockByRadio(this.id, this.name);" value=7 type=radio name=r$QAviso$Role>支援人員 <IMG src="http://ahisaw.hospital-n.local/WebApplication/Administration/UrgentAviso/AvisoImages/table_add.png"> </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoAvisoRole_8 onclick="showBlockByRadio(this.id, this.name);" value=8 type=radio name=r$QAviso$Role>病患或家屬 <IMG src="http://ahisaw.hospital-n.local/WebApplication/Administration/UrgentAviso/AvisoImages/table_add.png"> </TD>
+<TD width=240 align=left><INPUT id=rdoAvisoRole_9 onclick="showBlockByRadio(this.id, this.name);" value=9 type=radio name=r$QAviso$Role>無 </TD>
+<TD width=240 align=left><INPUT id=rdoAvisoRole_10 onclick="showBlockByRadio(this.id, this.name);" value=10 type=radio name=r$QAviso$Role>其他： <INPUT style="WIDTH: 140px" id=txbAvisoRole_10 class=textBox name=t$QAviso$Role_10> </TD>
+<TD width=240 align=left></TD></TR>
+<TR style="DISPLAY: none; HEIGHT: 26px" id=tr_rdoAvisoRole_0>
+<TD colSpan=5>
+<TABLE style="BORDER-BOTTOM-COLOR: darkgoldenrod; BORDER-TOP-COLOR: darkgoldenrod; BORDER-RIGHT-COLOR: darkgoldenrod; BORDER-LEFT-COLOR: darkgoldenrod" id=tbl_rdoAvisoRole_0 class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="BACKGROUND-COLOR: darkkhaki; HEIGHT: 26px">
+<TD colSpan=5 align=left>&nbsp;&nbsp;<SPAN class=queryText>醫師類型：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoAvisoDoctor_0 value=0 type=radio name=r$QAviso$Doctor>主治醫師 </TD>
+<TD width=240 align=left><INPUT id=rdoAvisoDoctor_1 value=1 type=radio name=r$QAviso$Doctor>住院醫師 </TD>
+<TD width=240 align=left><INPUT id=rdoAvisoDoctor_2 value=2 type=radio name=r$QAviso$Doctor>實習醫師 </TD>
+<TD width=240 align=left></TD></TR></TBODY></TABLE></TD></TR>
+<TR style="DISPLAY: none; HEIGHT: 26px" id=tr_rdoAvisoRole_1>
+<TD colSpan=5>
+<TABLE style="BORDER-BOTTOM-COLOR: darkgoldenrod; BORDER-TOP-COLOR: darkgoldenrod; BORDER-RIGHT-COLOR: darkgoldenrod; BORDER-LEFT-COLOR: darkgoldenrod" id=tbl_rdoAvisoRole_1 class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="BACKGROUND-COLOR: darkkhaki; HEIGHT: 26px">
+<TD colSpan=5 align=left>&nbsp;&nbsp;<SPAN class=queryText>護理人員類型：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoAvisoNurse_0 value=0 type=radio name=r$QAviso$Nurse>專科護理師 </TD>
+<TD width=240 align=left><INPUT id=rdoAvisoNurse_1 value=1 type=radio name=r$QAviso$Nurse>護理人員 </TD>
+<TD width=240 align=left><INPUT id=rdoAvisoNurse_2 value=2 type=radio name=r$QAviso$Nurse>實習護理師 </TD>
+<TD width=240 align=left></TD></TR></TBODY></TABLE></TD></TR>
+<TR style="DISPLAY: none; HEIGHT: 26px" id=tr_rdoAvisoRole_2>
+<TD colSpan=5>
+<TABLE style="BORDER-BOTTOM-COLOR: darkgoldenrod; BORDER-TOP-COLOR: darkgoldenrod; BORDER-RIGHT-COLOR: darkgoldenrod; BORDER-LEFT-COLOR: darkgoldenrod" id=tbl_rdoAvisoRole_2 class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="BACKGROUND-COLOR: darkkhaki; HEIGHT: 26px">
+<TD colSpan=5 align=left>&nbsp;&nbsp;<SPAN class=queryText>藥事人員類型：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoAvisoDispenser_0 value=0 type=radio name=r$QAviso$Dispenser>藥師 </TD>
+<TD width=240 align=left><INPUT id=rdoAvisoDispenser_1 value=1 type=radio name=r$QAviso$Dispenser>藥劑生 </TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD></TR></TBODY></TABLE></TD></TR>
+<TR style="DISPLAY: none; HEIGHT: 26px" id=tr_rdoAvisoRole_3>
+<TD colSpan=5>
+<TABLE style="BORDER-BOTTOM-COLOR: darkgoldenrod; BORDER-TOP-COLOR: darkgoldenrod; BORDER-RIGHT-COLOR: darkgoldenrod; BORDER-LEFT-COLOR: darkgoldenrod" id=tbl_rdoAvisoRole_3 class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="BACKGROUND-COLOR: darkkhaki; HEIGHT: 26px">
+<TD colSpan=5 align=left>&nbsp;&nbsp;<SPAN class=queryText>醫事檢驗人員類型：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoAvisoInspect_0 value=0 type=radio name=r$QAviso$Inspect>醫事檢驗師 </TD>
+<TD width=240 align=left><INPUT id=rdoAvisoInspect_1 value=1 type=radio name=r$QAviso$Inspect>醫事檢驗生 </TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD></TR></TBODY></TABLE></TD></TR>
+<TR style="DISPLAY: none; HEIGHT: 26px" id=tr_rdoAvisoRole_4>
+<TD colSpan=5>
+<TABLE style="BORDER-BOTTOM-COLOR: darkgoldenrod; BORDER-TOP-COLOR: darkgoldenrod; BORDER-RIGHT-COLOR: darkgoldenrod; BORDER-LEFT-COLOR: darkgoldenrod" id=tbl_rdoAvisoRole_4 class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="BACKGROUND-COLOR: darkkhaki; HEIGHT: 26px">
+<TD colSpan=5 align=left>&nbsp;&nbsp;<SPAN class=queryText>物理、職能治療人員類型：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoAvisoTreatmentMan_0 value=0 type=radio name=r$QAviso$TreatmentMan>物理、職能治療人員 </TD>
+<TD width=240 align=left><INPUT id=rdoAvisoTreatmentMan_1 value=1 type=radio name=r$QAviso$TreatmentMan>物理、職能治療實習生 </TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD></TR></TBODY></TABLE></TD></TR>
+<TR style="DISPLAY: none; HEIGHT: 26px" id=tr_rdoAvisoRole_5>
+<TD colSpan=5>
+<TABLE style="BORDER-BOTTOM-COLOR: darkgoldenrod; BORDER-TOP-COLOR: darkgoldenrod; BORDER-RIGHT-COLOR: darkgoldenrod; BORDER-LEFT-COLOR: darkgoldenrod" id=tbl_rdoAvisoRole_5 class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="BACKGROUND-COLOR: darkkhaki; HEIGHT: 26px">
+<TD colSpan=5 align=left>&nbsp;&nbsp;<SPAN class=queryText>放射技術人員類型：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoAvisoRadiateMan_0 value=0 type=radio name=r$QAviso$RadiateMan>放射師 </TD>
+<TD width=240 align=left><INPUT id=rdoAvisoRadiateMan_1 value=1 type=radio name=r$QAviso$RadiateMan>放射技術士 </TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD></TR></TBODY></TABLE></TD></TR>
+<TR style="DISPLAY: none; HEIGHT: 26px" id=tr_rdoAvisoRole_6>
+<TD colSpan=5>
+<TABLE style="BORDER-BOTTOM-COLOR: darkgoldenrod; BORDER-TOP-COLOR: darkgoldenrod; BORDER-RIGHT-COLOR: darkgoldenrod; BORDER-LEFT-COLOR: darkgoldenrod" id=tbl_rdoAvisoRole_6 class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="BACKGROUND-COLOR: darkkhaki; HEIGHT: 26px">
+<TD colSpan=5 align=left>&nbsp;&nbsp;<SPAN class=queryText>行政人員類型：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoAvisoStaff_0 value=0 type=radio name=r$QAviso$Staff>行政人員 </TD>
+<TD width=240 align=left><INPUT id=rdoAvisoStaff_1 value=1 type=radio name=r$QAviso$Staff>工務維修人員 </TD>
+<TD width=240 align=left><INPUT id=rdoAvisoStaff_2 value=2 type=radio name=r$QAviso$Staff>資訊技術人員 </TD>
+<TD width=240 align=left><INPUT id=rdoAvisoStaff_3 value=3 type=radio name=r$QAviso$Staff>品管人員 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoAvisoStaff_4 value=4 type=radio name=r$QAviso$Staff>其他： <INPUT style="WIDTH: 140px" id=txbStaff_4 class=textBox name=t$QAviso$Staff_4> </TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD></TR></TBODY></TABLE></TD></TR>
+<TR style="DISPLAY: none; HEIGHT: 26px" id=tr_rdoAvisoRole_7>
+<TD colSpan=5>
+<TABLE style="BORDER-BOTTOM-COLOR: darkgoldenrod; BORDER-TOP-COLOR: darkgoldenrod; BORDER-RIGHT-COLOR: darkgoldenrod; BORDER-LEFT-COLOR: darkgoldenrod" id=tbl_rdoAvisoRole_7 class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="BACKGROUND-COLOR: darkkhaki; HEIGHT: 26px">
+<TD colSpan=5 align=left>&nbsp;&nbsp;<SPAN class=queryText>支援人員類型：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoAvisoSupport_0 value=0 type=radio name=r$QAviso$Support>專科/外科助理 </TD>
+<TD width=240 align=left><INPUT id=rdoAvisoSupport_1 value=1 type=radio name=r$QAviso$Support>看護 </TD>
+<TD width=240 align=left><INPUT id=rdoAvisoSupport_2 value=2 type=radio name=r$QAviso$Support>志工 </TD>
+<TD width=240 align=left><INPUT id=rdoAvisoSupport_3 value=3 type=radio name=r$QAviso$Support>保全 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoAvisoSupport_4 value=4 type=radio name=r$QAviso$Support>駐衛警 </TD>
+<TD width=240 align=left><INPUT id=rdoAvisoSupport_5 value=5 type=radio name=r$QAviso$Support>外包人員 </TD>
+<TD width=240 align=left><INPUT id=rdoAvisoSupport_6 value=6 type=radio name=r$QAviso$Support>臨床研究助理 </TD>
+<TD width=240 align=left><INPUT id=rdoAvisoSupport_7 value=7 type=radio name=r$QAviso$Support>照顧服務員 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoAvisoSupport_8 value=8 type=radio name=r$QAviso$Support>其他： <INPUT style="WIDTH: 140px" id=txbAvisoSupport_8 class=textBox name=t$QAviso$Support_8> </TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD></TR></TBODY></TABLE></TD></TR>
+<TR style="DISPLAY: none; HEIGHT: 26px" id=tr_rdoAvisoRole_8>
+<TD colSpan=5>
+<TABLE style="BORDER-BOTTOM-COLOR: darkgoldenrod; BORDER-TOP-COLOR: darkgoldenrod; BORDER-RIGHT-COLOR: darkgoldenrod; BORDER-LEFT-COLOR: darkgoldenrod" id=tbl_rdoAvisoRole_8 class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="BACKGROUND-COLOR: darkkhaki; HEIGHT: 26px">
+<TD colSpan=5 align=left>&nbsp;&nbsp;<SPAN class=queryText>病患或家屬之類型：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoAvisoPatient_0 value=0 type=radio name=r$QAviso$Patient>病人 </TD>
+<TD width=240 align=left><INPUT id=rdoAvisoPatient_1 value=1 type=radio name=r$QAviso$Patient>家屬 </TD>
+<TD width=240 align=left><INPUT id=rdoAvisoPatient_2 value=2 type=radio name=r$QAviso$Patient>訪客 </TD>
+<TD width=240 align=left></TD></TR></TBODY></TABLE></TD></TR>
+<TR style="BACKGROUND-COLOR: darkseagreen; HEIGHT: 26px">
+<TD colSpan=5 align=left><FONT color=red>*</FONT><SPAN class=queryText>工作年資：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT style="TEXT-ALIGN: center; WIDTH: 25px" id=txbAvisoSeniorityYear class=textBox onkeypress="return checkNumberKeyin(this, false, event);" maxLength=2 name=t$QAviso$SeniorityYear> &nbsp;年&nbsp; <INPUT style="TEXT-ALIGN: center; WIDTH: 25px" id=txbAvisoSeniorityMonth class=textBox onkeypress="return checkNumberKeyin(this, false, event);" maxLength=2 name=t$QAviso$SeniorityMonth> &nbsp;月 </TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD></TR>
+<TR style="DISPLAY: none; HEIGHT: 26px" id=tr_AvisoSeniority_1>
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoAvisoSeniority_0 value=0 type=radio name=r$QAviso$Seniority>未滿1年 </TD>
+<TD width=240 align=left><INPUT id=rdoAvisoSeniority_1 value=1 type=radio name=r$QAviso$Seniority>1-5年 </TD>
+<TD width=240 align=left><INPUT id=rdoAvisoSeniority_2 value=2 type=radio name=r$QAviso$Seniority>6-10年 </TD>
+<TD width=240 align=left><INPUT id=rdoAvisoSeniority_3 value=3 type=radio name=r$QAviso$Seniority>11-15年 </TD></TR>
+<TR style="DISPLAY: none; HEIGHT: 26px" id=tr_AvisoSeniority_2>
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoAvisoSeniority_4 value=4 type=radio name=r$QAviso$Seniority>16-20年 </TD>
+<TD width=240 align=left><INPUT id=rdoAvisoSeniority_5 value=5 type=radio name=r$QAviso$Seniority>21-25年 </TD>
+<TD width=240 align=left><INPUT id=rdoAvisoSeniority_6 value=6 type=radio name=r$QAviso$Seniority>26年以上 </TD>
+<TD width=240 align=left></TD></TR>
+<TR style="BACKGROUND-COLOR: darkseagreen; HEIGHT: 26px">
+<TD colSpan=5 align=left><SPAN class=queryText>進入現職機構年資：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT style="TEXT-ALIGN: center; WIDTH: 25px" id=txbAvisoNowSeniorityYear class=textBox onkeypress="return checkNumberKeyin(this, false, event);" maxLength=2 name=t$QAviso$NowSeniorityYear> &nbsp;年&nbsp; <INPUT style="TEXT-ALIGN: center; WIDTH: 25px" id=txbAvisoNowSeniorityMonth class=textBox onkeypress="return checkNumberKeyin(this, false, event);" maxLength=2 name=t$QAviso$NowSeniorityMonth> &nbsp;月 </TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD></TR>
+<TR style="DISPLAY: none; HEIGHT: 26px" id=tr_AvisoNowSeniority_1>
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoAvisoNowSeniority_0 value=0 type=radio name=r$QAviso$NowSeniority>0-5年 </TD>
+<TD width=240 align=left><INPUT id=rdoAvisoNowSeniority_1 value=1 type=radio name=r$QAviso$NowSeniority>6-10年 </TD>
+<TD width=240 align=left><INPUT id=rdoAvisoNowSeniority_2 value=2 type=radio name=r$QAviso$NowSeniority>11-15年 </TD>
+<TD width=240 align=left><INPUT id=rdoAvisoNowSeniority_3 value=3 type=radio name=r$QAviso$NowSeniority>16-20年 </TD></TR>
+<TR style="DISPLAY: none; HEIGHT: 26px" id=tr_AvisoNowSeniority_2>
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoAvisoNowSeniority_4 value=4 type=radio name=r$QAviso$NowSeniority>21-25年 </TD>
+<TD width=240 align=left><INPUT id=rdoAvisoNowSeniority_5 value=5 type=radio name=r$QAviso$NowSeniority>26年以上 </TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD></TR></TBODY></TABLE></DIV></DIV></DIV>
+<DIV style="DISPLAY: none; VISIBILITY: hidden" id=caseTab_caseTabImmediate class=ajax__tab_panel><!-- update panel for 立即處理方式 -->
+<DIV id=caseTab_caseTabImmediate_uPanelImmediate>
+<DIV id=caseTab_caseTabImmediate_Immediate_panelImmediate Width="100%">
+<TABLE id=tblImmediateTitle class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="HEIGHT: 26px">
+<TD class=inputTableTitle>此事件發生後的立即處理</TD></TR></TBODY></TABLE>
+<TABLE id=tblImmediate class=queryTableDisplay width=970>
+<TBODY>
+<TR style="BACKGROUND-COLOR: darkseagreen; HEIGHT: 26px">
+<TD colSpan=5 align=left><FONT color=red>*</FONT><SPAN class=queryText>立即通知對象：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkImmediateNotify_0 value=0 type=checkbox name=c$QImmediate$Notify>病人主治醫師 </TD>
+<TD width=240 align=left><INPUT id=chkImmediateNotify_1 value=1 type=checkbox name=c$QImmediate$Notify>病人住院醫師 </TD>
+<TD width=240 align=left><INPUT id=chkImmediateNotify_2 value=2 type=checkbox name=c$QImmediate$Notify>值班主治醫師 </TD>
+<TD width=240 align=left><INPUT id=chkImmediateNotify_3 value=3 type=checkbox name=c$QImmediate$Notify>值班住院醫師 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkImmediateNotify_4 value=4 type=checkbox name=c$QImmediate$Notify>督導長 </TD>
+<TD width=240 align=left><INPUT id=chkImmediateNotify_5 value=5 type=checkbox name=c$QImmediate$Notify>值班護理長 </TD>
+<TD width=240 align=left><INPUT id=chkImmediateNotify_6 value=6 type=checkbox name=c$QImmediate$Notify>單位主管 </TD>
+<TD width=240 align=left><INPUT id=chkImmediateNotify_7 value=7 type=checkbox name=c$QImmediate$Notify>護理師 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkImmediateNotify_8 value=8 type=checkbox name=c$QImmediate$Notify>專科護理師 </TD>
+<TD width=240 align=left><INPUT id=chkImmediateNotify_9 value=9 type=checkbox name=c$QImmediate$Notify>藥事人員 </TD>
+<TD width=240 align=left><INPUT id=chkImmediateNotify_10 value=10 type=checkbox name=c$QImmediate$Notify>警衛 </TD>
+<TD width=240 align=left><INPUT id=chkImmediateNotify_11 value=11 type=checkbox name=c$QImmediate$Notify>社工人員 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD colSpan=2 align=left><INPUT id=chkImmediateNotify_12 value=12 type=checkbox name=c$QImmediate$Notify>家屬親友，與病患關係為： <INPUT style="WIDTH: 140px" id=txbImmediateNotify_12 class=textBox name=t$QImmediate$Notify_12> </TD>
+<TD width=240 align=left><INPUT id=chkImmediateNotify_13 value=13 type=checkbox name=c$QImmediate$Notify>牧靈人員 </TD>
+<TD width=240 align=left><INPUT id=chkImmediateNotify_14 value=14 type=checkbox name=c$QImmediate$Notify>不知道 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkImmediateNotify_15 value=15 type=checkbox name=c$QImmediate$Notify>其他： <INPUT style="WIDTH: 140px" id=txbImmediateNotify_15 class=textBox name=t$QImmediate$Notify_15> </TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD></TR>
+<TR style="BACKGROUND-COLOR: darkseagreen; HEIGHT: 26px">
+<TD colSpan=5 align=left><SPAN class=queryText>立即處置：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkImmediateDispose_0 onclick=showBlockByCheckBox(this.id); value=0 type=checkbox name=c$QImmediate$Dispose>無介入 <IMG src="http://ahisaw.hospital-n.local/WebApplication/Administration/UrgentAviso/AvisoImages/table_add.png"> </TD>
+<TD width=240 align=left><INPUT id=chkImmediateDispose_1 onclick=showBlockByCheckBox(this.id); value=1 type=checkbox name=c$QImmediate$Dispose>醫療介入 <IMG src="http://ahisaw.hospital-n.local/WebApplication/Administration/UrgentAviso/AvisoImages/table_add.png"> </TD>
+<TD width=240 align=left><INPUT id=chkImmediateDispose_2 onclick=showBlockByCheckBox(this.id); value=2 type=checkbox name=c$QImmediate$Dispose>其他介入 <IMG src="http://ahisaw.hospital-n.local/WebApplication/Administration/UrgentAviso/AvisoImages/table_add.png"> </TD>
+<TD width=240 align=left><INPUT id=chkImmediateDispose_3 onclick=showBlockByCheckBox(this.id); value=3 type=checkbox name=c$QImmediate$Dispose>不知道 <IMG src="http://ahisaw.hospital-n.local/WebApplication/Administration/UrgentAviso/AvisoImages/table_add.png"> </TD></TR>
+<TR style="DISPLAY: none; HEIGHT: 26px" id=tr_chkImmediateDispose_0>
+<TD colSpan=5>
+<TABLE style="BORDER-BOTTOM-COLOR: darkgoldenrod; BORDER-TOP-COLOR: darkgoldenrod; BORDER-RIGHT-COLOR: darkgoldenrod; BORDER-LEFT-COLOR: darkgoldenrod" id=tbl_chkImmediateDispose_0 class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="BACKGROUND-COLOR: darkkhaki; HEIGHT: 26px">
+<TD colSpan=5 align=left>&nbsp;&nbsp;<SPAN class=queryText>無介入類型：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkImmediateUnconcerned_0 value=0 type=checkbox name=c$QImmediate$Unconcerned>不需任何處理 </TD>
+<TD width=240 align=left><INPUT id=chkImmediateUnconcerned_1 value=1 type=checkbox name=c$QImmediate$Unconcerned>病人拒絕處置 </TD>
+<TD width=240 align=left><INPUT id=chkImmediateUnconcerned_2 value=2 type=checkbox name=c$QImmediate$Unconcerned>其他： <INPUT style="WIDTH: 140px" id=txbImmediateUnconcerned_2 class=textBox name=t$QImmediate$Unconcerned_2> </TD>
+<TD width=240 align=left></TD></TR></TBODY></TABLE></TD></TR>
+<TR style="DISPLAY: none; HEIGHT: 26px" id=tr_chkImmediateDispose_1>
+<TD colSpan=5>
+<TABLE style="BORDER-BOTTOM-COLOR: darkgoldenrod; BORDER-TOP-COLOR: darkgoldenrod; BORDER-RIGHT-COLOR: darkgoldenrod; BORDER-LEFT-COLOR: darkgoldenrod" id=tbl_chkImmediateDispose_1 class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="BACKGROUND-COLOR: darkkhaki; HEIGHT: 26px">
+<TD colSpan=5 align=left>&nbsp;&nbsp;<SPAN class=queryText>醫療介入類型：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkImmediateTreatmentInterpose_0 value=0 type=checkbox name=c$QImmediate$TreatmentInterpose>持續觀察 </TD>
+<TD width=240 align=left><INPUT id=chkImmediateTreatmentInterpose_1 value=1 type=checkbox name=c$QImmediate$TreatmentInterpose>加強照護防範 </TD>
+<TD width=240 align=left><INPUT id=chkImmediateTreatmentInterpose_2 value=2 type=checkbox name=c$QImmediate$TreatmentInterpose>監測生命徵象 </TD>
+<TD width=240 align=left><INPUT id=chkImmediateTreatmentInterpose_3 value=3 type=checkbox name=c$QImmediate$TreatmentInterpose>給予額外照護 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkImmediateTreatmentInterpose_4 value=4 type=checkbox name=c$QImmediate$TreatmentInterpose>傷口照護 </TD>
+<TD width=240 align=left><INPUT id=chkImmediateTreatmentInterpose_5 value=5 type=checkbox name=c$QImmediate$TreatmentInterpose>停止與事件有關的用藥或治療 </TD>
+<TD width=240 align=left><INPUT id=chkImmediateTreatmentInterpose_6 value=6 type=checkbox name=c$QImmediate$TreatmentInterpose>轉診或轉院治療 </TD>
+<TD width=240 align=left><INPUT id=chkImmediateTreatmentInterpose_7 value=7 type=checkbox name=c$QImmediate$TreatmentInterpose>急救 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkImmediateTreatmentInterpose_8 value=8 type=checkbox name=c$QImmediate$TreatmentInterpose>追補藥物劑量 </TD>
+<TD width=240 align=left><INPUT id=chkImmediateTreatmentInterpose_9 value=9 type=checkbox name=c$QImmediate$TreatmentInterpose>其他： <INPUT style="WIDTH: 140px" id=txbImmediateTreatmentInterpose_9 class=textBox name=t$QImmediate$TreatmentInterpose_9> </TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD></TR></TBODY></TABLE></TD></TR>
+<TR style="DISPLAY: none; HEIGHT: 26px" id=tr_chkImmediateDispose_2>
+<TD colSpan=5>
+<TABLE style="BORDER-BOTTOM-COLOR: darkgoldenrod; BORDER-TOP-COLOR: darkgoldenrod; BORDER-RIGHT-COLOR: darkgoldenrod; BORDER-LEFT-COLOR: darkgoldenrod" id=tbl_chkImmediateDispose_2 class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="BACKGROUND-COLOR: darkkhaki; HEIGHT: 26px">
+<TD colSpan=5 align=left>&nbsp;&nbsp;<SPAN class=queryText>其他介入類型：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkImmediateOtherInterpose_0 value=0 type=checkbox name=c$QImmediate$OtherInterpose>予以病患家屬慰問及支持 </TD>
+<TD width=240 align=left><INPUT id=chkImmediateOtherInterpose_1 value=1 type=checkbox name=c$QImmediate$OtherInterpose>移除與危害相關之設備或環境運作 </TD>
+<TD width=240 align=left><INPUT id=chkImmediateOtherInterpose_2 value=2 type=checkbox name=c$QImmediate$OtherInterpose>通報警政機關 </TD>
+<TD width=240 align=left><INPUT id=chkImmediateOtherInterpose_3 value=3 type=checkbox name=c$QImmediate$OtherInterpose>通報衛生主管機關 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkImmediateOtherInterpose_4 value=4 type=checkbox name=c$QImmediate$OtherInterpose>醫療團隊進行溝通 </TD>
+<TD width=240 align=left><INPUT id=chkImmediateOtherInterpose_5 value=5 type=checkbox name=c$QImmediate$OtherInterpose>其他： <INPUT style="WIDTH: 140px" id=txbImmediateOtherInterpose_5 class=textBox name=t$QImmediate$OtherInterpose_5> </TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD></TR></TBODY></TABLE></TD></TR>
+<TR style="DISPLAY: none; HEIGHT: 26px" id=tr_chkImmediateDispose_3>
+<TD colSpan=5>
+<TABLE style="BORDER-BOTTOM-COLOR: darkgoldenrod; BORDER-TOP-COLOR: darkgoldenrod; BORDER-RIGHT-COLOR: darkgoldenrod; BORDER-LEFT-COLOR: darkgoldenrod" id=tbl_chkImmediateDispose_3 class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="BACKGROUND-COLOR: darkkhaki; HEIGHT: 26px">
+<TD colSpan=5 align=left>&nbsp;&nbsp;<SPAN class=queryText>後續處理：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkImmediateFollowDispose_0 value=0 type=checkbox name=c$QImmediate$FollowDispose>通知家屬 </TD>
+<TD width=240 align=left><INPUT id=chkImmediateFollowDispose_1 value=1 type=checkbox name=c$QImmediate$FollowDispose>值班護理長 </TD>
+<TD width=240 align=left><INPUT id=chkImmediateFollowDispose_2 value=2 type=checkbox name=c$QImmediate$FollowDispose>社工人員 </TD>
+<TD width=240 align=left><INPUT id=chkImmediateFollowDispose_3 value=3 type=checkbox name=c$QImmediate$FollowDispose>照會相關科別醫師： <INPUT style="WIDTH: 140px" id=txbImmediateFollowDispose_3 class=textBox name=t$QImmediate$FollowDispose_3> </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkImmediateFollowDispose_4 value=4 type=checkbox name=c$QImmediate$FollowDispose>加強護理指導 </TD>
+<TD width=240 align=left><INPUT id=chkImmediateFollowDispose_5 value=5 type=checkbox name=c$QImmediate$FollowDispose>其他： <INPUT style="WIDTH: 140px" id=txbImmediateFollowDispose_5 class=textBox name=t$QImmediate$FollowDispose_5> </TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD></TR></TBODY></TABLE></TD></TR>
+<TR style="BACKGROUND-COLOR: darkseagreen; HEIGHT: 26px">
+<TD colSpan=5 align=left><SPAN class=queryText>其他立即處理方式：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD colSpan=4 align=left><TEXTAREA class=textBox rows=7 cols=185 name=t$QImmediate$OtherDispose></TEXTAREA> </TD></TR></TBODY></TABLE></DIV></DIV></DIV>
+<DIV style="DISPLAY: none; VISIBILITY: hidden" id=caseTab_caseTabPrevent class=ajax__tab_panel><!-- update panel for 預防措施 -->
+<DIV id=caseTab_caseTabPrevent_uPanelPrevent>
+<DIV id=caseTab_caseTabPrevent_Prevent_panelPrevent Width="100%">
+<TABLE id=tblPreventTitle class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="HEIGHT: 26px">
+<TD class=inputTableTitle>預防此類事件再發生的措施或方法</TD></TR></TBODY></TABLE>
+<TABLE id=tblPrevent class=queryTableDisplay width=970>
+<TBODY>
+<TR style="BACKGROUND-COLOR: darkseagreen; HEIGHT: 26px">
+<TD colSpan=5 align=left><SPAN class=queryText>您認為預防此類事件再發生的措施或方法(包括主管建議)：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkPreventRehappen_0 onclick=showBlockByCheckBox(this.id); value=0 type=checkbox name=c$QPrevent$Rehappen>加強教育訓練 <IMG src="http://ahisaw.hospital-n.local/WebApplication/Administration/UrgentAviso/AvisoImages/table_add.png"> </TD>
+<TD width=240 align=left><INPUT id=chkPreventRehappen_1 onclick=showBlockByCheckBox(this.id); value=1 type=checkbox name=c$QPrevent$Rehappen>改變醫療照護方式 <IMG src="http://ahisaw.hospital-n.local/WebApplication/Administration/UrgentAviso/AvisoImages/table_add.png"> </TD>
+<TD width=240 align=left><INPUT id=chkPreventRehappen_2 onclick=showBlockByCheckBox(this.id); value=2 type=checkbox name=c$QPrevent$Rehappen>改變行政管理 <IMG src="http://ahisaw.hospital-n.local/WebApplication/Administration/UrgentAviso/AvisoImages/table_add.png"> </TD>
+<TD width=240 align=left><INPUT id=chkPreventRehappen_3 onclick=showBlockByCheckBox(this.id); value=3 type=checkbox name=c$QPrevent$Rehappen>加強溝通方式 <IMG src="http://ahisaw.hospital-n.local/WebApplication/Administration/UrgentAviso/AvisoImages/table_add.png"> </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkPreventRehappen_4 value=4 type=checkbox name=c$QPrevent$Rehappen>不知道 </TD>
+<TD width=240 align=left><INPUT id=chkPreventRehappen_5 value=5 type=checkbox name=c$QPrevent$Rehappen>其他： <INPUT style="WIDTH: 140px" id=txbPreventRehappen_5 class=textBox name=t$QPrevent$Rehappen_5> </TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD></TR>
+<TR style="DISPLAY: none; HEIGHT: 26px" id=tr_chkPreventRehappen_0>
+<TD colSpan=5>
+<TABLE style="BORDER-BOTTOM-COLOR: darkgoldenrod; BORDER-TOP-COLOR: darkgoldenrod; BORDER-RIGHT-COLOR: darkgoldenrod; BORDER-LEFT-COLOR: darkgoldenrod" id=tbl_chkPreventRehappen_0 class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="BACKGROUND-COLOR: darkkhaki; HEIGHT: 26px">
+<TD colSpan=5 align=left>&nbsp;&nbsp;<SPAN class=queryText>加強教育訓練類型：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkPreventTrain_0 value=0 type=checkbox name=c$QPrevent$Train>提供醫療人員臨床教育訓練 </TD>
+<TD width=240 align=left><INPUT id=chkPreventTrain_1 value=1 type=checkbox name=c$QPrevent$Train>改變醫療人員行為態度 </TD>
+<TD width=240 align=left><INPUT id=chkPreventTrain_2 value=2 type=checkbox name=c$QPrevent$Train>提供病人及家屬適當衛教 </TD>
+<TD width=240 align=left><INPUT id=chkPreventTrain_3 value=3 type=checkbox name=c$QPrevent$Train>改變病人及家屬行為態度 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkPreventTrain_4 value=4 type=checkbox name=c$QPrevent$Train>其他： <INPUT style="WIDTH: 140px" id=txbPreventTrain_4 class=textBox name=t$QPrevent$Train_4> </TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD></TR></TBODY></TABLE></TD></TR>
+<TR style="DISPLAY: none; HEIGHT: 26px" id=tr_chkPreventRehappen_1>
+<TD colSpan=5>
+<TABLE style="BORDER-BOTTOM-COLOR: darkgoldenrod; BORDER-TOP-COLOR: darkgoldenrod; BORDER-RIGHT-COLOR: darkgoldenrod; BORDER-LEFT-COLOR: darkgoldenrod" id=tbl_chkPreventRehappen_1 class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="BACKGROUND-COLOR: darkkhaki; HEIGHT: 26px">
+<TD colSpan=5 align=left>&nbsp;&nbsp;<SPAN class=queryText>改變醫療照護方式類型：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD colSpan=2 align=left><INPUT id=chkPreventTreatment_0 value=0 type=checkbox name=c$QPrevent$Treatment>制定合宜之安全作業指引或標準作業流程 </TD>
+<TD width=240 align=left><INPUT id=chkPreventTreatment_1 value=1 type=checkbox name=c$QPrevent$Treatment>臨床作業流程改善 </TD>
+<TD width=240 align=left><INPUT id=chkPreventTreatment_2 value=2 type=checkbox name=c$QPrevent$Treatment>醫囑系統或提示系統修訂 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkPreventTreatment_3 value=3 type=checkbox name=c$QPrevent$Treatment>其他： <INPUT style="WIDTH: 140px" id=txbPreventTreatment_3 class=textBox name=t$QPrevent$Treatment_3> </TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD></TR></TBODY></TABLE></TD></TR>
+<TR style="DISPLAY: none; HEIGHT: 26px" id=tr_chkPreventRehappen_2>
+<TD colSpan=5>
+<TABLE style="BORDER-BOTTOM-COLOR: darkgoldenrod; BORDER-TOP-COLOR: darkgoldenrod; BORDER-RIGHT-COLOR: darkgoldenrod; BORDER-LEFT-COLOR: darkgoldenrod" id=tbl_chkPreventRehappen_2 class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="BACKGROUND-COLOR: darkkhaki; HEIGHT: 26px">
+<TD colSpan=5 align=left>&nbsp;&nbsp;<SPAN class=queryText>改變行政管理類型：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkPreventManage_0 value=0 type=checkbox name=c$QPrevent$Manage>醫院政策制度改變 </TD>
+<TD width=240 align=left><INPUT id=chkPreventManage_1 value=1 type=checkbox name=c$QPrevent$Manage>醫院行政流程改變 </TD>
+<TD width=240 align=left><INPUT id=chkPreventManage_2 value=2 type=checkbox name=c$QPrevent$Manage>監測制度建立 </TD>
+<TD width=240 align=left><INPUT id=chkPreventManage_3 value=3 type=checkbox name=c$QPrevent$Manage>人力配置改善 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkPreventManage_4 value=4 type=checkbox name=c$QPrevent$Manage>環境設備改善 </TD>
+<TD width=240 align=left><INPUT id=chkPreventManage_5 value=5 type=checkbox name=c$QPrevent$Manage>其他： <INPUT style="WIDTH: 140px" id=txbPreventManage_5 class=textBox name=t$QPrevent$Manage_5> </TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD></TR></TBODY></TABLE></TD></TR>
+<TR style="DISPLAY: none; HEIGHT: 26px" id=tr_chkPreventRehappen_3>
+<TD colSpan=5>
+<TABLE style="BORDER-BOTTOM-COLOR: darkgoldenrod; BORDER-TOP-COLOR: darkgoldenrod; BORDER-RIGHT-COLOR: darkgoldenrod; BORDER-LEFT-COLOR: darkgoldenrod" id=tbl_chkPreventRehappen_3 class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="BACKGROUND-COLOR: darkkhaki; HEIGHT: 26px">
+<TD colSpan=5 align=left>&nbsp;&nbsp;<SPAN class=queryText>加強溝通方式類型：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=chkPreventCommunicate_0 value=0 type=checkbox name=c$QPrevent$Communicate>增加醫療人員間溝通 </TD>
+<TD width=240 align=left><INPUT id=chkPreventCommunicate_1 value=1 type=checkbox name=c$QPrevent$Communicate>改變行政上溝通系統 </TD>
+<TD width=240 align=left><INPUT id=chkPreventCommunicate_2 value=2 type=checkbox name=c$QPrevent$Communicate>改變與病患溝通模式 </TD>
+<TD width=240 align=left><INPUT id=chkPreventCommunicate_3 value=3 type=checkbox name=c$QPrevent$Communicate>其他： <INPUT style="WIDTH: 140px" id=txbPreventCommunicate_3 class=textBox name=t$QPrevent$Communicate_3> </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV></DIV></DIV>
+<DIV style="DISPLAY: none; VISIBILITY: hidden" id=caseTab_caseTabRehappen class=ajax__tab_panel><!-- update panel for 再發生可能情形 -->
+<DIV id=caseTab_caseTabRehappen_uPanelRehappen>
+<DIV id=caseTab_caseTabRehappen_Rehappen_panelRehappen Width="100%">
+<TABLE id=tblRehappenTitle class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="HEIGHT: 26px">
+<TD class=inputTableTitle>此類事件再次發生的可能情形</TD></TR></TBODY></TABLE>
+<TABLE id=tblRehappen class=queryTableDisplay width=970>
+<TBODY>
+<TR style="BACKGROUND-COLOR: darkseagreen; HEIGHT: 26px">
+<TD colSpan=5 align=left><SPAN class=queryText>再發生的機會：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoRehappenRate_0 value=0 type=radio name=r$QRehappen$Rate>數週內 </TD>
+<TD width=240 align=left><INPUT id=rdoRehappenRate_1 value=1 type=radio name=r$QRehappen$Rate>一年數次 </TD>
+<TD width=240 align=left><INPUT id=rdoRehappenRate_2 value=2 type=radio name=r$QRehappen$Rate>1~2年一次 </TD>
+<TD width=240 align=left><INPUT id=rdoRehappenRate_3 value=3 type=radio name=r$QRehappen$Rate>2~5年一次 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoRehappenRate_4 value=4 type=radio name=r$QRehappen$Rate>5年以上 </TD>
+<TD width=240 align=left><INPUT id=rdoRehappenRate_5 value=5 type=radio name=r$QRehappen$Rate>不知道 </TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD></TR>
+<TR style="BACKGROUND-COLOR: darkseagreen; HEIGHT: 26px">
+<TD colSpan=5 align=left><SPAN class=queryText>再發生的地點：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoRehappenLocation_0 value=0 type=radio name=r$QRehappen$Location>只在通報之單位內 </TD>
+<TD width=240 align=left><INPUT id=rdoRehappenLocation_1 value=1 type=radio name=r$QRehappen$Location>該機構之其他單位 </TD>
+<TD width=240 align=left><INPUT id=rdoRehappenLocation_2 value=2 type=radio name=r$QRehappen$Location>所有其他機構 </TD>
+<TD width=240 align=left><INPUT id=rdoRehappenLocation_3 value=3 type=radio name=r$QRehappen$Location>機構間轉送過程 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoRehappenLocation_4 value=4 type=radio name=r$QRehappen$Location>其他： <INPUT style="WIDTH: 140px" id=txbRehappenLocation_4 class=textBox name=t$QRehappen$Location_4> </TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD></TR>
+<TR style="BACKGROUND-COLOR: darkseagreen; HEIGHT: 26px">
+<TD colSpan=5 align=left><SPAN class=queryText>如果發生在病人身上，將造成病人最嚴重的影響程度為何：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoRehappenAffect_0 onclick="showBlockByRadio(this.id, this.name);" value=0 type=radio name=r$QRehappen$Affect>有傷害 <IMG src="http://ahisaw.hospital-n.local/WebApplication/Administration/UrgentAviso/AvisoImages/table_add.png"> </TD>
+<TD width=240 align=left><INPUT id=rdoRehappenAffect_1 onclick="showBlockByRadio(this.id, this.name);" value=1 type=radio name=r$QRehappen$Affect>無傷害 </TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD></TR>
+<TR style="DISPLAY: none; HEIGHT: 26px" id=tr_rdoRehappenAffect_0>
+<TD colSpan=5>
+<TABLE style="BORDER-BOTTOM-COLOR: darkgoldenrod; BORDER-TOP-COLOR: darkgoldenrod; BORDER-RIGHT-COLOR: darkgoldenrod; BORDER-LEFT-COLOR: darkgoldenrod" id=tbl_rdoRehappenAffect_0 class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="BACKGROUND-COLOR: darkkhaki; HEIGHT: 26px">
+<TD colSpan=5 align=left>&nbsp;&nbsp;<SPAN class=queryText>有傷害之程度：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoRehappenHurtDegree_0 value=0 type=radio name=r$QRehappen$HurtDegree>死亡 </TD>
+<TD width=240 align=left><INPUT id=rdoRehappenHurtDegree_1 value=1 type=radio name=r$QRehappen$HurtDegree>極重度 </TD>
+<TD width=240 align=left><INPUT id=rdoRehappenHurtDegree_2 value=2 type=radio name=r$QRehappen$HurtDegree>重度 </TD>
+<TD width=240 align=left><INPUT id=rdoRehappenHurtDegree_3 value=3 type=radio name=r$QRehappen$HurtDegree>中度 </TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD width=240 align=left><INPUT id=rdoRehappenHurtDegree_4 value=4 type=radio name=r$QRehappen$HurtDegree>輕度 </TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD>
+<TD width=240 align=left></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV></DIV></DIV>
+<DIV style="VISIBILITY: visible" id=caseTab_caseTabImprove class=ajax__tab_panel><!-- update panel for 檢討改善 -->
+<DIV id=caseTab_caseTabImprove_uPanelImprove>
+<DIV id=caseTab_caseTabImprove_Improve_panelImprove Width="100%">
+<TABLE id=tblImproveTitle class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="HEIGHT: 26px">
+<TD class=inputTableTitle>檢討改善</TD></TR></TBODY></TABLE>
+<TABLE id=tblImprove class=queryTableDisplay width=970>
+<TBODY>
+<TR style="BACKGROUND-COLOR: darkseagreen; HEIGHT: 26px">
+<TD colSpan=5 align=left><FONT color=red>*</FONT><SPAN class=queryText>檢討改善方案：</SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD colSpan=4 align=left><TEXTAREA class=textBox rows=5 cols=185 name=t$QImprove$ImproveDesc></TEXTAREA> </TD></TR>
+<TR style="BACKGROUND-COLOR: darkseagreen; HEIGHT: 26px">
+<TD colSpan=5 align=left><SPAN class=queryText><SPAN id=caseTab_caseTabImprove_Improve_lblBossTitle>單位主管意見(組長)：</SPAN></SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD colSpan=4 align=left><TEXTAREA class=textBox disabled rows=5 cols=185 name=t$QImprove$BossComment></TEXTAREA> </TD></TR>
+<TR style="BACKGROUND-COLOR: darkseagreen; HEIGHT: 26px">
+<TD colSpan=5 align=left><SPAN class=queryText><SPAN id=caseTab_caseTabImprove_Improve_lblSubChiefTitle>單位主管意見(副主任)：</SPAN></SPAN></TD></TR>
+<TR style="DISPLAY: none; HEIGHT: 26px" id=tr_NurseSubChiefCheckCaseBlock>
+<TD width=10 align=right>&nbsp;</TD>
+<TD colSpan=4 align=left>
+<DIV id=div_oriNurseSubChiefCheckCase><INPUT id=chkImproveNurseCase value=0 type=checkbox name=c$QImprove$NurseCase>護理部檢討案件 </DIV>
+<DIV id=div_newNurseSubChiefCheckCase><FONT color=red>*</FONT><SPAN class=queryText>護理部檢討案件：</SPAN> <INPUT id=rdoImproveNurseCase_0 value=0 type=radio name=r$QImprove$NurseCase>是 &nbsp; <INPUT id=rdoImproveNurseCase_1 value=1 type=radio name=r$QImprove$NurseCase>否 </DIV></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD colSpan=4 align=left><TEXTAREA class=textBox disabled rows=5 cols=185 name=t$QImprove$SubChiefComment></TEXTAREA> </TD></TR>
+<TR style="BACKGROUND-COLOR: darkseagreen; HEIGHT: 26px">
+<TD colSpan=5 align=left><SPAN class=queryText><SPAN id=caseTab_caseTabImprove_Improve_lblChiefTitle>單位主管意見(主任)：</SPAN></SPAN></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD width=10 align=right>&nbsp;</TD>
+<TD colSpan=4 align=left><TEXTAREA class=textBox disabled rows=5 cols=185 name=t$QImprove$ChiefComment></TEXTAREA> </TD></TR></TBODY></TABLE></DIV></DIV></DIV></DIV></DIV></DIV>
+<DIV style="WIDTH: 100%" id=panelAction>
+<TABLE class=queryTableDisplay width="100%">
+<TBODY>
+<TR style="HEIGHT: 26px">
+<TD>
+<DIV id=uPanelMessageDown><SPAN style="COLOR: green" id=lblSuccessMsgDown></SPAN><SPAN id=lblErrorMsgDown class=errorMsgText></SPAN>&nbsp;</DIV></TD>
+<TD width="25%" align=right><FONT color=blue size=2>目前剩餘： <FONT color=crimson><SPAN id=lblRemainMinDown>--</SPAN></FONT>&nbsp;&nbsp;分&nbsp;&nbsp; <FONT color=crimson><SPAN id=lblRemainSecDown>--</SPAN></FONT>&nbsp;&nbsp;秒&nbsp;&nbsp; </FONT></TD></TR>
+<TR style="HEIGHT: 26px">
+<TD colSpan=2 align=right>
+<DIV id=uPanelActBtn><INPUT style="HEIGHT: 22px" id=btnTempSave class=button onclick=onBtnSaveClientClick(); value=暫存 type=submit name=btnTempSave> <INPUT style="HEIGHT: 22px" id=btnConfirmTempCase class=button onclick=onBtnSaveClientClick(); value=確認取號 type=submit name=btnConfirmTempCase> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <INPUT style="HEIGHT: 22px" id=btnPrint class=button disabled value=列印 type=submit name=btnPrint> <INPUT style="HEIGHT: 22px" id=btnBackWorkSiteDown class=button value=返回作業區 type=submit name=btnBackWorkSiteDown> </DIV></TD></TR></TBODY></TABLE></DIV><!-- hidden area -->
+<DIV style="WIDTH: 100%" id=panelHiddenArea>
+<DIV id=uPanelCaseType><INPUT id=hidCaseType value=Person,EventContainer,Aviso,Immediate,Rehappen,Prevent,Improve type=hidden name=hidCaseType> <INPUT id=hidIsPreviousEvant value=Improve type=hidden name=hidIsPreviousEvant> </DIV>
+<DIV id=uPanelEventType><INPUT id=hidEventType value=EventOther type=hidden name=hidEventType> <INPUT id=hidEventNames value=c$QOther$Type,t$QOther$Type_9,c$QOther$Chemical,c$QOther$Reason,t$QOther$Reason_7,t$QOther$Desc type=hidden name=hidEventNames> <INPUT id=hidEventFormNames type=hidden name=hidEventFormNames> </DIV>
+<DIV id=divHiddenPageData><INPUT id=hidIsNewCase value=true type=hidden name=hidIsNewCase> <INPUT id=hidIsNeedCountTime value=N type=hidden name=hidIsNeedCountTime> <INPUT id=hidJCIAEditRight value=N type=hidden name=hidJCIAEditRight> <INPUT id=hidImproveEditRight value=t$QImprove$BossComment@N,t$QImprove$SubChiefComment@N,t$QImprove$ChiefComment@N type=hidden name=hidImproveEditRight> <INPUT id=hidCasePersonData type=hidden name=hidCasePersonData> <INPUT id=hidCaseImmediateData type=hidden name=hidCaseImmediateData> <INPUT id=hidCasePreventData type=hidden name=hidCasePreventData> <INPUT id=hidCaseRehappenData type=hidden name=hidCaseRehappenData> <INPUT id=hidCaseAvisoData type=hidden name=hidCaseAvisoData> <INPUT id=hidCaseImproveData type=hidden name=hidCaseImproveData> <INPUT id=hidEventSurgeryData type=hidden name=hidEventSurgeryData> <INPUT id=hidEventFalldownData type=hidden name=hidEventFalldownData> <INPUT id=hidEventDrugData type=hidden name=hidEventDrugData> <INPUT id=hidEventBloodData type=hidden name=hidEventBloodData> <INPUT id=hidEventTreatmentData type=hidden name=hidEventTreatmentData> <INPUT id=hidEventAccidentData type=hidden name=hidEventAccidentData> <INPUT id=hidEventSecurityData type=hidden name=hidEventSecurityData> <INPUT id=hidEventHurtData type=hidden name=hidEventHurtData> <INPUT id=hidEventIntubateData type=hidden name=hidEventIntubateData> <INPUT id=hidEventHeartData type=hidden name=hidEventHeartData> <INPUT id=hidEventInspectData type=hidden name=hidEventInspectData> <INPUT id=hidEventAnesthesiaData type=hidden name=hidEventAnesthesiaData> <INPUT id=hidEventOtherData type=hidden name=hidEventOtherData> <INPUT id=hidEventAdminData type=hidden name=hidEventAdminData> <INPUT id=hidEventChemotherapyLeakData type=hidden name=hidEventChemotherapyLeakData> <INPUT id=hidEventChemotherapyOverData type=hidden name=hidEventChemotherapyOverData> <INPUT id=hidFalldownAnalyData type=hidden name=hidFalldownAnalyData> <INPUT id=hidIntubateOutData type=hidden name=hidIntubateOutData> </DIV><INPUT style="DISPLAY: none" id=btnCaseTabPerson onclick="__doPostBack('btnCaseTabPerson','')" type=button name=btnCaseTabPerson> <INPUT style="DISPLAY: none" id=btnCaseTabImmediate onclick="__doPostBack('btnCaseTabImmediate','')" type=button name=btnCaseTabImmediate> <INPUT style="DISPLAY: none" id=btnCaseTabPrevent onclick="__doPostBack('btnCaseTabPrevent','')" type=button name=btnCaseTabPrevent> <INPUT style="DISPLAY: none" id=btnCaseTabRehappen onclick="__doPostBack('btnCaseTabRehappen','')" type=button name=btnCaseTabRehappen> <INPUT style="DISPLAY: none" id=btnCaseTabAviso onclick="__doPostBack('btnCaseTabAviso','')" type=button name=btnCaseTabAviso> <INPUT style="DISPLAY: none" id=btnCaseTabImprove onclick="__doPostBack('btnCaseTabImprove','')" type=button name=btnCaseTabImprove> <INPUT style="DISPLAY: none" id=btnCaseTabEvent onclick="__doPostBack('btnCaseTabEvent','')" type=button name=btnCaseTabEvent> <INPUT style="DISPLAY: none" id=btnAutoSave onclick="__doPostBack('btnAutoSave','')" type=button name=btnAutoSave> </DIV>
+<SCRIPT type=text/javascript>
+//<![CDATA[
+initFieldData('txbAvisoDate', '2012/07/10');
+initFieldData('txbEventDept', 'RAD_影像醫學部_15100');
+Sys.Application.initialize();
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.TabPanel, {"headerTab":$get("__tab_caseTab_caseTabPerson")}, null, {"owner":"caseTab"}, $get("caseTab_caseTabPerson"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.TabPanel, {"headerTab":$get("__tab_caseTab_caseTabEvent")}, null, {"owner":"caseTab"}, $get("caseTab_caseTabEvent"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.TabPanel, {"headerTab":$get("__tab_caseTab_caseTabAviso")}, null, {"owner":"caseTab"}, $get("caseTab_caseTabAviso"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.TabPanel, {"headerTab":$get("__tab_caseTab_caseTabImmediate")}, null, {"owner":"caseTab"}, $get("caseTab_caseTabImmediate"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.TabPanel, {"headerTab":$get("__tab_caseTab_caseTabPrevent")}, null, {"owner":"caseTab"}, $get("caseTab_caseTabPrevent"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.TabPanel, {"headerTab":$get("__tab_caseTab_caseTabRehappen")}, null, {"owner":"caseTab"}, $get("caseTab_caseTabRehappen"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.TabPanel, {"headerTab":$get("__tab_caseTab_caseTabImprove")}, null, {"owner":"caseTab"}, $get("caseTab_caseTabImprove"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.TabContainer, {"activeTabIndex":0,"clientStateField":$get("caseTab_ClientState")}, {"activeTabChanged":onCaseTabChanged}, null, $get("caseTab"));
+});
+//]]>
+</SCRIPT>
+<SPAN style="DISPLAY: none !important"><INPUT id=__EVENTTARGET type=hidden _isContained="true"></SPAN><SPAN style="DISPLAY: none !important"><INPUT id=__EVENTARGUMENT type=hidden _isContained="true"></SPAN><SPAN style="DISPLAY: none !important"><INPUT id=__VIEWSTATE value=/wEPDwUJNDI5NDU1MTgxDxYEHhBDYXNlRm9ybUl0ZW1JbmZvMpwdAAEAAAD/////AQAAAAAAAAAMAgAAAEJVcmdlbnRBdmlzbywgVmVyc2lvbj0xLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGwFAQAAACJVcmdlbnRBdmlzby5Bdmlzb0JlYW4uQ2FzZUZvcm1JdGVtKwAAAA5fY2FzZUV2ZW50RGF0YRJfaXNOdXJzZVJldmlld0Nhc2UXX2lzQWxlcnROdXJzZVJldmlld0Nhc2UXPENhc2VObz5rX19CYWNraW5nRmllbGQbPENhc2VTdGF0dXM+a19fQmFja2luZ0ZpZWxkHzxNYWluQ2FzZVN0YXR1cz5rX19CYWNraW5nRmllbGQePENhc2VFdmVudENvZGU+a19fQmFja2luZ0ZpZWxkHzxBcmVhUGVyc29uRGF0YT5rX19CYWNraW5nRmllbGQiPEFyZWFJbW1lZGlhdGVEYXRhPmtfX0JhY2tpbmdGaWVsZCA8QXJlYVByZXZlbnREYXRhPmtfX0JhY2tpbmdGaWVsZCE8QXJlYVJlaGFwcGVuRGF0YT5rX19CYWNraW5nRmllbGQePEFyZWFBdmlzb0RhdGE+a19fQmFja2luZ0ZpZWxkIDxBcmVhSW1wcm92ZURhdGE+a19fQmFja2luZ0ZpZWxkITxFdmVudFN1cmdlcnlEYXRhPmtfX0JhY2tpbmdGaWVsZCI8RXZlbnRGYWxsZG93bkRhdGE+a19fQmFja2luZ0ZpZWxkHjxFdmVudERydWdEYXRhPmtfX0JhY2tpbmdGaWVsZB88RXZlbnRCbG9vZERhdGE+a19fQmFja2luZ0ZpZWxkIzxFdmVudFRyZWF0bWVudERhdGE+a19fQmFja2luZ0ZpZWxkIjxFdmVudEFjY2lkZW50RGF0YT5rX19CYWNraW5nRmllbGQiPEV2ZW50U2VjdXJpdHlEYXRhPmtfX0JhY2tpbmdGaWVsZB48RXZlbnRIdXJ0RGF0YT5rX19CYWNraW5nRmllbGQiPEV2ZW50SW50dWJhdGVEYXRhPmtfX0JhY2tpbmdGaWVsZB88RXZlbnRIZWFydERhdGE+a19fQmFja2luZ0ZpZWxkITxFdmVudEluc3BlY3REYXRhPmtfX0JhY2tpbmdGaWVsZCQ8RXZlbnRBbmVzdGhlc2lhRGF0YT5rX19CYWNraW5nRmllbGQfPEV2ZW50T3RoZXJEYXRhPmtfX0JhY2tpbmdGaWVsZB88RXZlbnRBZG1pbkRhdGE+a19fQmFja2luZ0ZpZWxkKjxFdmVudENoZW1vdGhlcmFweUxlYWtEYXRhPmtfX0JhY2tpbmdGaWVsZCo8RXZlbnRDaGVtb3RoZXJhcHlPdmVyRGF0YT5rX19CYWNraW5nRmllbGQiPEZhbGxkb3duQW5hbHlEYXRhPmtfX0JhY2tpbmdGaWVsZCA8SW50dWJhdGVPdXREYXRhPmtfX0JhY2tpbmdGaWVsZBo8SXNOZXdDYXNlPmtfX0JhY2tpbmdGaWVsZBk8SXNTZW5kUUE+a19fQmFja2luZ0ZpZWxkGzxBdmlzb0VtcE5vPmtfX0JhY2tpbmdGaWVsZBw8Q3VycmVudEVkaXQ+a19fQmFja2luZ0ZpZWxkHjxBdmlzb0RlcHRDb2RlPmtfX0JhY2tpbmdGaWVsZB48UUFSZWNlaXZlRGF0ZT5rX19CYWNraW5nRmllbGQaPEV2ZW50RGVzYz5rX19CYWNraW5nRmllbGQgPEV2ZW50UmVhc29uRGVzYz5rX19CYWNraW5nRmllbGQbPENyZWF0ZURhdGU+a19fQmFja2luZ0ZpZWxkGzxJc0Nhc2VNYXJrPmtfX0JhY2tpbmdGaWVsZBg8TWVzc2FnZT5rX19CYWNraW5nRmllbGQdPFVzZXJJdGVtSW5mbz5rX19CYWNraW5nRmllbGQBAAABAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAAABAQEDAQEDAAEEAQEBAXFTeXN0ZW0uTnVsbGFibGVgMVtbU3lzdGVtLkRhdGVUaW1lLCBtc2NvcmxpYiwgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXXFTeXN0ZW0uTnVsbGFibGVgMVtbU3lzdGVtLkRhdGVUaW1lLCBtc2NvcmxpYiwgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQEjVXJnZW50QXZpc28uQXZpc29CZWFuLkxvZ2luVXNlckl0ZW0CAAAAAgAAAAoAAAoGAwAAAARURU1QCQMAAAAKCgoKCgYEAAAAT3QkUUF2aXNvJEF2aXNvTmFtZUA6QOmZs+S9vuaYjEAsQHQkUUF2aXNvJEF2aXNvRGVwdEA6QFJBRF/lvbHlg4/phqvlrbjpg6hfMTUxMDAKCgoKCgoKCgoKCgoKCgoKCgoKAQAGBQAAAAYxMDA4NjAKCgoKCgoACgkGAAAABQYAAAAjVXJnZW50QXZpc28uQXZpc29CZWFuLkxvZ2luVXNlckl0ZW0qAAAADV9ob3NwaXRhbENvZGUOX2hvc3BpdGFsQ05hbWUOX2xvZ2luRGVwdENvZGUPX2xvZ2luRGVwdEVOYW1lD19sb2dpbkRlcHRDTmFtZQxfbG9naW5Vc2VySUQOX2xvZ2luVXNlck5hbWUUX2xvZ2luQ29zdENlbnRlckNvZGUHX2V4dFRlbAZfZW1haWwJX2lzUUFSb2xlDV9pc1FBQm9zc1JvbGURX2lzUUFTdWJDaGllZlJvbGUOX2lzUUFDaGllZlJvbGUdPEhvc3BpdGFsQ29kZT5rX19CYWNraW5nRmllbGQePEhvc3BpdGFsQ05hbWU+a19fQmFja2luZ0ZpZWxkIDxJc0ZpcnN0Q2F0ZWdvcnk+a19fQmFja2luZ0ZpZWxkHjxGaXJzdERlcHRDb2RlPmtfX0JhY2tpbmdGaWVsZB48TG9naW5EZXB0Q29kZT5rX19CYWNraW5nRmllbGQfPExvZ2luRGVwdEVOYW1lPmtfX0JhY2tpbmdGaWVsZB88TG9naW5EZXB0Q05hbWU+a19fQmFja2luZ0ZpZWxkHDxMb2dpblVzZXJJRD5rX19CYWNraW5nRmllbGQePExvZ2luVXNlck5hbWU+a19fQmFja2luZ0ZpZWxkJDxMb2dpbkNvc3RDZW50ZXJDb2RlPmtfX0JhY2tpbmdGaWVsZBc8RXh0VGVsPmtfX0JhY2tpbmdGaWVsZBY8RU1haWw+a19fQmFja2luZ0ZpZWxkGzxFeHBlY3RCb3NzPmtfX0JhY2tpbmdGaWVsZB88RXhwZWN0U3ViQ2hpZWY+a19fQmFja2luZ0ZpZWxkHDxFeHBlY3RDaGllZj5rX19CYWNraW5nRmllbGQZPElzUUFSb2xlPmtfX0JhY2tpbmdGaWVsZB08SXNRQUJvc3NSb2xlPmtfX0JhY2tpbmdGaWVsZCE8SXNRQVN1YkNoaWVmUm9sZT5rX19CYWNraW5nRmllbGQePElzUUFDaGllZlJvbGU+a19fQmFja2luZ0ZpZWxkHDxJc051cnNlUm9sZT5rX19CYWNraW5nRmllbGQbPElzQm9zc1JvbGU+a19fQmFja2luZ0ZpZWxkHzxJc1N1YkNoaWVmUm9sZT5rX19CYWNraW5nRmllbGQcPElzQ2hpZWZSb2xlPmtfX0JhY2tpbmdGaWVsZB08RW1wVGl0bGVDb2RlPmtfX0JhY2tpbmdGaWVsZCA8RW1wU3ViVGl0bGVDb2RlPmtfX0JhY2tpbmdGaWVsZBs8SXNBbmFseXNpcz5rX19CYWNraW5nRmllbGQfPENvc3RDZW50ZXJMaXN0PmtfX0JhY2tpbmdGaWVsZCY8Q29uZmlybUNvc3RDZW50ZXJMaXN0PmtfX0JhY2tpbmdGaWVsZAEBAQEBAQEBAQEAAAAAAQEAAQEBAQEBAQEBAQEBAAAAAAAAAAABAQADAwEBAQEBAQEBAQEBAQEBf1N5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljLkxpc3RgMVtbU3lzdGVtLlN0cmluZywgbXNjb3JsaWIsIFZlcnNpb249Mi4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5XV1/U3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuTGlzdGAxW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQIAAAAKCgoKCgoKCgoKAAAAAAYHAAAAAlQwBggAAAAM5Y+w5aSn57i96ZmiAQYJAAAABDAwNTQJCQAAAAYKAAAAA1JBRAYLAAAAD+W9seWDj+mGq+WtuOmDqAkFAAAABg0AAAAJ6Zmz5L2+5piMBg4AAAAFMTUxMDAGDwAAAAAGEAAAABNzY3NuYWtlQG50dWguZ292LnR3CgoKAAAAAAAAAAAKCgAJEQAAAAkSAAAABBEAAAB/U3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuTGlzdGAxW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQMAAAAGX2l0ZW1zBV9zaXplCF92ZXJzaW9uBgAACAgJEwAAAAAAAAAAAAAAARIAAAARAAAACRMAAAAAAAAAAAAAABETAAAAAAAAAAseFElzTG9naW5Bdmlzb1NhbWVEZXB0BQRUcnVlFgICAQ9kFgQCBA9kFgICAQ9kFgICAQ9kFgQCAQ9kFgICAQ9kFgJmD2QWAgIBDw8WAh4EVGV4dGVkZAIHD2QWAgIBDw8WAh4HVmlzaWJsZWhkZAIID2QWAgIHD2QWAmYPZBYWAgEPD2QWAh4HT25DbGljawUXb25CdG5TYXZlQ2xpZW50Q2xpY2soKTtkAgMPD2QWAh8EBRdvbkJ0blNhdmVDbGllbnRDbGljaygpO2QCBQ8PFgIfA2hkZAIHDw8WAh8DaGRkAgkPDxYCHwNoZGQCCw8QDxYCHwNoZGRkZAINDw8WAh8DaBYCHwQFF29uQnRuU2F2ZUNsaWVudENsaWNrKCk7ZAIRDw8WAh8DaBYCHwQFI29uQnRuTm90aWZ5TnVyc2VDaGllZkNsaWVudENsaWNrKCk7ZAITDw8WAh8DaBYCHwQFGW9uQnRuU2VuZFFBQ2xpZW50Q2xpY2soKTtkAhUPDxYCHwNoZGQCFw8PFgIfA2hkZBgCBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUHY2FzZVRhYgUHY2FzZVRhYg8PZAIGZA== type=hidden _isContained="true"></SPAN><SPAN style="DISPLAY: none !important"><INPUT id=__EVENTVALIDATION value=/wEWLwKTyrPmAwLFqNCmCAL4uNeiDgL+6YyoCgK8tKGPAwKysaP2BQLznbHDCwKI2PO3DwLd1J/EDwLRr7iHAwKDnOXbBQKdh7f1BAL6vfvmBALF2YXoBQKMjbD0DQLM+7OvCQLUnqDaDQKQj6WvDQK3iO+CDwLE6MaVAwLa5dPVAQL1ps+hBwKtxtfyBgKziJnTDgK04/veDQLA2eoxAqyarcQDAr7tkKMPApKCtvgOAs/Tq7oMAszg6UwClYeC8A4C8snYdwKO78uTCwKl2JijDwK8rdP7CALjpJTSCwLmo9qFCgLK+JrjBAKFqtzTCAKa8szmAQLa6stVAtG3wtMPAumS4MYCAuexo40IAsKOjZMDAoSOsbME type=hidden _isContained="true"></SPAN><SPAN style="DISPLAY: none !important"><INPUT id=caseTab_caseTabEvent_EventContainer_eventTab_ClientState value='{"ActiveTabIndex":15,"TabState":[true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true]}' type=hidden _isContained="true"></SPAN></FORM>
+<SCRIPT language=javascript>
+
+      var gTimeCount;
+      var gRemainSec = 30 * 60;
+      //var gRemainSec = 30;
+    
+      function countTime()
+      {
+          gRemainSec--;
+
+          var tempMin = Math.floor(gRemainSec % 3600 / 60);
+          var tempSec = Math.floor(gRemainSec % 60);
+
+          $get('lblRemainMinUp').innerHTML = tempMin;
+          $get('lblRemainSecUp').innerHTML = tempSec;
+          $get('lblRemainMinDown').innerHTML = tempMin;
+          $get('lblRemainSecDown').innerHTML = tempSec;
+      
+          if ( gRemainSec != 0 )
+          {
+              gTimeCount = setTimeout("countTime()", 1000);
+          }
+          else
+          {
+              clearTimeout(gTimeCount);
+              //location.href = "http://www.yahoo.com.tw";
+              autoSaveClientTrigger("btnAutoSave");
+          }
+      }
+    
+      var isNeedCountTime = $get("hidIsNeedCountTime").value == "Y";
+      
+      if ( isNeedCountTime )
+      {
+          countTime();
+      }
+      else
+      {
+          //alert("不用 count time~~~");
+          $get('lblRemainMinUp').innerHTML = "--";
+          $get('lblRemainSecUp').innerHTML = "--";
+          $get('lblRemainMinDown').innerHTML = "--";
+          $get('lblRemainSecDown').innerHTML = "--";
+      }
+    
+    </SCRIPT>
+</BODY>

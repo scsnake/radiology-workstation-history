@@ -1,0 +1,18 @@
+- 簡介：
+  -- simpleRIS的內容每隔數秒鐘會同步到RIS，impression要回到RIS打(Win + Space)
+- Hotkeys:
+  -- Capslock: show simpleRIS
+  -- Win + Capslock: original capslock function
+  -- Win + Space: jump to RIS impression
+  -- Ctrl + N: reset text
+  -- Ctrl + B: update RIS text
+  -- Alt + Win + Q*2: exit
+  -- Win + Up/Down: change to previous/next stored text
+  -- F9/F10: search word and jump before/after
+  -- F7/F8: previous/next search result
+  -- F11/F12: previous/next study of RIS
+- FAQ:
+  -- 撰打視窗不見：按Capslock
+  -- 報告內容突然消失：Win + Up然後Win + Down
+  -- Capslock不能切換大小寫：要用Win + Capslock
+  -- 報告內容沒有同步：按Ctrl + B

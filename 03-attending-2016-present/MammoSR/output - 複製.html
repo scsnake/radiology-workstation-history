@@ -1,0 +1,131 @@
+﻿<style type="text/css">          @media all {
+	.page-break	{ display: none; }
+}
+
+@media print {
+	.page-break	{ display: block; page-break-after: always; }
+}
+* {
+font-family: "Times New Roman", "標楷體";
+line-height: 150%;
+}
+
+
+
+table.tftable {font-size:14pt;width:100%;border-width: 1px;border-color: black;border-collapse: collapse;}
+table.tftable th, .header {font-size:12pt;background-color:#b8b8b8;border-width: 1px;padding: 8px;border-style: solid;border-color: black;text-align:center;font-weight: bold;}
+table.tftable tr {background-color:#ffffff;}
+table.tftable td {font-size:12pt;border-width: 1px;border-style: solid;border-color: black;padding:8px;}
+
+table.inline {font-size:14pt;width:100%;border-width: 0px;border-collapse: collapse;}
+table.inline td {text-align: center;border-width: 0px 1px 0px 0px;border-color: black;}
+table.inline .tdLast {text-align: center;border-width: 0px 0px 0px 0px;border-color: black;}
+table.inline .tdBottomLine {text-align: center;border-color: black; border-width: 0px 1px 1px 0px; }
+table.inline .tdBottomLineLast {text-align: center;border-color: black; border-width: 0px 0px 1px 0px; }
+
+
+
+table.lesion {font-size:14pt;width:100%;border: 0px;border-collapse: collapse;padding: 0px 2px 0px 2px;}
+table.lesion tr {border: 1px black solid;padding: 0px 2px 0px 2px;}
+table.lesion td {border: 0px;padding: 0px 2px 0px 2px;}
+table.lesion .lesionTd {font-size:12pt;background-color:#dddddd;border-width: 1px;border-style: solid;border-color: black;text-align:left;font-weight: bold;padding: 0px 2px 0px 2px;}
+table.lesion .lWhite {border-left: white !important;}
+
+.bold {font-weight: bold;}
+.bottomSpace {margin: 0px 0px 8px 0px;}
+
+.t1 {font-weight: bold; font-size: 20pt; color: black; text-align: center;line-height: 100%;margin:10px;}
+</style>
+
+<table id="tfhover" class="tftable" border="1">
+<tr><th colspan=4>乳房攝影檢查結果</th></tr>
+<tr><td width=15% class=bold>醫院名稱</td><td width=35%>N醫院</td><td class=bold width=15%>醫事機構代碼</td><td style="padding: 0px">
+<table class=inline><tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class=tdLast>0</td></tr></table>
+</td></tr>
+<tr><td width=15% class=bold>攝影日期</td><td colspan=3>$examDate1 年 $examDate2 月 $examDate3 日</td></tr>
+<tr><td width=15% class=bold>攝影儀機型</td><td colspan=3>□ 傳統乳房攝影儀<br/>□ 數位乳房攝影儀（Computed Radiography, CR）<br/>■ 數位乳房攝影儀（Digital Radiography, DR）</td></tr>
+<tr><td class=bold>乳腺組成</td><td colspan=3>$bdcb1 Fatty breast; $bdcb2 Mildly dense; $bdcb3 Moderate dense; $bdcb4 Extremely dense</td></tr>
+<tr><td class=bold>與舊片比較</td><td colspan=3>$comparecb1 是;<br/>$comparecb2 否，理由為：$reasoncb1 第一次篩檢，$reasoncb2 無法取得舊片，$reasoncb3 無法獲知是否有舊片。</td></tr>
+<tr><td class=bold>攝影檢查結果</td><td colspan=3>
+<p class=bottomSpace>※ Category 0, 3, 4, 5需加填「乳房攝影檢查異常個案報告表」。</p>
+$resultcb1 (0)需附加其他影像檢查再評估<br/>
+<p class=bottomSpace> 　(Category 0: Need Additional Imaging Evaluation.)</p>
+$resultcb2 (1)無異常發現<br/>
+<p class=bottomSpace> 　(Category 1: Negative.)</p>
+$resultcb3 (2)良性發現<br/>
+<p class=bottomSpace> 　(Category 2: Benign Finding.)</p>
+$resultcb4 (3)可能是良性發現，需六個月追蹤檢查<br/>
+<p class=bottomSpace> 　(Category 3: Probably Benign Finding. Short Interval Follow-Up Suggested.)</p>
+$resultcb5 (4)可疑異常需考慮組織生檢<br/>
+ 　(Category 4: Suspicious Abnormality. Biopsy Should Be Considered.)</br>
+　$resultsubcb1 a. Low suspicion<br/>
+　$resultsubcb2 b. Intermediate suspicion<br/>
+<p class=bottomSpace>　$resultsubcb3 c. Moderate suspicion</p>
+$resultcb6 (5)高度疑似為惡性腫瘤，必須採取適當措施
+<p class=bottomSpace> 　(Category 5: Highly Suggestive of Malignancy. Appropriate Action Should Be Taken.)</p>
+</td></tr>
+<tr><td class=bold width=15%>放射科醫師</td><td width=35%>$radiologist</td><td class=bold width=15%>醫事放射師</td><td>$technician</td></tr>
+</table>
+
+
+<div class="page-break"></div>
+<p style="text-align: right;">【本檢查經費由國民健康署菸害防制及衛生保健基金支應】</p>
+<p class="t1">國民健康署婦女乳房攝影檢查異常個案報告表</p>
+<p style="text-align: right;">病歷號：$chartno</p>
+<table id="tfhover" class="tftable" border="1">
+<tr><td class=header colspan=4>檢查資訊</td></tr>
+<tr><td width=15% class=bold>姓名</td><td width=35%>$ptname</td><td width=15% style="padding: 0;">
+<table class=inline><tr height=50%><td class="bold" style="border-width: 0 0 1px 0;border-color: black;text-align: left;">身分證統一編號</td></tr><tr><td class="bold" style="text-align: left;">護照號碼(外籍人士)</td></tr></table></td>
+<td style="padding: 0;">
+<table class=inline>
+<tr class=tdRow height=50%><td width=10% class=tdBottomLine>$id1</td><td width=10% class=tdBottomLine>$id2</td><td width=10% class=tdBottomLine>$id3</td><td width=10% class=tdBottomLine>$id4</td><td width=10% class=tdBottomLine>$id5</td><td width=10% class=tdBottomLine>$id6</td><td width=10% class=tdBottomLine>$id7</td><td width=10% class=tdBottomLine>$id8</td><td width=10% class=tdBottomLine>$id9</td><td width=10% class=tdBottomLineLast>$id10</td></tr>
+<tr class=tdRow><td width=10%>　</td><td width=10%>　</td><td width=10%>　</td><td width=10%>　</td><td width=10%>　</td><td width=10%>　</td><td width=10%>　</td><td width=10%>　</td><td width=10%>　</td><td class=tdLast> </td></tr>
+</table>
+</td></tr>
+<tr><td width=15% class=bold>出生日期</td><td width=35%>$brth1 年 $brth2 月 $brth3 日</td><td width=15% class=bold>乳房攝影日期</td><td>$examDate1 年 $examDate2 月 $examDate3 日</td></tr>
+<tr><td width=15% class=bold>醫院名稱</td><td width=35%></td><td width=15% class=bold>放射科醫師</td><td>$radiologist</td></tr>
+<tr><td class=header colspan=4>乳房X光攝影陽性結果</td></tr>
+<tr><td colspan=4>
+$resultcb1 <span class=bold>Category 0</span>: Need additional imaging evaluation.<br/>
+$resultcb4 <span class=bold>Category 3</span>: Probably benign finding, short interval follow-up is suggested.<br/>
+$resultcb5 <span class=bold>Category 4</span>: Suspicious abnormality, biopsy should be considered.<br/>
+　　　　　　$resultsubcb1 a. Low suspicion<br/>
+　　　　　　$resultsubcb2 b. Intermediate suspicion<br/>
+　　　　　　$resultsubcb3 c. Moderate suspicion<br/>
+$resultcb6 <span class=bold>Category 5</span>: highly suggestive of malignancy, appropriate action should be taken.
+</td></tr>
+<tr><td class=header colspan=4>病灶勾選</td></tr>
+<tr><td colspan=4>
+$findingmasscb <span class=bold>1. Mass</span>: $massposcb1 Rt. $massposcb2 Lt. $massposcb3 Multiple, unilateral $massposcb4 Multiple, bilateral<br/>
+<table class=lesion style="margin: 2px 5px 10px 2px"><tr><td rowspan=3 class=lesionTd width=10%>Location</td><td colspan=3 width=54%>$massloccb1 UOQ　 $massloccb2 UIQ　 $massloccb3 LOQ　 $massloccb4 LIQ</td><td>$massloccb5 Subareolar</td><td>$massloccb6 Axillary tail</td></tr>
+<tr><td class=lesionTd width=18% rowspan=2>One view only</td><td colspan=2>$masshscb1 Upper Hemisphere</td><td colspan=2>$masshscb2 Lower Hemisphere</td></tr>
+<tr><td colspan=2>$masshscb3 Outer Hemisphere</td><td colspan=2>$masshscb4 Inner Hemisphere</td></tr>
+<tr><td class=lesionTd>Size</td><td>$masssizecb1 < 1.0cm</td><td>$masssizecb2 1-2cm</td><td>$masssizecb3 2-3cm</td><td>$masssizecb4 3-4cm</td><td>$masssizecb5 4-5cm</td></tr>
+<tr><td class=lesionTd>Morphology</td><td>$massmorcb1 Round</td><td>$massmorcb2 Oval</td><td>$massmorcb3 Lobular</td><td>$massmorcb4 Irregular</td><td> </td></tr>
+<tr><td class=lesionTd>Margin</td><td>$massmargincb1 Circumscribed</td><td>$massmargincb2 Microlobulated</td><td>$massmargincb3 Obscured</td><td>$massmargincb4 Indistinct</td><td>$massmargincb5 Spiculated</td></tr>
+<tr><td class=lesionTd>Density</td><td>$massdencb1 High-dencbsity</td><td>$massdencb2 Isodencbse</td><td>$massdencb3 Low-dencbsity</td><td>$massdencb4 Radiolucent</td><td>$massdencb5 Mixed dencbsity</td></tr>
+</table>
+$findingcalcb <span class=bold>2. Calcifications</span>: $calposcb1 Rt. $calposcb2 Lt. $calposcb3 Multiple, unilateral $calposcb4 Multiple, bilateral<br/>
+<table class=lesion style="margin: 2px 5px 10px 2px"><tr><td rowspan=3 class=lesionTd width=10%>Location</td><td colspan=3 width=54%>$calloccb1 UOQ　 $calloccb2 UIQ　 $calloccb3 LOQ　 $calloccb4 LIQ</td><td>$calloccb5 Subareolar</td><td>$calloccb6 Axillary tail</td></tr>
+<tr><td class=lesionTd width=18% rowspan=2>One view only</td><td colspan=2>$calhscb1 Upper Hemisphere</td><td colspan=2>$calhscb2 Lower Hemisphere</td></tr>
+<tr><td colspan=2>$calhscb3 Outer Hemisphere</td><td colspan=2>$calhscb4 Inner Hemisphere</td></tr>
+<tr><td class=lesionTd>Distribution</td><td>$caldistcb1 Cluster</td><td>$caldistcb2 Linear</td><td>$caldistcb3 Segmental</td><td>$caldistcb4 Regional</td><td>$caldistcb5 Diffuse</td></tr>
+<tr><td class=lesionTd>Morphology</td><td colspan=5>$calmorcb1 Amorcbphous　$calmorcb2 Coarse Heterogeneous　$calmorcb3 Pleomorcbphic　$calmorcb4 Fine Linear Branching</td></tr>
+</table>
+$findingasycb <span class=bold>3. Focal asymmetry</span>: $asyposcb1 Rt. $asyposcb2 Lt. <br/>
+<table class=lesion style="margin: 2px 5px 10px 2px"><tr><td rowspan=3 class=lesionTd width=10%>Location</td><td colspan=3 width=54%>$asyloccb1 UOQ　 $asyloccb2 UIQ　 $asyloccb3 LOQ　 $asyloccb4 LIQ</td><td>$asyloccb5 Subareolar</td><td>$asyloccb6 Axillary tail</td></tr>
+<tr><td class=lesionTd width=18% rowspan=2>One view only</td><td colspan=2>$asyhscb1 Upper Hemisphere</td><td colspan=2>$asyhscb2 Lower Hemisphere</td></tr>
+<tr><td colspan=2>$asyhscb3 Outer Hemisphere</td><td colspan=2>$asyhscb4 Inner Hemisphere</td></tr>
+</table>
+$findingadcb <span class=bold>4. Architectural distortion</span>: $ardiposcb1 Rt. $ardiposcb2 Lt. <br/>
+<table class=lesion style="margin: 2px 5px 10px 2px"><tr><td rowspan=3 class=lesionTd width=10%>Location</td><td colspan=3 width=54%>$ardiloccb1 UOQ　 $ardiloccb2 UIQ　 $ardiloccb3 LOQ　 $ardiloccb4 LIQ</td><td>$ardiloccb5 Subareolar</td><td>$ardiloccb6 Axillary tail</td></tr>
+<tr><td class=lesionTd width=18% rowspan=2>One view only</td><td colspan=2>$ardihscb1 Upper Hemisphere</td><td colspan=2>$ardihscb2 Lower Hemisphere</td></tr>
+<tr><td colspan=2>$ardihscb3 Outer Hemisphere</td><td colspan=2>$ardihscb4 Inner Hemisphere</td></tr>
+</table>
+$findingnipcb <span class=bold>5. Thickening or retraction of the skin and/or nipple</span>: $nipposcb1 Rt. $nipposcb2 Lt. <br/>
+$findinglncb <span class=bold>6. Dense or enlarged axillary LNs</span>: $lnposcb1 Rt. $lnposcb2 Lt. <br/>
+$findingductcb <span class=bold>7. Dilated lactiferous ducts</span>: $ductposcb1 Rt. $ductposcb2 Lt. <br/>
+$findingskincb <span class=bold>8. Diffuse thickening of the skin and increased density</span>: $skinposcb1 Rt. $skinposcb2 Lt. <br/>
+$findingothercb <span class=bold>9. Others</span>: $other
+</td></tr>
+</table>

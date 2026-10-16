@@ -1,0 +1,35 @@
+- 打開Hotstring Helper.ini
+  -- 設定要作用的程式，以逗號分隔，可填exe檔名（大小寫相符）或視窗部分標題
+  -- 設定三種搜尋模式的快速鍵
+- 需要查詢的ahk放到Hotstring Helper.exe的資料夾，然後執行Hotstring Helper.exe；或者拖曳到Hotstring Helper.exe
+- preSearch: 預設為分號「;」，可搜尋分號「;」後的字串(字母、問號「?」、星號「*」，三個字以上)
+  -- 輸入「;acr」搜尋「acr」的所有結果，包括acromion, intracranial等字串
+	-- 輸入「;fem?r」搜尋結果包括femur, femoral等字串，問號「?」表示「任一字元」
+	-- 輸入「;dis*tion」搜尋結果包括dislocation, dissection, disc herniation等字串，星號「*」表示「零或任意個字元」
+- postSearch: 字串接反斜線「\」，則搜尋反斜線「\」前字串，顯示符合結果
+- keywordSearch: 選取字串後按Alt+F搜尋
+- 符合結果
+  -- 以滑鼠滾輪或PageUp/PageDown瀏覽上下頁
+	-- 以數字鍵選擇符合結果，Shift+數字鍵將字串首字轉換為大寫
+	-- 空白鍵選擇第一個結果
+	-- Esc取消搜尋
+- Ctrl+Alt+Q結束程式
+
+- Open "Hotstring Helper.ini"
+  -- Set action windows (separated by comma ",") with executable name (.exe, case sensitive) or part of window title
+  -- Set hotkeys for searching
+- Copy ahk file(s) in the folder of "Hotstring Helper.exe", then execute "Hotstring Helper.exe"; or drag and drop ahk file(s) onto "Hotstring Helper.exe"
+- preSearch: semicolon(;) as default; string after the semicolon will be searched; the string must contains more than 3 alphabets/question mark (?)/asterisk (*)
+  -- ";acr" will search hotstrings contain "acr", including "acromion", "intracranial", etc.
+	-- ";fem?r" will search "femur", "femoral", etc. "?" matches a single character.
+	-- ";dis*tion" will search "dislocation", "dissection", "disc herniation", etc. "*" matches zero or more characters.
+- postSearch: enter string and backslash (\) to search the string before "\"
+- keywordSearch: select string and press Alt+F to search
+- Matched results:
+  -- Mouse scrolling or PageUp/PageDown to view other pages
+	-- Use numeric key (0-9) to select result; press "Shift" and number will capitalize the selected result.
+	-- "Space": select first result of current page
+	-- "Esc": cancel searching/selection
+- "Ctrl+Alt+Q": quit the program
+
+LastUpdate: 2017/03/19 by scsnake@gmail.com

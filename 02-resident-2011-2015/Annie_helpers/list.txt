@@ -1,0 +1,3 @@
+microsoft,soft,andy
+apple,apple,jack
+tesla,tesla,chris

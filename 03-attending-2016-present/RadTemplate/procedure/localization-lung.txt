@@ -1,0 +1,17 @@
+History: [RUL GGN.]
+
+CT guided localization of the lung is performed in [supine||prone] position with the use of a 22G chiba needle. 
+-- Indication: pre-operative localization.
+-- Size and location of the lesion: [a GGN] (size [] mm)[] in [RUL].[]
+-- Underlying lung condition: [no emphysema.]
+-- Total length of the needle from skin to lesion: [] mm.
+-- Total length of the needle traversing lung: [] mm.
+-- Amount of dye (Patent Blue V) injection: [0.2] ml[].
+-- Pneumothorax: [no||minimal|mild|moderate|severe].
+-- Hemorrhage: [no||minimal|mild|moderate|severe].
+-- Hemoptysis: [no||minimal|mild|moderate|severe].
+-- Vital signs after procedure: [stable.]
+-- Recommended position after procedure: [supine||prone]. Suggest complete bed rest and perform surgical resection as soon as possible.
+
+Impression:
+[A GGN in LUL][ status post CT-guided dye localization.]

@@ -1,0 +1,5 @@
+﻿Workstation,IP,Location
+RAD-WS01,10.0.0.100,Reading Room 1
+RAD-WS02,10.0.0.100,Reading Room 1
+RAD-WS03,10.0.0.100,Reading Room 2
+RAD-WS04,10.0.0.100,ER Reading Room

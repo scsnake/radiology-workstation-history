@@ -1,0 +1,90 @@
+良性乳房攝影發現。建議每年追蹤或依臨床醫師建議追蹤。
+緻密型乳房，無異常乳房攝影發現 。建議每年追蹤或依臨床醫師建議追蹤。
+
+影像品質不佳. 
+緻密型乳房，無異常乳房攝影發現 。建議每年追蹤，若摸到腫塊則需施行乳房超音波對照。
+良性乳房攝影發現。建議每年追蹤。
+
+Dense breasts; BI-RADS 2, benign calcifications at the bilateral breasts.
+緻密型乳房，良性鈣化於兩側乳房。
+Dense breasts, which may decrease the sensitivity of mammography or obscure the lesion. Ultrasound correlation if palpable mass.
+緻密型乳房，乳房攝影的敏感度會因此減低，甚至遮蔽病灶。若摸到腫塊，則需施行乳房超音波對照。
+
+緻密型乳房，無異常乳房攝影發現。建議每年追蹤。若摸到腫塊，則需施行乳房超音波對照。
+緻密型乳房，良性鈣化於兩側乳房。建議每年追蹤。若摸到腫塊，則需施行乳房超音波對照。
+
+he
+terogeneously dense fibroglandular tissue of both breasts, which can decrease the sensitivity of mammography. 
+ctrl+ fu
+Suggest annual follow up and ultrasound correlation if palpable mass.
+
+ctrl+ so
+Suggest breast ultrasound correlation.
+建議乳房超音波對照。
+
+ctrl+ de
+Dense breasts, which may decrease the sensitivity of mammography or obscure the lesion. Ultrasound correlation if palpable mass.
+緻密型乳房，無異常乳房攝影發現，但乳房攝影的敏感度會因此減低，甚至遮蔽病灶。若摸到腫塊，則需施行乳房超音波對照。
+
+No definite abnormality noted in this study.
+BI-RADS 1, negative finding, suggest annual mammogram follow up or at the recommendation of the patient's physician.
+Benign mammographic findings.
+  
+
+Probably benign mammographic findings.
+可能為良性乳房攝影發現。
+可能為良性乳房攝影發現。建議短期追蹤。並加超音波對照。
+Suspicious mammographic findings.
+疑似不正常的乳房攝影發現。
+
+Suggest annual follow up or at the discretion of the patient's physician.
+建議每年追蹤或依臨床醫師建議追蹤。
+.
+Suggest breast ultrasound correlation.
+建議乳房超音波對照。
+
+Suggest annual follow up and breast ultrasound correlation.
+建議每年追蹤與乳房超音波對照。
+
+Suggest short-term follow up or breast ultrasound correlation.
+建議短期密切追蹤或乳房超音波對照。
+
+Indetermined mammographic findings
+性質未定之乳房攝影發現。建議乳房超音波對照。建議乳房超音波對照，與放大攝影。 (左乳) (右乳)
+
+Suggest magnification views. Ultrasound correlation if palpable mass.
+建議放大攝影。 若摸到腫塊，則需施行乳房超音波對照。
+
+緻密型乳房，無異常乳房攝影發現。建議每年追蹤與乳房超音波對照。
+放大攝影
+緻密型乳房，良性乳房攝影發現。建議每年追蹤與乳房超音波對照。
+緻密型乳房，乳房攝影的敏感度會因此減低，甚至遮蔽病灶。建議乳房超音波對照。
+無異常乳房攝影發現，建議每年追蹤。若摸到腫塊，則需施行乳房超音波對照。
+緻密型乳房，左乳輕微變形。建議乳房超音波對照與每年追蹤。
+良性乳房攝影發現。建議每年追蹤，若摸到腫塊，則需施行乳房超音波對照。
+
+兩側乳房瀰漫性矽膠注射肉芽變化
+兩側乳房腫塊與鈣化
+，放大攝影
+不對稱
+Benign mammographic findings.  Suggest follow up annually and breast ultrasound if there is palpable lump.      
+良性乳房攝影發現。建議每年追蹤。若摸到腫塊，則需施行乳房超音波對照。
+左側乳房性質未定之腫塊，建議乳房超音波檢查，如有需要則進行組織切片證實。
+建議乳房超音波對照，與放大攝影。
+建議乳房超音波對照，與局部壓迫攝影。
+建議放大與局部壓迫攝影。
+對照舊片
+
+緻密型乳房，良性乳房攝影發現。建議每年追蹤，若摸到腫塊則需施行乳房超音波對照。
+緻密型乳房，良性乳房攝影發現。建議每年追蹤。
+兩側乳房植入物。
+
+無異常乳房攝影發現。建議每年追蹤。
+緻密型乳房，無異常乳房攝影發現。
+緻密型乳房，良性鈣化於兩側乳房。
+若摸到腫塊，則需施行乳房超音波對照。
+建議每年追蹤與乳房超音波對照。
+
+
+Dense breasts; s/p bilateral retroglandular saline bag implantation.   Suggest annual follow up and ultrasound correlation if palpable lump.  
+緻密型乳房，兩側乳房植入物。建議每年追蹤，若摸到腫塊則需施行乳房超音波對照。

@@ -1,0 +1,10 @@
+<OBJECT style="DISPLAY: none" id=printDaemon classid=PrintLibrary.dll></OBJECT>
+<input type=text id=input></input>
+<script>
+var printDaemon = document.getElementById('printDaemon');
+function print(){
+	printDaemon.Compressed = false;
+	printDaemon.Data = document.getElementById('input').innerText;
+	printDaemon.Print();
+}
+</script>

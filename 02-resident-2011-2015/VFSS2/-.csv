@@ -1,0 +1,52 @@
+﻿StudyNo,
+ExamDate,2026/09/01 08:59:05
+AccessNo,
+ChartNo,
+PatientName,
+PatientAge,,y/o
+PatientGender,Male
+PatientFrom,OPD
+ChiefComplaint,
+Diagnosis,,""
+Swallowing Difficulty,""
+CVA Attack date,
+CVA location,
+NPC R/T,0
+NPC C/T,0
+NPC R/T Period,,
+NPC Symptom start at,
+NPC R/T type,
+NPC R/T dose,
+
+,1,2,3,4,PAS,Amount,Symptomatic,OralResidue,PharyngealResidue
+Thin5,,,,,,,0,,
+Thick5,,,,,,,0,,
+Paste5,,,,,,,0,,
+Pudding5,,,,,,,0,,
+frames to deci-seconds,0
+
+Bolus holding,,
+Oral drooling,,
+Premature oral leakage,,
+Oral mucosal coating,,
+Epiglottic movement,,
+Velar elevation,,
+Pharyngo-oral reflux,,
+Symmetry,,
+Tongue-palate contact,,
+Piecemeal swallowing,,
+Pharyngeal contraction,,
+Pharyngeal mucosal coating,,
+Hyoid bone elevation,,
+Pharyngo-nasal reflux,,
+Retropharyngeal soft tissue,,
+
+,Thyrohyoid approximation,Thyroid cartilage resting position,Hyoid cartilage resting position,Hyoid elevated position (Y-axis),"Hyoid elevated position (X-axis, over half of Mentle-Mandibular angle distance)"
+thin,,,,,0
+thick,,,,,0
+paste,,,,,0
+pudding,,,,,0
+
+Other comment,""
+Conclusion,""
+Examiner,,

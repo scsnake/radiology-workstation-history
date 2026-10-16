@@ -1,0 +1,6 @@
+Angiography is scheduled on "date" "time" on call.
+Please: 
+- Obtain informed consent.
+- Check patient laboratory data before the procedure (PLT, PT/PTT, and renal function).
+- NPO for 6 hours before angiography except medicines (but OHA and insulin should be held during NPO)
+- Presence of family during the whole procedure

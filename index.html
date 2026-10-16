@@ -1,0 +1,2779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Radiology Workstation Tools Catalog & Historical Archive (2003 – Present)</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --border-focus: #3b82f6;
+      --primary: #2563eb;
+      --primary-light: #3b82f6;
+      --danger: #ef4444;
+      --success: #10b981;
+      --era1: #059669;
+      --era2: #0284c7;
+      --era3: #7c3aed;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 1360px;
+      margin: 0 auto;
+    }
+    header {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.5rem 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.02em;
+    }
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-top: 0.25rem;
+      max-width: 900px;
+    }
+    .autosave-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.35rem 0.8rem;
+      border-radius: 999px;
+      background: #f1f5f9;
+      color: var(--text-muted);
+      border: 1px solid var(--border);
+      transition: all 0.3s ease;
+    }
+    .autosave-pill.saved {
+      background: #ecfdf5;
+      color: var(--success);
+      border-color: #a7f3d0;
+    }
+    .autosave-pill.saving {
+      background: #eff6ff;
+      color: var(--primary);
+      border-color: #bfdbfe;
+    }
+    .action-bar {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      align-items: center;
+      padding-top: 0.75rem;
+      border-top: 1px solid var(--border);
+    }
+    .btn {
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 0.45rem 1rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: #ffffff;
+      color: var(--text);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      transition: background 0.15s, border-color 0.15s;
+    }
+    .btn:hover {
+      background: #f1f5f9;
+      border-color: #cbd5e1;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+    }
+    .btn-primary:hover {
+      background: #1d4ed8;
+      border-color: #1d4ed8;
+    }
+    .btn-danger {
+      color: var(--danger);
+    }
+    .btn-danger:hover {
+      background: #fee2e2;
+      border-color: #fca5a5;
+    }
+    .controls {
+      display: flex;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .filter-btn {
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 0.4rem 0.9rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: var(--card-bg);
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover {
+      border-color: #cbd5e1;
+      color: var(--text);
+    }
+    .filter-btn.active {
+      background: var(--text);
+      color: #ffffff;
+      border-color: var(--text);
+    }
+    .status-filter-group {
+      display: inline-flex;
+      gap: 6px;
+      align-items: center;
+      margin-left: 8px;
+      padding-left: 8px;
+      border-left: 1px solid #cbd5e1;
+    }
+    .search-box {
+      flex: 1;
+      min-width: 260px;
+      padding: 0.45rem 0.9rem;
+      font-size: 0.85rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: var(--card-bg);
+      outline: none;
+    }
+    .search-box:focus {
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+    }
+    .tool-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      transition: transform 0.2s, box-shadow 0.2s, opacity 0.2s;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    .card:hover {
+      box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+    }
+    .card.is-excluded {
+      opacity: 0.45;
+      background: #f8fafc !important;
+      border: 2px dashed #cbd5e1 !important;
+      box-shadow: none !important;
+    }
+    .card.is-excluded .card-title {
+      text-decoration: line-through;
+      color: #94a3b8 !important;
+    }
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 0.5rem;
+      gap: 8px;
+    }
+    .card-title {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+    .badge-excluded {
+      background: #fee2e2;
+      color: #991b1b;
+      border: 1px solid #f87171;
+      font-size: 10px;
+      font-weight: 800;
+      padding: 1px 6px;
+      border-radius: 999px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .exclude-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 12px;
+      font-weight: 600;
+      color: #64748b;
+      cursor: pointer;
+      user-select: none;
+      padding: 2px 7px;
+      border-radius: 5px;
+      background: #f1f5f9;
+      border: 1px solid #cbd5e1;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+    .exclude-label:hover {
+      background: #fee2e2;
+      color: #b91c1c;
+      border-color: #fca5a5;
+    }
+    .exclude-label input[type="checkbox"] {
+      cursor: pointer;
+      width: 14px;
+      height: 14px;
+      accent-color: #ef4444;
+    }
+    .era-tag {
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .tag-era1 { background: #d1fae5; color: var(--era1); }
+    .tag-era2 { background: #e0f2fe; color: var(--era2); }
+    .tag-era3 { background: #ede9fe; color: var(--era3); }
+    .meta-line {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+    }
+    .desc-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.35rem;
+    }
+    .desc-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+    }
+    .desc-reset {
+      font-size: 0.75rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--primary);
+      text-decoration: underline;
+    }
+    .editable-desc {
+      width: 100%;
+      min-height: 85px;
+      padding: 0.6rem;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-family: inherit;
+      font-size: 0.9rem;
+      line-height: 1.45;
+      color: #1e293b;
+      background: #f8fafc;
+      resize: vertical;
+      transition: all 0.2s;
+      margin-bottom: 0.75rem;
+    }
+    .editable-desc:focus {
+      outline: none;
+      background: #ffffff;
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+    }
+    .highlights {
+      background: #f1f5f9;
+      padding: 0.65rem 0.85rem;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+      font-size: 0.82rem;
+      margin-top: auto;
+    }
+    .highlights ul {
+      margin-left: 1.1rem;
+      margin-top: 0.25rem;
+    }
+    .highlights li {
+      margin-bottom: 0.2rem;
+      color: #334155;
+    }
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      padding-top: 0.5rem;
+      border-top: 1px solid var(--border);
+    }
+    .card-footer code {
+      background: #f1f5f9;
+      padding: 0.1rem 0.3rem;
+      border-radius: 3px;
+    }
+    .toast {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background: #0f172a;
+      color: #ffffff;
+      padding: 0.75rem 1.25rem;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+      display: none;
+      z-index: 100;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-top">
+        <div>
+          <h1>Radiology Workstation Tools Catalog & Editor</h1>
+          <p class="subtitle">A historical archive of self-authored scripts and desktop tools (2003 – Present). Preserved as original records: not AI-optimized, not bug-fixed, and not guaranteed to be runnable. Intended solely as a personal record of coding experience and workflow ideas.</p>
+        <div class="anonymization-banner" style="margin-top: 0.85rem; padding: 0.65rem 1rem; background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 6px; font-size: 0.82rem; color: #166534; line-height: 1.45;">
+          <strong>🔒 Anonymization & Privacy Key:</strong> All institutional identifiers, personnel names, and endpoints use canonical sanitization placeholders:
+          <span style="display: block; margin-top: 0.25rem; color: #15803d;">
+            • <strong>Hospitals:</strong> <code>N hospital</code> (Main university medical center), <code>C hospital</code> (Regional Catholic hospital, post-2020)<br>
+            • <strong>Branches:</strong> Initialized prefixes: <code>Y branch</code> (Yunlin), <code>H branch</code> (Hsinchu), <code>J branch</code> (Jinshan), <code>B branch</code> (Bei-Hu), <code>ZD branch</code> (Zhudong), <code>N總院</code> (Main Campus)<br>
+            • <strong>Personnel:</strong> Generic titles (<code>張醫師</code>, <code>王醫師</code>, <code>陳醫師</code>, <code>林醫師</code>, <code>游醫師</code>) replacing real clinician names<br>
+            • <strong>Endpoints & PHI:</strong> Live hospital domains (institutional live domains) remapped to <code>*.local</code> simulation endpoints; clinical records replaced with synthetic mock data (<code>0000001</code>, <code>王小明</code>)
+          </span>
+        </div>
+        </div>
+        <div id="autosavePill" class="autosave-pill saved">
+          <span>●</span> <span id="autosaveText">All changes saved locally</span>
+        </div>
+      </div>
+
+      <div class="action-bar">
+        <button class="btn btn-primary" onclick="downloadUpdatedHtml()">
+          💾 Download Updated HTML
+        </button>
+        <button class="btn" onclick="exportJson()">
+          📄 Export Updated JSON
+        </button>
+        <button class="btn" onclick="exportMarkdownReadme()">
+          📝 Export Markdown for README
+        </button>
+        <button class="btn btn-danger" onclick="resetAllDescriptions()">
+          ↺ Reset All to Defaults
+        </button>
+      </div>
+    </header>
+
+    <div class="controls">
+      <button class="filter-btn active" onclick="filterEra('all')">All Periods (105)</button>
+      <button class="filter-btn" onclick="filterEra('01-student-2003-2010')">Student (2003–2010) (8)</button>
+      <button class="filter-btn" onclick="filterEra('02-resident-2011-2015')">Resident (2011–2015) (48)</button>
+      <button class="filter-btn" onclick="filterEra('03-attending-2016-present')">Attending (2016–Present) (49)</button>
+      <div class="status-filter-group">
+        <button class="filter-btn" id="filterIncludedBtn" onclick="filterStatus('included')" title="Show only included tools">Included (<span id="countIncluded">105</span>)</button>
+        <button class="filter-btn" id="filterExcludedBtn" onclick="filterStatus('excluded')" style="border-color:#ef4444; color:#b91c1c;" title="Show only excluded tools">Excluded (<span id="countExcluded">0</span>)</button>
+      </div>
+      <input type="text" id="search" class="search-box" placeholder="Search tools, technologies, keywords..." oninput="applyFilters()">
+    </div>
+
+    <div class="tool-grid" id="toolGrid">
+    </div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+
+  <script>
+    const DEFAULT_TOOLS = [
+  {
+    "era": "01-student-2003-2010",
+    "era_label": "Student (2003 – 2010)",
+    "id": "copyUSB",
+    "name": "copyUSB (copyppt)",
+    "tech": "AutoHotkey v1",
+    "period": "2008 – 2013",
+    "folder": "01-student-2003-2010/copyUSB",
+    "intro": "This tool automatically copies presentation slides and teaching files across hospital computers. It detects USB drive insertion and backs up files without manual navigation.",
+    "highlights": [
+      "USB drive insertion detection via Windows messages",
+      "Automatic presentation file synchronization",
+      "Reliable backup workflow for bedside teaching stations"
+    ],
+    "key_files": [
+      "copyppt.ahk",
+      "copyUSB.ahk"
+    ]
+  },
+  {
+    "era": "01-student-2003-2010",
+    "era_label": "Student (2003 – 2010)",
+    "id": "ICUbatch",
+    "name": "ICUbatch (orderBatch)",
+    "tech": "AutoHotkey v1, DOM Automation",
+    "period": "2010/02 – 2013",
+    "folder": "01-student-2003-2010/ICUbatch",
+    "intro": "This tool accelerates order entry during ICU rotations. It automates repetitive entry of routine medication orders and laboratory requests in the hospital web portal.",
+    "highlights": [
+      "Multi-item order entry for legacy web portals",
+      "Custom hotkeys for frequent ICU order sets",
+      "Keyboard input reduction during night shifts"
+    ],
+    "key_files": [
+      "orderBatch.ahk",
+      "ICUbatch.ahk"
+    ]
+  },
+  {
+    "era": "01-student-2003-2010",
+    "era_label": "Student (2003 – 2010)",
+    "id": "replyConsult",
+    "name": "replyConsult",
+    "tech": "AutoHotkey v1, Template Automation",
+    "period": "2010/03 – 2015",
+    "folder": "01-student-2003-2010/replyConsult",
+    "intro": "This tool assists clinicians in drafting consultation replies for emergency and procedure teams. It provides structured text templates for common radiological procedures.",
+    "highlights": [
+      "Structured templates for angio, drainage, and emergency procedures",
+      "Generic procedure note library for PTCD, TAE, and biopsy",
+      "Automatic text insertion into hospital consultation systems"
+    ],
+    "key_files": [
+      "replyERconsult.ahk",
+      "angioconsult 2.ahk"
+    ]
+  },
+  {
+    "era": "01-student-2003-2010",
+    "era_label": "Student (2003 – 2010)",
+    "id": "YBranch",
+    "name": "Y Branch Helper",
+    "tech": "AutoHotkey v1",
+    "period": "2010/02 – 2013",
+    "folder": "01-student-2003-2010/YBranch",
+    "intro": "This script adapts workstation window layouts for the N hospital Y branch. It streamlines interactions between local medical order systems and IMPAX PACS.",
+    "highlights": [
+      "Window coordinate adjustment for regional hospital workstations",
+      "Single-key login and application switching",
+      "Consistent user experience between hospital campuses"
+    ],
+    "key_files": [
+      "Y分院IMPAX.ahk",
+      "Y分院醫令系統.ahk"
+    ]
+  },
+  {
+    "era": "01-student-2003-2010",
+    "era_label": "Student (2003 – 2010)",
+    "id": "LZ_FV_automation",
+    "name": "LZ FV Automation & DOM Experiments",
+    "tech": "AutoHotkey v1, COM, GDI+",
+    "period": "2008 – 2009",
+    "folder": "01-student-2003-2010/LZ_FV_automation",
+    "intro": "This project explores Internet Explorer DOM inspection, COM interfaces, and image pattern matching. It established the core automation techniques later used in clinical web portals.",
+    "highlights": [
+      "Direct DOM element control via COM interfaces",
+      "Screen coordinate and color detection via GDI+",
+      "Foundational design for subsequent clinical automation"
+    ],
+    "key_files": [
+      "farmville.ahk",
+      "COM.ahk",
+      "IE HTML Element Spy.ahk"
+    ]
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "VFSS2",
+    "name": "VFSS2 (Swallowing Study PDF Engine)",
+    "tech": "AutoHotkey v1, LibHaru C Library (HPDF)",
+    "period": "2011/08 – 2017",
+    "folder": "02-resident-2011-2015/VFSS2",
+    "intro": "This tool generates clinical reports for Videofluoroscopic Swallowing Studies. It records dynamic examination parameters through a GUI and produces standardized PDF reports directly.",
+    "highlights": [
+      "Direct PDF creation via LibHaru without virtual print drivers",
+      "Interactive clinical scoring form",
+      "Standardized examination report layout"
+    ],
+    "key_files": [
+      "VFSS2 20140824 pretty form.ahk",
+      "HPDF.ahk",
+      "VFSS3.ahk"
+    ]
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "bone_age",
+    "name": "bone_age (Bone Age Reporting Assistant)",
+    "tech": "AutoHotkey v1, RIS/IMPAX Polling",
+    "period": "2012/02 – 2021",
+    "folder": "02-resident-2011-2015/bone_age",
+    "intro": "This assistant calculates pediatric bone age based on Greulich and Pyle standards. It extracts patient age and gender from PACS to generate formatted assessment reports.",
+    "highlights": [
+      "Automatic patient metadata extraction from RIS and IMPAX",
+      "Reference standard charts for pediatric assessment",
+      "One-click draft report insertion into RIS"
+    ],
+    "key_files": [
+      "boneage_CTH.ahk",
+      "boneage report.ahk"
+    ]
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "diff_match_patch",
+    "name": "diff_match_patch (Report Revision Diff)",
+    "tech": "AutoHotkey v1, C++, C#, JavaScript",
+    "period": "2012/11 – 2015",
+    "folder": "02-resident-2011-2015/diff_match_patch",
+    "intro": "This tool analyzes text revisions between preliminary drafts and finalized reports. It applies the diff-match-patch algorithm to highlight modifications for workflow review and training feedback.",
+    "highlights": [
+      "Character-level and word-level text difference calculation",
+      "Visual highlight of additions, deletions, and corrections",
+      "Educational feedback loop for clinical report training"
+    ],
+    "key_files": [
+      "diff_match_patch.cpp",
+      "DiffMatchPatch.cs",
+      "diff_match_patch.js"
+    ]
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "scsnake_sync",
+    "name": "scsnake sync",
+    "tech": "AutoHotkey v1, AHKsock (TCP Sockets)",
+    "period": "2013/06 – 2019",
+    "folder": "02-resident-2011-2015/scsnake_sync",
+    "intro": "This daemon synchronizes scripts, hotstrings, and settings across reading room computers. It communicates over the local hospital network using lightweight TCP sockets.",
+    "highlights": [
+      "Client-server synchronization using TCP sockets",
+      "Automatic workstation discovery and background updates",
+      "Configuration synchronization without physical USB drives"
+    ],
+    "key_files": [
+      "autoSync.ahk",
+      "AHKsock - client.ahk",
+      "AlwaysSync.ahk"
+    ]
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "RadCapture",
+    "name": "RadCapture",
+    "tech": "AutoHotkey v1, GDI+",
+    "period": "2014/07 – 2014/08",
+    "folder": "02-resident-2011-2015/RadCapture",
+    "intro": "This utility captures and crops diagnostic imaging findings directly from high-resolution medical monitors. It helps users collect teaching cases during routine reading.",
+    "highlights": [
+      "Full-resolution monitor capture without compression loss",
+      "Automatic file naming and timestamping",
+      "Non-intrusive floating overlay"
+    ],
+    "key_files": [
+      "RadCapture.ahk",
+      "Copy of ScreenCapture.ahk"
+    ]
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "g0v_campaign_finance",
+    "name": "g0v Campaign Finance Digitization",
+    "tech": "AutoHotkey v1",
+    "period": "2014/04 – 2017",
+    "folder": "02-resident-2011-2015/g0v_campaign_finance",
+    "intro": "This script contributed to the g0v civic hackathon for crowdsourced document verification. It accelerates image inspection and data entry for public audit records.",
+    "highlights": [
+      "Civic tech open-source collaboration",
+      "Automated document image loading workflow",
+      "Keyboard-driven fast verification interface"
+    ],
+    "key_files": [
+      "政治獻金數位化.ahk"
+    ]
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "DigiSign",
+    "name": "DigiSign (Electronic Digital Signing)",
+    "tech": "AutoHotkey v1, Smart Card Dialog Automation",
+    "period": "2014/05 – 2021",
+    "folder": "02-resident-2011-2015/DigiSign",
+    "intro": "This helper automates confirmation dialogs for hospital smart-card digital signing. It manages certificate verification prompts during high-volume report sign-off.",
+    "highlights": [
+      "Automated interaction with smart card verification prompts",
+      "Multi-user configuration profile support",
+      "Batch report verification workflow"
+    ],
+    "key_files": [
+      "DigiSign.ahk",
+      "電子簽章.ahk",
+      "closePop.ahk"
+    ]
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "peer_hotstrings",
+    "name": "Peer Hotstrings (Reporting Shortcuts)",
+    "tech": "AutoHotkey v1",
+    "period": "2011 – 2015",
+    "folder": "02-resident-2011-2015/peer_hotstrings_RadiologyAHK",
+    "intro": "This collaborative repository provides standardized reporting hotstrings. It offers structured diagnostic phrasing across thoracic, musculoskeletal, neurological, and abdominal imaging.",
+    "highlights": [
+      "Custom abbreviation collections for clinical colleagues",
+      "Subspecialty phrasing sets for CT, MRI, and radiography",
+      "Shared workflow shortcuts across team members"
+    ],
+    "key_files": [
+      "AutoCorrect.ahk",
+      "radiology.ahk",
+      "TYY.ahk",
+      "CWL.AHK"
+    ]
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "Residency_R3_Templates",
+    "name": "Subspecialty Reporting Templates",
+    "tech": "AutoHotkey v1",
+    "period": "2008 – 2015",
+    "folder": "02-resident-2011-2015/Residency_R3_Templates",
+    "intro": "This collection provides specialized report templates for advanced imaging rotations. It covers breast imaging (ultrasound, mammography) and thoracic imaging (chest CT, cardiac MRI).",
+    "highlights": [
+      "Structured template expansions for breast ultrasound and mammography",
+      "Standardized findings templates for thoracic CT",
+      "Evaluation macros for cardiac magnetic resonance"
+    ],
+    "key_files": [
+      "Chest.ahk",
+      "BREAST.ahk",
+      "HYSbreast.ahk",
+      "HYScMR.ahk"
+    ]
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "dotnet_RIS_interop",
+    "name": "dotnet RIS Interop",
+    "tech": "C#, VB.NET, AutoHotkey v1, CLR.ahk",
+    "period": "2011 – 2019",
+    "folder": "02-resident-2011-2015/dotnet_RIS_interop",
+    "intro": "This library bridges AutoHotkey to hospital RIS client controls using C# and .NET interop. It reads data directly from DataGrid controls without screen scraping.",
+    "highlights": [
+      "In-process .NET DataGrid inspection via C# and CLR wrappers",
+      "Direct retrieval of accession numbers and patient status",
+      "High reliability compared to visual accessibility hooks"
+    ],
+    "key_files": [
+      "getDataGrid.cs",
+      "getDataGrid.ahk",
+      "CLR.ahk"
+    ]
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "TMS_reader",
+    "name": "TMS Reader",
+    "tech": "AutoHotkey v1",
+    "period": "2013 – 2018",
+    "folder": "02-resident-2011-2015/TMS_reader",
+    "intro": "This tool parses schedules and course records from the hospital Teaching Management System. It presents clinical training credits in a clear dashboard.",
+    "highlights": [
+      "Automatic extraction of course training records",
+      "Interactive dashboard for conference attendance",
+      "Automated tracking for continuing education credit requirements"
+    ],
+    "key_files": [
+      "TMS reader.ahk",
+      "TMS reader GUI.ahk"
+    ]
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "easyPortal",
+    "name": "easyPortal & dontLogout",
+    "tech": "AutoHotkey v1, HTTPRequest",
+    "period": "2011/07 – 2017",
+    "folder": "02-resident-2011-2015/easyPortal",
+    "intro": "This background service maintains authenticated web sessions on the hospital clinical portal. It sends periodic heartbeat requests to prevent session timeouts during busy shifts.",
+    "highlights": [
+      "Silent background HTTP heartbeat keep-alive",
+      "Protection against session expiration and lost draft text",
+      "Minimal system resource usage"
+    ],
+    "key_files": [
+      "dontLogout.ahk",
+      "easyPortal.ahk",
+      "HTTPRequest.ahk"
+    ]
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "autorun_core",
+    "name": "autorun_core (Workstation Hub)",
+    "tech": "AutoHotkey v1, Win32 API, COM, Gaming Mouse Mapping",
+    "period": "2013 – Present",
+    "folder": "03-attending-2016-present/autorun_core",
+    "intro": "This central hub manages global hotkeys, window arrangements, and input hardware on reading room workstations. It integrates MMO gaming mouse keypads and houses over 350 reusable Win32 and COM libraries.",
+    "highlights": [
+      "Central lifecycle coordination for all reporting sub-tools",
+      "Razer Naga side-keypad remapping for high-speed reporting",
+      "Modular Win32 library collection for UIAutomation and COM",
+      "Dual-monitor mouse focus management between PACS and RIS"
+    ],
+    "key_files": [
+      "autorun.ahk",
+      "RazerNaga.ahk",
+      "autorun_thread.ahk"
+    ]
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "scsnake_package_manager",
+    "name": "scsnake Package Manager",
+    "tech": "AutoHotkey v1, JSON, HTTP, MD5",
+    "period": "2016 – 2019",
+    "folder": "03-attending-2016-present/scsnake_package_manager",
+    "intro": "This intranet package manager distributes modular clinical tools to reading room workstations. It resolves package dependencies, verifies MD5 checksums, and enables drag-and-drop updates.",
+    "highlights": [
+      "Dependency resolution and version tracking via JSON metadata",
+      "Cryptographic package verification using MD5 hashes",
+      "Drag-and-drop updater for non-technical workstation users"
+    ],
+    "key_files": [
+      "package_info.json",
+      "scsPackageManager.ahk",
+      "createPackageInfo.ahk"
+    ]
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "MammoSR",
+    "name": "MammoSR (Mammography Structured Reporting)",
+    "tech": "AutoHotkey v1, HTML5, JavaScript, IMPAX Integration",
+    "period": "2016 – 2020",
+    "folder": "03-attending-2016-present/MammoSR",
+    "intro": "This structured reporting engine supports national breast cancer screening programs. It provides an HTML5 interface for BI-RADS categorization, synchronizes active study context with Agfa IMPAX, and generates PDF reports.",
+    "highlights": [
+      "Compliance with national breast screening reporting standards",
+      "Active study context synchronization with Agfa IMPAX",
+      "Single-key BI-RADS 1 and 2 template selection",
+      "Automated digital signature embedding and PDF export"
+    ],
+    "key_files": [
+      "MammoSR.ahk",
+      "output.html",
+      "MammoSRPrintClient.ahk"
+    ]
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "RisTyper",
+    "name": "RisTyper (Smart Editor Overlay)",
+    "tech": "AutoHotkey v1, Win32 GUI",
+    "period": "2016 – 2019",
+    "folder": "03-attending-2016-present/RisTyper",
+    "intro": "This non-intrusive editor overlay sits directly above hospital RIS report controls. Users toggle the interface with CapsLock to access automatic numbering and dual-monitor focus switching.",
+    "highlights": [
+      "Single-key toggle displaying an overlay editor without focus loss",
+      "Automatic numbered list tracking on line breaks",
+      "Active slice number synchronization from IMPAX into report text",
+      "Local undo and redo buffer management"
+    ],
+    "key_files": [
+      "RisTyper.ahk",
+      "ReadMe.txt"
+    ]
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "textHotkey",
+    "name": "textHotkey (Caret Accelerator)",
+    "tech": "AutoHotkey v1, Win32 Text Manipulation",
+    "period": "2016 – 2019",
+    "folder": "03-attending-2016-present/textHotkey",
+    "intro": "This text navigation engine accelerates caret movement inside report editors. It moves, selects, and deletes text by word (Ctrl), clause (Alt), or full sentence (Win), and swaps adjacent lines.",
+    "highlights": [
+      "Hierarchical navigation by word, clause, and complete sentence",
+      "Single-key line swapping to reorder diagnostic impression items",
+      "Bracket and quotation expansion shortcuts"
+    ],
+    "key_files": [
+      "textHotkey.ahk",
+      "ReadMe.txt"
+    ]
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "RadTemplate",
+    "name": "RadTemplate (DSL Template Engine)",
+    "tech": "AutoHotkey v1, Domain-Specific Language",
+    "period": "2016 – 2019",
+    "folder": "03-attending-2016-present/RadTemplate",
+    "intro": "This dynamic template engine parses custom Domain-Specific Language files into interactive forms. It converts inline control tags into text boxes, dropdowns, and automated mathematical formulas.",
+    "highlights": [
+      "Lightweight template syntax for dropdowns, radios, and text boxes",
+      "Inline formula evaluation for automatic organ volume calculations",
+      "Drag-and-drop template loading"
+    ],
+    "key_files": [
+      "RadTemplate.ahk",
+      "RadTemplate2.ahk",
+      "ReadMe.txt"
+    ]
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "showLungCAD",
+    "name": "showLungCAD (AI Nodule Assistant)",
+    "tech": "AutoHotkey v1, C++, DICOM, REST",
+    "period": "2016 – 2019",
+    "folder": "03-attending-2016-present/showLungCAD",
+    "intro": "This clinical assistant reviews lung nodule detections from self-trained and deployed deep learning system. It features 3D morphological region growing to measure lesion volumes and provides single-key feedback.",
+    "highlights": [
+      "Integration with Siemens syngo.via and deep learning nodule detections",
+      "3D morphological region-growing nodule segmentation",
+      "Single-key feedback loop for false positive and false negative review"
+    ],
+    "key_files": [
+      "showLungCAD.ahk",
+      "Orthanc2Dicom.ahk",
+      "ReadMe.txt"
+    ]
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "urgentReport",
+    "name": "urgentReport (Critical Findings Paging)",
+    "tech": "AutoHotkey v1, HTML5, DataTables, SMS API",
+    "period": "2016 – 2019",
+    "folder": "03-attending-2016-present/urgentReport",
+    "intro": "This alert system facilitates communication of critical imaging findings to primary care teams. It monitors acute cases and provides a single-click SMS paging bridge for emergency notifications.",
+    "highlights": [
+      "Embedded HTML5 and DataTables interface inside AutoHotkey",
+      "Single-click SMS paging to primary clinical teams",
+      "Auditable notification log for emergency clinical findings"
+    ],
+    "key_files": [
+      "urgentReport.ahk",
+      "selectCT.ahk",
+      "ReadMe.txt"
+    ]
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "portalMessage",
+    "name": "portalMessage",
+    "tech": "AutoHotkey v1, SMS Gateway",
+    "period": "2016 – 2019",
+    "folder": "03-attending-2016-present/portalMessage",
+    "intro": "This communication utility broadcasts announcements and urgent messages through hospital SMS gateways. Users address clinical teams and on-call groups using aliases.",
+    "highlights": [
+      "Command-line and graphical SMS broadcast interface",
+      "Staff alias resolution using department rosters",
+      "Message priority tags for emergency, routine, and broadcast alerts"
+    ],
+    "key_files": [
+      "portalMessage.ahk",
+      "ReadMe.txt"
+    ]
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "diffReport",
+    "name": "diffReport",
+    "tech": "AutoHotkey v1, HTML/CSS",
+    "period": "2016 – 2019",
+    "folder": "03-attending-2016-present/diffReport",
+    "intro": "This comparison viewer displays text revisions between draft and finalized radiology reports. It shows side-by-side modifications before electronic signature submission.",
+    "highlights": [
+      "Side-by-side text difference display",
+      "Color-coded addition and deletion highlights",
+      "Direct integration with verification hotkeys"
+    ],
+    "key_files": [
+      "diffReport.ahk",
+      "ReadMe.txt"
+    ]
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "LDCTreport",
+    "name": "LDCTreport (Low Dose CT Screening)",
+    "tech": "AutoHotkey v1",
+    "period": "2016 – 2019",
+    "folder": "03-attending-2016-present/LDCTreport",
+    "intro": "This structured reporting tool supports Low Dose Chest CT lung screening. It follows Fleischner 2017 guidelines to record nodule characteristics and generate follow-up recommendations.",
+    "highlights": [
+      "Fleischner 2017 nodule and GGO classification",
+      "Anatomical lung lobe localization shortcuts",
+      "Automated recommendation generation for follow-up intervals"
+    ],
+    "key_files": [
+      "LDCTreport.ahk",
+      "ReadMe.txt"
+    ]
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "EBMpreload",
+    "name": "EBMpreload",
+    "tech": "AutoHotkey v1, PACS Integration",
+    "period": "2016 – 2019",
+    "folder": "03-attending-2016-present/EBMpreload",
+    "intro": "This accelerator preloads upcoming patient examinations in the EBM PACS viewer. It eliminates image loading delays during high-volume radiography reading sessions.",
+    "highlights": [
+      "Background preloading of upcoming examinations",
+      "Single-key transitions between patient studies",
+      "Custom window message hooks for EBM PACS"
+    ],
+    "key_files": [
+      "EBMpreload.ahk",
+      "ReadMe.txt"
+    ]
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "COM_Classes_Framework",
+    "name": "COM Classes Framework & UIAutomationServer",
+    "tech": "AutoHotkey v1, C#, Win32 COM, UIAutomation",
+    "period": "2012 – 2019",
+    "folder": "03-attending-2016-present/COM_Classes_Framework",
+    "intro": "This library provides object-oriented abstractions for Win32 COM interfaces and Microsoft UI Automation. It enables reliable control of hospital software and accessibility trees without visual scraping.",
+    "highlights": [
+      "Over 170 object-oriented Win32 COM and UI Automation wrapper classes",
+      "Direct interaction with WPF, WinForms, and native Windows controls",
+      "Architectural foundation for deep PACS and RIS synchronization"
+    ],
+    "key_files": [
+      "CCF.ahk",
+      "CCFramework.ahk",
+      "README.md"
+    ]
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "FinishReportAnalysis",
+    "name": "FinishReportAnalysis",
+    "tech": "JavaScript, pandas-js, SheetJS, HTML5",
+    "period": "2019/05",
+    "folder": "03-attending-2016-present/FinishReportAnalysis",
+    "intro": "This client-side analytics dashboard calculates reporting volume and turnaround times from exported RIS data. It runs entirely inside the browser using JavaScript dataframe libraries.",
+    "highlights": [
+      "Client-side processing with zero server dependencies",
+      "Turnaround time distribution and percentile calculations",
+      "Visual breakdown of subspecialty examination volume"
+    ],
+    "key_files": [
+      "main.js",
+      "index.html",
+      "dataframe.min.js"
+    ]
+  },
+  {
+    "era": "01-student-2003-2010",
+    "era_label": "Student (2003 – 2010)",
+    "id": "robotype_cafe",
+    "name": "RoboType Shorthand Migrator",
+    "tech": "AutoHotkey v1, Text Expansion",
+    "period": "2001 – 2014",
+    "folder": "01-student-2003-2010/robotype_cafe",
+    "intro": "This tool converts legacy RoboType shorthand expansion databases into native AutoHotkey hotstrings for diagnostic phrasing.",
+    "highlights": [
+      "Parsing legacy shorthand text expansion dictionaries",
+      "Conversion to AutoHotkey hotstring syntax",
+      "Foundation for subsequent reporting dictionaries"
+    ],
+    "key_files": [
+      "robotype2ahk.ahk",
+      "jw-robotype.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "01-student-2003-2010",
+    "era_label": "Student (2003 – 2010)",
+    "id": "imageViewer",
+    "name": "Lightweight Image Viewer",
+    "tech": "AutoHotkey v1, GDI+",
+    "period": "2009 – 2016",
+    "folder": "01-student-2003-2010/imageViewer",
+    "intro": "This utility provides lightweight image viewing and zoom navigation for teaching cases without heavy desktop software.",
+    "highlights": [
+      "Fast image preview and panning controls",
+      "Lightweight GDI+ rendering",
+      "Quick case presentation support"
+    ],
+    "key_files": [
+      "imageViewer.ahk",
+      "imageViewer2.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "searchLab",
+    "name": "searchLab (Clinical Lab Lookup)",
+    "tech": "AutoHotkey v1, GUI, Web Scraping",
+    "period": "2012 – 2019",
+    "folder": "02-resident-2011-2015/searchLab",
+    "intro": "This tool provides an in-situ clinical laboratory lookup overlay during report writing to check creatinine, eGFR, and tumor markers.",
+    "highlights": [
+      "In-situ lab lookup without leaving the reporting window",
+      "Automated eGFR calculation from serum creatinine",
+      "Support for multiple hospital RIS and portal versions"
+    ],
+    "key_files": [
+      "searchLab.ahk",
+      "searchLab2.ahk",
+      "searchLab 2019.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "angio_workflow",
+    "name": "Angiography Workflow & Consultation",
+    "tech": "AutoHotkey v1, Template Automation",
+    "period": "2012 – 2017",
+    "folder": "02-resident-2011-2015/angio_workflow",
+    "intro": "This collection coordinates interventional angiography consultations, procedure scheduling, and structured procedure note replies.",
+    "highlights": [
+      "Automated schedule extraction for catheterization laboratories",
+      "Structured templates for vascular and non-vascular interventions",
+      "Consultation reply generation for procedure teams"
+    ],
+    "key_files": [
+      "angioSchedule.ahk",
+      "AngioConsult.ahk",
+      "ReplyConsultation.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "ContrastDose",
+    "name": "Contrast Media Dose Calculator",
+    "tech": "AutoHotkey v1, Clinical Formula",
+    "period": "2012 – 2014",
+    "folder": "02-resident-2011-2015/ContrastDose",
+    "intro": "This clinical helper calculates contrast media injection volumes and flow rates based on patient body weight and renal function.",
+    "highlights": [
+      "Automated contrast dosage calculation based on patient weight",
+      "Renal safety threshold checks for iodinated contrast",
+      "Quick insertion of contrast details into scan logs"
+    ],
+    "key_files": [
+      "ContrastDose.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "breastUS",
+    "name": "Breast Ultrasound Reporting Aid",
+    "tech": "AutoHotkey v1, Structured Templates",
+    "period": "2014 – 2015",
+    "folder": "02-resident-2011-2015/breastUS",
+    "intro": "This helper assists breast ultrasound examinations with structured lesion measurement templates and BI-RADS assessment descriptors.",
+    "highlights": [
+      "Structured ultrasound reporting macros",
+      "Lesion quadrant and clock-face position helpers",
+      "Direct text insertion into report editors"
+    ],
+    "key_files": [
+      "breastUS.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "gantryAngle",
+    "name": "CT Gantry Tilt Calculator",
+    "tech": "AutoHotkey v1, Math Geometry",
+    "period": "2014 – 2015",
+    "folder": "02-resident-2011-2015/gantryAngle",
+    "intro": "This geometry helper calculates CT gantry tilt angles and reformatted plane coordinates for specialized head and neck imaging protocols.",
+    "highlights": [
+      "Trigonometric calculation of optimal gantry tilt",
+      "Reduction of dental artifact interference on head CTs",
+      "Visual angle reference overlay"
+    ],
+    "key_files": [
+      "gantryAngle.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "interventional_notes",
+    "name": "Interventional Procedure Notes",
+    "tech": "AutoHotkey v1, Clinical Documentation",
+    "period": "2012 – 2015",
+    "folder": "02-resident-2011-2015/interventional_notes",
+    "intro": "This suite formats structured procedure notes for radiofrequency ablation (RFA) and transcatheter arterial embolization (TAE).",
+    "highlights": [
+      "Standardized procedural records for RFA and TAE",
+      "Automatic calculation of ablation zones and embolization agents",
+      "Auditable clinical procedure logs"
+    ],
+    "key_files": [
+      "RFA note.ahk",
+      "TAE.ahk",
+      "followTAE.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "CTeventLog",
+    "name": "CT Event & Injection Logger",
+    "tech": "AutoHotkey v1, Logging",
+    "period": "2012 – 2017",
+    "folder": "02-resident-2011-2015/CTeventLog",
+    "intro": "This logger records contrast administration times, injection phases, and scan parameters during complex computed tomography protocols.",
+    "highlights": [
+      "Accurate phase timestamping for multiphasic CT protocols",
+      "Local audit log of contrast delivery parameters",
+      "Quick export to reporting templates"
+    ],
+    "key_files": [
+      "CTeventLog.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "impax_ui_tools",
+    "name": "IMPAX Display & UI Utilities",
+    "tech": "AutoHotkey v1, Win32 Hooks",
+    "period": "2012 – 2017",
+    "folder": "02-resident-2011-2015/impax_ui_tools",
+    "intro": "This tool suite resolves display glitches, focus stealing, and viewport magnification behaviors in Agfa IMPAX 6 workstations.",
+    "highlights": [
+      "Prevention of unwanted viewport flashing during rapid scrolling",
+      "Single-key magnification toggles for subtle findings",
+      "Taskbar icon restoration for minimized IMPAX sessions"
+    ],
+    "key_files": [
+      "AntiImpaxFlash.ahk",
+      "Show_Impax6_icon.ahk",
+      "mammoMagMove.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "YCH_workstation",
+    "name": "Regional Branch Workstation Suite",
+    "tech": "AutoHotkey v1, Workstation Automation",
+    "period": "2014 – 2025",
+    "folder": "02-resident-2011-2015/YCH_workstation",
+    "intro": "This comprehensive suite customizes reporting workflows for regional branch hospital stations across radiography, mammography, and BMD.",
+    "highlights": [
+      "Tailored reporting hotstrings for regional hospital workstations",
+      "Dedicated modules for general radiography, mammography, and bone densitometry",
+      "Local coordinate and window layout adaptations"
+    ],
+    "key_files": [
+      "YCH_main.ahk",
+      "YCH_XR.ahk",
+      "YCH_mammo.ahk",
+      "YCH_BMD.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "radiology_scheduling",
+    "name": "Radiology Scheduling & Roster Tools",
+    "tech": "Python, AutoHotkey v1",
+    "period": "2014 – 2015",
+    "folder": "02-resident-2011-2015/radiology_scheduling",
+    "intro": "This utility parses, manages, and synchronizes on-call rosters and departmental duty schedules into calendar formats.",
+    "highlights": [
+      "Automatic extraction of duty rosters into structured CSV/calendar formats",
+      "Python automation for schedule parsing",
+      "In-situ roster lookup for on-call teams"
+    ],
+    "key_files": [
+      "writeSchedule.py",
+      "loadRadSchedule.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "AVSgetLab",
+    "name": "AVS Laboratory Data Parser",
+    "tech": "AutoHotkey v1, DOM Parsing",
+    "period": "2012 – 2017",
+    "folder": "02-resident-2011-2015/AVSgetLab",
+    "intro": "This parser extracts aldosterone and cortisol values from clinical web portals during adrenal venous sampling procedures.",
+    "highlights": [
+      "Direct DOM element extraction of lab values",
+      "Automatic selectivity index and lateralization ratio calculations",
+      "Clean structured summary generation for procedure reports"
+    ],
+    "key_files": [
+      "AVSgetLab.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "checkRReport",
+    "name": "Preliminary Report Checker",
+    "tech": "AutoHotkey v1, Text Diff",
+    "period": "2013 – 2019",
+    "folder": "02-resident-2011-2015/checkRReport",
+    "intro": "This helper checks report submission status and compares modifications made across preliminary drafts.",
+    "highlights": [
+      "Verification of report submission state in RIS",
+      "Comparison of text modifications across draft versions",
+      "Protection against unsaved report closing"
+    ],
+    "key_files": [
+      "checkRReport.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "examWord2Sqlite",
+    "name": "Examination Archive to SQLite",
+    "tech": "AutoHotkey v1, SQLite DBA",
+    "period": "2014 – 2019",
+    "folder": "02-resident-2011-2015/examWord2Sqlite",
+    "intro": "This tool extracts examination findings from Word documents and archives structured report records into an SQLite database.",
+    "highlights": [
+      "Batch extraction of text from Word reports",
+      "SQLite database schema creation and record indexing",
+      "Searchable local archive for diagnostic case research"
+    ],
+    "key_files": [
+      "examWord2Sqlite.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "fetchSeriesName",
+    "name": "DICOM Series Name Extractor",
+    "tech": "AutoHotkey v1, Win32 Automation",
+    "period": "2015",
+    "folder": "02-resident-2011-2015/fetchSeriesName",
+    "intro": "This helper inspects PACS viewer controls and extracts active DICOM series descriptions directly into the report template.",
+    "highlights": [
+      "Direct extraction of active sequence names (T1, T2, DWI, ADC)",
+      "Elimination of manual sequence typing in complex MRI reports",
+      "Integration with reporting hotstrings"
+    ],
+    "key_files": [
+      "fetchSeriesName.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "GmailSync",
+    "name": "Clinical Reference Mail Synchronizer",
+    "tech": "AutoHotkey v1, Background Sync",
+    "period": "2014",
+    "folder": "02-resident-2011-2015/GmailSync",
+    "intro": "This background daemon monitors local Google Drive folders for synchronized clinical attachments and teaching articles.",
+    "highlights": [
+      "Automatic polling of local cloud storage folders",
+      "Instant notification when new reference files arrive",
+      "Silent background operation without system slowdown"
+    ],
+    "key_files": [
+      "GmailSync.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "Hotstring_Helper",
+    "name": "Hotstring Helper & Sorter",
+    "tech": "AutoHotkey v1, Tooling",
+    "period": "2013 – 2019",
+    "folder": "02-resident-2011-2015/Hotstring_Helper",
+    "intro": "This developer utility manages reporting hotstring collections, finds duplicate abbreviations, and sorts entries alphabetically.",
+    "highlights": [
+      "Duplicate trigger detection across multiple hotstring files",
+      "Automatic sorting and syntax validation",
+      "Interactive GUI for adding abbreviations on the fly"
+    ],
+    "key_files": [
+      "Hotstring Helper.ahk",
+      "HotstringFindDuplicate.ahk",
+      "HotstringSort.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "IVrecord",
+    "name": "Intravenous Procedure Record Logger",
+    "tech": "AutoHotkey v1, Clinical Forms",
+    "period": "2015 – 2017",
+    "folder": "02-resident-2011-2015/IVrecord",
+    "intro": "This tool logs patient IV catheter placements, procedure times, and contrast volumes with auditable timestamps.",
+    "highlights": [
+      "Timestamped logging for interventional contrast administration",
+      "Structured procedural audit records",
+      "Lightweight non-intrusive GUI"
+    ],
+    "key_files": [
+      "IVrecord.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "JYS_mouse",
+    "name": "JYS Mouse Viewport Accelerator",
+    "tech": "AutoHotkey v1, Input Remap",
+    "period": "2015 – 2017",
+    "folder": "02-resident-2011-2015/JYS_mouse",
+    "intro": "This utility maps mouse gestures and wheel triggers for rapid PACS viewport panning and window leveling adjustments.",
+    "highlights": [
+      "Accelerated image panning with minimal wrist strain",
+      "Fine-grain window leveling via mouse wheel increments",
+      "Configurable sensitivity toggles"
+    ],
+    "key_files": [
+      "JYS_mouse.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "NHI_tools",
+    "name": "NHI Guideline & Form Assistant",
+    "tech": "AutoHotkey v1, Web & DB",
+    "period": "2014 – 2017",
+    "folder": "02-resident-2011-2015/NHI_tools",
+    "intro": "This suite checks National Health Insurance pre-authorization criteria and fills clinical indication forms for advanced CT/MRI examinations.",
+    "highlights": [
+      "Verification of NHI indication criteria for high-cost imaging",
+      "Automated population of hospital pre-authorization forms",
+      "Local database tracking of approval status"
+    ],
+    "key_files": [
+      "NHIfollow.ahk",
+      "NHIform.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "RadQA",
+    "name": "Radiology Quality Assurance Logger",
+    "tech": "AutoHotkey v1, Sockets, Peer Review",
+    "period": "2015 – 2019",
+    "folder": "02-resident-2011-2015/RadQA",
+    "intro": "This peer review helper records discrepancy cases, diagnostic discussions, and teaching points into an auditable database.",
+    "highlights": [
+      "Structured logging of diagnostic discrepancies and learning points",
+      "Client-server synchronization using TCP sockets",
+      "Confidential peer review workflow support"
+    ],
+    "key_files": [
+      "RadQA.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "reportMining",
+    "name": "Radiology Report Data Mining",
+    "tech": "AutoHotkey v1, Data Extraction",
+    "period": "2012 – 2021",
+    "folder": "02-resident-2011-2015/reportMining",
+    "intro": "This suite performs batch data mining across historical radiology archives for research cohorts (mammography, chest CT).",
+    "highlights": [
+      "Batch examination loading by accession number or patient chart",
+      "Automated extraction of key diagnostic phrases",
+      "Cohort creation for clinical imaging research"
+    ],
+    "key_files": [
+      "reportMining.ahk",
+      "batchImpax.ahk",
+      "getChestCTList.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "reportTimer",
+    "name": "Turnaround Time Counter",
+    "tech": "AutoHotkey v1, Metrics",
+    "period": "2015",
+    "folder": "02-resident-2011-2015/reportTimer",
+    "intro": "This non-intrusive floating stopwatch measures examination turnaround times and personal reading speed across report shifts.",
+    "highlights": [
+      "Floating on-screen timer for reporting shifts",
+      "Turnaround time calculation per examination modality",
+      "Productivity insights without server surveillance"
+    ],
+    "key_files": [
+      "reportTimer.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "RisHelper",
+    "name": "RIS Numbering & Formatting Helper",
+    "tech": "AutoHotkey v1, Text Processing",
+    "period": "2015 – 2019",
+    "folder": "02-resident-2011-2015/RisHelper",
+    "intro": "This helper injects auto-numbering, paragraph indentations, and standard heading structures directly into hospital RIS editors.",
+    "highlights": [
+      "Automatic numbering on Enter key presses in report editors",
+      "Heading indentation and bullet point formatting",
+      "Single-key case summary capitalization"
+    ],
+    "key_files": [
+      "RisHelper.ahk",
+      "AutoNum.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "updateOpPatho",
+    "name": "Surgical Pathology Correlator",
+    "tech": "AutoHotkey v1, HTML5, Data Matching",
+    "period": "2013 – 2020",
+    "folder": "02-resident-2011-2015/updateOpPatho",
+    "intro": "This application correlates radiology report findings with post-operative surgical pathology results for diagnostic feedback.",
+    "highlights": [
+      "Automated matching of imaging accessions to pathology reports",
+      "HTML5 side-by-side presentation of imaging and histology findings",
+      "Diagnostic accuracy tracking and educational feedback"
+    ],
+    "key_files": [
+      "searchPatho.ahk",
+      "matchPathoList.ahk",
+      "getFullPatho.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "WorkloadComparison",
+    "name": "Reporting Volume & Workload Auditor",
+    "tech": "AutoHotkey v1, Reporting Metrics",
+    "period": "2015 – 2017",
+    "folder": "02-resident-2011-2015/WorkloadComparison",
+    "intro": "This tool compares monthly reporting volume, RVU calculations, and modality distributions against departmental statistical records.",
+    "highlights": [
+      "Reconciliation of personal reporting lists with official hospital statistics",
+      "Modality breakdown for plain radiographs, CT, and MRI",
+      "Audit assurance for report verification counts"
+    ],
+    "key_files": [
+      "績效比對.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "AutoCXR",
+    "name": "AutoCXR (Chest Radiograph Assistant)",
+    "tech": "AutoHotkey v1, Workstation Automation",
+    "period": "2018",
+    "folder": "03-attending-2016-present/AutoCXR",
+    "intro": "This tool assists high-volume chest radiograph interpretation with one-key normal template fills and negative finding verifications.",
+    "highlights": [
+      "Single-key normal chest radiograph report generation",
+      "Automated comparison against previous radiograph dates",
+      "High-speed reading room workflow acceleration"
+    ],
+    "key_files": [
+      "AutoCXR.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "dicomFetch",
+    "name": "DICOM Query & Fetch Client",
+    "tech": "AutoHotkey v1, DCM4CHE, DICOM",
+    "period": "2018 – 2021",
+    "folder": "03-attending-2016-present/dicomFetch",
+    "intro": "This client queries remote hospital PACS and DICOM archives to fetch prior imaging studies into local workstation cache.",
+    "highlights": [
+      "Automated C-FIND and C-MOVE queries using dcm4che tools",
+      "Background preloading of previous patient examinations",
+      "Support for specialized vacuum-assisted biopsy cases"
+    ],
+    "key_files": [
+      "dicomFetch.ahk",
+      "dicomFetch - VAB.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "EBMhelper",
+    "name": "EBM PACS Viewport Accelerator",
+    "tech": "AutoHotkey v1, Win32 Automation",
+    "period": "2017 – 2019",
+    "folder": "03-attending-2016-present/EBMhelper",
+    "intro": "This helper synchronizes viewport arrangements, zoom factors, and slice navigation across multi-monitor EBM PACS setups.",
+    "highlights": [
+      "Synchronized slice navigation across dual high-resolution monitors",
+      "Instant crosshair and measurement toggles",
+      "Window leveling shortcuts for lung, bone, and soft tissue"
+    ],
+    "key_files": [
+      "EBMhelper.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "GE_Mammo_Script",
+    "name": "GE Senographe Workstation Helper",
+    "tech": "AutoHotkey v1, Workstation Hooks",
+    "period": "2017",
+    "folder": "03-attending-2016-present/GE_Mammo_Script",
+    "intro": "This script streamlines interactions with GE Senographe mammography acquisition and review stations.",
+    "highlights": [
+      "Window arrangement and layout automation for GE acquisition stations",
+      "One-key view cycling across CC and MLO projections",
+      "Elimination of manual view navigation clicks"
+    ],
+    "key_files": [
+      "GE_Mammo_Script.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "getSearchReport",
+    "name": "Automated Report Search & Downloader",
+    "tech": "AutoHotkey v1, RIS Automation",
+    "period": "2016 – 2017",
+    "folder": "03-attending-2016-present/getSearchReport",
+    "intro": "This tool automates multi-parameter queries inside hospital RIS to search, aggregate, and download cohort reports for clinical studies.",
+    "highlights": [
+      "Multi-parameter search automation across hospital RIS databases",
+      "Batch extraction of diagnostic reports into text files",
+      "Background execution without blocking user interaction"
+    ],
+    "key_files": [
+      "getSearchReport.ahk",
+      "parseSearchReport.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "ImpaxBatchOpen",
+    "name": "IMPAX Batch Study Driver",
+    "tech": "AutoHotkey v1, COM & Context Server",
+    "period": "2017 – 2021",
+    "folder": "03-attending-2016-present/ImpaxBatchOpen",
+    "intro": "This enterprise driver drives Agfa IMPAX 6 to open patient examinations in batch sequences by accession number or chart ID.",
+    "highlights": [
+      "Automated context driving for Agfa IMPAX via COM interfaces",
+      "Batch examination sequence processing for clinical cancer conferences",
+      "Direct retrieval of pathology and surgical correlation records"
+    ],
+    "key_files": [
+      "ImpaxBatch.ahk",
+      "ImpaxBatchAccNo.ahk",
+      "get_patho_report.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "ImpaxTag",
+    "name": "IMPAX Study Tagger & Bookmarker",
+    "tech": "AutoHotkey v1, Overlay GUI",
+    "period": "2017 – 2019",
+    "folder": "03-attending-2016-present/ImpaxTag",
+    "intro": "This overlay tool allows radiologists to tag, bookmark, and categorize interesting cases directly while reviewing studies in IMPAX.",
+    "highlights": [
+      "Instant case tagging with customizable category keywords",
+      "Overlay bookmarking without interrupting routine reading",
+      "Searchable index of archived teaching cases"
+    ],
+    "key_files": [
+      "ImpaxTag.ahk",
+      "showMagicResult.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "MammoHelper",
+    "name": "Mammography Prior Review Helper",
+    "tech": "AutoHotkey v1, Context Sync",
+    "period": "2018 – 2021",
+    "folder": "03-attending-2016-present/MammoHelper",
+    "intro": "This assistant automatically loads and compares prior mammograms, historical breast biopsies, and pathology reports.",
+    "highlights": [
+      "Automatic retrieval of previous screening mammogram dates",
+      "One-click comparison of previous biopsy pathology findings",
+      "Standardized density and comparison text generation"
+    ],
+    "key_files": [
+      "OldExamHelper.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "mirrorRIS",
+    "name": "Remote Reading Room RIS Mirror",
+    "tech": "AutoHotkey v1, SSH Tunnel, Sockets",
+    "period": "2017 – 2019",
+    "folder": "03-attending-2016-present/mirrorRIS",
+    "intro": "This client-server daemon synchronizes active examination states between on-site hospital RIS and remote reading workstations over SSH tunnels.",
+    "highlights": [
+      "Encrypted SSH tunneling for remote hospital database connectivity",
+      "Instant active exam context mirroring across workstations",
+      "Dual-monitor report text synchronization"
+    ],
+    "key_files": [
+      "mirrorRIS.ahk",
+      "mirroRIS_server.ahk",
+      "sshTunneling.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "reportLater",
+    "name": "Deferred Reporting Queue Manager",
+    "tech": "AutoHotkey v1, Worklist Filter",
+    "period": "2018 – 2019",
+    "folder": "03-attending-2016-present/reportLater",
+    "intro": "This floating list manager allows readers to defer complex examinations and prioritize urgent emergency studies.",
+    "highlights": [
+      "Floating queue manager for complex cases requiring consultation",
+      "Quick toggle between routine reading and deferred study worklists",
+      "Visual alert tags for prioritized cases"
+    ],
+    "key_files": [
+      "reportLater.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "reportSpentTime",
+    "name": "Examination Turnaround Analytics",
+    "tech": "AutoHotkey v1, Analytics",
+    "period": "2019",
+    "folder": "03-attending-2016-present/reportSpentTime",
+    "intro": "This utility measures and logs real-time minutes spent on each examination type to assess reporting cognitive load and efficiency.",
+    "highlights": [
+      "Precise tracking of active interpretation time per study",
+      "Differentiation between simple radiographs and complex CT/MRI studies",
+      "Personal productivity and cognitive load metrics"
+    ],
+    "key_files": [
+      "reportSpentTime.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "RisServer",
+    "name": "RIS Background Polling Server",
+    "tech": "AutoHotkey v1, Inter-Process IPC",
+    "period": "2017 – 2019",
+    "folder": "03-attending-2016-present/RisServer",
+    "intro": "This server runs silently in the background to poll active study identifiers from RIS and broadcast changes to satellite tools.",
+    "highlights": [
+      "Single-owner polling architecture to minimize system resource usage",
+      "IPC broadcast of active patient metadata via Windows messages",
+      "Central coordination for all workstation overlay modules"
+    ],
+    "key_files": [
+      "RisServer.ahk",
+      "RisImpaxPolling.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "SaveDICOM",
+    "name": "Automated DICOM Series Exporter",
+    "tech": "AutoHotkey v1, File System",
+    "period": "2020",
+    "folder": "03-attending-2016-present/SaveDICOM",
+    "intro": "This tool monitors PACS export directories and automatically organizes exported DICOM series and key images into structured folders.",
+    "highlights": [
+      "Automatic directory restructuring for exported DICOM images",
+      "Anonymization preprocessing before teaching file creation",
+      "Direct integration with presentation software"
+    ],
+    "key_files": [
+      "saveDicom.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "syngoVia_integration",
+    "name": "Siemens syngo.via Workstation Bridge",
+    "tech": "AutoHotkey v1, Window Hooks, Interop",
+    "period": "2016 – 2019",
+    "folder": "03-attending-2016-present/syngoVia_integration",
+    "intro": "This integration bridge drives Siemens syngo.via advanced visualization software directly from routine reading room hotkeys.",
+    "highlights": [
+      "Single-key launch and study transfer to Siemens syngo.via",
+      "Automated window placement on specialized 3D workstations",
+      "Reconstructed series synchronization with primary PACS"
+    ],
+    "key_files": [
+      "syngoVia.ahk",
+      "syngoVia2.ahk",
+      "RAID2Syngovia.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "VAB_study",
+    "name": "Vacuum-Assisted Biopsy Assistant",
+    "tech": "AutoHotkey v1, Image Navigation",
+    "period": "2018",
+    "folder": "03-attending-2016-present/VAB_study",
+    "intro": "This specialized tool aggregates mammographic calcification targets and historical biopsy markers for vacuum-assisted biopsy planning.",
+    "highlights": [
+      "Side-by-side presentation of target calcifications and biopsy clips",
+      "Automatic extraction of biopsy needle trajectory notes",
+      "High-confidence procedure localization workflow"
+    ],
+    "key_files": [
+      "VAB_prior_mammo.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "ClinicalOrders",
+    "name": "Clinical Order & Procedure Analyzer",
+    "tech": "AutoHotkey v1, Table Parsing, JXON",
+    "period": "2018",
+    "folder": "03-attending-2016-present/ClinicalOrders",
+    "intro": "This tool parses hospital clinical order tables and procedure codes to audit departmental productivity and compliance.",
+    "highlights": [
+      "JSON parsing of hospital order management data structures",
+      "Automated procedure code reconciliation",
+      "Departmental workflow analytics"
+    ],
+    "key_files": [
+      "analysis.ahk",
+      "performance.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "CCTA_tools",
+    "name": "Coronary CTA Reporting Suite",
+    "tech": "AutoHotkey v1, Structured Reporting",
+    "period": "2017 – 2018",
+    "folder": "03-attending-2016-present/CCTA_tools",
+    "intro": "This suite formats Coronary CT Angiography reports, records coronary artery stenosis scores (CAD-RADS), and parses batch CCTA data.",
+    "highlights": [
+      "CAD-RADS stenosis scoring and recommendation generation",
+      "Standardized reporting table for 16-segment coronary anatomy",
+      "Batch report extraction and conversion tools"
+    ],
+    "key_files": [
+      "coronary CTA table.ahk",
+      "20180705 ConvertCCTAReports.ahk",
+      "20180705 GetCCTAReports.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "HologicWS",
+    "name": "Hologic SecurView Workstation Helper",
+    "tech": "AutoHotkey v1, UI Automation",
+    "period": "2020",
+    "folder": "03-attending-2016-present/HologicWS",
+    "intro": "This helper coordinates keyboard shortcuts and view arrangements on dedicated Hologic SecurView mammography workstations.",
+    "highlights": [
+      "Keyboard remapping for dedicated high-speed mammography keypads",
+      "Automated prior study context loading",
+      "Seamless navigation between 2D mammograms and tomosynthesis slices"
+    ],
+    "key_files": [
+      "HologicWS.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "Philips_ISP",
+    "name": "Philips IntelliSpace Portal Helper",
+    "tech": "AutoHotkey v1, Automation",
+    "period": "2018",
+    "folder": "03-attending-2016-present/Philips_ISP",
+    "intro": "This automation script searches and opens advanced visualization studies inside Philips IntelliSpace Portal.",
+    "highlights": [
+      "Chart number search automation in Philips Patient Directory",
+      "One-key launch of CT cardiac and vascular analysis modules",
+      "Elimination of repetitive manual search steps"
+    ],
+    "key_files": [
+      "PhilipsISP.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "Toshiba_Workstation",
+    "name": "Toshiba / Canon Workstation Helper",
+    "tech": "AutoHotkey v1, .NET & Win32 Interop",
+    "period": "2016 – 2017",
+    "folder": "03-attending-2016-present/Toshiba_Workstation",
+    "intro": "This bridge connects hospital RIS and IMPAX context with Toshiba / Canon CT and MRI analysis workstations.",
+    "highlights": [
+      "In-process .NET control interaction using Acc and CLR wrappers",
+      "Context handoff from primary PACS to Toshiba advanced software",
+      "Fast synchronization without manual accession typing"
+    ],
+    "key_files": [
+      "Toshiba.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "FirefoxLogin",
+    "name": "Firefox Clinical Portal Automation",
+    "tech": "AutoHotkey v1, WebExtensions",
+    "period": "2016 – 2020",
+    "folder": "03-attending-2016-present/FirefoxLogin",
+    "intro": "This utility automates secure authentication and session management for modern web-based clinical reporting portals in Firefox, and houses the WebExtension userscripts suite.",
+    "highlights": [
+      "Automated credential filling and multi-step portal login",
+      "Firefox WebExtension userscripts suite (NPortal, ProgressNote, ER, Ward, Lab)",
+      "WebExtension native messaging bridge to AutoHotkey"
+    ],
+    "key_files": [
+      "FirefoxLogin.ahk",
+      "FirefoxLoginAppTest.ahk",
+      "Portal_WebExt/NPortal.user.js",
+      "Portal_WebExt/manifest.json"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "WardRun",
+    "name": "Ward Round & Consultation Helper",
+    "tech": "AutoHotkey v1, Mobile Workflow",
+    "period": "2016 – 2017",
+    "folder": "03-attending-2016-present/WardRun",
+    "intro": "This tool streamlines bedside clinical consultations and ward rounding note generation on mobile workstation carts.",
+    "highlights": [
+      "Mobile-optimized consultation reply drafting",
+      "Quick patient lab and imaging status summary",
+      "Lightweight operation on low-power hospital cart laptops"
+    ],
+    "key_files": [
+      "WardRun.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "desktop_utilities",
+    "name": "Workstation Desktop Enhancement Utilities",
+    "tech": "AutoHotkey v1, Win32 Hooks",
+    "period": "2013 – 2018",
+    "folder": "03-attending-2016-present/desktop_utilities",
+    "intro": "A collection of lightweight Windows desktop utilities for reading room dual-monitor setups (desktop toggling, window pinning, wallpaper settings).",
+    "highlights": [
+      "Improved multi-monitor desktop showing without minimizing floating overlays",
+      "WinEventHook message monitoring and debugging tools",
+      "Target window coordinates and DPI resolution inspectors"
+    ],
+    "key_files": [
+      "ImprovedShowDesktop.ahk",
+      "WinEventHook Messages.ahk",
+      "setTargets.ahk",
+      "changeBackground.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "ImpaxContextServer",
+    "name": "ImpaxContextServer",
+    "tech": "VB.NET WinForms, WM_COPYDATA, Agfa/Mitra COM",
+    "period": "2014 – 2016",
+    "folder": "03-attending-2016-present/ImpaxContextServer",
+    "intro": "Agfa IMPAX Context Server background bridge via WM_COPYDATA messaging. Listens for external IPC commands and issues COM DoAction calls to IMPAX.",
+    "highlights": [
+      "Agfa IMPAX Context Server background bridge via WM_COPYDATA",
+      "Dispatches COM DoAction operations in dedicated background threads",
+      "Eliminates UI freezes during study switching and context changes"
+    ],
+    "key_files": [
+      "BuildString.Designer.vb",
+      "BuildString.vb",
+      "ImpaxContextServer.Designer.vb",
+      "ImpaxContextServer.resx"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "scsnake_IPC",
+    "name": "scsnake_IPC",
+    "tech": "VB.NET WinForms, WM_COPYDATA",
+    "period": "2016 – 2017",
+    "folder": "03-attending-2016-present/scsnake_IPC",
+    "intro": "Lightweight WM_COPYDATA IPC receiver template providing structured inter-process messaging between AutoHotkey scripts and .NET services.",
+    "highlights": [
+      "Lightweight WinForms WM_COPYDATA IPC receiver template",
+      "Clean inter-process string and command exchange",
+      "Architectural foundation for .NET and AutoHotkey hybrid tools"
+    ],
+    "key_files": [
+      "scsnake_IPC.sln",
+      "scsnake_IPC\\scsnake_IPC.Designer.vb",
+      "scsnake_IPC\\scsnake_IPC.resx",
+      "scsnake_IPC\\scsnake_IPC.vb"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "convertForm",
+    "name": "convertForm",
+    "tech": "AutoHotkey v1, RisImpax, String Parsing",
+    "period": "2020",
+    "folder": "03-attending-2016-present/convertForm",
+    "intro": "Emergency on-call fee claim assistant. Parses weekend and holiday report tables from RIS to compute on-call duty hours and populate claim forms.",
+    "highlights": [
+      "Parses weekend and holiday RIS report logs automatically",
+      "Computes on-call duty hours based on timestamp spans",
+      "Populates official emergency on-call fee claim forms via hotkey"
+    ],
+    "key_files": [
+      "convertForm.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "FastHotkey",
+    "name": "FastHotkey",
+    "tech": "AutoHotkey v1 Class Engine, Keyboard Hook",
+    "period": "2016 – 2017",
+    "folder": "03-attending-2016-present/FastHotkey",
+    "intro": "High-performance class-based hotstring compiler and engine. Pre-compiles hotstring dictionaries into indexed classes for instantaneous text expansion.",
+    "highlights": [
+      "High-performance class-based hotstring compiler and engine",
+      "Compiles static text expansions into indexed dictionary classes",
+      "Provides instantaneous text substitution for large reporting vocabularies"
+    ],
+    "key_files": [
+      "FastHotkey - lazy.ahk",
+      "FastHotkey - lowlevelhook.ahk",
+      "FastHotkey.ahk",
+      "FastHotkey_Class.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "dcm4che_wrapper",
+    "name": "dcm4che_wrapper",
+    "tech": "AutoHotkey v1, dcm4che CLI, DICOM Dictionary",
+    "period": "2017 – 2018",
+    "folder": "03-attending-2016-present/dcm4che_wrapper",
+    "intro": "Wrapper library for dcm4che findscu and movescu commands, enabling DICOM C-FIND and C-MOVE queries directly from AutoHotkey workflows.",
+    "highlights": [
+      "AutoHotkey wrapper for dcm4che findscu and movescu toolsets",
+      "Executes DICOM C-FIND and C-MOVE queries directly from workstation scripts",
+      "Maps standard DICOM element tags to human-readable names"
+    ],
+    "key_files": [
+      "dcm4che.ahk",
+      "DicomTagName.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "cth_ris_bridge",
+    "name": "C Hospital RIS Bridge",
+    "tech": "AutoHotkey v1, IE COM, DOM Automation",
+    "period": "2021 – 2023",
+    "folder": "03-attending-2016-present/cth_ris_bridge",
+    "intro": "C hospital RIS automation bridge. Integrates worklist extraction, accession navigation, and report field synchronization.",
+    "highlights": [
+      "Web-based RIS automation layer using IE COM and DOM event injection",
+      "Extracts active study accession numbers and synchronizes report panes",
+      "Supports hospital-specific location profiles and workstation presets"
+    ],
+    "key_files": [
+      "CTH_RIS.ahk",
+      "getPlace.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "RazerNaga",
+    "name": "RazerNaga",
+    "tech": "AutoHotkey v1, Low-level Mouse Hook",
+    "period": "2017 – 2019",
+    "folder": "03-attending-2016-present/RazerNaga",
+    "intro": "Ergonomic 12-button Razer Naga mouse button mapping and smart scroll engine customized for IMPAX, RIS, and EBM image navigation.",
+    "highlights": [
+      "Ergonomic 12-button Razer Naga side-key mapping for radiology viewers",
+      "Context-aware hotkey switching between IMPAX, RIS, and EBM viewers",
+      "Smooth continuous image scrolling and window-level adjustments"
+    ],
+    "key_files": [
+      "RazerNaga.ahk",
+      "getEBMSquareLoc.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "searchOpHx",
+    "name": "searchOpHx",
+    "tech": "AutoHotkey v1, Portal HTTP API",
+    "period": "2018 – 2019",
+    "folder": "03-attending-2016-present/searchOpHx",
+    "intro": "Automated surgical and admission history cross-referencing tool. Identifies post-operative and orthopedics cases during RIS worklist reading.",
+    "highlights": [
+      "Automated surgical and admission history cross-referencing tool",
+      "Queries clinical portal in the background for active RIS worklist cases",
+      "Flags post-operative status and orthopedic hardware in reading queues"
+    ],
+    "key_files": [
+      "searchOpHx.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "monitorWebsite",
+    "name": "monitorWebsite",
+    "tech": "AutoHotkey v1, HTTP, MD5 Hashing",
+    "period": "2016 – 2018",
+    "folder": "03-attending-2016-present/monitorWebsite",
+    "intro": "Intranet website change detector. Monitors hospital duty rosters, departmental bulletins, and web notices using periodic MD5 hash comparison.",
+    "highlights": [
+      "Hourly intranet page change detection using MD5 checksum hashing",
+      "Monitors departmental duty rosters, conference notices, and web bulletins",
+      "Visual alerts when changes are detected"
+    ],
+    "key_files": [
+      "monitorWebsite.ahk",
+      "website_list.txt"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "annualMeetingScraper",
+    "name": "annualMeetingScraper",
+    "tech": "AutoHotkey v1, HTTP Scraping",
+    "period": "2016",
+    "folder": "03-attending-2016-present/annualMeetingScraper",
+    "intro": "RSROC annual radiological meeting abstract submission query and status scraper.",
+    "highlights": [
+      "Automated abstract acceptance scraper for annual radiological meetings",
+      "Queries RSROC presentation schedules and generates local status reports",
+      "Eliminates repetitive manual form lookups"
+    ],
+    "key_files": [
+      "annualMeetingScraper.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "PacsIE_suite",
+    "name": "PacsIE_suite",
+    "tech": "AutoHotkey v1, IE COM, Scintilla, HTTP/SOAP, AES",
+    "period": "2016 – 2019",
+    "folder": "03-attending-2016-present/PacsIE_suite",
+    "intro": "Comprehensive web automation suite including PacsIE portal integration, simpleRIS Scintilla editor, miniPACS prefetching, and feedRIS batching.",
+    "highlights": [
+      "Integrated web automation layer for clinical portals and IMPAX",
+      "Includes simpleRIS Scintilla text editor with crash-recovery auto-saving",
+      "miniPACS prefetch pipeline to download and decrypt prior imaging studies",
+      "feedRIS automated batch reporting dispatcher"
+    ],
+    "key_files": [
+      "20171006104857update.bat",
+      "8-lex_advancedhighlight.ahk",
+      "autoFeed.ahk",
+      "B.ico"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "03-attending-2016-present",
+    "era_label": "Attending (2016 – Present)",
+    "id": "selectCT",
+    "name": "selectCT",
+    "tech": "AutoHotkey v1, DataTables HTML, dcm4che",
+    "period": "2019",
+    "folder": "03-attending-2016-present/selectCT",
+    "intro": "Interactive CT worklist picker with sortable DataTables HTML UI, DICOM C-FIND queries, and automatic RIS study shifting.",
+    "highlights": [
+      "Interactive CT worklist picker with sortable DataTables HTML interface",
+      "Runs DICOM queries to verify study completion and series counts",
+      "Automates accession shifting and study loading into RIS"
+    ],
+    "key_files": [
+      "selectCT.ahk",
+      "selectCT_Query.ahk",
+      "shiftCT.ahk",
+      "datatable.html"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "RAD_DB",
+    "name": "RAD_DB",
+    "tech": "AutoHotkey v1, ADODB/Jet OLEDB, MS Access COM, portalLib",
+    "period": "2011 – 2015",
+    "folder": "02-resident-2011-2015/RAD_DB",
+    "intro": "Angiography and interventional radiology procedure database pipeline. Records TACE and procedure records with portal demographic integration.",
+    "highlights": [
+      "Angio room procedure database pipeline using ADODB and MS Access",
+      "Records TACE and vascular intervention procedures with portal data integration",
+      "Generates formatted procedure notes directly for clinical records"
+    ],
+    "key_files": [
+      "writeToDb.ahk",
+      "writeToRis.ahk",
+      "closeUpdate.ahk",
+      "Procedure Note.cmd"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "portalLib",
+    "name": "portalLib",
+    "tech": "AutoHotkey v1, HTTP Client, SOAP/XML",
+    "period": "2012 – 2018",
+    "folder": "02-resident-2011-2015/portalLib",
+    "intro": "Foundational client library for N hospital HIS and medical web portal. Automates authentication, patient demographics, lab reports, and imaging history retrieval.",
+    "highlights": [
+      "Foundational HTTP and SOAP client library for hospital information systems",
+      "Automates session authentication, lab results, and patient medical records",
+      "Shared core backend utilized by more than 20 clinical workflow tools"
+    ],
+    "key_files": [
+      "portalLib.ahk",
+      "HTTPRequest.ahk",
+      "xpath.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "kln_OPD_history_parser",
+    "name": "kln_OPD_history_parser",
+    "tech": "AutoHotkey v1, portalLib, HTML Parser",
+    "period": "2013 – 2014",
+    "folder": "02-resident-2011-2015/kln_OPD_history_parser",
+    "intro": "Bulk outpatient clinical history scraper. Extracts diagnostic codes, medication history, and SOAP progress notes into structured CSV format.",
+    "highlights": [
+      "Bulk outpatient clinical history scraper and structured table generator",
+      "Parses diagnostic codes, medication history, and clinical progress notes",
+      "Exports patient longitudinal history into clean CSV files"
+    ],
+    "key_files": [
+      "getOPDdataFull.ahk",
+      "HtmlToCSV2.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "Annie_helpers",
+    "name": "Annie_helpers",
+    "tech": "AutoHotkey v1, GUI, Web Filtering",
+    "period": "2013",
+    "folder": "02-resident-2011-2015/Annie_helpers",
+    "intro": "Office productivity suite developed for clinical administrative support, including site blockers, Excel macros, and automated credential typing.",
+    "highlights": [
+      "Administrative productivity bundle for clinical office workflows",
+      "Includes site blockers, Excel report formatters, and Lotus Notes backup",
+      "Automated credential typing for administrative portals"
+    ],
+    "key_files": [
+      "Blocked Keywords.txt",
+      "blockFB.ahk",
+      "blockWeb.ahk",
+      "blockWeb.ico"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "Bombard",
+    "name": "Bombard",
+    "tech": "AutoHotkey v1, HTTP Client, portalLib",
+    "period": "2012",
+    "folder": "02-resident-2011-2015/Bombard",
+    "intro": "Adverse clinical event reporting portal automation. Streamlines submission of patient safety and equipment incident reports.",
+    "highlights": [
+      "Hospital adverse-event reporting portal automation script",
+      "Automates clinical incident reporting and equipment issue submissions",
+      "Streamlines mandatory hospital quality assurance paperwork"
+    ],
+    "key_files": [
+      "aviso.txt",
+      "bombard.ahk",
+      "full.ini",
+      "full.txt"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "cleanLab",
+    "name": "cleanLab",
+    "tech": "AutoHotkey v1, GUI, Regex",
+    "period": "2012",
+    "folder": "02-resident-2011-2015/cleanLab",
+    "intro": "Interactive GUI utility for cleaning, parsing, and standardizing pasted laboratory result blocks into compact tabular clinical notes.",
+    "highlights": [
+      "Interactive GUI utility for cleaning and reformatting pasted lab results",
+      "Converts dense multi-column laboratory tables into concise diagnostic notes",
+      "Standardizes unit formatting and reference range indicators"
+    ],
+    "key_files": [
+      "cleanLab.ahk",
+      "cleanLab.png"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "filterSCI",
+    "name": "filterSCI",
+    "tech": "AutoHotkey v1, HTTP Client",
+    "period": "2015",
+    "folder": "02-resident-2011-2015/filterSCI",
+    "intro": "Scientific citation index validator. Queries medical journal titles against TU Wien SCI database to verify indexing metrics and impact factors.",
+    "highlights": [
+      "Journal scientific indexing validator querying TU Wien SCI databases",
+      "Verifies impact factor, category rank, and citation indexing status",
+      "Aids academic publication planning and thesis citation selection"
+    ],
+    "key_files": [
+      "filterSCI.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "Sleipnir_helpers",
+    "name": "Sleipnir_helpers",
+    "tech": "AutoHotkey v1, COM Automation",
+    "period": "2013",
+    "folder": "02-resident-2011-2015/Sleipnir_helpers",
+    "intro": "Browser COM interop bridge for the Sleipnir dual-engine browser, extracting active DOM document instances for hospital portal scripting.",
+    "highlights": [
+      "COM interop bridge for the Sleipnir dual-engine browser",
+      "Extracts active DOM document instances for hospital portal scripting",
+      "Enables deep automation on workstations lacking standard browser APIs"
+    ],
+    "key_files": [
+      "sleipnir.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "archCal",
+    "name": "archCal",
+    "tech": "AutoHotkey v1, Transparent Overlay GUI",
+    "period": "2013",
+    "folder": "02-resident-2011-2015/archCal",
+    "intro": "Curved trajectory and archery degree-wheel transparent visual overlay attached to mouse cursor for geometric angle estimation.",
+    "highlights": [
+      "Transparent geometric overlay attached to mouse cursor",
+      "Interactive degree-wheel for estimating curved trajectories and angles",
+      "Lightweight hobby and geometry tool developed in AutoHotkey"
+    ],
+    "key_files": [
+      "archCal.ahk",
+      "archCal.ini",
+      "degree-wheel.gif"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "ChartReviewExport",
+    "name": "ChartReviewExport",
+    "tech": "AutoHotkey v1, Portal HTTP API",
+    "period": "2013 – 2014",
+    "folder": "02-resident-2011-2015/ChartReviewExport",
+    "intro": "Automated medical chart review query pipeline. Fetches historical radiology and pathology reports by chart number into tabular review records.",
+    "highlights": [
+      "Automated clinical chart review query pipeline",
+      "Fetches historical radiology and pathology reports by chart number",
+      "Exports multi-year patient records into tabular review spreadsheets"
+    ],
+    "key_files": [
+      "ChartReviewExport.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "02-resident-2011-2015",
+    "era_label": "Resident (2011 – 2015)",
+    "id": "UserScript_Path_Converter",
+    "name": "UserScript_Path_Converter",
+    "tech": "AutoHotkey v1, String Manipulation",
+    "period": "2012",
+    "folder": "02-resident-2011-2015/UserScript_Path_Converter",
+    "intro": "Development path switcher for Seahorse and Greasemonkey userscripts, transforming local file URLs to workstation network paths.",
+    "highlights": [
+      "Development path switcher for Seahorse and Greasemonkey userscripts",
+      "Transforms local development URLs to network workstation paths",
+      "Facilitates rapid testing and deployment of hospital web extensions"
+    ],
+    "key_files": [
+      "remote or local conversion.ahk"
+    ],
+    "is_new": true
+  },
+  {
+    "era": "01-student-2003-2010",
+    "era_label": "Student (2003 – 2010)",
+    "id": "LiuWordList",
+    "name": "LiuWordList",
+    "tech": "AutoHotkey v1, GUI Automation",
+    "period": "2007 – 2010",
+    "folder": "01-student-2003-2010/LiuWordList",
+    "intro": "Automated dictionary reverse-engineering script for the Boshiamy (嘸蝦米) input method. Sequentially steps through candidate grids to dump mappings.",
+    "highlights": [
+      "Automated reverse-engineering utility for the Boshiamy input method",
+      "Sequentially navigates input candidate grids to dump character code mappings",
+      "Generates raw word tables for custom input method engines"
+    ],
+    "key_files": [
+      "LiuWordList.ahk",
+      "LiuWordList2.ahk"
+    ],
+    "is_new": true
+  }
+];
+
+    const STORAGE_KEY = 'radiology_tools_catalog_edits_v2';
+    const EXCLUDED_STORAGE_KEY = 'radiology_tools_catalog_excluded_v1';
+    let toolEdits = {};
+    let excludedTools = new Set();
+    let currentEra = 'all';
+    let currentStatus = 'all'; // 'all', 'included', 'excluded'
+    let saveTimeout = null;
+
+    try {
+      const stored = localStorage.getItem(STORAGE_KEY);
+      if (stored) {
+        toolEdits = JSON.parse(stored);
+      }
+      const storedEx = localStorage.getItem(EXCLUDED_STORAGE_KEY);
+      if (storedEx) {
+        excludedTools = new Set(JSON.parse(storedEx));
+      }
+    } catch (e) {
+      console.warn("Could not load from localStorage:", e);
+    }
+
+    function getToolIntro(tool) {
+      return toolEdits[tool.id] !== undefined ? toolEdits[tool.id] : tool.intro;
+    }
+
+    function renderTools() {
+      const grid = document.getElementById('toolGrid');
+      grid.innerHTML = '';
+
+      DEFAULT_TOOLS.forEach(t => {
+        const isEra1 = t.era.includes('student');
+        const isEra2 = t.era.includes('resident');
+        const eraClass = isEra1 ? 'tag-era1' : (isEra2 ? 'tag-era2' : 'tag-era3');
+        const eraShort = isEra1 ? 'Student (2003-2010)' : (isEra2 ? 'Resident (2011-2015)' : 'Attending (2016+)');
+        const currentIntro = getToolIntro(t);
+        const hlItems = (t.highlights || []).map(h => `<li>${h}</li>`).join('');
+        const filesStr = (t.key_files || []).join(', ');
+
+        const card = document.createElement('div');
+        const isExcluded = excludedTools.has(t.id);
+        card.className = 'card' + (isExcluded ? ' is-excluded' : '');
+        card.setAttribute('data-id', t.id);
+        card.setAttribute('data-era', t.era);
+        card.setAttribute('data-is-new', t.is_new ? 'true' : 'false');
+        card.setAttribute('data-excluded', isExcluded ? 'true' : 'false');
+
+        card.innerHTML = `
+          <div class="card-header">
+            <div class="card-title">
+              ${t.name}
+              ${t.is_new ? '<span style="background:#fef3c7; color:#b45309; font-size:10px; font-weight:700; padding:2px 7px; border-radius:999px; margin-left:6px; border:1px solid #fde68a;">NEW</span>' : ''}
+              ${isExcluded ? '<span class="badge-excluded" style="margin-left:6px;">EXCLUDED</span>' : ''}
+            </div>
+            <div style="display:flex; align-items:center; gap:8px;">
+              <span class="era-tag ${eraClass}">${eraShort}</span>
+              <label class="exclude-label" title="Check to exclude from repository upload">
+                <input type="checkbox" onchange="toggleExclude('${t.id}', this.checked)" ${isExcluded ? 'checked' : ''}>
+                <span>Exclude</span>
+              </label>
+            </div>
+          </div>
+          <div class="meta-line">
+            <strong>Period:</strong> ${t.period} | <strong>Tech:</strong> ${t.tech}
+          </div>
+          <div class="desc-header">
+            <span class="desc-label">Tool Description (Editable)</span>
+            <button class="desc-reset" onclick="resetTool('${t.id}')">Reset</button>
+          </div>
+          <textarea class="editable-desc" oninput="onDescInput('${t.id}', this)">${currentIntro}</textarea>
+          <div class="highlights">
+            <strong>Key Design Highlights:</strong>
+            <ul>${hlItems}</ul>
+          </div>
+          <div class="card-footer">
+            <span>Folder: <code>${t.folder.split('/').pop()}</code></span>
+            <span class="key-files">${filesStr}</span>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+
+      applyFilters();
+      updateExclusionCounts();
+    }
+
+    function onDescInput(id, textarea) {
+      setAutosaveStatus('saving', 'Saving changes...');
+      toolEdits[id] = textarea.value;
+
+      if (saveTimeout) clearTimeout(saveTimeout);
+      saveTimeout = setTimeout(() => {
+        try {
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(toolEdits));
+          const time = new Date().toLocaleTimeString();
+          setAutosaveStatus('saved', `All changes autosaved locally (${time})`);
+        } catch (e) {
+          setAutosaveStatus('saving', 'Autosave error: storage quota exceeded');
+        }
+      }, 400);
+    }
+
+    function setAutosaveStatus(state, text) {
+      const pill = document.getElementById('autosavePill');
+      const label = document.getElementById('autosaveText');
+      if (pill) pill.className = `autosave-pill ${state}`;
+      if (label) label.innerText = text;
+    }
+
+    function resetTool(id) {
+      const tool = DEFAULT_TOOLS.find(t => t.id === id);
+      if (!tool) return;
+      delete toolEdits[id];
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(toolEdits));
+      const textarea = document.querySelector(`.card[data-id="${id}"] textarea`);
+      if (textarea) textarea.value = tool.intro;
+      showToast(`Reset "${tool.name}" description to default.`);
+      setAutosaveStatus('saved', 'Reset saved locally');
+    }
+
+    function resetAllDescriptions() {
+      if (confirm("Are you sure you want to revert ALL descriptions and exclusions back to defaults?")) {
+        toolEdits = {};
+        excludedTools.clear();
+        localStorage.removeItem(STORAGE_KEY);
+        localStorage.removeItem(EXCLUDED_STORAGE_KEY);
+        renderTools();
+        showToast("All descriptions and exclusions reset to defaults.");
+        setAutosaveStatus('saved', 'All defaults restored');
+      }
+    }
+
+    function filterEra(era) {
+      currentEra = era;
+      document.querySelectorAll('.controls > .filter-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('onclick') && btn.getAttribute('onclick').includes(era));
+      });
+      applyFilters();
+      updateExclusionCounts();
+    }
+
+    function toggleExclude(id, isChecked) {
+      if (isChecked) {
+        excludedTools.add(id);
+      } else {
+        excludedTools.delete(id);
+      }
+      try {
+        localStorage.setItem(EXCLUDED_STORAGE_KEY, JSON.stringify(Array.from(excludedTools)));
+      } catch (e) {
+        console.warn("Could not save exclusions:", e);
+      }
+      renderTools();
+      showToast(isChecked ? `Excluded "${id}" from repository.` : `Included "${id}" in repository.`);
+    }
+
+    function filterStatus(status) {
+      currentStatus = status;
+      const btnInc = document.getElementById('filterIncludedBtn');
+      const btnExc = document.getElementById('filterExcludedBtn');
+      if (btnInc) btnInc.classList.toggle('active', status === 'included');
+      if (btnExc) btnExc.classList.toggle('active', status === 'excluded');
+      applyFilters();
+      updateExclusionCounts();
+    }
+
+    function updateExclusionCounts() {
+      const total = DEFAULT_TOOLS.length;
+      const excluded = excludedTools.size;
+      const included = total - excluded;
+      const elInc = document.getElementById('countIncluded');
+      const elExc = document.getElementById('countExcluded');
+      if (elInc) elInc.innerText = included;
+      if (elExc) elExc.innerText = excluded;
+    }
+
+    function applyFilters() {
+      const q = (document.getElementById('search').value || '').toLowerCase();
+      document.querySelectorAll('.card').forEach(card => {
+        const isEx = card.getAttribute('data-excluded') === 'true';
+        const matchStatus = currentStatus === 'all' || (currentStatus === 'included' ? !isEx : isEx);
+        const matchEra = currentEra === 'all' || (currentEra === 'new' ? card.getAttribute('data-is-new') === 'true' : card.getAttribute('data-era') === currentEra);
+        const titleEl = card.querySelector('.card-title');
+        const textEl = card.querySelector('textarea');
+        const text = (titleEl ? titleEl.innerText.toLowerCase() : '') + ' ' + 
+                     (textEl ? textEl.value.toLowerCase() : '');
+        const matchQuery = !q || text.includes(q);
+        card.style.display = (matchStatus && matchEra && matchQuery) ? 'flex' : 'none';
+      });
+    }
+
+    function getUpdatedToolsData() {
+      return DEFAULT_TOOLS.map(t => ({
+        ...t,
+        intro: getToolIntro(t),
+        is_excluded: excludedTools.has(t.id)
+      }));
+    }
+
+    function downloadUpdatedHtml() {
+      const fullHtml = document.documentElement.outerHTML;
+      const blob = new Blob([fullHtml], { type: 'text/html;charset=utf-8' });
+      downloadBlob(blob, 'tools_catalog.html');
+      showToast("Downloaded tools_catalog.html with current edits baked in!");
+    }
+
+    function exportJson() {
+      const updated = getUpdatedToolsData();
+      const jsonStr = JSON.stringify(updated, null, 2);
+      const blob = new Blob([jsonStr], { type: 'application/json;charset=utf-8' });
+      downloadBlob(blob, 'tools_catalog.json');
+      showToast("Exported tools_catalog.json!");
+    }
+
+    function exportMarkdownReadme() {
+      const updated = getUpdatedToolsData();
+      let md = '# Tools Catalog\n\n';
+      
+      const eras = [
+        { key: '01-student-2003-2010', title: 'Student Era (2003 – 2010)' },
+        { key: '02-resident-2011-2015', title: 'Resident Era (2011 – 2015)' },
+        { key: '03-attending-2016-present', title: 'Attending Era (2016 – Present)' }
+      ];
+
+      eras.forEach(e => {
+        const toolsInEra = updated.filter(t => t.era === e.key && !t.is_excluded);
+        md += `## ${e.title} (${toolsInEra.length} Tools)\n\n`;
+        toolsInEra.forEach(t => {
+          md += `### ${t.name}\n`;
+          md += `- **Period**: ${t.period}\n`;
+          md += `- **Tech**: ${t.tech}\n`;
+          md += `- **Folder**: \`${t.folder}\`\n`;
+          md += `- **Description**: ${t.intro}\n`;
+          md += `- **Key Files**: ${t.key_files.map(f => '`' + f + '`').join(', ')}\n\n`;
+        });
+      });
+
+      const blob = new Blob([md], { type: 'text/markdown;charset=utf-8' });
+      downloadBlob(blob, 'TOOLS_CATALOG.md');
+      showToast("Exported TOOLS_CATALOG.md for GitHub README!");
+    }
+
+    function downloadBlob(blob, filename) {
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+
+    function showToast(msg) {
+      const t = document.getElementById('toast');
+      t.innerText = msg;
+      t.style.display = 'block';
+      setTimeout(() => { t.style.display = 'none'; }, 3000);
+    }
+
+    // Initial render
+    renderTools();
+  </script>
+</body>
+</html>

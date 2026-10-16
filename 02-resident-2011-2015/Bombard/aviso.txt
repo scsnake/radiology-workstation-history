@@ -1,0 +1,1457 @@
+ 
+ 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ 
+<html xmlns="http://www.w3.org/1999/xhtml" >
+  <head><title>
+	異常事件通報
+</title><link href="../../css/style.css" type="text/css" rel="stylesheet" /><link href="../AvisoCSS/ajaxCalendar.css" type="text/css" rel="Stylesheet" /><link href="../AvisoCSS/ajaxAutoComplete.css" type="text/css" rel="Stylesheet" /><link href="/WebApplication/Administration/UrgentAviso/WebResource.axd?d=BHuJee25iwJGOjdhQZbV0O1uzMMon3ts3NFlnEyBI_IxIsmrwCu8F3RaUuF4M7gx4eke1XFfw96GYzkQt9h0Ze9jU3-DbAEG2tzKkjZu4B8GR7ibWk8xAp9Lhhj79CUrZxxO4w2&amp;t=634575707300000000" type="text/css" rel="stylesheet" /></head>
+  <body>
+    <form name="formMain" method="post" action="CaseForm.aspx?ScrollTop=0&amp;ScrollLeft=0&amp;CaseActName=TempCase&amp;CurrentPageIndex=0&amp;CreateByTemp=Y" id="formMain">
+<div>
+<input type="hidden" name="caseTab_ClientState" id="caseTab_ClientState" value="{&quot;ActiveTabIndex&quot;:0,&quot;TabState&quot;:[true,true,true,true,true,true,true]}" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNDI5NDU1MTgxDxYEHhBDYXNlRm9ybUl0ZW1JbmZvMpwdAAEAAAD/////AQAAAAAAAAAMAgAAAEJVcmdlbnRBdmlzbywgVmVyc2lvbj0xLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGwFAQAAACJVcmdlbnRBdmlzby5Bdmlzb0JlYW4uQ2FzZUZvcm1JdGVtKwAAAA5fY2FzZUV2ZW50RGF0YRJfaXNOdXJzZVJldmlld0Nhc2UXX2lzQWxlcnROdXJzZVJldmlld0Nhc2UXPENhc2VObz5rX19CYWNraW5nRmllbGQbPENhc2VTdGF0dXM+a19fQmFja2luZ0ZpZWxkHzxNYWluQ2FzZVN0YXR1cz5rX19CYWNraW5nRmllbGQePENhc2VFdmVudENvZGU+a19fQmFja2luZ0ZpZWxkHzxBcmVhUGVyc29uRGF0YT5rX19CYWNraW5nRmllbGQiPEFyZWFJbW1lZGlhdGVEYXRhPmtfX0JhY2tpbmdGaWVsZCA8QXJlYVByZXZlbnREYXRhPmtfX0JhY2tpbmdGaWVsZCE8QXJlYVJlaGFwcGVuRGF0YT5rX19CYWNraW5nRmllbGQePEFyZWFBdmlzb0RhdGE+a19fQmFja2luZ0ZpZWxkIDxBcmVhSW1wcm92ZURhdGE+a19fQmFja2luZ0ZpZWxkITxFdmVudFN1cmdlcnlEYXRhPmtfX0JhY2tpbmdGaWVsZCI8RXZlbnRGYWxsZG93bkRhdGE+a19fQmFja2luZ0ZpZWxkHjxFdmVudERydWdEYXRhPmtfX0JhY2tpbmdGaWVsZB88RXZlbnRCbG9vZERhdGE+a19fQmFja2luZ0ZpZWxkIzxFdmVudFRyZWF0bWVudERhdGE+a19fQmFja2luZ0ZpZWxkIjxFdmVudEFjY2lkZW50RGF0YT5rX19CYWNraW5nRmllbGQiPEV2ZW50U2VjdXJpdHlEYXRhPmtfX0JhY2tpbmdGaWVsZB48RXZlbnRIdXJ0RGF0YT5rX19CYWNraW5nRmllbGQiPEV2ZW50SW50dWJhdGVEYXRhPmtfX0JhY2tpbmdGaWVsZB88RXZlbnRIZWFydERhdGE+a19fQmFja2luZ0ZpZWxkITxFdmVudEluc3BlY3REYXRhPmtfX0JhY2tpbmdGaWVsZCQ8RXZlbnRBbmVzdGhlc2lhRGF0YT5rX19CYWNraW5nRmllbGQfPEV2ZW50T3RoZXJEYXRhPmtfX0JhY2tpbmdGaWVsZB88RXZlbnRBZG1pbkRhdGE+a19fQmFja2luZ0ZpZWxkKjxFdmVudENoZW1vdGhlcmFweUxlYWtEYXRhPmtfX0JhY2tpbmdGaWVsZCo8RXZlbnRDaGVtb3RoZXJhcHlPdmVyRGF0YT5rX19CYWNraW5nRmllbGQiPEZhbGxkb3duQW5hbHlEYXRhPmtfX0JhY2tpbmdGaWVsZCA8SW50dWJhdGVPdXREYXRhPmtfX0JhY2tpbmdGaWVsZBo8SXNOZXdDYXNlPmtfX0JhY2tpbmdGaWVsZBk8SXNTZW5kUUE+a19fQmFja2luZ0ZpZWxkGzxBdmlzb0VtcE5vPmtfX0JhY2tpbmdGaWVsZBw8Q3VycmVudEVkaXQ+a19fQmFja2luZ0ZpZWxkHjxBdmlzb0RlcHRDb2RlPmtfX0JhY2tpbmdGaWVsZB48UUFSZWNlaXZlRGF0ZT5rX19CYWNraW5nRmllbGQaPEV2ZW50RGVzYz5rX19CYWNraW5nRmllbGQgPEV2ZW50UmVhc29uRGVzYz5rX19CYWNraW5nRmllbGQbPENyZWF0ZURhdGU+a19fQmFja2luZ0ZpZWxkGzxJc0Nhc2VNYXJrPmtfX0JhY2tpbmdGaWVsZBg8TWVzc2FnZT5rX19CYWNraW5nRmllbGQdPFVzZXJJdGVtSW5mbz5rX19CYWNraW5nRmllbGQBAAABAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAAABAQEDAQEDAAEEAQEBAXFTeXN0ZW0uTnVsbGFibGVgMVtbU3lzdGVtLkRhdGVUaW1lLCBtc2NvcmxpYiwgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXXFTeXN0ZW0uTnVsbGFibGVgMVtbU3lzdGVtLkRhdGVUaW1lLCBtc2NvcmxpYiwgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQEjVXJnZW50QXZpc28uQXZpc29CZWFuLkxvZ2luVXNlckl0ZW0CAAAAAgAAAAoAAAoGAwAAAARURU1QCQMAAAAKCgoKCgYEAAAAT3QkUUF2aXNvJEF2aXNvTmFtZUA6QOmZs+S9vuaYjEAsQHQkUUF2aXNvJEF2aXNvRGVwdEA6QFJBRF/lvbHlg4/phqvlrbjpg6hfMTUxMDAKCgoKCgoKCgoKCgoKCgoKCgoKAQAGBQAAAAYxMDA4NjAKCgoKCgoACgkGAAAABQYAAAAjVXJnZW50QXZpc28uQXZpc29CZWFuLkxvZ2luVXNlckl0ZW0qAAAADV9ob3NwaXRhbENvZGUOX2hvc3BpdGFsQ05hbWUOX2xvZ2luRGVwdENvZGUPX2xvZ2luRGVwdEVOYW1lD19sb2dpbkRlcHRDTmFtZQxfbG9naW5Vc2VySUQOX2xvZ2luVXNlck5hbWUUX2xvZ2luQ29zdENlbnRlckNvZGUHX2V4dFRlbAZfZW1haWwJX2lzUUFSb2xlDV9pc1FBQm9zc1JvbGURX2lzUUFTdWJDaGllZlJvbGUOX2lzUUFDaGllZlJvbGUdPEhvc3BpdGFsQ29kZT5rX19CYWNraW5nRmllbGQePEhvc3BpdGFsQ05hbWU+a19fQmFja2luZ0ZpZWxkIDxJc0ZpcnN0Q2F0ZWdvcnk+a19fQmFja2luZ0ZpZWxkHjxGaXJzdERlcHRDb2RlPmtfX0JhY2tpbmdGaWVsZB48TG9naW5EZXB0Q29kZT5rX19CYWNraW5nRmllbGQfPExvZ2luRGVwdEVOYW1lPmtfX0JhY2tpbmdGaWVsZB88TG9naW5EZXB0Q05hbWU+a19fQmFja2luZ0ZpZWxkHDxMb2dpblVzZXJJRD5rX19CYWNraW5nRmllbGQePExvZ2luVXNlck5hbWU+a19fQmFja2luZ0ZpZWxkJDxMb2dpbkNvc3RDZW50ZXJDb2RlPmtfX0JhY2tpbmdGaWVsZBc8RXh0VGVsPmtfX0JhY2tpbmdGaWVsZBY8RU1haWw+a19fQmFja2luZ0ZpZWxkGzxFeHBlY3RCb3NzPmtfX0JhY2tpbmdGaWVsZB88RXhwZWN0U3ViQ2hpZWY+a19fQmFja2luZ0ZpZWxkHDxFeHBlY3RDaGllZj5rX19CYWNraW5nRmllbGQZPElzUUFSb2xlPmtfX0JhY2tpbmdGaWVsZB08SXNRQUJvc3NSb2xlPmtfX0JhY2tpbmdGaWVsZCE8SXNRQVN1YkNoaWVmUm9sZT5rX19CYWNraW5nRmllbGQePElzUUFDaGllZlJvbGU+a19fQmFja2luZ0ZpZWxkHDxJc051cnNlUm9sZT5rX19CYWNraW5nRmllbGQbPElzQm9zc1JvbGU+a19fQmFja2luZ0ZpZWxkHzxJc1N1YkNoaWVmUm9sZT5rX19CYWNraW5nRmllbGQcPElzQ2hpZWZSb2xlPmtfX0JhY2tpbmdGaWVsZB08RW1wVGl0bGVDb2RlPmtfX0JhY2tpbmdGaWVsZCA8RW1wU3ViVGl0bGVDb2RlPmtfX0JhY2tpbmdGaWVsZBs8SXNBbmFseXNpcz5rX19CYWNraW5nRmllbGQfPENvc3RDZW50ZXJMaXN0PmtfX0JhY2tpbmdGaWVsZCY8Q29uZmlybUNvc3RDZW50ZXJMaXN0PmtfX0JhY2tpbmdGaWVsZAEBAQEBAQEBAQEAAAAAAQEAAQEBAQEBAQEBAQEBAAAAAAAAAAABAQADAwEBAQEBAQEBAQEBAQEBf1N5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljLkxpc3RgMVtbU3lzdGVtLlN0cmluZywgbXNjb3JsaWIsIFZlcnNpb249Mi4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5XV1/U3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuTGlzdGAxW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQIAAAAKCgoKCgoKCgoKAAAAAAYHAAAAAlQwBggAAAAM5Y+w5aSn57i96ZmiAQYJAAAABDAwNTQJCQAAAAYKAAAAA1JBRAYLAAAAD+W9seWDj+mGq+WtuOmDqAkFAAAABg0AAAAJ6Zmz5L2+5piMBg4AAAAFMTUxMDAGDwAAAAAGEAAAABNzY3NuYWtlQG50dWguZ292LnR3CgoKAAAAAAAAAAAKCgAJEQAAAAkSAAAABBEAAAB/U3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuTGlzdGAxW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQMAAAAGX2l0ZW1zBV9zaXplCF92ZXJzaW9uBgAACAgJEwAAAAAAAAAAAAAAARIAAAARAAAACRMAAAAAAAAAAAAAABETAAAAAAAAAAseFElzTG9naW5Bdmlzb1NhbWVEZXB0BQRUcnVlFgICAQ9kFgQCBA9kFgICAQ9kFgICAQ9kFgQCAQ9kFgICAQ9kFgJmD2QWAgIBDw8WAh4EVGV4dGVkZAIHD2QWAgIBDw8WAh4HVmlzaWJsZWhkZAIID2QWAgIHD2QWAmYPZBYWAgEPD2QWAh4HT25DbGljawUXb25CdG5TYXZlQ2xpZW50Q2xpY2soKTtkAgMPD2QWAh8EBRdvbkJ0blNhdmVDbGllbnRDbGljaygpO2QCBQ8PFgIfA2hkZAIHDw8WAh8DaGRkAgkPDxYCHwNoZGQCCw8QDxYCHwNoZGRkZAINDw8WAh8DaBYCHwQFF29uQnRuU2F2ZUNsaWVudENsaWNrKCk7ZAIRDw8WAh8DaBYCHwQFI29uQnRuTm90aWZ5TnVyc2VDaGllZkNsaWVudENsaWNrKCk7ZAITDw8WAh8DaBYCHwQFGW9uQnRuU2VuZFFBQ2xpZW50Q2xpY2soKTtkAhUPDxYCHwNoZGQCFw8PFgIfA2hkZBgCBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUHY2FzZVRhYgUHY2FzZVRhYg8PZGZk" />
+</div>
+ 
+<script type="text/javascript"> 
+//<![CDATA[
+var theForm = document.forms['formMain'];
+if (!theForm) {
+    theForm = document.formMain;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+ 
+ 
+<script src="/WebApplication/Administration/UrgentAviso/WebResource.axd?d=sBAdSpgwL5HUyVCKjk36WfM4u9IAl_nRjg3uEUtKeJ-lE3jEanBEptmt5j1_nGcmA-EQhBTSsMaWW_BM-kCp2DrRbRc1&amp;t=634761319083085725" type="text/javascript"></script>
+ 
+ 
+<script type="text/javascript"> 
+//<![CDATA[
+var gHappenDateWeek = 'caseTab_caseTabPerson_Person_lblHappenDateWeek';var __cultureInfo = '{"name":"zh-TW","numberFormat":{"CurrencyDecimalDigits":2,"CurrencyDecimalSeparator":".","IsReadOnly":true,"CurrencyGroupSizes":[3],"NumberGroupSizes":[3],"PercentGroupSizes":[3],"CurrencyGroupSeparator":",","CurrencySymbol":"NT$","NaNSymbol":"不是一個數字","CurrencyNegativePattern":1,"NumberNegativePattern":1,"PercentPositivePattern":1,"PercentNegativePattern":1,"NegativeInfinitySymbol":"負無窮大","NegativeSign":"-","NumberDecimalDigits":2,"NumberDecimalSeparator":".","NumberGroupSeparator":",","CurrencyPositivePattern":0,"PositiveInfinitySymbol":"正無窮大","PositiveSign":"+","PercentDecimalDigits":2,"PercentDecimalSeparator":".","PercentGroupSeparator":",","PercentSymbol":"%","PerMilleSymbol":"‰","NativeDigits":["0","1","2","3","4","5","6","7","8","9"],"DigitSubstitution":1},"dateTimeFormat":{"AMDesignator":"上午","Calendar":{"MinSupportedDateTime":"\/Date(-62135596800000)\/","MaxSupportedDateTime":"\/Date(253402271999999)\/","AlgorithmType":1,"CalendarType":1,"Eras":[1],"TwoDigitYearMax":2029,"IsReadOnly":true},"DateSeparator":"/","FirstDayOfWeek":0,"CalendarWeekRule":0,"FullDateTimePattern":"yyyy\u0027年\u0027M\u0027月\u0027d\u0027日\u0027 tt hh:mm:ss","LongDatePattern":"yyyy\u0027年\u0027M\u0027月\u0027d\u0027日\u0027","LongTimePattern":"tt hh:mm:ss","MonthDayPattern":"M\u0027月\u0027d\u0027日\u0027","PMDesignator":"下午","RFC1123Pattern":"ddd, dd MMM yyyy HH\u0027:\u0027mm\u0027:\u0027ss \u0027GMT\u0027","ShortDatePattern":"yyyy/M/d","ShortTimePattern":"tt hh:mm","SortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd\u0027T\u0027HH\u0027:\u0027mm\u0027:\u0027ss","TimeSeparator":":","UniversalSortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd HH\u0027:\u0027mm\u0027:\u0027ss\u0027Z\u0027","YearMonthPattern":"yyyy\u0027年\u0027M\u0027月\u0027","AbbreviatedDayNames":["星期日","星期一","星期二","星期三","星期四","星期五","星期六"],"ShortestDayNames":["日","一","二","三","四","五","六"],"DayNames":["星期日","星期一","星期二","星期三","星期四","星期五","星期六"],"AbbreviatedMonthNames":["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月",""],"MonthNames":["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月",""],"IsReadOnly":true,"NativeCalendarName":"西曆 (中文)","AbbreviatedMonthGenitiveNames":["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月",""],"MonthGenitiveNames":["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月",""]}}';//]]>
+</script>
+ 
+<script src="/WebApplication/Administration/UrgentAviso/ScriptResource.axd?d=rlVH9Ncmse7zyytK0Mf5Z6bQ2rHOc1RStFHDondhu5epJJiey5aSzM1JJRKOgiRfoHJuWdEUA9-jAS_lnsTQbSU18sPCpGUatgNwvXRbDb0UBONq7feAe4GEQ0Lc7NucdaDTZOl_ZOS-rgKlRqs_Gd9u4hc1&amp;t=ffffffffac299bf8" type="text/javascript"></script>
+<script src="/WebApplication/Administration/UrgentAviso/ScriptResource.axd?d=f1xwZ8Td9HWbF7k5VKV0m9Gq-zd_9cvsIfuMrNyITj8Fspsnu9IqlS2r_9w685rUo_SH2yxB7ktvfNSQ7WI9VDAdXRffeqOlcRiiHQWg6x9a_6ufNarbzvv5ekON_norORHk2MkzJMsSk3BOcywcdu63uwYsfj7A15akXUPnpsX1eqLq0&amp;t=ffffffffac299bf8" type="text/javascript"></script>
+<script src="../AvisoJS/CaseForm.js" type="text/javascript"></script>
+<script src="../AvisoJS/JQuery.js" type="text/javascript"></script>
+<script src="/WebApplication/Administration/UrgentAviso/ScriptResource.axd?d=Y52OnN_DyFsBtfc7Z6CD0qSHHChC1hdjZiqwJ9jmvSBl_myKyI3kBG2l6sEPPcrgrFcXAEKTCwI0tsF5CdQXV7rf5Qz1gtJW41vL1EBgzF1XuZK2RIbNMn1JKrB9qD2FtOeR8S5dhCmYwl3FQ3Ym4B5x4jo1&amp;t=6879b39b" type="text/javascript"></script>
+<script src="/WebApplication/Administration/UrgentAviso/ScriptResource.axd?d=WP5GFLEuJSdSBJYcIIiQfcYB-s62Md6tkiBFCX5N6zGJbMepHetenM4VzVseX0YfRwbHAWDJIfwLyhRcoM0ryKbh_gaAuHJ8beKo4615eZisWpzBfoAP7ubWWT1pQeKUC_z-BEbuSwPZSKVI0mEdKM6B3lw1&amp;t=6879b39b" type="text/javascript"></script>
+<script src="/WebApplication/Administration/UrgentAviso/ScriptResource.axd?d=JY1Dr31Xh2GhX-D-y9CZ_2jtVpb45_4c5lgeea_OwVKi1YCP6vBsvqt4T7Eeoye1Pamzs6hWD7LzALdiNQpdGYSpef5bLw2nbpXD7Raw-3xjtZ2mXQjhojc2Ud3FCCc8oZnK-VS3b4d_iICWB4HM4QjtObo1&amp;t=6879b39b" type="text/javascript"></script>
+<script src="/WebApplication/Administration/UrgentAviso/ScriptResource.axd?d=ahWHu_Q_5HSTiA-6xATlEfYr3TFksQfh_DVjNBNKnFSeN2FiDrK8cTzbF7RWPYPI47HmT1SRufEcP_NUyYs46wfNNrokCMQ5P9wxVZTCbl95DVOm76K9zqQdd_cGS25x5Wn-jw_tKlO5i80Gq6tf4KvQIpk1&amp;t=6879b39b" type="text/javascript"></script>
+<script src="/WebApplication/Administration/UrgentAviso/ScriptResource.axd?d=YF3WwNwWXwUHGLIfYsa9uPhBbvLa-8I3hpwru0mgsiQ-6mYIx1hB1immZEU44Un3fvX6Aw_PpvnyJqgyZQm0AvrpIREUnbQd2QYrI6TwoLiILHtF28RJdcCGO0bnBTugM4wzoF3mTOEY6K4WKknQB4c_JS41&amp;t=6879b39b" type="text/javascript"></script>
+<script src="/WebApplication/Administration/UrgentAviso/ScriptResource.axd?d=MGnOCipTemRzNgQRbxpIczpETEsIhJpWFdw_MpiN-HMwdPFVY9qlQPJsch0ec1wWaRW6PYirxS2QqNYoCcSPFTLQChs1u5stbH5BtKOpoVqCjeGd7---QStWkcCy1kGzoGiG3SxH4Y3FEwS7aHmpLtf82Gk1&amp;t=6879b39b" type="text/javascript"></script>
+<script src="/WebApplication/Administration/UrgentAviso/ScriptResource.axd?d=8oFoIBuKj_VkOfnkrsVO57CMnxMiM0U93EI2VLd-2_sNosIba_ilFWRQAYuXhmGxbVE51v51g_GJ_K1VmJGc80z4ivHKTieASn8htvjhnyQGggzsMzuKfdFQw9sOu744LNlBlcw68wDJ82aHO-IT9Gq3LV81&amp;t=6879b39b" type="text/javascript"></script>
+<script src="/WebApplication/Administration/UrgentAviso/ScriptResource.axd?d=eDnjxUaCvVShMdjnwKbFclXYvwjkufkDTMcqcaYMJLWIWrxlPq-8FIrVW_Tw4gTnsCg562DJbrTt2egw_olZIGx5DLdh0BEnAXeyNSGS3a6NdZXg1mO4EimHB1NWA6QPayP7p-X5VOLQNh_LUMuZCm2hIlo1&amp;t=6879b39b" type="text/javascript"></script>
+<script src="/WebApplication/Administration/UrgentAviso/ScriptResource.axd?d=b94yQ503_Pop_A5wzpNFpuLcz8AIX5hdzuKbrPEWQGicXOiQ76xbZ-C4jT86bMO2MiMM4wag36dbM789Nwy1wXsBGunfZg9sfc6nn6-dGTzKSYrPPghyDeUfup3Vmo9Q-8RIcJQOh0VMYNG5Gvuxpcvkgm41&amp;t=6879b39b" type="text/javascript"></script>
+<script src="/WebApplication/Administration/UrgentAviso/ScriptResource.axd?d=Cq0aJAAfZc2BrqSDfAZEeUdD_COBM_h2GLBUxmviTnETHYaWKa00Y5Dw1-A2TNqwbIQ_AC5lRhTa-Fon0Qbn2g-7_duSnSfgeBnrwXTcGUKuXP12CN2LrAPPaCgrqGlEoLFnbFZSgwhR8MeraEV3StxMUhn0L5NFNn2H69s2f5Lx6fip0&amp;t=6879b39b" type="text/javascript"></script>
+<script src="/WebApplication/Administration/UrgentAviso/ScriptResource.axd?d=r8EbdOsj4R4xRUaZebuoQrca7t2CB2fzztjPnhLLPL7jOSh7J6ohS3_htmDTbREouJddSmyNs61cVb2qDN5mBJQyO11w2uYZnuujuta1BOQb2YWQMpb9RJFPGpYH9s4sXWYJKQ2&amp;t=6879b39b" type="text/javascript"></script>
+<script src="/WebApplication/Administration/UrgentAviso/ScriptResource.axd?d=OcEzibqKvwdjKuefyaYj3UxQ6Gmjvm5VDYpMJUbu_B_kE7IK5mHvzX-E66FbjxCXnak8eMHP7HOfrbP3OxwhS4jp48lHe26xyppJIrI-TSLkEC30E9slYofzm2V68OPlbxBbDCV1wB-zN-mnWYJguhrRBlRyOd8eaXDoTYr27vaWoCZD0&amp;t=6879b39b" type="text/javascript"></script>
+<div>
+ 
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWLwL3zO6QDAKysaP2BQLFqNCmCAL4uNeiDgL+6YyoCgK8tKGPAwLznbHDCwKI2PO3DwLd1J/EDwLRr7iHAwKDnOXbBQKdh7f1BAL6vfvmBALF2YXoBQKMjbD0DQLM+7OvCQLUnqDaDQKQj6WvDQK3iO+CDwLE6MaVAwLa5dPVAQL1ps+hBwKtxtfyBgKziJnTDgK04/veDQLA2eoxAqyarcQDAr7tkKMPApKCtvgOAs/Tq7oMAszg6UwClYeC8A4C8snYdwKO78uTCwKl2JijDwK8rdP7CALjpJTSCwLmo9qFCgLK+JrjBAKFqtzTCAKa8szmAQLa6stVAtG3wtMPAumS4MYCAuexo40IAsKOjZMDAoSOsbME" />
+</div><object id='printDaemon' style='display: none;' classid='/WebApplication/NControls/PrintLibrary.dll#NH.Printing.PrintDaemon'> </object>
+      <script type="text/javascript"> 
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('scriptManager', document.getElementById('formMain'));
+Sys.WebForms.PageRequestManager.getInstance()._updateControls(['fuPanelCaseNo','fuPanelMessage','fcaseTab$caseTabPerson$uPanelPerson','fcaseTab$caseTabEvent$uPanelEvent','fcaseTab$caseTabAviso$uPanelAviso','fcaseTab$caseTabImmediate$uPanelImmediate','fcaseTab$caseTabPrevent$uPanelPrevent','fcaseTab$caseTabRehappen$uPanelRehappen','fcaseTab$caseTabImprove$uPanelImprove','fuPanelMessageDown','fuPanelActBtn','fuPanelCaseType','fuPanelEventType'], ['btnCaseTabPerson','btnCaseTabEvent','btnCaseTabAviso','btnCaseTabImmediate','btnCaseTabPrevent','btnCaseTabRehappen','btnCaseTabImprove'], [], 90);
+//]]>
+</script>
+ 
+      <div id="panelMain" style="width:100%;">
+	
+        <table id="tblMain" class="queryTableDisplay" width="100%">
+		<tr style="height:26px">
+			<td class="inputTableTitle" colspan="8">通報事件單</td>
+		</tr>
+		<tr style="HEIGHT: 26px">
+			<td align="right" width="12%"><span class="queryText">案號：</span></td>
+			<td align="left" width="13%">
+						  <div id="uPanelCaseNo">
+				
+						      <span id="lblCaseNo"></span>
+						    
+			</div>
+            </td>
+			<td align="right" width="12%"></td>
+			<td align="left" width="13%"></td>
+			<td align="right" width="12%"></td>
+			<td align="left" width="13%"></td>
+			<td align="right" width="12%"></td>
+			<td align="center" width="13%">
+							
+							<input type="submit" name="btnBackWorkSiteUp" value="返回作業區" id="btnBackWorkSiteUp" class="button" style="height:22px;width:96px;" />
+              
+						</td>
+		</tr>
+		<tr style="height:20px">
+			<td colspan="8">
+              <table id="tblRemind" class="queryTableDisplay" width="100%">
+                <tr style="height:20px">
+                  <td width="25%">&nbsp;</td>
+                  <td width="10%" align="right"><font size="2" color="red">事項提醒：</font></td>
+                  <td align="left"><font size="2" color="blue">1.<font color="crimson">新增</font>案件<font color="crimson">至少</font>需填寫<font color="crimson">「當事人資料」、「通報者資料」、「事件內容」、「檢討改善」</font>的必填欄位資料。</font></td>
+                </tr>
+                <tr style="height:20px">
+                  <td width="25%">&nbsp;</td>
+                  <td width="10%">&nbsp;</td>
+                  <td align="left"><font size="2" color="blue">2.選項後方如果有&nbsp;<img src="../AvisoImages/table_add.png">&nbsp;圖示，則表示該選項勾選後會顯示細項目供進一步選取。</font></td>
+                </tr>
+                <tr style="height:20px">
+                  <td width="25%">&nbsp;</td>
+                  <td width="10%">&nbsp;</td>
+                  <td align="left"><font size="2" color="blue">3.<font color="crimson">新增檢核條件</font>：「當事人資料」&nbsp;若&nbsp;<font color="crimson">受影響對象</font>&nbsp;為病人，則<font color="crimson">病人所在科別</font>&nbsp;為必選取項目。</font></td>
+                </tr>
+                <tr style="height:20px">
+                  <td width="25%">&nbsp;</td>
+                  <td width="10%">&nbsp;</td>
+                  <td align="left"><font size="2" color="blue">4.<font color="crimson">新增暫存機制</font>：由「新增通報(暫存版)」進入，點選「暫存」可將頁面資料儲存，並產生&nbsp;<font color="crimson">TEMPxxxx</font>&nbsp;之暫存案號。</font></td>
+                </tr>
+                <tr style="height:20px">
+                  <td width="25%">&nbsp;</td>
+                  <td width="10%">&nbsp;</td>
+                  <td align="left"><font size="2" color="blue">&nbsp;&nbsp;&nbsp;於填寫完成後請記得點選&nbsp;<font color="crimson">「確認取號」</font>&nbsp;以轉成實際案號。</font></td>
+                </tr>
+              </table>
+            </td>
+		</tr>
+		<tr style="height:26px">
+			<td colspan="6">
+              <div id="uPanelMessage">
+				
+      						<span id="lblSuccessMsg" style="color:Green;"></span>
+    							<span id="lblErrorMsg" class="errorMsgText"></span>
+                
+			</div>
+            </td>
+			<td align="right" colspan="2">
+              <font size="2" color="blue">目前剩餘：
+                <font color="crimson">
+                  <span id="lblRemainMinUp"></span>
+                </font>
+                &nbsp;&nbsp;分&nbsp;&nbsp;
+                <font color="crimson">
+                  <span id="lblRemainSecUp"></span>
+                </font>
+                &nbsp;&nbsp;秒&nbsp;&nbsp;
+              </font>
+            </td>
+		</tr>
+	</table>
+	
+      
+</div>
+ 
+      <div id="panelCaseTab" style="width:100%;">
+	
+      
+        <div class="ajax__tab_xp" id="caseTab" style="visibility:hidden;">
+		<div id="caseTab_header">
+			<span id="__tab_caseTab_caseTabPerson">當事人資料</span><span id="__tab_caseTab_caseTabEvent">事件內容</span><span id="__tab_caseTab_caseTabAviso">通報者資料</span><span id="__tab_caseTab_caseTabImmediate">立即處理方式</span><span id="__tab_caseTab_caseTabPrevent">預防措施</span><span id="__tab_caseTab_caseTabRehappen">再發生的可能情形</span><span id="__tab_caseTab_caseTabImprove">檢討改善</span>
+		</div><div id="caseTab_body">
+			<div id="caseTab_caseTabPerson">
+				
+              <!-- update panel for 當事人資料 -->
+              <div id="caseTab_caseTabPerson_uPanelPerson">
+					
+                  <div id="caseTab_caseTabPerson_Person_panelPerson" Width="100%">
+  <table id="tblPersonTitle" class="queryTableDisplay" width="100%">
+    <tr style="height:26px">
+      <td class="inputTableTitle">當事人基本資料</td>
+    </tr>  
+  </table>
+ 
+  <table id="tblPerson" class="queryTableDisplay" width="970px">
+    <tr style="height:26px">
+      <td colspan="5">
+        <table class="queryTableDisplay" width="100%">
+          <tr style="height:26px">
+            <td align="right" Width="14%"><font color="red">*</font><span class="queryText">事件發生日期：</span></td>
+            <td align="left" width="11%">
+              <input type="text" id="txbHappenDate" name="t$QPerson$HappenDate" class="textBox" style="width:90px" maxlength="10" onfocus="showCalendarWeek(this);" />
+              <span id="caseTab_caseTabPerson_Person_lblHappenDateWeek"></span>
+            </td>
+            <td align="right" Width="14%"><font color="red">*</font><span class="queryText">發生時間：</span></td>
+            <td align="left" width="13%">
+              <input type="text" id="txbHappenHour" name="t$QPerson$HappenHour" class="textBox" style="width:18px; text-align:center" onkeypress="return checkNumberKeyin(this, false, event);" maxlength="2" />&nbsp;時<font size="1" color="blue">(24hr)</font>
+              <input type="text" id="txbHappenMin" name="t$QPerson$HappenMin" class="textBox" style="width:18px; text-align:center" onkeypress="return checkNumberKeyin(this, false, event);" maxlength="2" />&nbsp;分
+            </td>
+            <td align="right" Width="14%"><font color="red">*</font><span class="queryText">通報日期：</span></td>
+            <td align="left" Width="11%">
+              <input type="text" id="txbAvisoDate" name="t$QPerson$AvisoDate" class="textBox" style="width:90px" maxlength="10" onfocus="showCalendar(this);" />
+            </td>
+            <td align="right" Width="12%" id="td_PersonHappenTimeTitle" style="display:none"><span class="queryText">發生時段：</span></td>
+            <td align="left" Width="11%" id="td_PersonHappenTimeValue" style="display:none">
+              <select id="s$QPerson$HappenTime" name="s$QPerson$HappenTime">
+                <option value="0" selected="selected">=請選擇=</option>
+                <option value="2">00:01 ~ 02:00</option>
+                <option value="4">02:01 ~ 04:00</option>
+                <option value="6">04:01 ~ 06:00</option>
+                <option value="8">06:01 ~ 08:00</option>
+                <option value="10">08:01 ~ 10:00</option>
+                <option value="12">10:01 ~ 12:00</option>
+                <option value="14">12:01 ~ 14:00</option>
+                <option value="16">14:01 ~ 16:00</option>
+                <option value="18">16:01 ~ 18:00</option>
+                <option value="20">18:01 ~ 20:00</option>
+                <option value="22">20:01 ~ 22:00</option>
+                <option value="24">22:01 ~ 24:00</option>
+              </select>
+            </td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" Width="14%"><span class="queryText">姓名：</span></td>
+            <td align="left" Width="11%">
+              <input type="text" id="txbPersonName" name="t$QPerson$Name" class="textBox" style="width:90px" maxlength="6" />
+            </td>
+            <td align="right" Width="14%"><span class="queryText">性別：</span></td>
+            <td align="left" Width="13%">
+              <input id="rdoPersonGrender_0" type="radio" name="r$QPerson$Grender" value="0" />男
+              <input id="rdoPersonGrender_1" type="radio" name="r$QPerson$Grender" value="1" />女
+            </td>
+            <td align="right" Width="14%"><span class="queryText">年齡：</span></td>
+            <td align="left" Width="11%">
+              <input type="text" id="txbPersonAge" name="t$QPerson$Age" class="textBox" style="width:24px; text-align:center" maxlength="3" onkeypress="return checkNumberKeyin(this, false, event);" />
+              &nbsp;
+              <select id="s$QPerson$AgeUnit" name="s$QPerson$AgeUnit">
+                <option value="0" selected="selected">年</option>
+                <option value="1">天</option>
+              </select>
+            </td>
+            <td align="right" Width="12%"><span class="queryText">婚姻狀況：</span></td>
+            <td align="left" Width="11%">
+              <input id="rdoPersonMarital_0" type="radio" name="r$QPerson$Marital" value="0" />未婚
+              <input id="rdoPersonMarital_1" type="radio" name="r$QPerson$Marital" value="1" />已婚
+            </td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" Width="14%"><span class="queryText">病歷號/身分證：</span></td>
+            <td align="left" Width="11%">
+              <input type="text" id="txbPersonId" name="t$QPerson$PersonId" class="textBox" style="width:90px" maxlength="10" />
+            </td>
+            <td align="right" Width="14%"><span class="queryText">門診/住院日期：</span></td>
+            <td align="left" Width="13%">
+              <input type="text" id="txbTreatmentDate" name="t$QPerson$TreatmentDate" class="textBox" style="width:90px" maxlength="10" onfocus="showCalendar(this);" />
+            </td>
+            <td align="right" Width="14%"><span class="queryText">床號：</span></td>
+            <td align="left" Width="11%">
+              <input type="text" id="txbBedNo" name="t$QPerson$BedNo" class="textBox" style="width:90px" maxlength="15" />
+            </td>
+            <td align="right" Width="12%"><span class="queryText"></span></td>
+            <td align="left" Width="11%"></td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" Width="14%"><span class="queryText">病人有無陪伴者：</span></td>
+            <td align="left" Width="11%">
+              <input id="rdoPersonIsPersonAttendee_0" type="radio" name="r$QPerson$IsPersonAttendee" value="0" />無
+              <input id="rdoPersonIsPersonAttendee_1" type="radio" name="r$QPerson$IsPersonAttendee" value="1" />有
+            </td>
+            <td align="right" Width="14%"><span class="queryText">陪伴者是否在場：</span></td>
+            <td align="left" Width="13%">
+              <input id="rdoPersonIsAttendee_0" type="radio" name="r$QPerson$IsAttendee" value="0" />無
+              <input id="rdoPersonIsAttendee_1" type="radio" name="r$QPerson$IsAttendee" value="1" />有
+            </td>
+            <td align="right" Width="14%"><font color="red">*</font><span class="queryText">事件發生單位：</span></td>
+            <td align="left" colspan="3">
+              <input type="text" id="txbEventDept" name="t$QPerson$EventDept" class="textBox" style="width:250px" onfocus="showAutoCompleteDept(this);" />
+              <input type="button" id="btnEventDept" class="button" value="重填" onclick="clearTxbValue('txbEventDept');" />
+              <img src="../AvisoImages/info.png" onclick="openDeptHelperPage();">
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr style="height:26px; background-color:DarkSeaGreen">
+      <td align="left" colspan="5"><span class="queryText">診斷：</span></td>
+    </tr>
+    <tr style="height:26px">
+      <td align="right" Width="10px">&nbsp;</td>
+      <td align="left" colspan="4">
+        <textarea name="t$QPerson$Diagnosis" class="textBox" rows="5" cols="185"></textarea>
+      </td>
+    </tr>
+    <tr style="height:26px; background-color:DarkSeaGreen">
+      <td align="left" colspan="5"><span class="queryText">身份：</span></td>
+    </tr>
+    <tr style="height:26px">
+      <td align="right" Width="10px">&nbsp;</td>
+      <td align="left" Width="240px">
+        <input type="checkbox" id="chkPersonRole_0" name="c$QPerson$Role" value="0" onclick="showBlockByCheckBox(this.id);" />病患
+        <img src="../AvisoImages/table_add.png">
+      </td>
+      <td align="left" Width="240px">
+        <input type="checkbox" id="chkPersonRole_1" name="c$QPerson$Role" value="1" onclick="showBlockByCheckBox(this.id);" />員工
+        <img src="../AvisoImages/table_add.png">
+      </td>
+      <td align="left" Width="240px">
+        <input type="checkbox" id="chkPersonRole_2" name="c$QPerson$Role" value="2" />訪客/家屬
+      </td>
+      <td align="left" Width="240px">
+        <input type="checkbox" id="chkPersonRole_3" name="c$QPerson$Role" value="3" />服務員/看護
+      </td>
+    </tr>
+    <tr style="height:26px">
+      <td align="right" Width="10px">&nbsp;</td>
+      <td align="left" Width="240px">
+        <input type="checkbox" id="chkPersonRole_4" name="c$QPerson$Role" value="4" />其他：
+        <input type="text" id="txbPersonRole_4" name="t$QPerson$Role_4" class="textBox" style="width:140px" />
+      </td>
+      <td align="left" Width="240px"></td>
+      <td align="left" Width="240px"></td>
+      <td align="left" Width="240px"></td>
+    </tr>
+    <tr id="tr_chkPersonRole_0" style="height:26px; display:none">
+      <td colspan="5">
+        <table id="tbl_chkPersonRole_0" class="queryTableDisplay" width="100%" style="border-color:DarkGoldenrod">
+          <tr style="height:26px; background-color:DarkKhaki">
+            <td align="left" colspan="5">&nbsp;&nbsp;<span class="queryText">病房型態：</span></td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" Width="10px">&nbsp;</td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonSickRoomType_0" type="radio" name="r$QPerson$SickRoomType" value="0" />單人房
+            </td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonSickRoomType_1" type="radio" name="r$QPerson$SickRoomType" value="1" />二人房
+            </td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonSickRoomType_2" type="radio" name="r$QPerson$SickRoomType" value="2" />三人房
+            </td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonSickRoomType_3" type="radio" name="r$QPerson$SickRoomType" value="3" />四人房
+            </td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" Width="10px">&nbsp;</td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonSickRoomType_4" type="radio" name="r$QPerson$SickRoomType" value="4" />其他：
+              <input type="text" id="txbPersonSickRoomType_4" name="t$QPerson$SickRoomType_4" class="textBox" style="width:140px" />
+            </td>
+            <td align="left" Width="240px"></td>
+            <td align="left" Width="240px"></td>
+            <td align="left" Width="240px"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr id="tr_chkPersonRole_1" style="height:26px; display:none">
+      <td colspan="5">
+        <table id="tbl_chkPersonRole_1" class="queryTableDisplay" width="100%" style="border-color:DarkGoldenrod">
+          <tr style="height:26px; background-color:DarkKhaki">
+            <td align="left" colspan="5">&nbsp;&nbsp;<span class="queryText">員工類型：</span></td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" Width="10px">&nbsp;</td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonEmpType_0" type="radio" name="r$QPerson$EmpType" value="0" />醫師
+            </td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonEmpType_1" type="radio" name="r$QPerson$EmpType" value="1" />護理人員
+            </td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonEmpType_2" type="radio" name="r$QPerson$EmpType" value="2" />醫技人員
+            </td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonEmpType_3" type="radio" name="r$QPerson$EmpType" value="3" />實習生
+            </td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" Width="10px">&nbsp;</td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonEmpType_4" type="radio" name="r$QPerson$EmpType" value="4" />行政人員
+            </td>
+            <td align="left" Width="240px"></td>
+            <td align="left" Width="240px"></td>
+            <td align="left" Width="240px"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr style="height:26px; background-color:DarkSeaGreen">
+      <td align="left" colspan="5"><span class="queryText">事件發生地點：</span></td>
+    </tr>
+    <tr style="height:26px">
+      <td align="right" Width="10px">&nbsp;</td>
+      <td align="left" Width="240px">
+        <input type="checkbox" id="chkPersonEventVenue_0" name="c$QPerson$EventVenue" value="0" />一般病房
+      </td>
+      <td align="left" Width="240px">
+        <input type="checkbox" id="chkPersonEventVenue_1" name="c$QPerson$EventVenue" value="1" />藥局
+      </td>
+      <td align="left" Width="240px">
+        <input type="checkbox" id="chkPersonEventVenue_2" name="c$QPerson$EventVenue" value="2" />急診室
+      </td>
+      <td align="left" Width="240px">
+        <input type="checkbox" id="chkPersonEventVenue_3" name="c$QPerson$EventVenue" value="3" onclick="showBlockByCheckBox(this.id);" />門診
+        <img src="../AvisoImages/table_add.png">
+      </td>
+    </tr>
+    <tr style="height:26px">
+      <td align="right" Width="10px">&nbsp;</td>
+      <td align="left" Width="240px">
+        <input type="checkbox" id="chkPersonEventVenue_4" name="c$QPerson$EventVenue" value="4" onclick="showBlockByCheckBox(this.id);" />公共區域
+        <img src="../AvisoImages/table_add.png">
+      </td>
+      <td align="left" Width="240px">
+        <input type="checkbox" id="chkPersonEventVenue_5" name="c$QPerson$EventVenue" value="5" onclick="showBlockByCheckBox(this.id);" />功能檢查室
+        <img src="../AvisoImages/table_add.png">
+      </td>
+      <td align="left" Width="240px">
+        <input type="checkbox" id="chkPersonEventVenue_6" name="c$QPerson$EventVenue" value="6" onclick="showBlockByCheckBox(this.id);" />特殊醫療照護區
+        <img src="../AvisoImages/table_add.png">
+      </td>
+      <td align="left" Width="240px">
+        <input type="checkbox" id="chkPersonEventVenue_7" name="c$QPerson$EventVenue" value="7" />不知道
+      </td>
+    </tr>
+    <tr style="height:26px">
+      <td align="right" Width="10px">&nbsp;</td>
+      <td align="left" Width="240px">
+        <input type="checkbox" id="chkPersonEventVenue_8" name="c$QPerson$EventVenue" value="8" onclick="showBlockByCheckBox(this.id);" />其他
+        <img src="../AvisoImages/table_add.png">
+      </td>
+      <td align="left" Width="240px">
+        <input type="checkbox" id="chkPersonEventVenue_9" name="c$QPerson$EventVenue" value="9" />院外
+      </td>
+      <td align="left" Width="240px">
+        <input type="checkbox" id="chkPersonEventVenue_10" name="c$QPerson$EventVenue" value="10" />外包-傳送人員
+      </td>
+      <td align="left" Width="240px"></td>
+    </tr>
+    <tr id="tr_chkPersonEventVenue_3" style="height:26px; display:none">
+      <td colspan="5">
+        <table id="tbl_chkPersonEventVenue_3" class="queryTableDisplay" width="100%" style="border-color:DarkGoldenrod">
+          <tr style="height:26px; background-color:DarkKhaki">
+            <td align="left" colspan="5">&nbsp;&nbsp;<span class="queryText">門診類型：</span></td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" Width="10px">&nbsp;</td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonPoliclinic_0" name="c$QPerson$Policlinic" value="0" />門診大廳
+            </td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonPoliclinic_1" name="c$QPerson$Policlinic" value="1" />診間室
+            </td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonPoliclinic_2" name="c$QPerson$Policlinic" value="2" />檢驗站
+            </td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonPoliclinic_3" name="c$QPerson$Policlinic" value="3" />其他：
+              <input type="text" id="txbPersonPoliclinic_3" name="t$QPerson$Policlinic_3" class="textBox" style="width:140px" />
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr id="tr_chkPersonEventVenue_4" style="height:26px; display:none">
+      <td colspan="5">
+        <table id="tbl_chkPersonEventVenue_4" class="queryTableDisplay" width="100%" style="border-color:DarkGoldenrod">
+          <tr style="height:26px; background-color:DarkKhaki">
+            <td align="left" colspan="5">&nbsp;&nbsp;<span class="queryText">公共區域：</span></td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" Width="10px">&nbsp;</td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonPublicPlace_0" name="c$QPerson$PublicPlace" value="0" />交誼廳
+            </td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonPublicPlace_1" name="c$QPerson$PublicPlace" value="1" />樓梯間
+            </td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonPublicPlace_2" name="c$QPerson$PublicPlace" value="2" />電梯
+            </td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonPublicPlace_3" name="c$QPerson$PublicPlace" value="3" />停車場
+            </td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" Width="10px">&nbsp;</td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonPublicPlace_4" name="c$QPerson$PublicPlace" value="4" />其他：
+              <input type="text" id="txbPersonPublicPlace_4" name="t$QPerson$PublicPlace_4" class="textBox" style="width:140px" />
+            </td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="txbPersonPublicPlace_5" name="c$QPerson$PublicPlace" value="5" />B1 商場
+            </td>
+            <td align="left" Width="240px"></td>
+            <td align="left" Width="240px"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr id="tr_chkPersonEventVenue_5" style="height:26px; display:none">
+      <td colspan="5">
+        <table id="tbl_chkPersonEventVenue_5" class="queryTableDisplay" width="100%" style="border-color:DarkGoldenrod">
+          <tr style="height:26px; background-color:DarkKhaki">
+            <td align="left" colspan="5">&nbsp;&nbsp;<span class="queryText">功能檢查室類型：</span></td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" Width="10px">&nbsp;</td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonInspectRoom_0" name="c$QPerson$InspectRoom" value="0" />X 光室
+            </td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonInspectRoom_1" name="c$QPerson$InspectRoom" value="1" />超音波室
+            </td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonInspectRoom_2" name="c$QPerson$InspectRoom" value="2" />電腦斷層室
+            </td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonInspectRoom_3" name="c$QPerson$InspectRoom" value="3" />血管攝影室
+            </td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" Width="10px">&nbsp;</td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonInspectRoom_4" name="c$QPerson$InspectRoom" value="4" />放射診斷科
+            </td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonInspectRoom_5" name="c$QPerson$InspectRoom" value="5" />內視鏡室
+            </td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonInspectRoom_6" name="c$QPerson$InspectRoom" value="6" />心電圖室
+            </td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonInspectRoom_7" name="c$QPerson$InspectRoom" value="7" />肺功能室
+            </td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" Width="10px">&nbsp;</td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonInspectRoom_8" name="c$QPerson$InspectRoom" value="8" />核磁共振室
+            </td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonInspectRoom_9" name="c$QPerson$InspectRoom" value="9" />尿動力室
+            </td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonInspectRoom_10" name="c$QPerson$InspectRoom" value="10" />支氣管檢查室
+            </td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonInspectRoom_11" name="c$QPerson$InspectRoom" value="11" />其他：
+              <input type="text" id="txbPersonInspectRoom_11" name="t$QPerson$InspectRoom_11" class="textBox" style="width:140px" />
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr id="tr_chkPersonEventVenue_6" style="height:26px; display:none">
+      <td colspan="5">
+        <table id="tbl_chkPersonEventVenue_6" class="queryTableDisplay" width="100%" style="border-color:DarkGoldenrod">
+          <tr style="height:26px; background-color:DarkKhaki">
+            <td align="left" colspan="5">&nbsp;&nbsp;<span class="queryText">特殊醫療照護區類型：</span></td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" Width="10px">&nbsp;</td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonCareArea_0" name="c$QPerson$CareArea" value="0" />加護病房
+            </td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonCareArea_1" name="c$QPerson$CareArea" value="1" />開刀房
+            </td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonCareArea_2" name="c$QPerson$CareArea" value="2" />產房
+            </td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonCareArea_3" name="c$QPerson$CareArea" value="3" />安寧病房
+            </td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" Width="10px">&nbsp;</td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonCareArea_4" name="c$QPerson$CareArea" value="4" />復健部門
+            </td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonCareArea_5" name="c$QPerson$CareArea" value="5" />日間照護
+            </td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonCareArea_6" name="c$QPerson$CareArea" value="6" />RCC/RCW 呼吸治療單位
+            </td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonCareArea_7" name="c$QPerson$CareArea" value="7" />透析中心
+            </td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" Width="10px">&nbsp;</td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonCareArea_8" name="c$QPerson$CareArea" value="8" />嬰兒室
+            </td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonCareArea_9" name="c$QPerson$CareArea" value="9" />其他：
+              <input type="text" id="txbPersonCareArea_9" name="t$QPerson$CareArea_9" class="textBox" style="width:140px" />
+            </td>
+            <td align="left" Width="240px"></td>
+            <td align="left" Width="240px"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr id="tr_chkPersonEventVenue_8" style="height:26px; display:none">
+      <td colspan="5">
+        <table id="tbl_chkPersonEventVenue_8" class="queryTableDisplay" width="100%" style="border-color:DarkGoldenrod">
+          <tr style="height:26px; background-color:DarkKhaki">
+            <td align="left" colspan="5">&nbsp;&nbsp;<span class="queryText">其他類型：</span></td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" Width="10px">&nbsp;</td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonVenueOther_0" name="c$QPerson$VenueOther" value="0" />護理之家
+            </td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonVenueOther_1" name="c$QPerson$VenueOther" value="1" />家庭社區醫學部
+            </td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonVenueOther_2" name="c$QPerson$VenueOther" value="2" />行政單位辦公室
+            </td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonVenueOther_3" name="c$QPerson$VenueOther" value="3" />科辦公室
+            </td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" Width="10px">&nbsp;</td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonVenueOther_4" name="c$QPerson$VenueOther" value="4" />其他：
+              <input type="text" id="txbPersonVenueOther_4" name="t$QPerson$VenueOther_4" class="textBox" style="width:140px" />
+            </td>
+            <td align="left" Width="240px"></td>
+            <td align="left" Width="240px"></td>
+            <td align="left" Width="240px"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr style="height:26px; background-color:DarkSeaGreen">
+      <td align="left" colspan="5"><span class="queryText">受影響的對象：</span></td>
+    </tr>
+    <tr style="height:26px">
+      <td align="right" Width="10px">&nbsp;</td>
+      <td align="left" Width="240px">
+        <input type="checkbox" id="chkPersonAffectPerson_0" name="c$QPerson$AffectPerson" value="0" onclick="showBlockByCheckBox(this.id);" />病人
+        <img src="../AvisoImages/table_add.png">
+      </td>
+      <td align="left" Width="240px">
+        <input type="checkbox" id="chkPersonAffectPerson_1" name="c$QPerson$AffectPerson" value="1" />住民
+      </td>
+      <td align="left" Width="240px">
+        <input type="checkbox" id="chkPersonAffectPerson_2" name="c$QPerson$AffectPerson" value="2" />訪客/家屬
+      </td>
+      <td align="left" Width="240px">
+        <input type="checkbox" id="chkPersonAffectPerson_3" name="c$QPerson$AffectPerson" value="3" />員工
+      </td>
+    </tr>
+    <tr style="height:26px">
+      <td align="right" Width="10px">&nbsp;</td>
+      <td align="left" Width="240px">
+        <input type="checkbox" id="chkPersonAffectPerson_4" name="c$QPerson$AffectPerson" value="4" />儀器設備
+      </td>
+      <td align="left" Width="240px">
+        <input type="checkbox" id="chkPersonAffectPerson_5" name="c$QPerson$AffectPerson" value="5" />不知道
+      </td>
+      <td align="left" Width="240px">
+        <input type="checkbox" id="chkPersonAffectPerson_6" name="c$QPerson$AffectPerson" value="6" />其他：
+        <input type="text" id="txbPersonAffectPerson_6" name="t$QPerson$AffectPerson_6" class="textBox" style="width:140px" />
+      </td>
+      <td align="left" Width="240px"></td>
+    </tr>
+    <tr id="tr_chkPersonAffectPerson_0" style="height:26px; display:none">
+      <td colspan="5">
+        <table id="tbl_chkPersonAffectPerson_0" class="queryTableDisplay" width="100%" style="border-color:DarkGoldenrod">
+          <tr style="height:26px; background-color:DarkKhaki">
+            <td align="left" colspan="5">&nbsp;&nbsp;<span class="queryText">病人性別：</span></td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" Width="10px">&nbsp;</td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientGrender_0" type="radio" name="r$QPerson$PatientGrender" value="0" />男性
+            </td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientGrender_1" type="radio" name="r$QPerson$PatientGrender" value="1" />女性
+            </td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientGrender_2" type="radio" name="r$QPerson$PatientGrender" value="2" />不知道
+            </td>
+            <td align="left" Width="240px"></td>
+          </tr>
+          <tr style="height:26px; background-color:DarkKhaki">
+            <td align="left" colspan="5">&nbsp;&nbsp;<span class="queryText">病人年齡層：</span></td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" Width="10px">&nbsp;</td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientAge_0" type="radio" name="r$QPerson$PatientAge" value="0" />嬰兒(一歲以下)(不含一歲)
+            </td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientAge_1" type="radio" name="r$QPerson$PatientAge" value="1" />幼兒(1-3)
+            </td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientAge_2" type="radio" name="r$QPerson$PatientAge" value="2" />學齡前期(4-6)
+            </td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientAge_3" type="radio" name="r$QPerson$PatientAge" value="3" />學齡期(7-12)
+            </td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" Width="10px">&nbsp;</td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientAge_4" type="radio" name="r$QPerson$PatientAge" value="4" />青少年(13-18)
+            </td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientAge_5" type="radio" name="r$QPerson$PatientAge" value="5" />成年(19-64)
+            </td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientAge_6" type="radio" name="r$QPerson$PatientAge" value="6" />老年(65歲以上)
+            </td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientAge_7" type="radio" name="r$QPerson$PatientAge" value="7" />不知道
+            </td>
+          </tr>
+          <tr style="height:26px; background-color:DarkKhaki">
+            <td align="left" colspan="5">&nbsp;&nbsp;<span class="queryText">就醫類別：</span></td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" Width="10px">&nbsp;</td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientTreatment_0" type="radio" name="r$QPerson$PatientTreatment" value="0" />住院
+            </td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientTreatment_1" type="radio" name="r$QPerson$PatientTreatment" value="1" />門診
+            </td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientTreatment_2" type="radio" name="r$QPerson$PatientTreatment" value="2" />急診
+            </td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientTreatment_3" type="radio" name="r$QPerson$PatientTreatment" value="3" />健檢
+            </td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" Width="10px">&nbsp;</td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientTreatment_4" type="radio" name="r$QPerson$PatientTreatment" value="4" />護理之家
+            </td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientTreatment_5" type="radio" name="r$QPerson$PatientTreatment" value="5" />不知道
+            </td>
+            <td align="left" Width="240px"></td>
+            <td align="left" Width="240px"></td>
+          </tr>
+          <tr style="height:26px; background-color:DarkKhaki">
+            <td align="left" colspan="5">
+              &nbsp;&nbsp;
+              <font color="red">*</font>
+              <span class="queryText">病人所在科別：</span>
+            </td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" Width="10px">&nbsp;</td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientDept_0" type="radio" name="r$QPerson$PatientDept" value="0" />內科
+            </td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientDept_1" type="radio" name="r$QPerson$PatientDept" value="1" />外科
+            </td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientDept_2" type="radio" name="r$QPerson$PatientDept" value="2" />婦產科
+            </td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientDept_3" type="radio" name="r$QPerson$PatientDept" value="3" />小兒科
+            </td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" Width="10px">&nbsp;</td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientDept_4" type="radio" name="r$QPerson$PatientDept" value="4" />家庭醫學科
+            </td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientDept_5" type="radio" name="r$QPerson$PatientDept" value="5" />骨科
+            </td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientDept_6" type="radio" name="r$QPerson$PatientDept" value="6" />神經外科
+            </td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientDept_7" type="radio" name="r$QPerson$PatientDept" value="7" />整型外科
+            </td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" Width="10px">&nbsp;</td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientDept_8" type="radio" name="r$QPerson$PatientDept" value="8" />泌尿科
+            </td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientDept_9" type="radio" name="r$QPerson$PatientDept" value="9" />耳鼻喉科
+            </td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientDept_10" type="radio" name="r$QPerson$PatientDept" value="10" />眼科
+            </td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientDept_11" type="radio" name="r$QPerson$PatientDept" value="11" />皮膚科
+            </td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" Width="10px">&nbsp;</td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientDept_12" type="radio" name="r$QPerson$PatientDept" value="12" />神經科
+            </td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientDept_13" type="radio" name="r$QPerson$PatientDept" value="13" />復健科
+            </td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientDept_14" type="radio" name="r$QPerson$PatientDept" value="14" />麻醉科
+            </td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientDept_15" type="radio" name="r$QPerson$PatientDept" value="15" />放射科
+            </td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" Width="10px">&nbsp;</td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientDept_16" type="radio" name="r$QPerson$PatientDept" value="16" />病理科
+            </td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientDept_17" type="radio" name="r$QPerson$PatientDept" value="17" />核醫科
+            </td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientDept_18" type="radio" name="r$QPerson$PatientDept" value="18" />急診醫學科
+            </td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientDept_19" type="radio" name="r$QPerson$PatientDept" value="19" />職業醫學科
+            </td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" Width="10px">&nbsp;</td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientDept_20" type="radio" name="r$QPerson$PatientDept" value="20" />腫瘤科
+            </td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientDept_21" type="radio" name="r$QPerson$PatientDept" value="21" />精神科
+            </td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientDept_22" type="radio" name="r$QPerson$PatientDept" value="22" />牙科
+            </td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientDept_23" type="radio" name="r$QPerson$PatientDept" value="23" />口腔顎面外科
+            </td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" Width="10px">&nbsp;</td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientDept_24" type="radio" name="r$QPerson$PatientDept" value="24" />中醫科
+            </td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientDept_25" type="radio" name="r$QPerson$PatientDept" value="25" />緩和醫療科
+            </td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientDept_26" type="radio" name="r$QPerson$PatientDept" value="26" />藥劑科
+            </td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientDept_27" type="radio" name="r$QPerson$PatientDept" value="27" />不知道
+            </td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" Width="10px">&nbsp;</td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientDept_28" type="radio" name="r$QPerson$PatientDept" value="28" />其他：
+              <input type="text" id="txbPersonPatientDept_28" name="t$QPerson$PatientDept_28" class="textBox" style="width:140px" />
+            </td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonPatientDept_29" type="radio" name="r$QPerson$PatientDept" value="29" />創傷醫學部
+            </td>
+            <td align="left" Width="240px"></td>
+            <td align="left" Width="240px"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr style="height:26px; background-color:DarkSeaGreen">
+      <td align="left" colspan="5">
+        <span class="queryText">對健康的影響程度：</span>
+        <img src="../AvisoImages/info.png" onclick="openTreatAffectHelperPage();">
+      </td>
+    </tr>
+    <tr style="height:26px">
+      <td align="right" Width="10px">&nbsp;</td>
+      <td align="left" Width="240px">
+        <input id="rdoPersonAffectHealth_0" type="radio" name="r$QPerson$AffectHealth" value="0" onclick="showBlockByRadio(this.id, this.name);" />有傷害
+        <img src="../AvisoImages/table_add.png">
+      </td>
+      <td align="left" Width="240px">
+        <input id="rdoPersonAffectHealth_1" type="radio" name="r$QPerson$AffectHealth" value="1" onclick="showBlockByRadio(this.id, this.name);" />無傷害
+      </td>
+      <td align="left" Width="240px">
+        <input id="rdoPersonAffectHealth_2" type="radio" name="r$QPerson$AffectHealth" value="2" onclick="showBlockByRadio(this.id, this.name);" />跡近錯失
+      </td>
+      <td align="left" Width="240px">
+        <input id="rdoPersonAffectHealth_3" type="radio" name="r$QPerson$AffectHealth" value="3" onclick="showBlockByRadio(this.id, this.name);" />無法判定
+      </td>
+    </tr>
+    <tr id="tr_rdoPersonAffectHealth_0" style="height:26px; display:none">
+      <td colspan="5">
+        <table id="tbl_rdoPersonAffectHealth_0" class="queryTableDisplay" width="100%" style="border-color:DarkGoldenrod">
+          <tr style="height:26px; background-color:DarkKhaki">
+            <td align="left" colspan="5">&nbsp;&nbsp;<span class="queryText">有傷害程度：</span></td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" Width="10px">&nbsp;</td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonAffectHurt_0" type="radio" name="r$QPerson$AffectHurt" value="0" />死亡
+            </td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonAffectHurt_1" type="radio" name="r$QPerson$AffectHurt" value="1" />極重度
+            </td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonAffectHurt_2" type="radio" name="r$QPerson$AffectHurt" value="2" />重度
+            </td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonAffectHurt_3" type="radio" name="r$QPerson$AffectHurt" value="3" />中度
+            </td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" Width="10px">&nbsp;</td>
+            <td align="left" Width="240px">
+              <input id="rdoPersonAffectHurt_4" type="radio" name="r$QPerson$AffectHurt" value="4" />輕度
+            </td>
+            <td align="left" Width="240px"></td>
+            <td align="left" Width="240px"></td>
+            <td align="left" Width="240px"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr style="height:26px; background-color:DarkSeaGreen">
+      <td align="left" colspan="5"><span class="queryText">過程中有關聯的人員：</span></td>
+    </tr>
+    <tr style="height:26px">
+      <td align="right" Width="10px">&nbsp;</td>
+      <td align="left" Width="240px">
+        <input type="checkbox" id="chkPersonRelPerson_0" name="c$QPerson$RelPerson" value="0" onclick="showBlockByCheckBox(this.id);" />醫師
+        <img src="../AvisoImages/table_add.png">
+      </td>
+      <td align="left" Width="240px">
+        <input type="checkbox" id="chkPersonRelPerson_1" name="c$QPerson$RelPerson" value="1" onclick="showBlockByCheckBox(this.id);" />護理人員
+        <img src="../AvisoImages/table_add.png">
+      </td>
+      <td align="left" Width="240px">
+        <input type="checkbox" id="chkPersonRelPerson_2" name="c$QPerson$RelPerson" value="2" onclick="showBlockByCheckBox(this.id);" />藥事人員
+        <img src="../AvisoImages/table_add.png">
+      </td>
+      <td align="left" Width="240px">
+        <input type="checkbox" id="chkPersonRelPerson_3" name="c$QPerson$RelPerson" value="3" onclick="showBlockByCheckBox(this.id);" />醫事檢驗人員
+        <img src="../AvisoImages/table_add.png">
+      </td>
+    </tr>
+    <tr style="height:26px">
+      <td align="right" Width="10px">&nbsp;</td>
+      <td align="left" Width="240px">
+        <input type="checkbox" id="chkPersonRelPerson_4" name="c$QPerson$RelPerson" value="4" onclick="showBlockByCheckBox(this.id);" />物理、職能治療人員
+        <img src="../AvisoImages/table_add.png">
+      </td>
+      <td align="left" Width="240px">
+        <input type="checkbox" id="chkPersonRelPerson_5" name="c$QPerson$RelPerson" value="5" onclick="showBlockByCheckBox(this.id);" />放射技術人員
+        <img src="../AvisoImages/table_add.png">
+      </td>
+      <td align="left" Width="240px">
+        <input type="checkbox" id="chkPersonRelPerson_6" name="c$QPerson$RelPerson" value="6" onclick="showBlockByCheckBox(this.id);" />行政人員
+        <img src="../AvisoImages/table_add.png">
+      </td>
+      <td align="left" Width="240px">
+        <input type="checkbox" id="chkPersonRelPerson_7" name="c$QPerson$RelPerson" value="7" onclick="showBlockByCheckBox(this.id);" />支援人員
+        <img src="../AvisoImages/table_add.png">
+      </td>
+    </tr>
+    <tr style="height:26px">
+      <td align="right" Width="10px">&nbsp;</td>
+      <td align="left" Width="240px">
+        <input type="checkbox" id="chkPersonRelPerson_8" name="c$QPerson$RelPerson" value="8" />無
+      </td>
+      <td align="left" Width="240px">
+        <input type="checkbox" id="chkPersonRelPerson_9" name="c$QPerson$RelPerson" value="9" />其他：
+        <input type="text" id="txbPersonRelPerson_9" name="t$QPerson$RelPerson_9" class="textBox" style="width:140px" />
+      </td>
+      <td align="left" Width="240px"></td>
+      <td align="left" Width="240px"></td>
+    </tr>
+    <tr id="tr_chkPersonRelPerson_0" style="height:26px; display:none">
+      <td colspan="5">
+        <table id="tbl_chkPersonRelPerson_0" class="queryTableDisplay" width="100%" style="border-color:DarkGoldenrod">
+          <tr style="height:26px; background-color:DarkKhaki">
+            <td align="left" colspan="5">&nbsp;&nbsp;<span class="queryText">醫師類型：</span></td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" Width="10px">&nbsp;</td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonDoctor_0" name="c$QPerson$Doctor" value="0" />主治醫師
+            </td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonDoctor_1" name="c$QPerson$Doctor" value="1" />住院醫師
+            </td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonDoctor_2" name="c$QPerson$Doctor" value="2" />實習醫師
+            </td>
+            <td align="left" Width="240px"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr id="tr_chkPersonRelPerson_1" style="height:26px; display:none">
+      <td colspan="5">
+        <table id="tbl_chkPersonRelPerson_1" class="queryTableDisplay" width="100%" style="border-color:DarkGoldenrod">
+          <tr style="height:26px; background-color:DarkKhaki">
+            <td align="left" colspan="5">&nbsp;&nbsp;<span class="queryText">護理人員類型：</span></td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" Width="10px">&nbsp;</td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonNurse_0" name="c$QPerson$Nurse" value="0" />專科護理師
+            </td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonNurse_1" name="c$QPerson$Nurse" value="1" />護理人員
+            </td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonNurse_2" name="c$QPerson$Nurse" value="2" />實習護理師
+            </td>
+            <td align="left" Width="240px"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr id="tr_chkPersonRelPerson_2" style="height:26px; display:none">
+      <td colspan="5">
+        <table id="tbl_chkPersonRelPerson_2" class="queryTableDisplay" width="100%" style="border-color:DarkGoldenrod">
+          <tr style="height:26px; background-color:DarkKhaki">
+            <td align="left" colspan="5">&nbsp;&nbsp;<span class="queryText">藥事人員類型：</span></td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" Width="10px">&nbsp;</td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonDispenser_0" name="c$QPerson$Dispenser" value="0" />藥師
+            </td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonDispenser_1" name="c$QPerson$Dispenser" value="1" />藥劑生
+            </td>
+            <td align="left" Width="240px"></td>
+            <td align="left" Width="240px"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr id="tr_chkPersonRelPerson_3" style="height:26px; display:none">
+      <td colspan="5">
+        <table id="tbl_chkPersonRelPerson_3" class="queryTableDisplay" width="100%" style="border-color:DarkGoldenrod">
+          <tr style="height:26px; background-color:DarkKhaki">
+            <td align="left" colspan="5">&nbsp;&nbsp;<span class="queryText">醫事檢驗人員類型：</span></td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" Width="10px">&nbsp;</td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonInspect_0" name="c$QPerson$Inspect" value="0" />醫事檢驗師
+            </td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonInspect_1" name="c$QPerson$Inspect" value="1" />醫事檢驗生
+            </td>
+            <td align="left" Width="240px"></td>
+            <td align="left" Width="240px"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr id="tr_chkPersonRelPerson_4" style="height:26px; display:none">
+      <td colspan="5">
+        <table id="tbl_chkPersonRelPerson_4" class="queryTableDisplay" width="100%" style="border-color:DarkGoldenrod">
+          <tr style="height:26px; background-color:DarkKhaki">
+            <td align="left" colspan="5">&nbsp;&nbsp;<span class="queryText">物理、職能治療人員類型：</span></td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" Width="10px">&nbsp;</td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonTreatmentMan_0" name="c$QPerson$TreatmentMan" value="0" />物理、職能治療人員
+            </td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonTreatmentMan_1" name="c$QPerson$TreatmentMan" value="1" />物理、職能治療實習生
+            </td>
+            <td align="left" Width="240px"></td>
+            <td align="left" Width="240px"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr id="tr_chkPersonRelPerson_5" style="height:26px; display:none">
+      <td colspan="5">
+        <table id="tbl_chkRelPerson_5" class="queryTableDisplay" width="100%" style="border-color:DarkGoldenrod">
+          <tr style="height:26px; background-color:DarkKhaki">
+            <td align="left" colspan="5">&nbsp;&nbsp;<span class="queryText">放射技術人員類型：</span></td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" Width="10px">&nbsp;</td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonRadiateMan_0" name="c$QPerson$RadiateMan" value="0" />放射師
+            </td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonRadiateMan_1" name="c$QPerson$RadiateMan" value="1" />放射技術士
+            </td>
+            <td align="left" Width="240px"></td>
+            <td align="left" Width="240px"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr id="tr_chkPersonRelPerson_6" style="height:26px; display:none">
+      <td colspan="5">
+        <table id="tbl_chkPersonRelPerson_6" class="queryTableDisplay" width="100%" style="border-color:DarkGoldenrod">
+          <tr style="height:26px; background-color:DarkKhaki">
+            <td align="left" colspan="5">&nbsp;&nbsp;<span class="queryText">行政人員類型：</span></td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" Width="10px">&nbsp;</td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonStaff_0" name="c$QPerson$Staff" value="0" />行政人員
+            </td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonStaff_1" name="c$QPerson$Staff" value="1" />工務維修人員
+            </td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonStaff_2" name="c$QPerson$Staff" value="2" />資訊技術人員
+            </td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonStaff_3" name="c$QPerson$Staff" value="3" />品管人員
+            </td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" Width="10px">&nbsp;</td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonStaff_4" name="c$QPerson$Staff" value="4" />其他：
+              <input type="text" id="txbPersonStaff_4" name="t$QPerson$Staff_4" class="textBox" style="width:140px" />
+            </td>
+            <td align="left" Width="240px"></td>
+            <td align="left" Width="240px"></td>
+            <td align="left" Width="240px"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr id="tr_chkPersonRelPerson_7" style="height:26px; display:none">
+      <td colspan="5">
+        <table id="tbl_chkPersonRelPerson_7" class="queryTableDisplay" width="100%" style="border-color:DarkGoldenrod">
+          <tr style="height:26px; background-color:DarkKhaki">
+            <td align="left" colspan="5">&nbsp;&nbsp;<span class="queryText">支援人員類型：</span></td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" Width="10px">&nbsp;</td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonSupport_0" name="c$QPerson$Support" value="0" />專科/外科助理
+            </td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonSupport_1" name="c$QPerson$Support" value="1" />看護
+            </td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonSupport_2" name="c$QPerson$Support" value="2" />志工
+            </td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonSupport_3" name="c$QPerson$Support" value="3" />保全
+            </td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" Width="10px">&nbsp;</td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonSupport_4" name="c$QPerson$Support" value="4" />駐衛警
+            </td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonSupport_5" name="c$QPerson$Support" value="5" />外包人員
+            </td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonSupport_6" name="c$QPerson$Support" value="6" />臨床研究助理
+            </td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonSupport_7" name="c$QPerson$Support" value="7" />照顧服務員
+            </td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" Width="10px">&nbsp;</td>
+            <td align="left" Width="240px">
+              <input type="checkbox" id="chkPersonSupport_8" name="c$QPerson$Support" value="8" />其他：
+              <input type="text" id="txbPersonSupport_8" name="t$QPerson$Support_8" class="textBox" style="width:140px" />
+            </td>
+            <td align="left" Width="240px"></td>
+            <td align="left" Width="240px"></td>
+            <td align="left" Width="240px"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+ 
+                
+				</div>
+            
+			</div><div id="caseTab_caseTabEvent" style="display:none;visibility:hidden;">
+				
+              <!-- update panel for 事件內容 -->
+              <div id="caseTab_caseTabEvent_uPanelEvent">
+					
+                  
+                
+				</div>
+            
+			</div><div id="caseTab_caseTabAviso" style="display:none;visibility:hidden;">
+				
+              <!-- update panel for 通報者資料 -->
+              <div id="caseTab_caseTabAviso_uPanelAviso">
+					
+                  
+                
+				</div>
+            
+			</div><div id="caseTab_caseTabImmediate" style="display:none;visibility:hidden;">
+				
+              <!-- update panel for 立即處理方式 -->
+              <div id="caseTab_caseTabImmediate_uPanelImmediate">
+					
+                  
+                
+				</div>
+            
+			</div><div id="caseTab_caseTabPrevent" style="display:none;visibility:hidden;">
+				
+              <!-- update panel for 預防措施 -->
+              <div id="caseTab_caseTabPrevent_uPanelPrevent">
+					
+                  
+                
+				</div>
+            
+			</div><div id="caseTab_caseTabRehappen" style="display:none;visibility:hidden;">
+				
+              <!-- update panel for 再發生可能情形 -->
+              <div id="caseTab_caseTabRehappen_uPanelRehappen">
+					
+                  
+                
+				</div>
+            
+			</div><div id="caseTab_caseTabImprove" style="display:none;visibility:hidden;">
+				
+              <!-- update panel for 檢討改善 -->
+              <div id="caseTab_caseTabImprove_uPanelImprove">
+					
+                  
+                
+				</div>
+            
+			</div>
+		</div>
+	</div>
+      
+      
+</div>
+ 
+      <div id="panelAction" style="width:100%;">
+	
+        <table width="100%" class="queryTableDisplay">
+          <tr style="height:26px">
+            <td>
+              <div id="uPanelMessageDown">
+		
+      						<span id="lblSuccessMsgDown" style="color:Green;"></span>
+    							<span id="lblErrorMsgDown" class="errorMsgText"></span>
+                
+	</div>
+            </td>
+            <td align="right" width="25%">
+              <font size="2" color="blue">目前剩餘：
+                <font color="crimson">
+                  <span id="lblRemainMinDown"></span>
+                </font>
+                &nbsp;&nbsp;分&nbsp;&nbsp;
+                <font color="crimson">
+                  <span id="lblRemainSecDown"></span>
+                </font>
+                &nbsp;&nbsp;秒&nbsp;&nbsp;
+              </font>
+            </td>
+          </tr>
+          <tr style="height:26px">
+            <td align="right" colspan="2">
+              <div id="uPanelActBtn">
+		
+                  <input type="submit" name="btnTempSave" value="暫存" onclick="onBtnSaveClientClick();" id="btnTempSave" class="button" style="height:22px;" />
+                  <input type="submit" name="btnConfirmTempCase" value="確認取號" onclick="onBtnSaveClientClick();" id="btnConfirmTempCase" class="button" style="height:22px;" />
+                  
+                  
+                  
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  
+                  &nbsp;
+                  
+							    <input type="submit" name="btnPrint" value="列印" id="btnPrint" disabled="disabled" class="button" style="height:22px;" />
+							    
+							    
+							    
+							    
+							    <input type="submit" name="btnBackWorkSiteDown" value="返回作業區" id="btnBackWorkSiteDown" class="button" style="height:22px;" />
+                
+	</div>
+            </td>
+          </tr>
+        </table>
+      
+</div>
+ 
+      <!-- hidden area -->
+      <div id="panelHiddenArea" style="width:100%;">
+	
+      
+        <div id="uPanelCaseType">
+		
+            <input name="hidCaseType" type="hidden" id="hidCaseType" value="Person" />
+            <input name="hidIsPreviousEvant" type="hidden" id="hidIsPreviousEvant" />
+          
+	</div>
+        
+        <div id="uPanelEventType">
+		
+            <input name="hidEventType" type="hidden" id="hidEventType" />
+            <input name="hidEventNames" type="hidden" id="hidEventNames" />
+            <input name="hidEventFormNames" type="hidden" id="hidEventFormNames" />
+          
+	</div>
+        
+        <div id="divHiddenPageData">
+          <input name="hidIsNewCase" type="hidden" id="hidIsNewCase" value="true" />
+          <input name="hidIsNeedCountTime" type="hidden" id="hidIsNeedCountTime" value="N" />
+        
+          <input name="hidJCIAEditRight" type="hidden" id="hidJCIAEditRight" value="N" />
+        
+          <input name="hidImproveEditRight" type="hidden" id="hidImproveEditRight" value="t$QImprove$BossComment@N,t$QImprove$SubChiefComment@N,t$QImprove$ChiefComment@N" />
+        
+          <input name="hidCasePersonData" type="hidden" id="hidCasePersonData" />
+          <input name="hidCaseImmediateData" type="hidden" id="hidCaseImmediateData" />
+          <input name="hidCasePreventData" type="hidden" id="hidCasePreventData" />
+          <input name="hidCaseRehappenData" type="hidden" id="hidCaseRehappenData" />
+          <input name="hidCaseAvisoData" type="hidden" id="hidCaseAvisoData" />
+          <input name="hidCaseImproveData" type="hidden" id="hidCaseImproveData" />
+        
+          <input name="hidEventSurgeryData" type="hidden" id="hidEventSurgeryData" />
+          <input name="hidEventFalldownData" type="hidden" id="hidEventFalldownData" />
+          <input name="hidEventDrugData" type="hidden" id="hidEventDrugData" />
+          <input name="hidEventBloodData" type="hidden" id="hidEventBloodData" />
+          <input name="hidEventTreatmentData" type="hidden" id="hidEventTreatmentData" />
+          <input name="hidEventAccidentData" type="hidden" id="hidEventAccidentData" />
+          <input name="hidEventSecurityData" type="hidden" id="hidEventSecurityData" />
+          <input name="hidEventHurtData" type="hidden" id="hidEventHurtData" />
+          <input name="hidEventIntubateData" type="hidden" id="hidEventIntubateData" />
+          <input name="hidEventHeartData" type="hidden" id="hidEventHeartData" />
+          <input name="hidEventInspectData" type="hidden" id="hidEventInspectData" />
+          <input name="hidEventAnesthesiaData" type="hidden" id="hidEventAnesthesiaData" />
+          <input name="hidEventOtherData" type="hidden" id="hidEventOtherData" />
+          <input name="hidEventAdminData" type="hidden" id="hidEventAdminData" />
+          <input name="hidEventChemotherapyLeakData" type="hidden" id="hidEventChemotherapyLeakData" />
+          <input name="hidEventChemotherapyOverData" type="hidden" id="hidEventChemotherapyOverData" />
+          <input name="hidFalldownAnalyData" type="hidden" id="hidFalldownAnalyData" />
+          <input name="hidIntubateOutData" type="hidden" id="hidIntubateOutData" />
+        </div>
+        
+        <input onclick="__doPostBack('btnCaseTabPerson','')" name="btnCaseTabPerson" type="button" id="btnCaseTabPerson" style="display:none" />
+        <input onclick="__doPostBack('btnCaseTabImmediate','')" name="btnCaseTabImmediate" type="button" id="btnCaseTabImmediate" style="display:none" />
+        <input onclick="__doPostBack('btnCaseTabPrevent','')" name="btnCaseTabPrevent" type="button" id="btnCaseTabPrevent" style="display:none" />
+        <input onclick="__doPostBack('btnCaseTabRehappen','')" name="btnCaseTabRehappen" type="button" id="btnCaseTabRehappen" style="display:none" />
+        <input onclick="__doPostBack('btnCaseTabAviso','')" name="btnCaseTabAviso" type="button" id="btnCaseTabAviso" style="display:none" />
+        <input onclick="__doPostBack('btnCaseTabImprove','')" name="btnCaseTabImprove" type="button" id="btnCaseTabImprove" style="display:none" />
+        <input onclick="__doPostBack('btnCaseTabEvent','')" name="btnCaseTabEvent" type="button" id="btnCaseTabEvent" style="display:none" />
+        
+        <input onclick="__doPostBack('btnAutoSave','')" name="btnAutoSave" type="button" id="btnAutoSave" style="display:none" />
+        
+      
+</div>
+ 
+    
+ 
+<script type="text/javascript"> 
+//<![CDATA[
+initFieldData('txbAvisoDate', '2012/07/10');
+initFieldData('txbEventDept', 'RAD_影像醫學部_15100');
+Sys.Application.initialize();
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.TabPanel, {"headerTab":$get("__tab_caseTab_caseTabPerson")}, null, {"owner":"caseTab"}, $get("caseTab_caseTabPerson"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.TabPanel, {"headerTab":$get("__tab_caseTab_caseTabEvent")}, null, {"owner":"caseTab"}, $get("caseTab_caseTabEvent"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.TabPanel, {"headerTab":$get("__tab_caseTab_caseTabAviso")}, null, {"owner":"caseTab"}, $get("caseTab_caseTabAviso"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.TabPanel, {"headerTab":$get("__tab_caseTab_caseTabImmediate")}, null, {"owner":"caseTab"}, $get("caseTab_caseTabImmediate"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.TabPanel, {"headerTab":$get("__tab_caseTab_caseTabPrevent")}, null, {"owner":"caseTab"}, $get("caseTab_caseTabPrevent"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.TabPanel, {"headerTab":$get("__tab_caseTab_caseTabRehappen")}, null, {"owner":"caseTab"}, $get("caseTab_caseTabRehappen"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.TabPanel, {"headerTab":$get("__tab_caseTab_caseTabImprove")}, null, {"owner":"caseTab"}, $get("caseTab_caseTabImprove"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.TabContainer, {"activeTabIndex":0,"clientStateField":$get("caseTab_ClientState")}, {"activeTabChanged":onCaseTabChanged}, null, $get("caseTab"));
+});
+//]]>
+</script>
+</form>
+    
+    <script language="javascript">
+ 
+      var gTimeCount;
+      var gRemainSec = 30 * 60;
+      //var gRemainSec = 30;
+    
+      function countTime()
+      {
+          gRemainSec--;
+ 
+          var tempMin = Math.floor(gRemainSec % 3600 / 60);
+          var tempSec = Math.floor(gRemainSec % 60);
+ 
+          $get('lblRemainMinUp').innerHTML = tempMin;
+          $get('lblRemainSecUp').innerHTML = tempSec;
+          $get('lblRemainMinDown').innerHTML = tempMin;
+          $get('lblRemainSecDown').innerHTML = tempSec;
+      
+          if ( gRemainSec != 0 )
+          {
+              gTimeCount = setTimeout("countTime()", 1000);
+          }
+          else
+          {
+              clearTimeout(gTimeCount);
+              //location.href = "http://www.yahoo.com.tw";
+              autoSaveClientTrigger("btnAutoSave");
+          }
+      }
+    
+      var isNeedCountTime = $get("hidIsNeedCountTime").value == "Y";
+      
+      if ( isNeedCountTime )
+      {
+          countTime();
+      }
+      else
+      {
+          //alert("不用 count time~~~");
+          $get('lblRemainMinUp').innerHTML = "--";
+          $get('lblRemainSecUp').innerHTML = "--";
+          $get('lblRemainMinDown').innerHTML = "--";
+          $get('lblRemainSecDown').innerHTML = "--";
+      }
+    
+    </script>
+    
+  </body>
+</html>
+

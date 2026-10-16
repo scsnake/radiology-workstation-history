@@ -1,0 +1,18 @@
+- Syngovia result
+  -- Ctrl + I: 在瀏覽器開啟Syngovia LungCAD results
+	-- Ctrl + PageUp/PageDown: 上/下一個結果
+- Magic result (AI)
+  -- Win + I: 在瀏覽器/IMPAX顯示GGN results
+	-- Win + PageUp/PageDown: 上/下一個結果
+  -- ShowInBrowser: 在瀏覽器顯示
+	-- ShowInImpax: 在IMPAX顯示(推薦)
+- Region growing:
+  -- RegionGrowMorph.exe開啟後等到顯示ready
+  -- IMPAX顯示最大圖、不縮放、顯示病患資訊(左下角FOV資訊)
+  -- 看到lesion，shift + 滑鼠左鍵長按，等到ROI長到差不多大放開shift鍵、左鍵
+- 設定檔：
+  -- OpenRegionGrow: 開啟RegionGrowMorph.exe
+  -- ShowNoduleList: nodule list保持開啟
+- 快速鍵：
+  -- 回報false negative: Win + N
+  -- 回報false positive: Win + P
