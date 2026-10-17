@@ -5,7 +5,7 @@ This repository is an archive of original self-authored scripts, desktop automat
 ### Purpose & Archival Scope
 - **Historical Record**: This repository serves solely as a personal record of coding experience, architecture ideas, and workflow automation concepts developed through the years.
 - **Original Historical State (Not AI-Optimized)**: The code is preserved in its authentic historical form. It has **not been optimized, refactored, or rewritten by AI**.
-- **No Warranty / Not Guaranteed Runnable**: These scripts are historical artifacts. Because hospital-specific function names, file names, DOM element IDs, and URLs have been sanitized, direct execution may not be possible without local adaptation. They are **not guaranteed to be runnable or bug-fixed**, and they are not maintained for production use.
+- **No Warranty / Not Runnable**: These scripts are historical artifacts. Because hospital-specific function names, file names, DOM element IDs, and URLs have been sanitized, these scripts cannot be executed directly. They are **not runnable or bug-fixed**, and they are not maintained for production use.
 - **Data Privacy & Sanitization**: All patient health information (PHI) has been completely removed. System configuration tables, contact rosters, and network endpoints use synthetic mock data.
 
 ### Institutional & Data Anonymization Key
@@ -21,7 +21,7 @@ To preserve medical privacy and institutional confidentiality, all clinical iden
   - `B branch`: Bei-Hu branch.
   - `ZD branch`: Zhudong branch.
   - `N總院` / `N Main Hospital`: Main hospital center campus.
-- **File Names, Function Names & DOM Selectors**: Hospital and branch abbreviations in file/folder names, function/variable identifiers, and web portal DOM element IDs are replaced with anonymized initials (e.g. `N`, `CH`, `Y`, `H`, `ZD`). Because external web portals and PACS services expect real site-specific identifiers, scripts cannot be run directly without adapting these names.
+- **File Names, Function Names & DOM Selectors**: Hospital and branch abbreviations in file/folder names, function/variable identifiers, and web portal DOM element IDs are replaced with anonymized initials (e.g. `N`, `CH`, `Y`, `H`, `ZD`). Because external web portals, RIS controls, and PACS services require real site-specific identifiers, these scripts serve as an archival reference only and cannot be run.
 - **Clinicians & Staff Names**: Two-to-three character personnel names are replaced with generic professional titles (`張醫師`, `王醫師`, `陳醫師`, `林醫師`, `游醫師`) or standard synthetic placeholders.
 - **Patient Privacy (PHI)**: All patient records have been replaced with synthetic mock data (`0000001`, `王小明`, `T0000000001`). No real clinical records or chart numbers exist in this repository.
 - **Network Endpoints & Domains**: Institutional top-level domains (`institutional live domains`) and intranet IPs are replaced with local simulation endpoints (`*.hospital-n.local`, `*.hospital-y.local`, `*.hospital-h.local`, `127.0.0.1:8000`).
